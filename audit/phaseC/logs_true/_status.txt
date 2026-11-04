@@ -1,0 +1,13 @@
+true run_verdict rc=0 12s
+true hn_runner rc=0 4s
+true hp_runner rc=0 10s
+true hb_runner rc=0 10s
+true sz_runner rc=0 4s
+true hv_runner rc=0 8s
+true hr_is_runner rc=0 7s
+true hr_oos_runner rc=0 7s
+true hcrt_runner rc=0 16s
+true hsw_runner rc=0 14s
+true hm_runner rc=1 10s
+true hs_runner rc=0 860s
+true hm_runner rc=0

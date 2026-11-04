@@ -1,0 +1,26 @@
+top 5 by TRAIN (<2025), TEST (2025+) untouched:
+  window (0, 24) minstop 0.8ATR ladder 1.0R
+     TRAIN n  504  net   -49.9R  avg -0.099R  PF 0.82  win 49%  maxDD  55.7R
+     TEST  n  357  net   -45.4R  avg -0.127R  PF 0.78  win 44%  maxDD  50.5R
+  window (6, 12) minstop 0.8ATR ladder 1.0R
+     TRAIN n  273  net   -34.6R  avg -0.127R  PF 0.78  win 46%  maxDD  36.8R
+     TEST  n  164  net   -24.4R  avg -0.149R  PF 0.75  win 42%  maxDD  31.2R
+  window (6, 12) minstop 0.8ATR ladder 0.4R
+     TRAIN n  273  net   -30.6R  avg -0.112R  PF 0.69  win 59%  maxDD  30.7R
+     TEST  n  164  net   -25.6R  avg -0.156R  PF 0.58  win 57%  maxDD  31.7R
+  window (6, 12) minstop 0.5ATR ladder 0.6R
+     TRAIN n  273  net   -42.3R  avg -0.155R  PF 0.68  win 52%  maxDD  43.1R
+     TEST  n  164  net   -35.7R  avg -0.218R  PF 0.56  win 47%  maxDD  36.9R
+  window (6, 12) minstop 0.5ATR ladder 0.4R
+     TRAIN n  273  net   -49.7R  avg -0.182R  PF 0.57  win 51%  maxDD  51.2R
+     TEST  n  164  net   -22.9R  avg -0.140R  PF 0.65  win 51%  maxDD  27.7R
+
+chosen window (0, 24), minstop 0.8, ladder 1.0R
+  M15 prev-day sweep  <2025 n  504  net   -49.9R  avg -0.099R  PF 0.82  win 49%  maxDD  55.7R
+                      2025+ n  357  net   -45.4R  avg -0.127R  PF 0.78  win 44%  maxDD  50.5R
+  M15 random twin     <2025 n  503  net   -47.5R  avg -0.094R  PF 0.83  win 49%  maxDD  58.1R
+                      2025+ n  359  net   -16.3R  avg -0.045R  PF 0.91  win 50%  maxDD  21.7R
+  M5 prev-day sweep  <2025 n    0  net    +0.0R  avg +0.000R  PF 0.00  win 0%  maxDD   0.0R
+                      2025+ n  305  net   -43.7R  avg -0.143R  PF 0.75  win 44%  maxDD  46.8R
+  M5 random twin     <2025 n    0  net    +0.0R  avg +0.000R  PF 0.00  win 0%  maxDD   0.0R
+                      2025+ n  308  net    -2.4R  avg -0.008R  PF 0.98  win 52%  maxDD  25.2R

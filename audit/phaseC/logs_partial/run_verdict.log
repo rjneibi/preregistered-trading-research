@@ -1,0 +1,42 @@
+loading full M1 (2010+ for H2 warm-start) ...
+
+== (a) H1 rerun (matrix median costs) ==
+  full: n=472 wr=72.9% pf=1.24 net=$20,910 exp=$44.3
+   old: n=267 wr=71.2% pf=0.95 net=$-1,725 exp=$-6.5
+   new: n=205 wr=75.1% pf=1.42 net=$22,634 exp=$110.4
+  p90 stress:
+  full: n=472 wr=72.9% pf=1.15 net=$13,941 exp=$29.5
+   old: n=267 wr=71.2% pf=0.86 net=$-4,883 exp=$-18.3
+   new: n=205 wr=75.1% pf=1.34 net=$18,824 exp=$91.8
+  flat-20 comparison:
+  full: n=472 wr=72.9% pf=1.49 net=$40,544 exp=$85.9
+   old: n=267 wr=71.2% pf=1.27 net=$8,520 exp=$31.9
+   new: n=205 wr=75.1% pf=1.62 net=$32,024 exp=$156.2
+  mean cost/trade: $61.6 (old $58.37, new $65.8)
+  splits positive: 11/15 
+  split expectancies: [-25.97, -17.68, -9.95, -8.88, 79.93, 11.05, 19.26, 18.78, 111.81, 32.46, 31.15, 132.2, 39.71, 141.74, 134.12]
+  fallback hits: {'_global': 572, '2026': 36}
+  H1 gates: {'1_full_pf_ge_1.20': True, '2_splits_ge_10of15': True, '3_each_era_pf_ge_1.00': False, '4_n_ge_300': True}
+  H1 FAIL
+
+== (b) H2 @ 0.50 ==
+  full: n=193 wr=72.0% pf=1.25 net=$13,689 exp=$70.9
+   old: n=96 wr=67.7% pf=0.88 net=$-2,021 exp=$-21.0
+   new: n=97 wr=76.3% pf=1.42 net=$15,709 exp=$162.0
+  splits positive: 11/15 
+  split expectancies: [-67.51, -34.55, -64.96, -67.68, 125.66, 51.81, 28.03, 14.88, 204.36, 62.78, 46.04, 229.43, 22.98, 222.8, 193.19]
+  p90 full PF: 1.20
+
+== (c) plateau ==
+  PF @0.40=1.34 @0.50=1.25 @0.60=1.20 -> OK
+
+== (d) mechanism control (old era) ==
+  {'n_in': 96, 'n_out': 171, 'pf_in': 0.8802320930394568, 'pf_out': 1.0167448207043632, 'sufficient': True, 'pf_gap': -0.137}
+
+  H2 gates: {'1_filtered_pf_ge_1.25': True, '2_splits_ge_11of15': True, '3_p90_pf_ge_1.10': True, '4_mechanism_gap_ge_0.15_nin_ge_40': False, '5_n_ge_150_and_plateau': True}
+  H2 FAIL
+
+== VERDICT ==
+BOTH FAIL -> STOP the goldbot-breakout line. Archive results. Salvage candidates require fresh pre-registration before any backtest.
+
+verdict appended to audit/_copy/sb_partial/research/goldbot/results/DECISIONS.log

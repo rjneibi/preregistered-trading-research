@@ -1,0 +1,223 @@
+{
+ "total": 179000,
+ "rows": 174,
+ "families": {
+  "goldbot pre-July ledger": {
+   "rows": 39,
+   "variants": 41
+  },
+  "goldbot ledger": {
+   "rows": 12,
+   "variants": 0
+  },
+  "arbitrage": {
+   "rows": 1,
+   "variants": 1
+  },
+  "trend/mean-reversion": {
+   "rows": 1,
+   "variants": 1
+  },
+  "support/resistance": {
+   "rows": 3,
+   "variants": 30
+  },
+  "trend filter": {
+   "rows": 1,
+   "variants": 12
+  },
+  "volume": {
+   "rows": 1,
+   "variants": 2
+  },
+  "transfer test": {
+   "rows": 3,
+   "variants": 10
+  },
+  "ML": {
+   "rows": 2,
+   "variants": 4
+  },
+  "pivot/breakout": {
+   "rows": 6,
+   "variants": 43
+  },
+  "pivot/mean-reversion": {
+   "rows": 1,
+   "variants": 1
+  },
+  "regime/sizing": {
+   "rows": 1,
+   "variants": 0
+  },
+  "regime filter": {
+   "rows": 1,
+   "variants": 3
+  },
+  "scalping": {
+   "rows": 1,
+   "variants": 12
+  },
+  "ML/meta-label": {
+   "rows": 1,
+   "variants": 2
+  },
+  "grid": {
+   "rows": 1,
+   "variants": 5
+  },
+  "ICT": {
+   "rows": 1,
+   "variants": 6
+  },
+  "news sizing": {
+   "rows": 1,
+   "variants": 1
+  },
+  "portfolio": {
+   "rows": 2,
+   "variants": 2
+  },
+  "routing overlay": {
+   "rows": 1,
+   "variants": 1
+  },
+  "sizing": {
+   "rows": 1,
+   "variants": 1
+  },
+  "regime": {
+   "rows": 1,
+   "variants": 1
+  },
+  "ICT/SMC": {
+   "rows": 6,
+   "variants": 6494
+  },
+  "event": {
+   "rows": 1,
+   "variants": 7
+  },
+  "time-of-day": {
+   "rows": 1,
+   "variants": 9
+  },
+  "diagnostics": {
+   "rows": 2,
+   "variants": 0
+  },
+  "risk geometry": {
+   "rows": 1,
+   "variants": 2
+  },
+  "implementation audit": {
+   "rows": 1,
+   "variants": 0
+  },
+  "forward test": {
+   "rows": 1,
+   "variants": 1
+  },
+  "TA levels": {
+   "rows": 1,
+   "variants": 5
+  },
+  "mixed": {
+   "rows": 3,
+   "variants": 21
+  },
+  "mean-reversion": {
+   "rows": 2,
+   "variants": 3972
+  },
+  "swing": {
+   "rows": 1,
+   "variants": 50
+  },
+  "scalping/ORB": {
+   "rows": 1,
+   "variants": 18
+  },
+  "volatility": {
+   "rows": 1,
+   "variants": 5
+  },
+  "crypto": {
+   "rows": 1,
+   "variants": 20
+  },
+  "trend": {
+   "rows": 2,
+   "variants": 9
+  },
+  "rotation": {
+   "rows": 1,
+   "variants": 0
+  },
+  "exits": {
+   "rows": 1,
+   "variants": 6
+  },
+  "literature replication": {
+   "rows": 1,
+   "variants": 6
+  },
+  "price action": {
+   "rows": 4,
+   "variants": 58
+  },
+  "indicator search": {
+   "rows": 1,
+   "variants": 64521
+  },
+  "ORB": {
+   "rows": 1,
+   "variants": 800
+  },
+  "breakout": {
+   "rows": 1,
+   "variants": 36864
+  },
+  "LLM agent": {
+   "rows": 1,
+   "variants": 17
+  },
+  "copy trading": {
+   "rows": 1,
+   "variants": 1
+  },
+  "analyst/copy": {
+   "rows": 21,
+   "variants": 1464
+  },
+  "audit rerun": {
+   "rows": 2,
+   "variants": 2
+  },
+  "audit Phase C": {
+   "rows": 10,
+   "variants": 0
+  },
+  "audit Phase D": {
+   "rows": 7,
+   "variants": 64431
+  },
+  "audit Phase E": {
+   "rows": 15,
+   "variants": 38
+  }
+ },
+ "fragile_family_n": {
+  "XM-1-A1": 17,
+  "SW-1": 50,
+  "EDGE-1-F6": 34,
+  "TUNE-1-DIP": 3960
+ },
+ "corrected_total": 190234,
+ "corrected_fragile_family_n": {
+  "XM-1-A1": 17,
+  "SW-1": 60,
+  "EDGE-1-F6": 37,
+  "TUNE-1-DIP": 3960
+ }
+}

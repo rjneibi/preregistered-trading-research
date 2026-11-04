@@ -1,0 +1,922 @@
+{
+ "pooled": {
+  "3|1.5R": {
+   "cid": 45,
+   "is_avgR": -0.23853272238624676,
+   "is_n": 213,
+   "eligible": 104,
+   "fallback": false
+  },
+  "3|1R": {
+   "cid": 65,
+   "is_avgR": -0.27785440716718474,
+   "is_n": 279,
+   "eligible": 104,
+   "fallback": false
+  },
+  "3|2R": {
+   "cid": 41,
+   "is_avgR": -0.2349154215548118,
+   "is_n": 251,
+   "eligible": 104,
+   "fallback": false
+  },
+  "3|3R": {
+   "cid": 83,
+   "is_avgR": -0.1641298673721491,
+   "is_n": 158,
+   "eligible": 104,
+   "fallback": false
+  },
+  "3|liq": {
+   "cid": 41,
+   "is_avgR": -0.025871897311741134,
+   "is_n": 243,
+   "eligible": 104,
+   "fallback": false
+  },
+  "5|1.5R": {
+   "cid": 45,
+   "is_avgR": -0.18779808695226793,
+   "is_n": 151,
+   "eligible": 82,
+   "fallback": false
+  },
+  "5|1R": {
+   "cid": 71,
+   "is_avgR": -0.19250098255622955,
+   "is_n": 170,
+   "eligible": 82,
+   "fallback": false
+  },
+  "5|2R": {
+   "cid": 23,
+   "is_avgR": -0.1761708106215791,
+   "is_n": 241,
+   "eligible": 82,
+   "fallback": false
+  },
+  "5|3R": {
+   "cid": 23,
+   "is_avgR": -0.1523741214808417,
+   "is_n": 237,
+   "eligible": 82,
+   "fallback": false
+  },
+  "5|liq": {
+   "cid": 58,
+   "is_avgR": -0.1316937932249246,
+   "is_n": 179,
+   "eligible": 82,
+   "fallback": false
+  },
+  "15|1.5R": {
+   "cid": 0,
+   "eligible": 0,
+   "fallback": true
+  },
+  "15|1R": {
+   "cid": 0,
+   "eligible": 0,
+   "fallback": true
+  },
+  "15|2R": {
+   "cid": 0,
+   "eligible": 0,
+   "fallback": true
+  },
+  "15|3R": {
+   "cid": 0,
+   "eligible": 0,
+   "fallback": true
+  },
+  "15|liq": {
+   "cid": 0,
+   "eligible": 0,
+   "fallback": true
+  }
+ },
+ "per_symbol": {
+  "XAUUSD|3|1.5R": 57,
+  "EURUSD|3|1.5R": 81,
+  "GBPUSD|3|1.5R": 106,
+  "NAS100|3|1.5R": 73,
+  "XAUUSD|3|1R": 65,
+  "EURUSD|3|1R": 83,
+  "GBPUSD|3|1R": 106,
+  "NAS100|3|1R": 73,
+  "XAUUSD|3|2R": 65,
+  "EURUSD|3|2R": 81,
+  "GBPUSD|3|2R": 95,
+  "NAS100|3|2R": 105,
+  "XAUUSD|3|3R": 65,
+  "EURUSD|3|3R": 81,
+  "GBPUSD|3|3R": 95,
+  "NAS100|3|3R": 99,
+  "XAUUSD|3|liq": 83,
+  "EURUSD|3|liq": 81,
+  "GBPUSD|3|liq": 69,
+  "NAS100|3|liq": 45,
+  "XAUUSD|5|1.5R": 66,
+  "EURUSD|5|1.5R": 22,
+  "GBPUSD|5|1.5R": 91,
+  "NAS100|5|1.5R": 71,
+  "XAUUSD|5|1R": 70,
+  "EURUSD|5|1R": 13,
+  "GBPUSD|5|1R": 90,
+  "NAS100|5|1R": 107,
+  "XAUUSD|5|2R": 66,
+  "EURUSD|5|2R": 8,
+  "GBPUSD|5|2R": 69,
+  "NAS100|5|2R": 103,
+  "XAUUSD|5|3R": 33,
+  "EURUSD|5|3R": 13,
+  "GBPUSD|5|3R": 69,
+  "NAS100|5|3R": 102,
+  "XAUUSD|5|liq": 33,
+  "EURUSD|5|liq": 47,
+  "GBPUSD|5|liq": 32,
+  "NAS100|5|liq": 59,
+  "XAUUSD|15|1.5R": 26,
+  "EURUSD|15|1.5R": null,
+  "GBPUSD|15|1.5R": 19,
+  "NAS100|15|1.5R": 13,
+  "XAUUSD|15|1R": 27,
+  "EURUSD|15|1R": null,
+  "GBPUSD|15|1R": 19,
+  "NAS100|15|1R": 13,
+  "XAUUSD|15|2R": 27,
+  "EURUSD|15|2R": null,
+  "GBPUSD|15|2R": 19,
+  "NAS100|15|2R": 13,
+  "XAUUSD|15|3R": 27,
+  "EURUSD|15|3R": null,
+  "GBPUSD|15|3R": 19,
+  "NAS100|15|3R": 13,
+  "XAUUSD|15|liq": 2,
+  "EURUSD|15|liq": null,
+  "GBPUSD|15|liq": 19,
+  "NAS100|15|liq": 30
+ },
+ "default_cid": 0,
+ "n_configs": 108,
+ "backtests": 6480,
+ "configs": [
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 2,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 3,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 1,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 2,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.0,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.25,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 240,
+   "sl_buffer_atr": 0.25
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.1
+  },
+  {
+   "swing_n": 5,
+   "crt_k": 3,
+   "fvg_min_atr": 0.5,
+   "bias_tf": 60,
+   "sl_buffer_atr": 0.25
+  }
+ ]
+}

@@ -1,0 +1,206 @@
+{
+ "pooled": {
+  "pf_filtered": 1.2060857026348677,
+  "pf_unfiltered": 1.2357553836537805,
+  "uplift": -0.029669681018912764,
+  "pf_filtered_p90": 1.1234216803093815,
+  "pf_filtered_old": 0.9410427900925488,
+  "pf_filtered_new": 1.3941666106956616,
+  "n_kept_pooled": 1935,
+  "n_kept_unique": 468,
+  "retention_unique": 0.9915254237288136,
+  "positive_splits": 10
+ },
+ "splits": [
+  {
+   "split": 0,
+   "tau": 0.7,
+   "n_test": 174,
+   "n_kept": 169,
+   "retention": 0.971,
+   "pf_kept": 0.78,
+   "pf_unfiltered": 0.776,
+   "exp_kept": -25.5
+  },
+  {
+   "split": 1,
+   "tau": 0.7,
+   "n_test": 162,
+   "n_kept": 133,
+   "retention": 0.821,
+   "pf_kept": 0.939,
+   "pf_unfiltered": 0.884,
+   "exp_kept": -9.38
+  },
+  {
+   "split": 2,
+   "tau": 0.7,
+   "n_test": 161,
+   "n_kept": 123,
+   "retention": 0.764,
+   "pf_kept": 1.048,
+   "pf_unfiltered": 0.937,
+   "exp_kept": 7.18
+  },
+  {
+   "split": 3,
+   "tau": 0.7,
+   "n_test": 170,
+   "n_kept": 131,
+   "retention": 0.771,
+   "pf_kept": 0.968,
+   "pf_unfiltered": 0.946,
+   "exp_kept": -5.35
+  },
+  {
+   "split": 4,
+   "tau": 0.7,
+   "n_test": 165,
+   "n_kept": 125,
+   "retention": 0.758,
+   "pf_kept": 1.351,
+   "pf_unfiltered": 1.29,
+   "exp_kept": 98.14
+  },
+  {
+   "split": 5,
+   "tau": 0.7,
+   "n_test": 156,
+   "n_kept": 152,
+   "retention": 0.974,
+   "pf_kept": 1.068,
+   "pf_unfiltered": 1.1,
+   "exp_kept": 7.6
+  },
+  {
+   "split": 6,
+   "tau": 0.7,
+   "n_test": 155,
+   "n_kept": 145,
+   "retention": 0.935,
+   "pf_kept": 1.151,
+   "pf_unfiltered": 1.165,
+   "exp_kept": 18.23
+  },
+  {
+   "split": 7,
+   "tau": 0.7,
+   "n_test": 164,
+   "n_kept": 125,
+   "retention": 0.762,
+   "pf_kept": 0.975,
+   "pf_unfiltered": 1.149,
+   "exp_kept": -3.45
+  },
+  {
+   "split": 8,
+   "tau": 0.7,
+   "n_test": 159,
+   "n_kept": 109,
+   "retention": 0.686,
+   "pf_kept": 1.583,
+   "pf_unfiltered": 1.468,
+   "exp_kept": 100.53
+  },
+  {
+   "split": 9,
+   "tau": 0.7,
+   "n_test": 143,
+   "n_kept": 114,
+   "retention": 0.797,
+   "pf_kept": 1.259,
+   "pf_unfiltered": 1.205,
+   "exp_kept": 38.63
+  },
+  {
+   "split": 10,
+   "tau": 0.7,
+   "n_test": 152,
+   "n_kept": 125,
+   "retention": 0.822,
+   "pf_kept": 0.99,
+   "pf_unfiltered": 1.189,
+   "exp_kept": -1.79
+  },
+  {
+   "split": 11,
+   "tau": 0.7,
+   "n_test": 147,
+   "n_kept": 95,
+   "retention": 0.646,
+   "pf_kept": 1.407,
+   "pf_unfiltered": 1.457,
+   "exp_kept": 123.42
+  },
+  {
+   "split": 12,
+   "tau": 0.7,
+   "n_test": 151,
+   "n_kept": 130,
+   "retention": 0.861,
+   "pf_kept": 1.097,
+   "pf_unfiltered": 1.231,
+   "exp_kept": 18.18
+  },
+  {
+   "split": 13,
+   "tau": 0.45,
+   "n_test": 146,
+   "n_kept": 146,
+   "retention": 1.0,
+   "pf_kept": 1.477,
+   "pf_unfiltered": 1.477,
+   "exp_kept": 141.74
+  },
+  {
+   "split": 14,
+   "tau": 0.7,
+   "n_test": 155,
+   "n_kept": 113,
+   "retention": 0.729,
+   "pf_kept": 1.408,
+   "pf_unfiltered": 1.453,
+   "exp_kept": 112.86
+  }
+ ],
+ "control_pooled": {
+  "pf_filtered": 1.2562354050236781,
+  "pf_unfiltered": 1.2357553836537805,
+  "uplift": 0.020480021369897683,
+  "pf_filtered_p90": 1.1746500695734199,
+  "pf_filtered_old": 0.9411107624323828,
+  "pf_filtered_new": 1.4566834813399328,
+  "n_kept_pooled": 2197,
+  "n_kept_unique": 472,
+  "retention_unique": 1.0,
+  "positive_splits": 11
+ },
+ "gates": {
+  "1_filtered_pf_ge_1.40": false,
+  "2_uplift_ge_0.15": false,
+  "3_old_era_pf_ge_1.05": false,
+  "4_retention_ge_40pct_and_n_ge_200": true,
+  "5_splits_ge_11of15": false,
+  "6_p90_pf_ge_1.15": false,
+  "7_shuffled_control_fails": true
+ },
+ "voided": false,
+ "suspicion": {
+  "overshoot_rank": 8,
+  "corr_old": 0.08224512236454377,
+  "corr_new": -0.12221691469477976,
+  "importance_order": [
+   "hour",
+   "weekday",
+   "tie_entry",
+   "hivol",
+   "vol_pctile_prevday",
+   "adx_d1",
+   "news_day",
+   "overshoot_atr"
+  ]
+ },
+ "pass": false,
+ "verdict": "FAIL -> ML-filter line closed a SECOND time; no third attempt until forward journal holds ~950 events",
+ "nan_counts": {}
+}

@@ -1,0 +1,31 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote audit/_copy/rs_adj/fable-backtesting/calendar/news_days.json: 260 blackout days
+months per stream: {'Index dip RSI2': 160, 'Index dip IBS': 160, 'Nasdaq ORB': 52, 'Crypto trend (12 coins)': 109, 'Multi-asset trend (TSMOM)': 178, 'Crypto funding carry': 83}
+
+per stream (scaled to 10% vol):
+  Index dip RSI2               Sharpe  0.92  worst month -11.1%  maxDD 25.0%  (2013-07..)
+  Index dip IBS                Sharpe  0.85  worst month  -8.4%  maxDD 13.6%  (2013-07..)
+  Nasdaq ORB                   Sharpe  1.05  worst month  -4.7%  maxDD  6.5%  (2022-07..)
+  Crypto trend (12 coins)      Sharpe  1.19  worst month  -3.0%  maxDD  8.3%  (2017-10..)
+  Multi-asset trend (TSMOM)    Sharpe -0.35  worst month  -8.5%  maxDD 47.1%  (2012-01..)
+  Crypto funding carry         Sharpe  1.83  worst month  -0.8%  maxDD  3.1%  (2019-12..)
+
+correlation of monthly returns:
+                           Index dip RSI2  Index dip IBS  Nasdaq ORB  Crypto trend (12 coins)  Multi-asset trend (TSMOM)  Crypto funding carry
+Index dip RSI2                       1.00           0.21        0.07                     0.03                      -0.05                 -0.08
+Index dip IBS                        0.21           1.00       -0.00                     0.03                       0.10                 -0.12
+Nasdaq ORB                           0.07          -0.00        1.00                    -0.10                      -0.23                 -0.02
+Crypto trend (12 coins)              0.03           0.03       -0.10                     1.00                       0.14                  0.53
+Multi-asset trend (TSMOM)           -0.05           0.10       -0.23                     0.14                       1.00                  0.17
+Crypto funding carry                -0.08          -0.12       -0.02                     0.53                       0.17                  1.00
+
+COMBINED equal-risk book, 2022-07..2026-10 (52 months, all streams live):
+  Sharpe 2.58  vol 3.3%  maxDD 2.3%  worst month -1.6%  losing months 21%
+  vs Index dip RSI2               alone over same months: Sharpe  1.81  maxDD  8.4%
+  vs Index dip IBS                alone over same months: Sharpe  2.05  maxDD  3.0%
+  vs Nasdaq ORB                   alone over same months: Sharpe  1.05  maxDD  6.5%
+  vs Crypto trend (12 coins)      alone over same months: Sharpe  0.80  maxDD  7.0%
+  vs Multi-asset trend (TSMOM)    alone over same months: Sharpe -0.62  maxDD 29.9%
+  vs Crypto funding carry         alone over same months: Sharpe  1.69  maxDD  3.1%
+  book re-levered to 10% vol: CAGR +28.5%  maxDD 6.9%
+  by year: 2022 +7%, 2023 +20%, 2024 +50%, 2025 +31%, 2026 +18%

@@ -1,0 +1,90 @@
+{
+ "is_cutoff": "2023-02-23 18:24:00+00:00",
+ "is_fraction": 0.7,
+ "n_is_trades": 334,
+ "oos_rows_dropped": 138,
+ "er_window": 14,
+ "confirm_bars": 2,
+ "calib_quantiles": {
+  "mr_enter_q": 0.2,
+  "mr_exit_q": 0.35,
+  "mom_exit_q": 0.55,
+  "mom_enter_q": 0.75
+ },
+ "thresholds": {
+  "enter_mr": 0.09623115181181222,
+  "exit_mr": 0.17164965031621532,
+  "exit_mom": 0.2832321672076952,
+  "enter_mom": 0.4217443249701222
+ },
+ "route_pivot_in": [
+  "MOMENTUM"
+ ],
+ "symbol_spec": {
+  "tick_size": 0.01,
+  "tick_value": 1.0,
+  "volume_step": 0.01,
+  "volume_min": 0.01,
+  "volume_max": 100.0
+ },
+ "sizing": {
+  "risk_fraction": 0.01,
+  "start_equity": 10000.0,
+  "stop_atr_mult": 2.4
+ },
+ "diagnostics": {
+  "flip_count": 5208,
+  "pct_bars_per_state": {
+   "NEUTRAL": 0.4255,
+   "MOMENTUM": 0.3297,
+   "MEAN_REVERSION": 0.2448
+  },
+  "trades_per_state": {
+   "MOMENTUM": 261,
+   "NEUTRAL": 60,
+   "MEAN_REVERSION": 13
+  }
+ },
+ "comparison_IS_only": {
+  "routing_OFF": {
+   "n": 334,
+   "pf_1lot": 1.0509394632751894,
+   "net_1lot": 2261.69,
+   "final_equity": 9920.37,
+   "n_taken": 334,
+   "n_skipped_zero_lots": 0,
+   "sized_pf": 0.9853554966380491,
+   "sized_net": -79.63
+  },
+  "route_MOMENTUM": {
+   "n": 261,
+   "pf_1lot": 1.0741062834202904,
+   "net_1lot": 2599.86,
+   "final_equity": 10149.85,
+   "n_taken": 261,
+   "n_skipped_zero_lots": 0,
+   "sized_pf": 1.0351509277185396,
+   "sized_net": 149.85
+  },
+  "route_MEAN_REVERSION": {
+   "n": 13,
+   "pf_1lot": 2.0928564766602293,
+   "net_1lot": 956.19,
+   "final_equity": 10097.58,
+   "n_taken": 13,
+   "n_skipped_zero_lots": 0,
+   "sized_pf": 1.639855378159159,
+   "sized_net": 97.58
+  },
+  "route_NEUTRAL": {
+   "n": 60,
+   "pf_1lot": 0.8466711151663311,
+   "net_1lot": -1294.36,
+   "final_equity": 9671.1,
+   "n_taken": 60,
+   "n_skipped_zero_lots": 0,
+   "sized_pf": 0.7200931000390914,
+   "sized_net": -328.9
+  }
+ }
+}

@@ -1,0 +1,38 @@
+cost matrix: audit/_copy/sb_recorded/fable-backtesting/cost_matrix.json (overall med=$0.72, p95=$0.79, n=1,986)
+        flat: breakeven move ~ $0.20/oz per round trip
+  optimistic: breakeven move ~ $0.43/oz per round trip
+   realistic: breakeven move ~ $0.89/oz per round trip
+       worst: breakeven move ~ $1.06/oz per round trip
+  admin fee [ESTIMATE]: $5.00/lot/night (pending broker T&Cs)
+
+loading xauusd_m1_histdata.csv ...
+M1 2010-01-03 23:00:00+00:00 .. 2026-06-19 17:57:00+00:00  (5,769,159 bars); D1 trading days: 4,248 (dropped 859 partial days < 300 bars)
+D1 ATR% full-sample median (parameter-free vol axis): 1.3424%
+
+signals: raw=1258  filtered=609 (long=392, short=217)
+E1 degenerate skips: filtered=10 raw=16
+
+== 2x2 era table (net realistic PF | n), reversion vs mirror ==
+  old/LOvol  n=222  E1=0.8411662532048483  E2=0.76444841873473  mirror=0.7767096236347583
+  old/HIvol  n=177  E1=0.9311011029804406  E2=0.7603526278507827  mirror=0.9305436102784884
+  new/LOvol  n= 96  E1=1.2075705176263816  E2=1.4948271700804747  mirror=0.4768457316285662
+  new/HIvol  n=104  E1=0.7287495298487269  E2=0.8731087674451218  mirror=0.8646629155837092
+
+PBO (S=8, C(8,4)=70, embargo 24h): 0.557 (lambda_mean -0.37)
+
+== gates (primary E1) ==
+  g0_power_n_ge_100: PASS
+  g1_pf_ge_1.30: FAIL
+  g2_uplift_ge_0.10: FAIL
+  g3_era_ge_1.00_both: FAIL
+  g3_no_mirror_inversion: PASS
+  g4_dsr_ge_0.95: FAIL
+  g6_p95_stress_pf_ge_1.15: FAIL
+  g5_pbo_lt_0.50: FAIL
+  DSR detail: SR=-0.0373 SR0=+0.0005 skew=-6.02 kurt=127.0 n=599 -> DSR=0.1533
+
+E2 gates: {'g0_power_n_ge_100': True, 'g1_pf_ge_1.30': False, 'g2_uplift_ge_0.10': False, 'g3_era_ge_1.00_both': False, 'g3_no_mirror_inversion': True, 'g4_dsr_ge_0.95': False, 'g6_p95_stress_pf_ge_1.15': False, 'g5_pbo_lt_0.50': False} -> displaces E1: False
+
+== HCRT FAIL: ICT/CRT line on XAUUSD D1 CLOSED — no threshold shopping, no timeframe migration; FVG/QT/SMT inherit the negative prior ==
+
+results -> audit/_copy/sb_recorded/research/goldbot/results/HCRT_run.json

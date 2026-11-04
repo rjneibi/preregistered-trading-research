@@ -1,0 +1,41 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote originals/gann_bot_500/fable-backtesting/calendar/news_days.json: 260 blackout days
+A TREND (long/flat) vs buy-and-hold - Sharpe / MAR / CAGR / maxDD per half, CFD costs [spot Sharpe]
+  BTC A1 SMA20          Sh 1.30 MAR  1.34 CAGR  +74.5% DD  -55.7% [spot Sh 1.45]  |  Sh 0.20 MAR  0.02 CAGR   +1.2% DD  -50.1% [spot Sh 0.43]
+  BTC A1 SMA50          Sh 1.55 MAR  1.60 CAGR +104.3% DD  -65.0% [spot Sh 1.69]  |  Sh 0.56 MAR  0.27 CAGR  +13.9% DD  -51.7% [spot Sh 0.79]
+  BTC A1 SMA100         Sh 1.09 MAR  0.89 CAGR  +57.7% DD  -65.0% [spot Sh 1.23]  |  Sh 0.59 MAR  0.39 CAGR  +15.1% DD  -38.8% [spot Sh 0.83]
+  BTC A1 SMA200         Sh 0.48 MAR  0.19 CAGR  +12.3% DD  -66.0% [spot Sh 0.62]  |  Sh 0.72 MAR  0.59 CAGR  +20.3% DD  -34.3% [spot Sh 0.95]
+  BTC A2 TSMOM30        Sh 1.33 MAR  1.08 CAGR  +80.8% DD  -74.7% [spot Sh 1.47]  |  Sh 0.45 MAR  0.23 CAGR  +10.0% DD  -43.7% [spot Sh 0.69]
+  BTC A3 Donchian20/10  Sh 1.50 MAR  2.09 CAGR  +90.0% DD  -43.0% [spot Sh 1.63]  |  Sh 0.19 MAR  0.03 CAGR   +1.2% DD  -41.3% [spot Sh 0.42]
+  BTC buy&hold          Sh 0.90 MAR  0.56 CAGR  +48.2% DD  -85.5% [spot Sh 1.08]  |  Sh 0.19 MAR -0.04 CAGR   -3.0% DD  -71.1% [spot Sh 0.49]
+  ETH A1 SMA20          Sh 1.35 MAR  1.67 CAGR +103.0% DD  -61.6% [spot Sh 1.47]  |  Sh 0.22 MAR -0.01 CAGR   -0.6% DD  -48.8% [spot Sh 0.37]
+  ETH A1 SMA50          Sh 1.20 MAR  1.27 CAGR  +83.3% DD  -65.5% [spot Sh 1.31]  |  Sh 0.62 MAR  0.49 CAGR  +19.3% DD  -39.3% [spot Sh 0.79]
+  ETH A1 SMA100         Sh 1.05 MAR  1.00 CAGR  +64.8% DD  -65.0% [spot Sh 1.16]  |  Sh 0.23 MAR  0.01 CAGR   +0.7% DD  -53.3% [spot Sh 0.40]
+  ETH A1 SMA200         Sh 0.79 MAR  0.46 CAGR  +34.6% DD  -74.7% [spot Sh 0.90]  |  Sh 0.40 MAR  0.21 CAGR   +8.3% DD  -40.0% [spot Sh 0.56]
+  ETH A2 TSMOM30        Sh 1.27 MAR  1.35 CAGR  +96.8% DD  -71.9% [spot Sh 1.38]  |  Sh 0.55 MAR  0.35 CAGR  +15.9% DD  -46.2% [spot Sh 0.70]
+  ETH A3 Donchian20/10  Sh 1.30 MAR  1.34 CAGR  +94.2% DD  -70.2% [spot Sh 1.39]  |  Sh -0.25 MAR -0.23 CAGR  -15.8% DD  -68.0% [spot Sh -0.11]
+  ETH buy&hold          Sh 0.93 MAR  0.55 CAGR  +52.3% DD  -94.8% [spot Sh 1.08]  |  Sh -0.00 MAR -0.26 CAGR  -21.0% DD  -79.1% [spot Sh 0.22]
+  verdicts (beat buy&hold on Sharpe AND MAR, both halves, BTC and ETH, CFD costs):
+    A1 SMA20          PASS
+    A1 SMA50          PASS
+    A1 SMA100         PASS
+    A1 SMA200         fail
+    A2 TSMOM30        PASS
+    A3 Donchian20/10  fail
+
+B SWING rules from the index study, long only, CFD costs (financing 15%/yr)
+  MR1 BTC n=  69 win 72% avg +0.76% PF 1.16/2.28 twin p=0.233 | ETH PF 1.45 n64  fail
+  MR2 BTC n= 269 win 64% avg +0.04% PF 1.18/0.90 twin p=0.669 | ETH PF 0.97 n287  fail
+  MR3 BTC n=  82 win 70% avg +1.01% PF 4.17/1.90 twin p=0.010 | ETH PF 2.27 n67  fail
+  MR4 BTC n=  24 win 62% avg +0.58% PF 0.33/5.21 twin p=0.583 | ETH PF 2.92 n23  fail
+  MR5 BTC n=  82 win 66% avg +0.58% PF 0.91/1.73 twin p=0.555 | ETH PF 1.18 n84  fail
+  TR1 BTC n=  50 win 56% avg +2.47% PF 1.56/1.81 twin p=0.290 | ETH PF 2.76 n44  fail
+  TR2 BTC n=  58 win 34% avg +1.31% PF 2.92/0.88 twin p=0.093 | ETH PF 0.96 n50  fail
+  TR3 BTC n=  34 win 50% avg +3.53% PF 3.05/1.52 twin p=0.178 | ETH PF 4.46 n22  fail
+  TR4 BTC n= 137 win 45% avg +0.06% PF 1.29/0.74 twin p=0.679 | ETH PF 0.91 n127  fail
+
+C WEEKDAY mean daily return % (close-to-close, UTC days)  Mon..Sun
+  BTC half1: +0.50 -0.01 +0.55 -0.20 +0.51 +0.31 +0.02
+  BTC half2: +0.33 -0.00 +0.27 -0.26 +0.03 -0.00 +0.11
+  ETH half1: +0.38 +0.07 +0.38 -0.40 +0.68 +0.66 +0.34
+  ETH half2: +0.27 -0.19 +0.41 -0.36 +0.03 +0.08 +0.05

@@ -1,0 +1,33 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote originals/gann_bot_500/fable-backtesting/calendar/news_days.json: 260 blackout days
+slip $0.0 spread $0.8: n=176 win=39% PF=1.91 avg=+0.523R  halves 2.02/1.81
+slip $0.0 spread $2.0: n=176 win=34% PF=1.24 avg=+0.151R  halves 1.37/1.12
+slip $0.5 spread $0.8: n=176 win=39% PF=1.47 avg=+0.299R  halves 1.53/1.41
+slip $0.5 spread $2.0: n=176 win=34% PF=0.98 avg=-0.012R  halves 1.08/0.90
+slip $1.0 spread $0.8: n=176 win=39% PF=1.16 avg=+0.115R  halves 1.20/1.13
+slip $1.0 spread $2.0: n=176 win=34% PF=0.80 avg=-0.156R  halves 0.87/0.74
+slip $2.0 spread $0.8: n=176 win=38% PF=0.78 avg=-0.181R  halves 0.79/0.77
+slip $2.0 spread $2.0: n=176 win=31% PF=0.55 avg=-0.402R  halves 0.59/0.52
+slip $3.0 spread $0.8: n=176 win=36% PF=0.55 avg=-0.419R  halves 0.55/0.55
+slip $3.0 spread $2.0: n=176 win=29% PF=0.40 avg=-0.612R  halves 0.42/0.38
+slip $5.0 spread $0.8: n=176 win=31% PF=0.30 avg=-0.805R  halves 0.29/0.31
+slip $5.0 spread $2.0: n=176 win=25% PF=0.23 avg=-0.971R  halves 0.23/0.22
+
+per year (slip $1, spread $2):  n  sumR  median risk$
+  2010  11  +1.22    6.43
+  2011  11  -5.93    7.75
+  2012  11 +10.53    5.20
+  2013  11  +3.07    8.74
+  2014  11  -0.68    8.60
+  2015   9  -7.10   10.68
+  2016  12  -0.70    6.76
+  2017  12  -8.38    3.82
+  2018  12  -7.63    3.59
+  2019  11  -7.36    4.06
+  2020  12  -6.98    6.90
+  2021  10  +1.60    6.42
+  2022  10  -9.83    4.10
+  2023   7  +0.07    3.34
+  2024  11  -4.94    5.74
+  2025   7  +4.67    7.57
+  2026   8 +10.96   14.80

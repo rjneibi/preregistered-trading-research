@@ -1,0 +1,11 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote originals/gann_bot_500/fable-backtesting/calendar/news_days.json: 260 blackout days
+
+leverage 1x (each index 0.33x of equity): CAGR +2.4%  max drawdown -7.1%  $10,000 -> $13,953  worst day -3.4%
+  2013:+0.3%  2014:+2.0%  2015:+2.8%  2016:+1.5%  2017:+3.9%  2018:-2.3%  2019:+0.2%  2020:-2.5%  2021:+6.8%  2022:-1.1%  2023:+2.2%  2024:+7.7%  2025:+3.7%  2026:+9.2%
+
+leverage 2x (each index 0.67x of equity): CAGR +4.8%  max drawdown -14.4%  $10,000 -> $19,013  worst day -6.8%
+  2013:+0.5%  2014:+4.0%  2015:+5.6%  2016:+2.9%  2017:+8.0%  2018:-4.9%  2019:+0.2%  2020:-5.2%  2021:+13.8%  2022:-2.2%  2023:+4.2%  2024:+15.7%  2025:+7.4%  2026:+18.9%
+
+leverage 3x (each index 1.00x of equity): CAGR +7.0%  max drawdown -21.6%  $10,000 -> $25,301  worst day -10.2%
+  2013:+0.6%  2014:+5.9%  2015:+8.3%  2016:+4.3%  2017:+12.2%  2018:-7.7%  2019:+0.1%  2020:-8.1%  2021:+21.2%  2022:-3.3%  2023:+6.2%  2024:+24.0%  2025:+10.9%  2026:+29.0%

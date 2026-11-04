@@ -1,0 +1,118 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote audit/_copy/rs_recorded/fable-backtesting/calendar/news_days.json: 260 blackout days
+spot_vip0 {'sharpe': 1.472, 'bh': 0.953, 'dd': -0.274, 'bh_dd': -0.484, 'h1': 1.943, 'h2': 0.929, 'bh_h1': 1.05, 'bh_h2': 0.842}
+spot_bnb {'sharpe': 1.487, 'bh': 0.955, 'dd': -0.272, 'bh_dd': -0.484, 'h1': 1.954, 'h2': 0.949, 'bh_h1': 1.052, 'bh_h2': 0.844}
+perp {'sharpe': 1.358, 'bh': 0.864, 'dd': -0.273, 'bh_dd': -0.484, 'h1': 1.786, 'h2': 0.864, 'bh_h1': 0.936, 'bh_h2': 0.782}
+{
+"F6_check_original_cost": {
+"sharpe": 1.522,
+"bh": 0.959,
+"dd": -0.266,
+"bh_dd": -0.483,
+"h1": 1.976,
+"h2": 0.999,
+"bh_h1": 1.055,
+"bh_h2": 0.849
+},
+"F6": {
+"spot_vip0": {
+"sharpe": 1.472,
+"bh": 0.953,
+"dd": -0.274,
+"bh_dd": -0.484,
+"h1": 1.943,
+"h2": 0.929,
+"bh_h1": 1.05,
+"bh_h2": 0.842
+},
+"spot_bnb": {
+"sharpe": 1.487,
+"bh": 0.955,
+"dd": -0.272,
+"bh_dd": -0.484,
+"h1": 1.954,
+"h2": 0.949,
+"bh_h1": 1.052,
+"bh_h2": 0.844
+},
+"perp": {
+"sharpe": 1.358,
+"bh": 0.864,
+"dd": -0.273,
+"bh_dd": -0.484,
+"h1": 1.786,
+"h2": 0.864,
+"bh_h1": 0.936,
+"bh_h2": 0.782
+}
+},
+"F6_survivorship_spot_vip0": {
+"sharpe": 1.508,
+"bh": 0.882,
+"dd": -0.249,
+"bh_dd": -0.508,
+"h1": 2.045,
+"h2": 0.914,
+"bh_h1": 1.043,
+"bh_h2": 0.703
+},
+"survivorship_notes": {
+"LUNA": {
+"first": "2020-08-21",
+"last": "2022-05-13",
+"days": 632,
+"delisted": true,
+"cut": "first run before a gap over 3 days"
+},
+"FTT": {
+"first": "2019-12-20",
+"last": "2022-11-15",
+"days": 1063,
+"delisted": true,
+"cut": "first run before a gap over 3 days"
+},
+"UST": {
+"first": "2021-12-24",
+"last": "2022-05-13",
+"days": 142,
+"delisted": true,
+"cut": "none"
+},
+"SRM": {
+"first": "2020-08-11",
+"last": "2022-11-28",
+"days": 841,
+"delisted": true,
+"cut": "none"
+},
+"WAVES": {
+"first": "2019-01-18",
+"last": "2024-06-17",
+"days": 1979,
+"delisted": true,
+"cut": "none"
+},
+"MITH": {
+"first": "2019-04-19",
+"last": "2022-12-22",
+"days": 1345,
+"delisted": true,
+"cut": "none"
+},
+"BTS": {
+"first": "2020-02-06",
+"last": "2023-12-07",
+"days": 1402,
+"delisted": true,
+"cut": "none"
+},
+"ANC": {
+"first": "2022-01-25",
+"last": "2022-12-27",
+"days": 338,
+"delisted": true,
+"cut": "none"
+}
+}
+}
+{'spot_vip0': [], 'spot_bnb': [], 'perp': []} {'spot_vip0': ['MR3'], 'spot_bnb': [], 'perp': []}

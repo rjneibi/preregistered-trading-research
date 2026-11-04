@@ -1,0 +1,42 @@
+loading full M1 (2010+ for H2 warm-start) ...
+
+== (a) H1 rerun (matrix median costs) ==
+  full: n=472 wr=72.9% pf=1.13 net=$11,811 exp=$25.0
+   old: n=267 wr=71.2% pf=0.90 net=$-3,632 exp=$-13.6
+   new: n=205 wr=75.1% pf=1.28 net=$15,443 exp=$75.3
+  p90 stress:
+  full: n=472 wr=72.7% pf=1.05 net=$4,201 exp=$8.9
+   old: n=267 wr=71.2% pf=0.83 net=$-6,070 exp=$-22.7
+   new: n=205 wr=74.6% pf=1.18 net=$10,272 exp=$50.1
+  flat-20 comparison:
+  full: n=472 wr=72.9% pf=1.49 net=$40,544 exp=$85.9
+   old: n=267 wr=71.2% pf=1.27 net=$8,520 exp=$31.9
+   new: n=205 wr=75.1% pf=1.62 net=$32,024 exp=$156.2
+  mean cost/trade: $80.87 (old $65.51, new $100.88)
+  splits positive: 11/15 
+  split expectancies: [-29.02, -23.74, -19.08, -20.63, 54.96, 1.37, 6.37, 3.37, 82.56, 15.32, 11.55, 97.49, 16.75, 103.46, 94.64]
+  fallback hits: none
+  H1 gates: {'1_full_pf_ge_1.20': False, '2_splits_ge_10of15': True, '3_each_era_pf_ge_1.00': False, '4_n_ge_300': True}
+  H1 FAIL
+
+== (b) H2 @ 0.50 ==
+  full: n=193 wr=72.0% pf=1.17 net=$9,502 exp=$49.2
+   old: n=96 wr=67.7% pf=0.84 net=$-2,757 exp=$-28.7
+   new: n=97 wr=76.3% pf=1.33 net=$12,258 exp=$126.4
+  splits positive: 9/15 
+  split expectancies: [-71.42, -41.55, -74.65, -82.54, 98.6, 40.6, 13.66, -4.3, 173.13, 45.17, 24.05, 195.86, -2.93, 184.93, 153.44]
+  p90 full PF: 1.10
+
+== (c) plateau ==
+  PF @0.40=1.25 @0.50=1.17 @0.60=1.13 -> OK
+
+== (d) mechanism control (old era) ==
+  {'n_in': 96, 'n_out': 171, 'pf_in': 0.8383714840486183, 'pf_out': 0.9515477188198702, 'sufficient': True, 'pf_gap': -0.113}
+
+  H2 gates: {'1_filtered_pf_ge_1.25': False, '2_splits_ge_11of15': False, '3_p90_pf_ge_1.10': True, '4_mechanism_gap_ge_0.15_nin_ge_40': False, '5_n_ge_150_and_plateau': True}
+  H2 FAIL
+
+== VERDICT ==
+BOTH FAIL -> STOP the goldbot-breakout line. Archive results. Salvage candidates require fresh pre-registration before any backtest.
+
+verdict appended to audit/_copy/sb_recorded/research/goldbot/results/DECISIONS.log

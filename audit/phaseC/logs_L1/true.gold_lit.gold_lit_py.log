@@ -1,0 +1,29 @@
+H-A1 Asia long 00:15-07 n=4319
+   A 2010-17: n2320 gross +0.312 net -0.088 $/oz  x2cost -0.488  +15min -0.064  win 48%  --
+   B 2018-26: n2257 gross +0.380 net -0.020 $/oz  x2cost -0.420  +15min -0.054  win 48%  --
+   C 2023+: n969 gross +0.753 net +0.353 $/oz  x2cost -0.047  +15min +0.285  win 51%  --
+   ALL net t=-0.07  by year $/oz: 10:+39 11:-26 12:-13 13:+23 14:-6 15:+4 16:+22 17:-58 18:-188 19:-121 20:-120 21:+183 22:-142 23:-83 24:+149 25:+462 26:-186
+   -> FAIL
+H-A2 US short 13:00-20 n=4128
+   A 2010-17: n2263 gross +0.116 net -0.284 $/oz  x2cost -0.684  +15min -0.230  win 46%  --
+   B 2018-26: n2115 gross +0.499 net +0.099 $/oz  x2cost -0.301  +15min +0.064  win 47%  --
+   C 2023+: n863 gross +1.180 net +0.780 $/oz  x2cost +0.380  +15min +0.784  win 47%  ok
+   ALL net t=-0.40  by year $/oz: 10:-216 11:-11 12:-189 13:+103 14:-122 15:-41 16:+55 17:-212 18:-10 19:-155 20:-208 21:+45 22:-136 23:+13 24:-43 25:-435 26:+1138
+   -> FAIL
+monthly data 2004-07..2026-10 n=268
+H-B1 Sep+Nov
+   2004-14: in +1.95% (n24)  others +0.63%  ok
+   2015-26: in -1.00% (n23)  others +1.37%  --
+   ALL: in +0.72% vs others +1.06%  Welch t=-0.37  net/month +0.47%  -> FAIL
+H-B2 Dec-Feb
+   2004-14: in +1.40% (n34)  others +0.69%  ok
+   2015-26: in +2.41% (n35)  others +0.52%  ok
+   ALL: in +1.97% vs others +0.69%  Welch t=+1.85  net/month +1.72%  -> FAIL
+H-C1 12m momentum months 267, invested 69%
+   2004-14: Sharpe 0.57 vs hold 0.40  CAGR +8.0% vs +5.9%  ok
+   2015-26: Sharpe 0.41 vs hold 0.57  CAGR +4.8% vs +7.9%  --
+   ALL: Sharpe 0.52 vs 0.53  maxDD 35% vs 49%  -> FAIL
+H-C2 24m momentum months 267, invested 72%
+   2004-14: Sharpe 0.44 vs hold 0.40  CAGR +5.8% vs +5.9%  ok
+   2015-26: Sharpe 0.46 vs hold 0.57  CAGR +5.5% vs +7.9%  --
+   ALL: Sharpe 0.46 vs 0.53  maxDD 42% vs 49%  -> FAIL

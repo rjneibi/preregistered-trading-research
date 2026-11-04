@@ -1,0 +1,23 @@
+phaseC/lookahead2.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published. Without them the cross-market, swing, tune and tvsearch sections are written as ERROR entries
+phaseC/split_events.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published. Without them the ETF symbols are left out
+phaseC/talab_pess.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published. Without them every row is empty
+infrastructure/lookahead.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published. Without them the pa, sweep and talab sections are written as ERROR entries
+infrastructure/lookahead_margin0.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published. Same as lookahead.json
+phaseC/clock_map_all.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published
+phaseC/fable_recorded.json | Reads a flip_scalp signal list that is not published, see data/MANIFEST.md
+phaseC/fable_v3_recorded.csv | Same as fable_recorded.json
+phaseC/fable_v4_recorded.csv | Same as fable_recorded.json
+phaseC/talab_clock.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published
+phaseC/tvs_recheck.json | Reads the dated Yahoo bars and an MT5 gold export
+phaseE/e3_result.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published
+phaseE/e5_result.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published
+phaseE/e6_result.json | Reads the demo trade journal, which holds demo balances and is not published
+phaseE/e6_pairs.csv | Same as e6_result.json
+stats/assumed_clock.json | Reads logs from stages that need MT5 exports
+stats/gate_table.json | Reads the US500 MT5 export for the index rows
+stats/pass_audit.json | Reads the US500 MT5 export
+trade_checks/sc1_check.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published
+trade_checks/spot_checks.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published
+infrastructure/clock_cross.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published
+infrastructure/data_profile.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published
+infrastructure/resample_and_defects.json | Reads MetaTrader 5 demo exports, which cannot be downloaded or published

@@ -1,0 +1,33 @@
+ask 2015 352794
+bid 2016 348805
+ask 2016 348805
+bid 2017 329672
+bid 2018 340270
+ask 2018 340270
+bid 2019 334905
+ask 2019 334905
+bid 2020 352620
+ask 2020 352620
+bid 2021 351632
+ask 2021 351632
+bid 2022 351368
+ask 2022 351368
+bid 2023 348529
+ask 2024 354457
+bid 2025 353686
+ask 2025 353686
+mv: cannot stat 'audit/_copy/data/dk_xag/t_bid2026/xagusd-m1-bid-2026-01-01-2026-10-30.csv': No such file or directory
+bid 2026 293362
+mv: cannot stat 'audit/_copy/data/dk_xag/t_ask2026/xagusd-m1-ask-2026-01-01-2026-10-30.csv': No such file or directory
+ask 2026 293366
+/t_ask2022/xagusd-m1-ask-2022-01-01-2023-01-01.csv': No such file or directory
+ask 2022 351368
+bid 2023 348529
+ask 2023 348529
+bid 2024 354457
+ask 2024 354457
+bid 2025 353686
+mv: cannot stat 'audit/_copy/data/dk_xag/t_ask2025/xagusd-m1-ask-2025-01-01-2026-01-01.csv': No such file or directory
+ask 2025 353686
+bid 2026 293362
+ask 2026 293366

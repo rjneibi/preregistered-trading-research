@@ -1,0 +1,81 @@
+{
+ "A_gold_200d": {
+  "label": "CONTAMINATED in advance, GOLD-LIT-1 overlap",
+  "spells_total": 63,
+  "with_2010_2012_ASSUMED_CLOCK": {
+   "spells": 63,
+   "pf": 3.316,
+   "sharpe": 0.425,
+   "bh_sharpe": 0.492,
+   "dd": -0.342,
+   "bh_dd": -0.479
+  },
+  "without_2010_2012": {
+   "spells": 57,
+   "pf": 3.152,
+   "sharpe": 0.438,
+   "bh_sharpe": 0.417,
+   "dd": -0.309,
+   "bh_dd": -0.403
+  },
+  "slices": {
+   "dev_end": "2019-09-25",
+   "val_end": "2022-06-04"
+  },
+  "dev": {
+   "n": 26,
+   "pf": 0.964,
+   "pf2x": 0.92,
+   "twin_p": 0.5657171414292853,
+   "status": "INSUFFICIENT SAMPLE",
+   "passed": false,
+   "sharpe": 0.008,
+   "bh_sharpe": -0.131,
+   "dd": -0.205,
+   "bh_dd": -0.403,
+   "sharpe_gate": true
+  },
+  "validation": "not evaluated",
+  "holdout": "not evaluated"
+ },
+ "B_EURUSD": {
+  "bars": 86083,
+  "first": "2013-01-01",
+  "last": "2026-10-29",
+  "dev_end": "2019-12-01",
+  "val_end": "2022-09-06",
+  "dev": {
+   "n": 984,
+   "pf": 0.866,
+   "pf2x": 0.771,
+   "twin_p": 0.96,
+   "status": "FAIL",
+   "passed": false,
+   "pf_gross": 0.973,
+   "pf_1_5x": 0.817,
+   "avg_r": -0.0789
+  },
+  "validation": "not evaluated",
+  "holdout": "not evaluated"
+ },
+ "B_GBPUSD": {
+  "bars": 86190,
+  "first": "2013-01-01",
+  "last": "2026-10-29",
+  "dev_end": "2019-12-01",
+  "val_end": "2022-09-06",
+  "dev": {
+   "n": 1053,
+   "pf": 0.802,
+   "pf2x": 0.658,
+   "twin_p": 0.997,
+   "status": "FAIL",
+   "passed": false,
+   "pf_gross": 0.975,
+   "pf_1_5x": 0.726,
+   "avg_r": -0.0985
+  },
+  "validation": "not evaluated",
+  "holdout": "not evaluated"
+ }
+}

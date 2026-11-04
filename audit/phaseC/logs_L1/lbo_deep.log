@@ -1,0 +1,9 @@
+== deep
+audit/_copy/lbo/src/lbo/metrics.py:68: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  g = trades.groupby(key)[r_col]
+audit/_copy/lbo/src/lbo/metrics.py:68: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  g = trades.groupby(key)[r_col]
+audit/_copy/lbo/src/lbo/metrics.py:68: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  g = trades.groupby(key)[r_col]
+audit/_copy/lbo/src/lbo/metrics.py:68: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  g = trades.groupby(key)[r_col]

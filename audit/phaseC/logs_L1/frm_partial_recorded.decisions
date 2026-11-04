@@ -1,0 +1,6 @@
+2026-10-31  FR-M VERDICT (prereg a87b81e): FR-M ALL VARIANTS FAIL -> recommend RETIRE Micro (operator confirms)
+            M0_baseline: n=1353 PF=0.102 OOS=0.090 net=$-293,888 worst=$-18,843 FAIL
+            M1_r3s3_only: n=223 PF=0.139 OOS=0.113 net=$-35,251 worst=$-3,179 FAIL
+            M2_grid_sl: n=1353 PF=0.099 OOS=0.087 net=$-301,043 worst=$-18,843 FAIL
+            M3_atr_tp: n=1353 PF=0.312 OOS=0.370 net=$-98,721 worst=$-4,939 FAIL
+            M4_combo: n=223 PF=0.372 OOS=0.459 net=$-11,286 worst=$-1,383 FAIL

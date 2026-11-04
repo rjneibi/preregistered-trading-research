@@ -1,0 +1,19 @@
+# review_f/f6.py, run once on 2026-11-03 on the author's machine, PYTHONHASHSEED=0. Not part of the clean run.
+2017-08-17 00:00:00 2026-10-13 00:00:00 {'BTC': 3345, 'ETH': 3345, 'BNB': 3264, 'XRP': 3085, 'ADA': 3102, 'SOL': 2255, 'DOGE': 2658, 'LTC': 3227, 'LINK': 2828, 'DOT': 2248, 'AVAX': 2213, 'TRX': 3047}
+F6 days 3284 Sharpe 1.522 DSR ledger 0.5199 114500 0.5583 SR daily 0.0797 t 4.57
+lag 1 Sharpe 1.522 DSR178991 0.52
+lag 2 Sharpe 1.501 DSR178991 0.495
+lag 3 Sharpe 1.432 DSR178991 0.413
+by half 1.976 0.999
+last 3y 1.417 since 2024 0.973 2025+ 0.33
+corr to equal wt coin mkt 0.699 beta 0.185 alpha ann 0.182 alpha t 3.6
+coins with ma ready by year-end {2017: 4, 2018: 7, 2019: 9, 2020: 12, 2021: 12, 2022: 12, 2023: 12, 2024: 12, 2025: 12, 2026: 12}
+PBO if ranks uniform N 5 0.6
+PBO if ranks uniform N 10 0.5
+PBO if ranks uniform N 12 0.5
+{20: np.float64(1.52), 30: np.float64(1.47), 50: np.float64(1.52), 100: np.float64(1.26), 200: np.float64(1.03)}
+SW-1 n 397 PF 1.741 1.5 2.018 DSR10 0.957 50 0.867 114500 0.231 178991 0.207 delay1 PF 1.293
+SW years neg 3 of 14
+SW ex-2020 PF 1.541 n 355 t 2.69 DSR178991 0.058
+US500 gaps>4d [('2025-07-16', '2025-09-09', np.float64(55.0))]
+rows per year {2012: 105, 2013: 259, 2014: 259, 2015: 259, 2016: 258, 2017: 257, 2018: 259, 2019: 258, 2020: 259, 2021: 259, 2022: 258, 2023: 257, 2024: 259, 2025: 221, 2026: 203}

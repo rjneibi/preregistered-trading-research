@@ -1,0 +1,11 @@
+== M15
+  all               <2025 n  627  net   +12.2R  avg +0.019R  PF 1.06  win 69%  maxDD  17.3R   | twin avg -0.041R
+  all               2025+ n  364  net   +64.3R  avg +0.177R  PF 1.68  win 75%  maxDD   8.4R   | twin avg +0.071R
+  with H4 trend     <2025 n  235  net    +2.9R  avg +0.012R  PF 1.03  win 68%  maxDD  14.9R   | twin avg -0.008R
+  with H4 trend     2025+ n  139  net   +18.0R  avg +0.130R  PF 1.48  win 74%  maxDD   6.6R   | twin avg -0.022R
+  against H4 trend  <2025 n  392  net    +9.3R  avg +0.024R  PF 1.07  win 69%  maxDD  12.2R   | twin avg -0.051R
+  against H4 trend  2025+ n  225  net   +46.3R  avg +0.206R  PF 1.82  win 76%  maxDD   7.2R   | twin avg +0.095R
+== M5
+  all               2025+ n  297  net   +24.6R  avg +0.083R  PF 1.33  win 76%  maxDD   7.0R   | twin avg +0.000R
+  with H4 trend     2025+ n  107  net    -1.2R  avg -0.012R  PF 0.96  win 71%  maxDD   5.8R   | twin avg -0.135R
+  against H4 trend  2025+ n  190  net   +25.9R  avg +0.136R  PF 1.60  win 78%  maxDD   5.3R   | twin avg -0.035R

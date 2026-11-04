@@ -1,0 +1,56 @@
+audit/phaseD/h3_run.py:63: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  months = sorted(set(lx.index.to_period("M").astype(str)))
+audit/phaseD/h3_run.py:128: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  keep = df.index.to_period("M").astype(str).isin(list(betas))
+audit/phaseD/h3_run.py:131: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  b = df.index.to_period("M").astype(str).map(betas).values.astype(float)
+audit/phaseD/h3_run.py:143: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  m = df.index.to_period("M").astype(str) == mo
+{
+ "clock": "true_utc",
+ "bars": 44144,
+ "first": "2015-03-01 23:00:00+00:00",
+ "last": "2022-09-27 02:00:00+00:00",
+ "is_end": "2020-06-25 02:00:00+00:00",
+ "beta_min": -0.002,
+ "beta_max": 1.301,
+ "gate1_fit": {
+  "valid": true,
+  "reason": "ok",
+  "phi1": 0.9986256055564308,
+  "half_life_h": 503.98249629028203,
+  "n": 30900
+ },
+ "gate1_pass": false,
+ "monthly_fit_valid_share": 0.044,
+ "monthly_valid_hl_median_h": 15.542060184854416,
+ "verdict": "FAILED at validity gate 1. No trading conclusion"
+}
+audit/phaseD/h3_run.py:63: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  months = sorted(set(lx.index.to_period("M").astype(str)))
+audit/phaseD/h3_run.py:128: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  keep = df.index.to_period("M").astype(str).isin(list(betas))
+audit/phaseD/h3_run.py:131: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  b = df.index.to_period("M").astype(str).map(betas).values.astype(float)
+audit/phaseD/h3_run.py:143: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  m = df.index.to_period("M").astype(str) == mo
+{
+ "clock": "recorded",
+ "bars": 43076,
+ "first": "2015-03-01 23:00:00+00:00",
+ "last": "2022-09-27 02:00:00+00:00",
+ "is_end": "2020-06-23 00:00:00+00:00",
+ "beta_min": -0.002,
+ "beta_max": 1.301,
+ "gate1_fit": {
+  "valid": true,
+  "reason": "ok",
+  "phi1": 0.9985816498786146,
+  "half_life_h": 488.35297514956534,
+  "n": 30153
+ },
+ "gate1_pass": false,
+ "monthly_fit_valid_share": 0.3,
+ "monthly_valid_hl_median_h": 9.914104135460189,
+ "verdict": "FAILED at validity gate 1. No trading conclusion"
+}

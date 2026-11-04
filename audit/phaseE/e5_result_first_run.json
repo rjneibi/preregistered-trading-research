@@ -1,0 +1,759 @@
+{
+ "F6_check_original_cost": {
+  "sharpe": 1.522,
+  "bh": 0.959,
+  "dd": -0.266,
+  "bh_dd": -0.483,
+  "h1": 1.976,
+  "h2": 0.999,
+  "bh_h1": 1.055,
+  "bh_h2": 0.849
+ },
+ "CR1_trend": {
+  "spot_vip0": {
+   "A1 SMA100": {
+    "passes_original_gate": true,
+    "BTC_h0": 1.211,
+    "BTC_h1": 0.799,
+    "ETH_h0": 1.149,
+    "ETH_h1": 0.374
+   },
+   "A1 SMA20": {
+    "passes_original_gate": false,
+    "BTC_h0": 1.395,
+    "BTC_h1": 0.343,
+    "ETH_h0": 1.427,
+    "ETH_h1": 0.309
+   },
+   "A1 SMA200": {
+    "passes_original_gate": false,
+    "BTC_h0": 0.614,
+    "BTC_h1": 0.936,
+    "ETH_h0": 0.891,
+    "ETH_h1": 0.553
+   },
+   "A1 SMA50": {
+    "passes_original_gate": true,
+    "BTC_h0": 1.666,
+    "BTC_h1": 0.746,
+    "ETH_h0": 1.29,
+    "ETH_h1": 0.759
+   },
+   "A2 TSMOM30": {
+    "passes_original_gate": true,
+    "BTC_h0": 1.438,
+    "BTC_h1": 0.619,
+    "ETH_h0": 1.36,
+    "ETH_h1": 0.662
+   },
+   "A3 Donchian20/10": {
+    "passes_original_gate": false,
+    "BTC_h0": 1.621,
+    "BTC_h1": 0.391,
+    "ETH_h0": 1.384,
+    "ETH_h1": -0.135
+   },
+   "buy&hold": {
+    "BTC_h0": 1.083,
+    "BTC_h1": 0.489,
+    "ETH_h0": 1.081,
+    "ETH_h1": 0.218
+   }
+  },
+  "spot_bnb": {
+   "A1 SMA100": {
+    "passes_original_gate": true,
+    "BTC_h0": 1.216,
+    "BTC_h1": 0.809,
+    "ETH_h0": 1.152,
+    "ETH_h1": 0.383
+   },
+   "A1 SMA20": {
+    "passes_original_gate": false,
+    "BTC_h0": 1.413,
+    "BTC_h1": 0.375,
+    "ETH_h0": 1.441,
+    "ETH_h1": 0.33
+   },
+   "A1 SMA200": {
+    "passes_original_gate": false,
+    "BTC_h0": 0.618,
+    "BTC_h1": 0.942,
+    "ETH_h0": 0.893,
+    "ETH_h1": 0.557
+   },
+   "A1 SMA50": {
+    "passes_original_gate": true,
+    "BTC_h0": 1.674,
+    "BTC_h1": 0.762,
+    "ETH_h0": 1.298,
+    "ETH_h1": 0.769
+   },
+   "A2 TSMOM30": {
+    "passes_original_gate": true,
+    "BTC_h0": 1.449,
+    "BTC_h1": 0.644,
+    "ETH_h0": 1.368,
+    "ETH_h1": 0.677
+   },
+   "A3 Donchian20/10": {
+    "passes_original_gate": false,
+    "BTC_h0": 1.625,
+    "BTC_h1": 0.4,
+    "ETH_h0": 1.387,
+    "ETH_h1": -0.127
+   },
+   "buy&hold": {
+    "BTC_h0": 1.083,
+    "BTC_h1": 0.489,
+    "ETH_h0": 1.081,
+    "ETH_h1": 0.218
+   }
+  },
+  "perp": {
+   "A1 SMA100": {
+    "passes_original_gate": true,
+    "BTC_h0": 1.032,
+    "BTC_h1": 0.672,
+    "ETH_h0": 0.971,
+    "ETH_h1": 0.292
+   },
+   "A1 SMA20": {
+    "passes_original_gate": false,
+    "BTC_h0": 1.256,
+    "BTC_h1": 0.275,
+    "ETH_h0": 1.272,
+    "ETH_h1": 0.264
+   },
+   "A1 SMA200": {
+    "passes_original_gate": false,
+    "BTC_h0": 0.399,
+    "BTC_h1": 0.8,
+    "ETH_h0": 0.699,
+    "ETH_h1": 0.442
+   },
+   "A1 SMA50": {
+    "passes_original_gate": true,
+    "BTC_h0": 1.501,
+    "BTC_h1": 0.638,
+    "ETH_h0": 1.12,
+    "ETH_h1": 0.676
+   },
+   "A2 TSMOM30": {
+    "passes_original_gate": true,
+    "BTC_h0": 1.288,
+    "BTC_h1": 0.532,
+    "ETH_h0": 1.201,
+    "ETH_h1": 0.596
+   },
+   "A3 Donchian20/10": {
+    "passes_original_gate": false,
+    "BTC_h0": 1.448,
+    "BTC_h1": 0.275,
+    "ETH_h0": 1.208,
+    "ETH_h1": -0.207
+   },
+   "buy&hold": {
+    "BTC_h0": 0.941,
+    "BTC_h1": 0.359,
+    "ETH_h0": 0.934,
+    "ETH_h1": 0.131
+   }
+  }
+ },
+ "CR1_swing": {
+  "spot_vip0": {
+   "MR1": {
+    "BTC": {
+     "n": 69,
+     "pf_h1": 1.093,
+     "pf_h2": 2.457,
+     "na": 27,
+     "nb": 42
+    },
+    "p": 0.152,
+    "ETH": {
+     "n": 64,
+     "pf_h1": 1.385,
+     "pf_h2": 1.302,
+     "na": 31,
+     "nb": 33
+    },
+    "passes_original_gate": false
+   },
+   "MR2": {
+    "BTC": {
+     "n": 269,
+     "pf_h1": 1.044,
+     "pf_h2": 0.921,
+     "na": 107,
+     "nb": 162
+    },
+    "p": 0.505,
+    "ETH": {
+     "n": 287,
+     "pf_h1": 0.86,
+     "pf_h2": 0.885,
+     "na": 114,
+     "nb": 173
+    },
+    "passes_original_gate": false
+   },
+   "MR3": {
+    "BTC": {
+     "n": 82,
+     "pf_h1": 3.466,
+     "pf_h2": 1.897,
+     "na": 33,
+     "nb": 49
+    },
+    "p": 0.003,
+    "ETH": {
+     "n": 67,
+     "pf_h1": 1.295,
+     "pf_h2": 3.791,
+     "na": 30,
+     "nb": 37
+    },
+    "passes_original_gate": true
+   },
+   "MR4": {
+    "BTC": {
+     "n": 24,
+     "pf_h1": 0.348,
+     "pf_h2": 6.261,
+     "na": 8,
+     "nb": 16
+    },
+    "p": 0.4875,
+    "ETH": {
+     "n": 23,
+     "pf_h1": 3.227,
+     "pf_h2": 2.863,
+     "na": 11,
+     "nb": 12
+    },
+    "passes_original_gate": false
+   },
+   "MR5": {
+    "BTC": {
+     "n": 82,
+     "pf_h1": 0.934,
+     "pf_h2": 1.965,
+     "na": 32,
+     "nb": 50
+    },
+    "p": 0.3935,
+    "ETH": {
+     "n": 84,
+     "pf_h1": 1.324,
+     "pf_h2": 1.002,
+     "na": 42,
+     "nb": 42
+    },
+    "passes_original_gate": false
+   },
+   "TR1": {
+    "BTC": {
+     "n": 50,
+     "pf_h1": 1.638,
+     "pf_h2": 2.061,
+     "na": 26,
+     "nb": 24
+    },
+    "p": 0.1905,
+    "ETH": {
+     "n": 44,
+     "pf_h1": 4.143,
+     "pf_h2": 1.585,
+     "na": 21,
+     "nb": 23
+    },
+    "passes_original_gate": false
+   },
+   "TR2": {
+    "BTC": {
+     "n": 58,
+     "pf_h1": 2.706,
+     "pf_h2": 0.916,
+     "na": 23,
+     "nb": 35
+    },
+    "p": 0.056,
+    "ETH": {
+     "n": 50,
+     "pf_h1": 0.634,
+     "pf_h2": 1.518,
+     "na": 25,
+     "nb": 25
+    },
+    "passes_original_gate": false
+   },
+   "TR3": {
+    "BTC": {
+     "n": 34,
+     "pf_h1": 3.291,
+     "pf_h2": 1.711,
+     "na": 14,
+     "nb": 20
+    },
+    "p": 0.114,
+    "ETH": {
+     "n": 22,
+     "pf_h1": 5.752,
+     "pf_h2": 2.671,
+     "na": 14,
+     "nb": 8
+    },
+    "passes_original_gate": false
+   },
+   "TR4": {
+    "BTC": {
+     "n": 137,
+     "pf_h1": 1.205,
+     "pf_h2": 0.776,
+     "na": 67,
+     "nb": 70
+    },
+    "p": 0.564,
+    "ETH": {
+     "n": 127,
+     "pf_h1": 1.04,
+     "pf_h2": 0.702,
+     "na": 59,
+     "nb": 68
+    },
+    "passes_original_gate": false
+   }
+  },
+  "spot_bnb": {
+   "MR1": {
+    "BTC": {
+     "n": 69,
+     "pf_h1": 1.147,
+     "pf_h2": 2.517,
+     "na": 27,
+     "nb": 42
+    },
+    "p": 0.17,
+    "ETH": {
+     "n": 64,
+     "pf_h1": 1.508,
+     "pf_h2": 1.327,
+     "na": 31,
+     "nb": 33
+    },
+    "passes_original_gate": false
+   },
+   "MR2": {
+    "BTC": {
+     "n": 269,
+     "pf_h1": 1.117,
+     "pf_h2": 0.941,
+     "na": 107,
+     "nb": 162
+    },
+    "p": 0.524,
+    "ETH": {
+     "n": 287,
+     "pf_h1": 0.954,
+     "pf_h2": 0.901,
+     "na": 114,
+     "nb": 173
+    },
+    "passes_original_gate": false
+   },
+   "MR3": {
+    "BTC": {
+     "n": 82,
+     "pf_h1": 3.808,
+     "pf_h2": 1.959,
+     "na": 33,
+     "nb": 49
+    },
+    "p": 0.007,
+    "ETH": {
+     "n": 67,
+     "pf_h1": 1.466,
+     "pf_h2": 3.938,
+     "na": 30,
+     "nb": 37
+    },
+    "passes_original_gate": false
+   },
+   "MR4": {
+    "BTC": {
+     "n": 24,
+     "pf_h1": 0.355,
+     "pf_h2": 6.354,
+     "na": 8,
+     "nb": 16
+    },
+    "p": 0.4745,
+    "ETH": {
+     "n": 23,
+     "pf_h1": 3.306,
+     "pf_h2": 2.889,
+     "na": 11,
+     "nb": 12
+    },
+    "passes_original_gate": false
+   },
+   "MR5": {
+    "BTC": {
+     "n": 82,
+     "pf_h1": 0.968,
+     "pf_h2": 1.992,
+     "na": 32,
+     "nb": 50
+    },
+    "p": 0.4235,
+    "ETH": {
+     "n": 84,
+     "pf_h1": 1.376,
+     "pf_h2": 1.014,
+     "na": 42,
+     "nb": 42
+    },
+    "passes_original_gate": false
+   },
+   "TR1": {
+    "BTC": {
+     "n": 50,
+     "pf_h1": 1.674,
+     "pf_h2": 2.077,
+     "na": 26,
+     "nb": 24
+    },
+    "p": 0.191,
+    "ETH": {
+     "n": 44,
+     "pf_h1": 4.251,
+     "pf_h2": 1.598,
+     "na": 21,
+     "nb": 23
+    },
+    "passes_original_gate": false
+   },
+   "TR2": {
+    "BTC": {
+     "n": 58,
+     "pf_h1": 2.824,
+     "pf_h2": 0.931,
+     "na": 23,
+     "nb": 35
+    },
+    "p": 0.066,
+    "ETH": {
+     "n": 50,
+     "pf_h1": 0.663,
+     "pf_h2": 1.537,
+     "na": 25,
+     "nb": 25
+    },
+    "passes_original_gate": false
+   },
+   "TR3": {
+    "BTC": {
+     "n": 34,
+     "pf_h1": 3.337,
+     "pf_h2": 1.725,
+     "na": 14,
+     "nb": 20
+    },
+    "p": 0.0975,
+    "ETH": {
+     "n": 22,
+     "pf_h1": 5.86,
+     "pf_h2": 2.689,
+     "na": 14,
+     "nb": 8
+    },
+    "passes_original_gate": false
+   },
+   "TR4": {
+    "BTC": {
+     "n": 137,
+     "pf_h1": 1.262,
+     "pf_h2": 0.786,
+     "na": 67,
+     "nb": 70
+    },
+    "p": 0.5885,
+    "ETH": {
+     "n": 127,
+     "pf_h1": 1.129,
+     "pf_h2": 0.71,
+     "na": 59,
+     "nb": 68
+    },
+    "passes_original_gate": false
+   }
+  },
+  "perp": {
+   "MR1": {
+    "BTC": {
+     "n": 69,
+     "pf_h1": 1.109,
+     "pf_h2": 2.396,
+     "na": 27,
+     "nb": 42
+    },
+    "p": 0.23,
+    "ETH": {
+     "n": 64,
+     "pf_h1": 1.546,
+     "pf_h2": 1.289,
+     "na": 31,
+     "nb": 33
+    },
+    "passes_original_gate": false
+   },
+   "MR2": {
+    "BTC": {
+     "n": 269,
+     "pf_h1": 1.139,
+     "pf_h2": 0.926,
+     "na": 107,
+     "nb": 162
+    },
+    "p": 0.616,
+    "ETH": {
+     "n": 287,
+     "pf_h1": 1.016,
+     "pf_h2": 0.894,
+     "na": 114,
+     "nb": 173
+    },
+    "passes_original_gate": false
+   },
+   "MR3": {
+    "BTC": {
+     "n": 82,
+     "pf_h1": 3.771,
+     "pf_h2": 1.909,
+     "na": 33,
+     "nb": 49
+    },
+    "p": 0.008,
+    "ETH": {
+     "n": 67,
+     "pf_h1": 1.554,
+     "pf_h2": 3.888,
+     "na": 30,
+     "nb": 37
+    },
+    "passes_original_gate": false
+   },
+   "MR4": {
+    "BTC": {
+     "n": 24,
+     "pf_h1": 0.336,
+     "pf_h2": 5.917,
+     "na": 8,
+     "nb": 16
+    },
+    "p": 0.5075,
+    "ETH": {
+     "n": 23,
+     "pf_h1": 3.277,
+     "pf_h2": 2.774,
+     "na": 11,
+     "nb": 12
+    },
+    "passes_original_gate": false
+   },
+   "MR5": {
+    "BTC": {
+     "n": 82,
+     "pf_h1": 0.866,
+     "pf_h2": 1.845,
+     "na": 32,
+     "nb": 50
+    },
+    "p": 0.5385,
+    "ETH": {
+     "n": 84,
+     "pf_h1": 1.332,
+     "pf_h2": 0.97,
+     "na": 42,
+     "nb": 42
+    },
+    "passes_original_gate": false
+   },
+   "TR1": {
+    "BTC": {
+     "n": 50,
+     "pf_h1": 1.409,
+     "pf_h2": 1.88,
+     "na": 26,
+     "nb": 24
+    },
+    "p": 0.345,
+    "ETH": {
+     "n": 44,
+     "pf_h1": 3.737,
+     "pf_h2": 1.448,
+     "na": 21,
+     "nb": 23
+    },
+    "passes_original_gate": false
+   },
+   "TR2": {
+    "BTC": {
+     "n": 58,
+     "pf_h1": 2.724,
+     "pf_h2": 0.885,
+     "na": 23,
+     "nb": 35
+    },
+    "p": 0.1155,
+    "ETH": {
+     "n": 50,
+     "pf_h1": 0.642,
+     "pf_h2": 1.482,
+     "na": 25,
+     "nb": 25
+    },
+    "passes_original_gate": false
+   },
+   "TR3": {
+    "BTC": {
+     "n": 34,
+     "pf_h1": 2.487,
+     "pf_h2": 1.521,
+     "na": 14,
+     "nb": 20
+    },
+    "p": 0.218,
+    "ETH": {
+     "n": 22,
+     "pf_h1": 4.886,
+     "pf_h2": 2.346,
+     "na": 14,
+     "nb": 8
+    },
+    "passes_original_gate": false
+   },
+   "TR4": {
+    "BTC": {
+     "n": 137,
+     "pf_h1": 1.212,
+     "pf_h2": 0.754,
+     "na": 67,
+     "nb": 70
+    },
+    "p": 0.6715,
+    "ETH": {
+     "n": 127,
+     "pf_h1": 1.135,
+     "pf_h2": 0.693,
+     "na": 59,
+     "nb": 68
+    },
+    "passes_original_gate": false
+   }
+  }
+ },
+ "F6": {
+  "spot_vip0": {
+   "sharpe": 1.472,
+   "bh": 0.953,
+   "dd": -0.274,
+   "bh_dd": -0.484,
+   "h1": 1.943,
+   "h2": 0.929,
+   "bh_h1": 1.05,
+   "bh_h2": 0.842
+  },
+  "spot_bnb": {
+   "sharpe": 1.487,
+   "bh": 0.955,
+   "dd": -0.272,
+   "bh_dd": -0.484,
+   "h1": 1.954,
+   "h2": 0.949,
+   "bh_h1": 1.052,
+   "bh_h2": 0.844
+  },
+  "perp": {
+   "sharpe": 1.364,
+   "bh": 0.865,
+   "dd": -0.273,
+   "bh_dd": -0.484,
+   "h1": 1.798,
+   "h2": 0.864,
+   "bh_h1": 0.938,
+   "bh_h2": 0.782
+  }
+ },
+ "survivorship_notes": {
+  "LUNA": {
+   "first": "2020-08-21",
+   "last": "2022-05-13",
+   "days": 632,
+   "delisted": true,
+   "cut": "first run before a gap over 3 days"
+  },
+  "FTT": {
+   "first": "2019-12-20",
+   "last": "2022-11-15",
+   "days": 1063,
+   "delisted": true,
+   "cut": "first run before a gap over 3 days"
+  },
+  "UST": {
+   "first": "2021-12-24",
+   "last": "2022-05-13",
+   "days": 142,
+   "delisted": true,
+   "cut": "none"
+  },
+  "SRM": {
+   "first": "2020-08-11",
+   "last": "2022-11-28",
+   "days": 841,
+   "delisted": true,
+   "cut": "none"
+  },
+  "WAVES": {
+   "first": "2019-01-18",
+   "last": "2024-06-17",
+   "days": 1979,
+   "delisted": true,
+   "cut": "none"
+  },
+  "MITH": {
+   "first": "2019-04-19",
+   "last": "2022-12-22",
+   "days": 1345,
+   "delisted": true,
+   "cut": "none"
+  },
+  "BTS": {
+   "first": "2020-02-06",
+   "last": "2023-12-07",
+   "days": 1402,
+   "delisted": true,
+   "cut": "none"
+  },
+  "ANC": {
+   "first": "2022-01-25",
+   "last": "2022-12-27",
+   "days": 338,
+   "delisted": true,
+   "cut": "none"
+  }
+ },
+ "F6_survivorship_spot_vip0": {
+  "sharpe": 1.508,
+  "bh": 0.882,
+  "dd": -0.249,
+  "bh_dd": -0.508,
+  "h1": 2.045,
+  "h2": 0.914,
+  "bh_h1": 1.043,
+  "bh_h2": 0.703
+ },
+ "F6_coin_days_added": 7742
+}

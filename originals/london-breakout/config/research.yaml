@@ -1,0 +1,73 @@
+# Single source of truth for the London Breakout study. `python run_all.py` reads this.
+seed: 20261030
+
+data:
+  start: "2013-01-01"
+  end: "2026-10-30"          # exclusive
+
+# Instruments. Spread comes from Dukascopy bid/ask per bar (no assumption needed).
+# slip = extra slippage per side (price units) on market and stop orders.
+# comm = commission per round trip in price units (indices: none at typical CFD brokers;
+#        FX / gold: $7 per lot round trip, ECN style).
+# point = display unit for reports.
+instruments:
+  GER40:  {symbol: deuidxeur,     slip: 0.5,     comm: 0.0,     point: 1.0,    role: primary}
+  UK100:  {symbol: gbridxgbp,     slip: 0.5,     comm: 0.0,     point: 1.0,    role: primary}
+  US30:   {symbol: usa30idxusd,   slip: 1.0,     comm: 0.0,     point: 1.0,    role: robustness}
+  NAS100: {symbol: usatechidxusd, slip: 0.5,     comm: 0.0,     point: 1.0,    role: robustness}
+  EURUSD: {symbol: eurusd,        slip: 0.00002, comm: 0.00007, point: 0.0001, role: robustness}
+  GBPUSD: {symbol: gbpusd,        slip: 0.00003, comm: 0.00007, point: 0.0001, role: robustness}
+  XAUUSD: {symbol: xauusd,        slip: 0.05,    comm: 0.07,    point: 0.1,    role: robustness}
+
+# Chronological split, frozen before any backtest (dates fixed from the GER40/UK100
+# common range ~2013-10 .. 2026-10: 60/20/20 by calendar time).
+splits:
+  is_end:  "2021-08-01"      # in-sample:  data start .. is_end
+  val_end: "2024-03-15"      # validation: is_end .. val_end
+  # out-of-sample: val_end .. data end  (LOCKED until config/final_strategy.yaml is frozen)
+
+costs:
+  multipliers: [0.0, 0.5, 1.0, 2.0]   # 0 = gross, for reference only
+risk_fractions: [0.005, 0.01]
+min_trades_for_selection: 150
+
+variant_a:
+  exit_local: [16, 30]       # forced flat at 16:30 London (cash close of DAX and FTSE)
+  grid:                      # stage-1 factorial, market entry
+    box: [utc0007, utc2307, tokyo, ny1904]
+    tf: [1, 5, 15]
+    strong: [none, body50, range1atr, close25]
+    breakout: [close, whole, buffer]
+    window: [30, 60, 120]
+    stop: [in25, mid, opp, candle, atr1, atr2]
+    rr: [1.0, 1.5, 2.0, 3.0, 4.0, .inf]      # .inf = no target, exit at stop or 16:30
+  buffer_atr: 0.1
+  stop_order_grid:           # stage-1, OCO stop entries at the box edges
+    box: [utc0007, utc2307, tokyo, ny1904]
+    window: [30, 60, 120]
+    buffer_atr: [0.0, 0.1]
+    stop: [in25, mid, opp, atr1, atr2]
+    rr: [1.0, 1.5, 2.0, 3.0, 4.0, .inf]
+  stage2:                    # one-factor-at-a-time around stage-1 survivors
+    vol_k: [0.0, 1.0, 1.5, 2.0]
+    stop_extra: [atr0.5, atr3]
+    fresh: [false, true]
+    max_trades: [one, reversal]
+    box_filter: [none, p20_80, no_narrow, no_wide, narrow, wide]
+
+variant_b:
+  sessions: [asia, london, ny]
+  levels: [session_hl, fractal, pivot]
+  window: [30, 60]
+  vol_k: [0.0, 1.0, 1.5, 2.0]
+  buffer_atr: [0.0, 0.1]
+  stop_atr: [0.5, 1.0, 1.5, 2.0, 3.0]
+  rr: [2.0, 3.0, 4.0]        # author says minimum 1:3; 2.0 shown for contrast only
+  max_trades: 2
+
+robustness:
+  monte_carlo_runs: 10000
+  random_baseline_runs: 2000
+  bootstrap_runs: 2000
+  wfo_train_months: 24
+  wfo_test_months: 6

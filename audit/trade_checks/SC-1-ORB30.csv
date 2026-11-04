@@ -1,0 +1,21 @@
+entry,side,entry_px,stop,exit,how,first_bar_breaks,none_earlier,entry_is_edge,stop_is_other,flat_by_1600
+2022-08-08 10:02,1,13390.9,13212.5,13212.5,stop,True,True,True,True,True
+2022-10-11 10:00,-1,10765.9,10887.7,10887.7,stop,True,True,True,True,True
+2022-10-21 10:00,1,11110.7,10951.5,11311.6,close,True,True,True,True,True
+2023-07-19 10:15,-1,15847.3,15906.2,15906.2,stop,True,True,True,True,True
+2023-09-19 10:00,-1,15118.2,15184.8,15184.8,stop,True,True,True,True,True
+2023-10-10 10:00,1,15103.5,15040.8,15130.1,close,True,True,True,True,True
+2023-10-16 10:12,1,15137.3,15047.6,15166.1,close,True,True,True,True,True
+2023-12-18 10:00,1,16670.8,16622.0,16730.6,close,True,True,True,True,True
+2024-04-10 10:33,1,18027.62,17928.5,18013.8,close,True,True,True,True,True
+2024-04-17 10:00,-1,17715.36,17798.76,17495.41,close,True,True,True,True,True
+2024-04-24 10:15,-1,17572.92,17656.17,17520.1,close,True,True,True,True,True
+2024-04-26 10:03,1,17668.08,17535.83,17705.5,close,True,True,True,True,True
+2024-07-05 10:00,1,20286.43,20198.68,20392.36,close,True,True,True,True,True
+2024-07-12 10:00,1,20342.4,20219.15,20334.33,close,True,True,True,True,True
+2025-03-14 10:00,-1,19424.2,19591.0,19591.0,stop,True,True,True,True,True
+2025-03-24 10:21,1,20133.8,20024.85,20161.65,close,True,True,True,True,True
+2025-06-12 10:07,1,21867.3,21797.15,21913.45,close,True,True,True,True,True
+2025-12-10 10:40,-1,25535.3,25640.3,25640.3,stop,True,True,True,True,True
+2026-05-06 10:40,1,28388.2,28220.2,28592.1,close,True,True,True,True,True
+2026-08-25 10:01,-1,29206.8,29340.0,29199.2,close,True,True,True,True,True

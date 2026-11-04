@@ -1,0 +1,76 @@
+{
+  "profile": "S",
+  "symbol": "AUDUSD",
+  "logic": "S-swing",
+  "cost_pts": 18,
+  "swap_long_pts": 6.3,
+  "swap_short_pts": -14.8,
+  "news_blocked_entries": 0,
+  "split_date": "2024-05-07",
+  "is_period": [
+    "2019-06-17",
+    "2024-05-07"
+  ],
+  "oos_period": [
+    "2024-05-07",
+    "2026-06-12"
+  ],
+  "longs": 17,
+  "shorts": 14,
+  "rejections": 104,
+  "full": {
+    "n": 31,
+    "wins": 13,
+    "losses": 12,
+    "be": 2,
+    "timeouts": 4,
+    "win_rate": 41.935483870967744,
+    "pf": 0.4008,
+    "exp_R": -0.2545,
+    "exp_usd": -12.59,
+    "maxdd": 3.42,
+    "net_profit": -390.16,
+    "regime_conc": 0.0
+  },
+  "is": {
+    "n": 19,
+    "wins": 8,
+    "losses": 8,
+    "be": 1,
+    "timeouts": 2,
+    "win_rate": 42.10526315789473,
+    "pf": 0.3268,
+    "exp_R": -0.299,
+    "exp_usd": -14.84,
+    "maxdd": 2.68,
+    "net_profit": -281.95,
+    "regime_conc": 0.0
+  },
+  "oos": {
+    "n": 12,
+    "wins": 5,
+    "losses": 4,
+    "be": 1,
+    "timeouts": 2,
+    "win_rate": 41.66666666666667,
+    "pf": 0.5343,
+    "exp_R": -0.1839,
+    "exp_usd": -9.02,
+    "maxdd": 2.12,
+    "net_profit": -108.22,
+    "regime_conc": 0.0
+  },
+  "polarity_full": {
+    "flip_n": 31,
+    "flip_wr": 41.935483870967744,
+    "noflip_n": 0,
+    "noflip_wr": 0.0
+  },
+  "polarity_oos": {
+    "flip_n": 12,
+    "flip_wr": 41.66666666666667,
+    "noflip_n": 0,
+    "noflip_wr": 0.0
+  },
+  "csv": "@GANN_ROOT@/research/fx_backtest/results/trades_S_AUDUSD.csv"
+}

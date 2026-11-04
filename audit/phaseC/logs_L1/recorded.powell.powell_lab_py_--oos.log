@@ -1,0 +1,22 @@
+  no data: 2018-09-26
+  no data: 2020-09-16
+
+events measured: 73
+corr(stmt_move, presser_move) yellen: +0.766 (n=12)
+corr(stmt_move, presser_move) powell: +0.073 (n=60)
+
+config                       n   total$    mean     PF    WR   (realistic slip, Powell era)
+fade_t0_1530ET              60  -147.79  -2.463  0.663 43.3%
+fade_t0_1600ET              60  -125.62  -2.094  0.744 43.3%
+fade_t3_1530ET              42  -174.34  -4.151  0.532 40.5%
+fade_t3_1600ET              42  -201.84  -4.806  0.537 40.5%
+fade_t6_1530ET              27   -89.39  -3.311  0.590 37.0%
+fade_t6_1600ET              27  -117.92  -4.367  0.567 37.0%
+momentum_t0_1530ET          60    73.48   1.225  1.226 51.7%
+momentum_t0_1600ET          60    51.60   0.860  1.130 53.3%
+momentum_t3_1530ET          42   120.97   2.880  1.548 54.8%
+momentum_t3_1600ET          42   148.91   3.545  1.582 57.1%
+momentum_t6_1530ET          27    55.05   2.039  1.386 55.6%
+momentum_t6_1600ET          27    83.98   3.110  1.500 59.3%
+
+wrote powell_lab_oos.json / powell_events_oos.csv

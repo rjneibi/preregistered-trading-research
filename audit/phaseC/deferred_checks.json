@@ -1,0 +1,175 @@
+{
+ "shift": {
+  "XM-1-A1": {
+   "delay_0": {
+    "n": 124,
+    "pf": 2.372,
+    "avg_pct": 0.438
+   },
+   "delay_1": {
+    "n": 124,
+    "pf": 1.796,
+    "avg_pct": 0.304
+   },
+   "delay_2": {
+    "n": 124,
+    "pf": 1.836,
+    "avg_pct": 0.366
+   },
+   "delay_3": {
+    "n": 124,
+    "pf": 1.999,
+    "avg_pct": 0.423
+   }
+  },
+  "SW-1": {
+   "delay_0": {
+    "n": 397,
+    "pf": 1.741,
+    "avg_pct": 0.298
+   },
+   "delay_1": {
+    "n": 397,
+    "pf": 1.293,
+    "avg_pct": 0.136
+   },
+   "delay_2": {
+    "n": 397,
+    "pf": 1.284,
+    "avg_pct": 0.151
+   },
+   "delay_3": {
+    "n": 397,
+    "pf": 1.46,
+    "avg_pct": 0.237
+   }
+  }
+ },
+ "spreads": {
+  "XAUUSD": {
+   "us_afternoon_median": 0.33,
+   "rollover_bars": 17022,
+   "rollover_median": 0.517,
+   "rollover_x": 1.57,
+   "rollover_p90_x": 3.33,
+   "fomc_median_x": 1.78,
+   "fomc_n": 91,
+   "first_friday_release_median_x": 1.79,
+   "first_friday_n": 160
+  },
+  "NAS100": {
+   "us_afternoon_median": 1.452,
+   "rollover_bars": 0,
+   "rollover_median": null,
+   "rollover_x": null,
+   "rollover_p90_x": null,
+   "fomc_median_x": 1.0,
+   "fomc_n": 91,
+   "first_friday_release_median_x": 2.12,
+   "first_friday_n": 155
+  },
+  "US30": {
+   "us_afternoon_median": 2.48,
+   "rollover_bars": 0,
+   "rollover_median": null,
+   "rollover_x": null,
+   "rollover_p90_x": null,
+   "fomc_median_x": 1.01,
+   "fomc_n": 91,
+   "first_friday_release_median_x": 1.6,
+   "first_friday_n": 151
+  },
+  "EURUSD": {
+   "us_afternoon_median": 3e-05,
+   "rollover_bars": 120413,
+   "rollover_median": 0.00015,
+   "rollover_x": 5.0,
+   "rollover_p90_x": 15.0,
+   "fomc_median_x": 3.83,
+   "fomc_n": 91,
+   "first_friday_release_median_x": 3.17,
+   "first_friday_n": 163
+  }
+ },
+ "h1_costs": {
+  "n": 481,
+  "matrix_cost_mean": 81.22,
+  "measured_cost_mean": 93.66,
+  "pf_matrix": 1.009,
+  "pf_measured": 0.952,
+  "nights_mean": 0.14,
+  "lot_nights": 103.0,
+  "net_matrix": 930,
+  "breakeven_swap_usd_per_lot_night": 9.03
+ },
+ "hist_gaps": {
+  "all_gaps_over_6h": 878,
+  "not_weekend": 19,
+  "longest": [
+   [
+    "2023-04-06T21:58:00",
+    74.0
+   ],
+   [
+    "2013-12-24T18:45:00",
+    40.4
+   ],
+   [
+    "2012-12-24T18:45:00",
+    40.2
+   ],
+   [
+    "2025-12-24T18:43:00",
+    28.4
+   ],
+   [
+    "2014-12-24T18:44:00",
+    28.3
+   ],
+   [
+    "2018-12-24T18:44:00",
+    28.3
+   ],
+   [
+    "2019-12-24T18:44:00",
+    28.3
+   ],
+   [
+    "2024-12-24T18:43:00",
+    28.3
+   ]
+  ]
+ },
+ "cross": {
+  "US500 D1 vs ^GSPC": {
+   "days": 3529,
+   "corr_by_lag": {
+    "-1": -0.0884,
+    "0": 0.9601,
+    "1": -0.0924
+   },
+   "best_lag": 0,
+   "median_abs_level_diff_pct": 0.069
+  },
+  "BTC D1 vs BTC-USD": {
+   "days": 3344,
+   "corr_by_lag": {
+    "-1": -0.0339,
+    "0": 0.9908,
+    "1": -0.0398
+   },
+   "best_lag": 0,
+   "median_abs_level_diff_pct": 0.086
+  },
+  "ETH D1 vs ETH-USD": {
+   "days": 3260,
+   "corr_by_lag": {
+    "-1": -0.0372,
+    "0": 0.9935,
+    "1": -0.0448
+   },
+   "best_lag": 0,
+   "median_abs_level_diff_pct": 0.093
+  }
+ }
+}

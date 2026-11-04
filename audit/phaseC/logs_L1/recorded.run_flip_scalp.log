@@ -1,0 +1,36 @@
+=== flip-scalp backtest: 2021-06-19 -> 2026-06-19 ===
+[data] M1 bars: 1,772,805
+[data] H1=29,574 H4=8,177 D1=1,580
+  [scan] day     0/1541  events so far: 0
+  [scan] day   200/1541  events so far: 145
+  [scan] day   400/1541  events so far: 305
+  [scan] day   600/1541  events so far: 464
+  [scan] day   800/1541  events so far: 612
+  [scan] day  1000/1541  events so far: 774
+  [scan] day  1200/1541  events so far: 952
+  [scan] day  1400/1541  events so far: 1121
+  [scan] done — 1262 deduped flip events
+audit/_copy/sb_fable_recorded/research/flip_scalp/run_flip_scalp.py:248: UserWarning: no explicit representation of timezones available for np.datetime64
+  i0 = self.t.searchsorted(np.datetime64(entry_ts))
+audit/_copy/sb_fable_recorded/research/flip_scalp/run_flip_scalp.py:257: UserWarning: no explicit representation of timezones available for np.datetime64
+  np.datetime64(entry_ts + pd.Timedelta(hours=horizon_hours)))
+[grid] TP5_SL5: 1262 trades
+[grid] TP5_SL10: 1262 trades
+[grid] TP5_SL15: 1262 trades
+audit/_copy/sb_fable_recorded/research/flip_scalp/run_flip_scalp.py:344: UserWarning: no explicit representation of timezones available for np.datetime64
+  np.datetime64(entry_ts), side="right")
+audit/_copy/sb_fable_recorded/research/flip_scalp/run_flip_scalp.py:258: UserWarning: no explicit representation of timezones available for np.datetime64
+  i_s = (self.t.searchsorted(np.datetime64(stop_ts), side="right")
+[grid] TP5_FLIPEXIT: 1262 trades
+[grid] TP10_SL5: 1262 trades
+[grid] TP10_SL10: 1262 trades
+[grid] TP10_SL15: 1262 trades
+[grid] TP10_FLIPEXIT: 1262 trades
+[grid] TP15_SL5: 1262 trades
+[grid] TP15_SL10: 1262 trades
+[grid] TP15_SL15: 1262 trades
+[grid] TP15_FLIPEXIT: 1262 trades
+[grid] TP5_NOSL: 1262 trades
+[grid] TP10_NOSL: 1262 trades
+[grid] TP15_NOSL: 1262 trades
+[done] report: audit/_copy/sb_fable_recorded/research/flip_scalp/flip_scalp_report.md

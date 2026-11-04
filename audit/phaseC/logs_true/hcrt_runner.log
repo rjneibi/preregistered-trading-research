@@ -1,0 +1,38 @@
+cost matrix: audit/_copy/sb_true/fable-backtesting/cost_matrix.json (overall med=$0.72, p95=$0.79, n=1,986)
+        flat: breakeven move ~ $0.20/oz per round trip
+  optimistic: breakeven move ~ $0.43/oz per round trip
+   realistic: breakeven move ~ $0.89/oz per round trip
+       worst: breakeven move ~ $1.06/oz per round trip
+  admin fee [ESTIMATE]: $5.00/lot/night (pending broker T&Cs)
+
+loading xauusd_m1_trueutc.csv ...
+M1 2010-01-03 23:00:00+00:00 .. 2026-06-19 16:57:00+00:00  (5,769,159 bars); D1 trading days: 4,247 (dropped 870 partial days < 300 bars)
+D1 ATR% full-sample median (parameter-free vol axis): 1.3405%
+
+signals: raw=1265  filtered=613 (long=391, short=222)
+E1 degenerate skips: filtered=8 raw=16
+
+== 2x2 era table (net realistic PF | n), reversion vs mirror ==
+  old/LOvol  n=216  E1=0.8757894674182859  E2=0.7778549649634608  mirror=0.7864242077933304
+  old/HIvol  n=185  E1=0.9014043964286429  E2=0.7664238664011817  mirror=0.9260741180215777
+  new/LOvol  n= 95  E1=1.1670749421272888  E2=1.4215944292156255  mirror=0.5088651834129215
+  new/HIvol  n=109  E1=0.8724720567359809  E2=0.9867594863546595  mirror=0.7709338845260119
+
+PBO (S=8, C(8,4)=70, embargo 24h): 0.714 (lambda_mean -0.71)
+
+== gates (primary E1) ==
+  g0_power_n_ge_100: PASS
+  g1_pf_ge_1.30: FAIL
+  g2_uplift_ge_0.10: FAIL
+  g3_era_ge_1.00_both: FAIL
+  g3_no_mirror_inversion: PASS
+  g4_dsr_ge_0.95: FAIL
+  g6_p95_stress_pf_ge_1.15: FAIL
+  g5_pbo_lt_0.50: FAIL
+  DSR detail: SR=-0.0225 SR0=+0.0001 skew=-5.39 kurt=116.7 n=605 -> DSR=0.2783
+
+E2 gates: {'g0_power_n_ge_100': True, 'g1_pf_ge_1.30': False, 'g2_uplift_ge_0.10': False, 'g3_era_ge_1.00_both': False, 'g3_no_mirror_inversion': True, 'g4_dsr_ge_0.95': False, 'g6_p95_stress_pf_ge_1.15': False, 'g5_pbo_lt_0.50': False} -> displaces E1: False
+
+== HCRT FAIL: ICT/CRT line on XAUUSD D1 CLOSED — no threshold shopping, no timeframe migration; FVG/QT/SMT inherit the negative prior ==
+
+results -> audit/_copy/sb_true/research/goldbot/results/HCRT_run.json

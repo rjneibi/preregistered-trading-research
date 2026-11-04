@@ -1,0 +1,1728 @@
+- id: ARB-BTC-PAPER
+  date: '2025-09-24'
+  family: arbitrage
+  market: BTCUSDT
+  timeframe: tick
+  data: exchange WebSocket feeds, live only
+  idea_source: own
+  hypothesis: Cross-venue BTCUSDT edges above 20 bps exist.
+  rules: Log edges above alert_edge_bps; paper only.
+  parameters_tested: single config
+  n_variants: '1'
+  prereg: not pre-registered
+  splits: none
+  costs: not modelled
+  gates: none
+  results: edges.log and ticks.log are empty; no result exists
+  verdict: NOT RUN
+  audit_verdict: UNVERIFIED
+  known_issues: Scaffold only, September 2025. Nothing was measured.
+  status_of_number: found
+  publish_class: public
+- id: BINANCE-TESTNET-P1
+  date: '2026-05-26'
+  family: trend/mean-reversion
+  market: BTCUSDT
+  timeframe: not determined
+  data: Binance Testnet
+  idea_source: own (crypto bot roadmap, May 2026)
+  hypothesis: Plumbing test for a paper bot.
+  rules: See README; RSI + 50-MA per the author's notes (not published), not re-verified.
+  parameters_tested: single config
+  n_variants: '1'
+  prereg: not pre-registered
+  splits: none
+  costs: none
+  gates: none
+  results: No backtest or forward result on disk
+  verdict: NOT RUN
+  audit_verdict: UNVERIFIED
+  known_issues: Infrastructure only. No evidence value.
+  status_of_number: found
+  publish_class: public
+- id: GANN-PROFILE-D-BASE
+  date: '2026-06-11'
+  family: support/resistance
+  market: XAUUSD
+  timeframe: H1 / M1
+  data: broker demo feed H1 2020-10 to 2026-06
+  idea_source: own (Gann and fib levels)
+  hypothesis: Six-gate zone logic with polarity has positive expectancy.
+  rules: Six gates, SL 1xATR, TP 3xATR, 50% partial at 1xATR.
+  parameters_tested: baseline vs Option C M1 pullback
+  n_variants: '2'
+  prereg: not pre-registered
+  splits: 70/30 chronological
+  costs: 4.0 pts round-trip
+  gates: OOS PF>=1.2 and expectancy>0
+  results: Full n=685, PF 1.11, +0.060R, maxDD 11.9%
+  verdict: FAILED
+  audit_verdict: UNVERIFIED
+  known_issues: 'Superseded: faithful M1 replay D-REVIVAL gave PF 0.87. Backtest cost of 4 pts is far below realistic spread.'
+  status_of_number: found
+  publish_class: public
+- id: HA-ADDITIONS
+  date: '2026-06-13'
+  family: trend filter
+  market: XAUUSD
+  timeframe: H1/H4
+  data: MT5 history
+  idea_source: own
+  hypothesis: Heikin-Ashi trail, session filter and H4 HA colour streak improve D/R/S.
+  rules: A1 HA trail; A2 block entries outside 06-17 UTC; A3 2 H4 HA candles match EMA50 bias.
+  parameters_tested: 3 additions plus combined, on 3 profiles
+  n_variants: '12'
+  prereg: not pre-registered
+  splits: see report
+  costs: see report
+  gates: see report
+  results: See HA_ADDITIONS_REPORT.md tables
+  verdict: INCONCLUSIVE
+  audit_verdict: UNVERIFIED
+  known_issues: Not transcribed yet; verify in Phase 3.
+  status_of_number: found
+  publish_class: public
+- id: VP-FILTER
+  date: '2026-06-13'
+  family: volume
+  market: XAUUSD
+  timeframe: H1
+  data: MT5 tick-volume
+  idea_source: own
+  hypothesis: Volume-profile POC/VA/LVN filter improves D and R.
+  rules: Keep signals only with POC, Value Area and LVN path conditions.
+  parameters_tested: 2 profiles
+  n_variants: '2'
+  prereg: not pre-registered
+  splits: none
+  costs: see backtest_vp.py
+  gates: none
+  results: Filter passed 0% of signals, so 0 trades survived; baseline D PF 1.025 n=66, R PF 1.027 n=32
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: All-veto result is a filter definition failure, not evidence about volume profile. Spot volume is a broker tick count.
+  status_of_number: found
+  publish_class: public
+- id: FX-TRANSFER-1
+  date: '2026-06-14'
+  family: transfer test
+  market: EURUSD/GBPUSD/AUDUSD
+  timeframe: H1
+  data: broker demo feed 2019-06 to 2026-06
+  idea_source: own
+  hypothesis: Gold profiles D/R/S transfer to FX majors with locked parameters.
+  rules: Live gates unchanged, no per-pair tuning.
+  parameters_tested: 3 profiles x 3 pairs
+  n_variants: '9'
+  prereg: not pre-registered (locked parameters)
+  splits: 70/30 chronological
+  costs: per-symbol spread + $7/lot
+  gates: OOS PF and expectancy
+  results: 0/9 pass; best full PF 0.90 (R EURUSD); D EURUSD 0.72/0.63
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: The gold reference it compares to was later overturned.
+  status_of_number: found
+  publish_class: public
+- id: NQ-TRANSFER
+  date: '2026-06-30'
+  family: transfer test
+  market: USTEC
+  timeframe: H1
+  data: MT5 USTEC
+  idea_source: own
+  hypothesis: Six-gate strategy transfers from gold to NASDAQ.
+  rules: Live evaluate_signal with ATR TP and widened session.
+  parameters_tested: see backtest_nq.py
+  n_variants: None
+  prereg: not pre-registered
+  splits: walk-forward
+  costs: see code
+  gates: see AUDIT_REPORT
+  results: Not transcribed yet
+  verdict: UNVERIFIED
+  audit_verdict: UNVERIFIED
+  known_issues: Locate result output in Phase 3.
+  status_of_number: found
+  publish_class: public
+- id: DR-EDGE-SCREEN
+  date: '2026-07-01'
+  family: support/resistance
+  market: XAUUSD
+  timeframe: H1 / M1
+  data: HistData M1 2021-06-19 to 2026-06-19
+  idea_source: own
+  hypothesis: Unthrottled D/R entry signals carry edge.
+  rules: Every H1 close passing six gates is one entry.
+  parameters_tested: 2 profiles, variants A/B/C1-C4
+  n_variants: '8'
+  prereg: not pre-registered
+  splits: IS 70 / OOS 30
+  costs: no modelled spread
+  gates: report flags
+  results: D ALL n=1351 PF 1.326; R ALL n=1012 PF 1.06
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: No spread modelled and fixed-point TPs calibrated to the current regime. Superseded by D-REVIVAL.
+  status_of_number: found
+  publish_class: public
+- id: LABELSIZING-CORE
+  date: '2026-06-29'
+  family: ML
+  market: synthetic
+  timeframe: H1
+  data: synthetic data generated in process
+  idea_source: own
+  hypothesis: Validation harness for triple-barrier labels, CPCV, Venn-Abers and CVaR sizing.
+  rules: Correctness asserts only.
+  parameters_tested: n/a
+  n_variants: '0'
+  prereg: not pre-registered
+  splits: CPCV
+  costs: n/a
+  gates: unit asserts
+  results: No market result by design
+  verdict: NOT RUN
+  audit_verdict: VERIFIED
+  known_issues: Method validation on synthetic data, not a market test.
+  status_of_number: found
+  publish_class: public
+- id: XAU-FLIP-RAW
+  date: '2026-07-02'
+  family: pivot/breakout
+  market: XAUUSD
+  timeframe: H1/H4 flips
+  data: HistData M1 XAUUSD 2010-2026 (bid)
+  idea_source: own
+  hypothesis: Entering on any zone flip has edge.
+  rules: All zones, immediate entry; TP-only variant.
+  parameters_tested: ledger rows 8-9
+  n_variants: '2'
+  prereg: not pre-registered
+  splits: train/test/virgin
+  costs: 20 pts/trade
+  gates: none
+  results: enter-on-any-flip PF~1.05; TP-only hit $10 92% yet lost (avg loss -$131 vs +$9.79)
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Selection on repeatedly consulted eras.
+  status_of_number: found
+  publish_class: public
+- id: XAU-R3S3-FADE
+  date: '2026-07-02'
+  family: pivot/mean-reversion
+  market: XAUUSD
+  timeframe: H1
+  data: HistData M1 XAUUSD 2010-2026 (bid)
+  idea_source: own
+  hypothesis: Fading R3/S3 has positive expectancy.
+  rules: Fade at R3/S3, as shipped in the pivots.py placeholder.
+  parameters_tested: ledger row 10
+  n_variants: '1'
+  prereg: not pre-registered
+  splits: 11 years
+  costs: 20 pts/trade
+  gates: none
+  results: Rejected; ledger row 10 reads 'breakout accepted, fade rejected'
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: The digest says fades failed OOS gates twice in flip_bot.py. Disk shows the rejection but no per-attempt numbers, and flip_bot is the breakout bot. Attempt count UNVERIFIED.
+  status_of_number: found
+  publish_class: public
+- id: XAU-FINAL-V4
+  date: '2026-07-02'
+  family: pivot/breakout
+  market: XAUUSD
+  timeframe: H1
+  data: HistData M1 XAUUSD 2010-2026 (bid)
+  idea_source: own + Fable optimisation
+  hypothesis: H1 close beyond an unflipped R3/S3 in 12-20 UTC, no Mondays, 1/day, has edge.
+  rules: TP 0.8xATR, SL 2.4xATR, 24h close.
+  parameters_tested: 17 optimisation rounds, ledger rows 1-37
+  n_variants: '37'
+  prereg: not pre-registered
+  splits: train/test/virgin 2015-21
+  costs: 20 pts/trade
+  gates: self-set
+  results: 2025 n=51 86.3% WR PF 2.90; 2021-26 PF 1.40; 2015-21 PF 1.21 at 20 pts
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Headline PF 2.90 is n=51 at a flat 20-pt cost and eras consulted repeatedly. TP 0.8 / SL 2.4 needs 75% wins to break even. Killed at decision-grade costs by H1 and TA-LAB round 11.
+  status_of_number: found
+  publish_class: public
+- id: XAU-FINAL-V3
+  date: '2026-07-02'
+  family: pivot/breakout
+  market: XAUUSD
+  timeframe: H4
+  data: HistData M1 XAUUSD 2010-2026 (bid)
+  idea_source: own + Fable optimisation
+  hypothesis: H4 flips with 1% risk and DD governor have edge.
+  rules: TP 1.4xATR, SL 2.1xATR, 24h stop.
+  parameters_tested: shared with V4
+  n_variants: '1'
+  prereg: not pre-registered
+  splits: train/test/virgin
+  costs: 20 pts/trade
+  gates: self-set
+  results: 2021-26 PF 2.00; 2015-21 PF 1.24; pooled PF 1.67
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Same issues as V4. H-B arm B binding FAIL.
+  status_of_number: found
+  publish_class: public
+- id: DESIGN-A-MODULES
+  date: '2026-07-06'
+  family: regime/sizing
+  market: XAUUSD
+  timeframe: n/a
+  data: unit tests only
+  idea_source: own
+  hypothesis: Regime gate and ATR sizing modules behave as specified.
+  rules: regime.py ER/ADX/Hurst with hysteresis; sizing.py.
+  parameters_tested: 18 unit tests
+  n_variants: '0'
+  prereg: not pre-registered
+  splits: n/a
+  costs: n/a
+  gates: unit tests
+  results: 18 test functions on disk; pass state to confirm in Phase 3
+  verdict: UNVERIFIED
+  audit_verdict: VERIFIED
+  known_issues: Design A as a strategy never ran as one experiment; the sizing question was answered by SZ and HR. Design B has no artifact found.
+  status_of_number: found
+  publish_class: public
+- id: H1
+  date: '2026-07-07'
+  family: pivot/breakout
+  market: XAUUSD
+  timeframe: H1+H4
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: own
+  hypothesis: Conviction dual-arm breakout has positive net edge 2015-2026.
+  rules: flip_bot v1.1 rules, UTC day cut, news blackout off.
+  parameters_tested: single
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/PREREGISTRATION.md commit 35deedc
+  splits: old 2015-2021 / new 2021-2026; 15 purged combinatorial splits
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: PF>=1.20, >=10/15 splits, each era PF>=1.00, n>=300
+  results: Partial coverage PF 1.24 (old 0.95, new 1.42) n=472; full-coverage confirmation PF 1.13 (old 0.90, new 1.28)
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: A pass on partial cost data was killed by the pre-committed rerun.
+  status_of_number: found
+  publish_class: public
+- id: H2
+  date: '2026-07-07'
+  family: regime filter
+  market: XAUUSD
+  timeframe: H1+H4
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: own
+  hypothesis: ATR percentile gate rescues the old era.
+  rules: Trade only if trailing 252d percentile >= 0.50.
+  parameters_tested: thresholds 0.40/0.50/0.60
+  n_variants: '3'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/PREREGISTRATION.md commit 35deedc
+  splits: old 2015-2021 / new 2021-2026; 15 purged combinatorial splits
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: PF>=1.25, >=11/15, p90>=1.10, mechanism gap>=0.15
+  results: PF 1.17, p90 1.10, 9/15, n=193, gap -0.113
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: H-S
+  date: '2026-07-06'
+  family: scalping
+  market: XAUUSD
+  timeframe: M1
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: own
+  hypothesis: Bar-level scalps clear costs.
+  rules: '12 configs: A/B x 3 geometries x 2 sessions.'
+  parameters_tested: '12'
+  n_variants: '12'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/HS_PREREGISTRATION.md commit 55539b9
+  splits: OOS
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: OOS PF>=1.30, eras>=1.10, p90>=1.10, n>=500, beats permutation
+  results: Winner OOS PF 0.307 n=56260
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Frontier showed 60-109% required win rates at measured costs.
+  status_of_number: found
+  publish_class: public
+- id: H-M
+  date: '2026-07-06'
+  family: ML/meta-label
+  market: XAUUSD
+  timeframe: H1+H4
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: 'the author''s notes (not published): meta-labeling on the primary signal'
+  hypothesis: HGB meta-label filter lifts PF.
+  rules: 8 pinned features, CPCV, train-only threshold.
+  parameters_tested: 1 + control
+  n_variants: '2'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/HM_PREREGISTRATION.md commit 0a84ca3
+  splits: CPCV
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: PF>=1.40, uplift>=0.15, old>=1.05, retention, 11/15, p90>=1.15, control
+  results: PF 1.236 -> 1.206, uplift -0.030, retention 99%
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: ML filter closed a second time.
+  status_of_number: found
+  publish_class: public
+- id: FR-M
+  date: '2026-07-06'
+  family: grid
+  market: XAUUSD
+  timeframe: M1
+  data: HistData M1 XAUUSD 2010-2026 (bid)
+  idea_source: own
+  hypothesis: The Micro grid profile is viable.
+  rules: M0-M4 grid variants.
+  parameters_tested: '5'
+  n_variants: '5'
+  prereg: originals/gann_bot_500/research/fleet_review/FR_PREREGISTRATION.md a87b81e
+  splits: OOS
+  costs: see prereg
+  gates: see prereg
+  results: All FAIL; M0 n=1353 PF=0.102; best M4 n=223 PF=0.372
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Dollars here are per backtest config, not an account.
+  status_of_number: found
+  publish_class: public
+- id: FR-L
+  date: '2026-07-06'
+  family: ICT
+  market: XAUUSD
+  timeframe: M1
+  data: HistData M1 XAUUSD 2010-2026 (bid)
+  idea_source: ICT London kill-zone
+  hypothesis: London sweep/FVG with fixed or ATR TP is viable.
+  rules: 6 TP variants.
+  parameters_tested: '6'
+  n_variants: '6'
+  prereg: originals/gann_bot_500/research/fleet_review/FR_PREREGISTRATION.md a87b81e
+  splits: OOS
+  costs: see prereg
+  gates: see prereg
+  results: Reference n=679 PF=0.587; all variants fail. Displayed WR double-scaled, corrected in the log.
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Log carries an explicit WR scale correction. Early PF 2.90 at n=9 is the same line per memory; verify in Phase 3.
+  status_of_number: found
+  publish_class: public
+- id: H-N
+  date: '2026-07-07'
+  family: news sizing
+  market: XAUUSD
+  timeframe: H1+H4
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: own
+  hypothesis: 1.5x sizing on news days is cost-validated.
+  rules: FOMC/NFP/CPI days 1.5x.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/HN_PREREGISTRATION.md 56d89dd
+  splits: eras
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: median PF>=1.50, p90, eras
+  results: Partial PASS PF 1.53; full-coverage confirmation 1.44, FAIL
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Second case of a pass killed by the confirmation rerun. Killed the multiplier, not news-day trading.
+  status_of_number: found
+  publish_class: public
+- id: H-P
+  date: '2026-07-06'
+  family: portfolio
+  market: XAUUSD
+  timeframe: H1+H4
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: own
+  hypothesis: Two-arm portfolio beats best single arm.
+  rules: Arm A + arm B.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/HP_PREREGISTRATION.md 56d89dd
+  splits: eras
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: PF>=1.20, eras, net, corr<=0.60, p90
+  results: PF 1.373, corr 0.82
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Failed on correlation.
+  status_of_number: found
+  publish_class: public
+- id: H-B
+  date: '2026-07-07'
+  family: pivot/breakout
+  market: XAUUSD
+  timeframe: H4
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: own
+  hypothesis: Arm B solo stands.
+  rules: Arm B alone.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/HB_PREREGISTRATION.md a734cd7
+  splits: old 2015-2021 / new 2021-2026; 15 purged combinatorial splits
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: PF>=1.35, eras>=1.00, 11/15, p90, n>=300
+  results: Provisional PASS PF 1.459; binding FAIL PF 1.376, old 0.977
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Third pass killed by confirmation at full cost coverage.
+  status_of_number: found
+  publish_class: public
+- id: HR
+  date: '2026-07-06'
+  family: routing overlay
+  market: XAUUSD
+  timeframe: H1+H4
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: own
+  hypothesis: Regime routing lifts OOS PF.
+  rules: Routing overlay.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/HR_PREREGISTRATION.md
+  splits: IS then OOS
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: PF>=1.35, uplift>=0.10, n>=70, p90>=1.15
+  results: Routed PF 1.484 vs 1.421, uplift +0.063
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Baseline was known favourable at freeze; a future era-stratified test would be a new trial.
+  status_of_number: found
+  publish_class: public
+- id: SZ
+  date: '2026-07-06'
+  family: sizing
+  market: XAUUSD
+  timeframe: H1+H4
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: own
+  hypothesis: Regime tilt repairs the sizing inversion.
+  rules: Tilt on 1/ATR lots.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/SZ_PREREGISTRATION.md
+  splits: eras
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: beat baseline +0.05, inversion eliminated, risk-adjusted
+  results: tilt old PF 0.928 vs 0.936
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: First genuinely blind freeze; both forecasters were wrong at high confidence, which reset the calibration ledger.
+  status_of_number: found
+  publish_class: public
+- id: HV
+  date: '2026-07-07'
+  family: regime
+  market: XAUUSD
+  timeframe: H1+H4
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: literature pass, ERA_MECHANISM_RESEARCH
+  hypothesis: Volatility explains the era boundary.
+  rules: Vol gate.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/HV_PREREGISTRATION.md
+  splits: eras
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: V1-V4
+  results: All 4 gates FAIL
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Cycle 3 later showed no significant performance break exists, so HV searched for a mechanism behind an untested premise.
+  status_of_number: found
+  publish_class: public
+- id: HCRT
+  date: '2026-07-07'
+  family: ICT/SMC
+  market: XAUUSD
+  timeframe: D1
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: ICT Candle Range Theory
+  hypothesis: Raw CRT-D1 sweep has edge.
+  rules: Single primary E1, mirror and bias controls.
+  parameters_tested: 1 primary + controls
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/HCRT_PREREGISTRATION.md c5e042d
+  splits: old 2015-2021 / new 2021-2026; 15 purged combinatorial splits
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: n>=100, PF>=1.30, uplift, eras, DSR>=0.95, PBO<0.50, p95 stress
+  results: n=599 PF 0.86, DSR and PBO gates FAIL
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Full DSR/PBO applied. FVG, QT, SMT inherit the negative prior.
+  status_of_number: found
+  publish_class: public
+- id: HSW
+  date: '2026-07-07'
+  family: ICT/SMC
+  market: XAUUSD
+  timeframe: intraday
+  data: HistData M1 + Dukascopy tick cost matrix 2015-2026
+  idea_source: liquidity sweep literature, Osler kernel
+  hypothesis: Intraday sweep-reclaim at PDH/PDL has edge.
+  rules: Primary, mirror, touch baseline.
+  parameters_tested: 1 primary + controls
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/HSW_PREREGISTRATION.md 2f7599a
+  splits: old 2015-2021 / new 2021-2026; 15 purged combinatorial splits
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: as HCRT
+  results: n=885 PF 0.827
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: 'First blind disagreement: Rashed PASS, Claude FAIL.'
+  status_of_number: found
+  publish_class: public
+- id: HPF
+  date: '2026-07-08'
+  family: event
+  market: XAUUSD
+  timeframe: M1
+  data: Powell press conference events 2023-26
+  idea_source: own
+  hypothesis: Fading the Powell presser has edge.
+  rules: fade_t0_1600ET.
+  parameters_tested: 1 primary + 6 family
+  n_variants: '7'
+  prereg: originals/gann_bot_500/research/powell/HPF_PREREGISTRATION.md dd4b486
+  splits: IS Powell era, OOS 2023-26
+  costs: realistic
+  gates: n>=22, PF>=1.20, family 4/6, permutation
+  results: OOS n=27, PF 0.518, sign flip vs IS 1.44
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: H3-SILVER
+  date: '2026-07-06'
+  family: transfer test
+  market: XAUUSD/XAGUSD
+  timeframe: see prereg
+  data: XAGUSD ticks 2015-01 to 2022-09
+  idea_source: own
+  hypothesis: XAU/XAG spread diagnostic.
+  rules: See prereg.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/H3_PREREGISTRATION.md
+  splits: see prereg
+  costs: see prereg
+  gates: see prereg
+  results: Frozen with zero silver bars on disk; no verdict logged
+  verdict: NOT RUN
+  audit_verdict: VERIFIED
+  known_issues: Cycle 4 recorded that silver ticks end 2022-09, before the window of interest.
+  status_of_number: found
+  publish_class: public
+- id: H-20
+  date: '2026-08-23'
+  family: time-of-day
+  market: XAUUSD
+  timeframe: H1
+  data: same 472 events
+  idea_source: cycle 2 diagnostic
+  hypothesis: 20:00 UTC cohort is an hour effect, not overnight carry.
+  rules: Three counterfactual exit arms.
+  parameters_tested: 9 hours, N_eff pinned
+  n_variants: '9'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/H20_PREREGISTRATION.md SHA 5A2B501E
+  splits: ERAS
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: kill-only G0-G6
+  results: 'Withdrawn unrun: MDE 0.347A vs effect ~0.114A. Sealed prediction never opened.'
+  verdict: NOT RUN
+  audit_verdict: UNVERIFIED
+  known_issues: Correct disposition per power-first rule.
+  status_of_number: found
+  publish_class: public
+- id: CYCLES-1-10
+  date: '2026-08-25'
+  family: diagnostics
+  market: XAUUSD
+  timeframe: H1+H4
+  data: 472-trade frozen ledger
+  idea_source: own
+  hypothesis: Which assumptions of the programme survive standard tests?
+  rules: Sup-Wald break test, PSR, MinTRL, power, breakeven markup, slippage stress, first broker contact.
+  parameters_tested: 10 cycles
+  n_variants: '0'
+  prereg: no prereg (diagnostics of a frozen ledger)
+  splits: n/a
+  costs: measured swap, p90 cost
+  gates: n/a
+  results: No significant performance break; cost/ATR break at 2020-02-28; n=784 needed vs 41 trades/yr; hour 20 Sidak p=0.206; PSR 0.041 full sample
+  verdict: INCONCLUSIVE
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: 'Key finding of the programme: an edge is neither shown nor excluded, because the sample cannot resolve it. Cycle 5''s precision argument killed in cycle 6; the v1.3 fix killed in cycle 7; all four door-3 predictions refuted in cycle 8.'
+  status_of_number: found
+  publish_class: public
+- id: DOOR-3
+  date: '2026-08-24'
+  family: risk geometry
+  market: XAUUSD
+  timeframe: H1+H4
+  data: same 472 events
+  idea_source: own
+  hypothesis: A $20 stop forced by a $2,000 account costs winners.
+  rules: k_sl_atr 2.4 -> sl_usd 20.
+  parameters_tested: 2 arms
+  n_variants: '2'
+  prereg: originals/gann_bot_500/research/goldbot/prereg/door3_fixed_dollar_stop.md SHA 77A50FB4
+  splits: n/a
+  costs: per-year x UTC-hour Dukascopy spread matrix, k_slip 0.5 x spread per side (assumption), $7/lot RT
+  gates: 4 predictions
+  results: 0 of 4 predictions confirmed; zero of 360 winners reach $20 (max MAE $17.60)
+  verdict: INCONCLUSIVE
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Engineering result about expressibility, not edge. Headroom 1.14x and eroding as ATR rises.
+  status_of_number: found
+  publish_class: public
+- id: FLIP-BOT-DEFECTS
+  date: '2026-08-24'
+  family: implementation audit
+  market: XAUUSD
+  timeframe: live
+  data: demo terminal
+  idea_source: the author's notes (not published) MT5 review
+  hypothesis: Implementation matches spec.
+  rules: Mutation-checked offline tests.
+  parameters_tested: v1.2-v1.5
+  n_variants: '0'
+  prereg: no prereg (code defects)
+  splits: n/a
+  costs: n/a
+  gates: tests
+  results: UTC-midnight state wipe fixed in v1.2; duplicate exits, unconfirmed closes, orphan adoption fixed; contract-size fix v1.3 was itself wrong and replaced in v1.4
+  verdict: PASSED
+  audit_verdict: VERIFIED
+  known_issues: 'Answers the brief''s Phase 3 item: the state wipe was live-only. Backtests never ran through this code, and the log records no verdict affected.'
+  status_of_number: found
+  publish_class: public
+- id: FORWARD-FLIP-DEMO
+  date: '2026-08-25'
+  family: forward test
+  market: XAUUSD
+  timeframe: live
+  data: demo 2026-08-25 on
+  idea_source: own
+  hypothesis: Winner MAE stays inside the $20 cap at N>=20-30.
+  rules: Frozen spec on $2,000 notional.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: cycle 10 pre-registered criteria
+  splits: forward
+  costs: observed
+  gates: winner MAE <= 0.906xATR
+  results: No closing report found; demo account purged by 2026-09-29
+  verdict: INCOMPLETE
+  audit_verdict: UNVERIFIED
+  known_issues: Account died from idle purge before n was reached. First observed slippage n=1 only.
+  status_of_number: found
+  publish_class: public
+- id: TA-LAB-R1-R2
+  date: '2026-10-12'
+  family: TA levels
+  market: XAUUSD
+  timeframe: M15
+  data: M15 2022-07 to 2026-10
+  idea_source: own
+  hypothesis: Pivots, fib and Asia breakouts have edge.
+  rules: Lock ladder 0.6R.
+  parameters_tested: several
+  n_variants: '5'
+  prereg: not pre-registered
+  splits: by year
+  costs: see lab.py
+  gates: random twin
+  results: Asia breakout -0.19R; pivots +0.04R; fib 61.8 +0.06R vs random +0.07R
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: Limit fill-bar bug had inflated pivots from +0.34R to +0.04R.
+  status_of_number: found
+  publish_class: public
+- id: TA-LAB-R4-SWEEP
+  date: '2026-10-12'
+  family: ICT/SMC
+  market: XAUUSD
+  timeframe: M15/M5
+  data: M15, M5
+  idea_source: own
+  hypothesis: Asia-range sweep fade has edge.
+  rules: 06-20 UTC, 1/day, stop wick+0.3, ladder 0.4R.
+  parameters_tested: chosen on <2025
+  n_variants: '4'
+  prereg: not pre-registered
+  splits: <2025 vs 2025+
+  costs: $0.30 slip
+  gates: random twin
+  results: Originally +0.048/+0.235R; corrected M15 <2025 -0.092R PF0.78
+  verdict: FAILED
+  audit_verdict: INVALID
+  known_issues: 'LOOK-AHEAD LEAK found in round 12: 24*bph bars pulled next-day bars into the Asia range. Show original and corrected side by side.'
+  status_of_number: found
+  publish_class: public
+- id: TA-LAB-R5-R9
+  date: '2026-10-12'
+  family: ICT/SMC
+  market: XAUUSD/XAGUSD
+  timeframe: M15/M5
+  data: as R4
+  idea_source: own
+  hypothesis: London-range, previous-day, H4-filtered and silver sweep fades have edge.
+  rules: Rounds 5,6,8,9.
+  parameters_tested: 4 rounds
+  n_variants: '4'
+  prereg: not pre-registered
+  splits: <2025 vs 2025+
+  costs: $0.30 slip
+  gates: random twin
+  results: All NO EDGE
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Rounds 8 and 9 reused the leaky build; already rejected.
+  status_of_number: found
+  publish_class: public
+- id: TA-LAB-R11
+  date: '2026-10-12'
+  family: pivot/breakout
+  market: XAUUSD
+  timeframe: H1
+  data: H1
+  idea_source: FINAL_v4 spec
+  hypothesis: FINAL_v4 holds in an independent lab.
+  rules: No tuning.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: published spec, no tuning
+  splits: <2025 vs 2025+
+  costs: see lab.py
+  gates: random twin
+  results: <2025 n64 -0.077R PF0.73; 2025+ n42 +0.032R PF1.15
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: D-REVIVAL
+  date: '2026-10-13'
+  family: support/resistance
+  market: XAUUSD
+  timeframe: M1
+  data: HistData + ta_lab M1 2010-03 to 2026-10, re-clocked
+  idea_source: own
+  hypothesis: Profile D has edge when replayed faithfully.
+  rules: Faithful M1 replay plus exit and gate variants.
+  parameters_tested: many
+  n_variants: '20'
+  prereg: not pre-registered
+  splits: 2010-19 / 2020-26
+  costs: spread $0.35
+  gates: both halves
+  results: n=1432 PF0.87 -92R; gross PF1.00
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: Replica matched 5/12 live signals. Random direction about equal.
+  status_of_number: found
+  publish_class: public
+- id: BOT-LAB-1
+  date: '2026-10-13'
+  family: mixed
+  market: XAUUSD
+  timeframe: M1/D1
+  data: M1 2010-2026
+  idea_source: own
+  hypothesis: ICT tags, news, daily trend or session drift pass.
+  rules: A tags, B news, C daily trend, D session drift.
+  parameters_tested: 4 groups
+  n_variants: '12'
+  prereg: pass rule fixed before runs
+  splits: both halves
+  costs: $0.80 to $2 spread + slip
+  gates: PF>=1.15 both halves, >=95% twins
+  results: Nothing passes; NFP pre-range breakout PF 2.0-2.3 at $0.80, 0.98 at $2+$0.50
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: Asia-long 'edge' was a broker 01:00 reopen artefact.
+  status_of_number: found
+  publish_class: public
+- id: WHY-1
+  date: '2026-10-13'
+  family: diagnostics
+  market: XAUUSD
+  timeframe: M1
+  data: M1 2010-2026
+  idea_source: own
+  hypothesis: Why do price-only rules fail?
+  rules: Autocorr, variance ratio, level touch placebos, barrier math.
+  parameters_tested: 4 questions
+  n_variants: '0'
+  prereg: diagnostic
+  splits: 4 eras
+  costs: $0.35
+  gates: n/a
+  results: VR(4) 0.94-1.06; pivots 48.2%, fib 50.0%, placebo 49.8%
+  verdict: PASSED
+  audit_verdict: VERIFIED
+  known_issues: Explanatory result, not a strategy.
+  status_of_number: found
+  publish_class: public
+- id: ML-1
+  date: '2026-10-13'
+  family: ML
+  market: XAUUSD
+  timeframe: H1
+  data: M1 2014-2026
+  idea_source: own
+  hypothesis: GBM on 27 price features predicts 1 ATR barrier.
+  rules: Numpy GBM, expanding walk-forward, embargo, shuffled control.
+  parameters_tested: 4 thresholds
+  n_variants: '4'
+  prereg: gate fixed
+  splits: walk-forward
+  costs: $0.35
+  gates: PF>=1.15 both halves
+  results: OOS AUC 0.519 (shuffled 0.503)
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: XM-1-A1
+  date: '2026-10-13'
+  family: mean-reversion
+  market: US500 + 4 untouched markets
+  timeframe: D1
+  data: broker demo feed D1 2012-2026, IWM/EWA from 2003
+  idea_source: published RSI2 family
+  hypothesis: Short-term dip buying above SMA200 has edge.
+  rules: RSI2<10, close>SMA200, exit close>SMA5 or 10 days.
+  parameters_tested: 12-cell grid + stress
+  n_variants: '12'
+  prereg: pre-declared gates in xm_lab.py
+  splits: halves
+  costs: spread, financing, 2x stress
+  gates: PF both halves, twin
+  results: n=124 PF 1.72/3.79; next-open PF 1.65/3.45
+  verdict: PASSED
+  audit_verdict: REPRODUCES-BUT-FRAGILE
+  known_issues: 'Original note, since superseded: not yet deflated by programme trial count. audit/VERDICTS.md now gives both DSRs. ~9 trades/yr. IWM 2003-2011 flat.'
+  status_of_number: found
+  publish_class: public
+- id: XM-1-OTHERS
+  date: '2026-10-13'
+  family: mixed
+  market: indices, gold
+  timeframe: D1/H1
+  data: broker demo feed
+  idea_source: published anomalies
+  hypothesis: Turn of month, pre-FOMC, overnight, CFD 12m trend and leaders of gold work.
+  rules: See log.
+  parameters_tested: '5'
+  n_variants: '5'
+  prereg: pre-declared gates
+  splits: halves
+  costs: CFD financing
+  gates: as XM-1
+  results: All fail; |corr|<0.03
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: SW-1
+  date: '2026-10-13'
+  family: swing
+  market: indices, gold, silver
+  timeframe: D1
+  data: broker demo feed
+  idea_source: own
+  hypothesis: Swing rules beat the twin.
+  rules: 10 rules.
+  parameters_tested: 10 rules x 5 markets
+  n_variants: '50'
+  prereg: pre-declared twin p<0.005
+  splits: halves
+  costs: next-open
+  gates: twin p<0.005
+  results: IBS<0.2 US500 n=397 PF 1.50/2.02 p=0.004; trend rules fail; gold and silver no rule
+  verdict: PASSED
+  audit_verdict: REPRODUCES-BUT-FRAGILE
+  known_issues: Only MR2 confirmed. Not deflated by programme trial count.
+  status_of_number: found
+  publish_class: public
+- id: SC-1
+  date: '2026-10-13'
+  family: scalping/ORB
+  market: indices, gold
+  timeframe: M1
+  data: MT5 M1
+  idea_source: Zarattini, Gao et al.
+  hypothesis: Intraday rules clear costs.
+  rules: ORB, candle ORB, momentum, gap fade, stretch fade, first-hour reversal.
+  parameters_tested: battery
+  n_variants: '18'
+  prereg: pre-declared
+  splits: halves
+  costs: 1.5x spread +0.5 on stops
+  gates: twin
+  results: USTEC ORB-30m n=987 PF 1.22/1.30 p=0.001; others fail
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: PASS at the time, but TUNE-1 part 2 found live ORB-30 PF 0.87 n245 over the last 12 months. Recorded FAILED on forward holdout; show both.
+  status_of_number: found
+  publish_class: public
+- id: VS-1
+  date: '2026-10-13'
+  family: volatility
+  market: US500/US30/USTEC
+  timeframe: D1
+  data: MT5
+  idea_source: own
+  hypothesis: Vol-targeting or fear gauges improve the dip bot.
+  rules: S1-S5.
+  parameters_tested: '5'
+  n_variants: '5'
+  prereg: pre-declared
+  splits: 2013-19 / 2020-26
+  costs: as live
+  gates: Sharpe and MAR both halves
+  results: All FAIL
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: Dip portfolio Sharpe 0.23 in 2013-19 vs 1.01 in 2020-26.
+  status_of_number: found
+  publish_class: public
+- id: CR-1
+  date: '2026-10-13'
+  family: crypto
+  market: BTC/ETH
+  timeframe: D1
+  data: Binance 2017-08 to 2026-10
+  idea_source: own
+  hypothesis: Index swing rules and long/flat trend work on crypto.
+  rules: MR1-5, TR1-4, SMA, TSMOM30.
+  parameters_tested: battery
+  n_variants: '20'
+  prereg: pre-declared twin p<0.0125
+  splits: halves
+  costs: 0.1% RT + 15%/yr
+  gates: twin
+  results: All FAIL the twin gate; SMA50 p .005/.097 and .092/.036
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: Probable timing edge, not proven; halves ~4y.
+  status_of_number: found
+  publish_class: public
+- id: EDGE-1-F1
+  date: '2026-10-14'
+  family: trend
+  market: 59 markets
+  timeframe: D1
+  data: MT5 2005-26
+  idea_source: Moskowitz et al.; Hurst et al.
+  hypothesis: Multi-asset TSMOM works on CFDs.
+  rules: 12m TSMOM.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: gates in edge_lab docstring
+  splits: halves
+  costs: CFD financing
+  gates: see code
+  results: Gross Sharpe ~0.27, net -0.27
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: EDGE-1-F2
+  date: '2026-10-14'
+  family: rotation
+  market: XL* ETFs
+  timeframe: D1
+  data: MT5
+  idea_source: published
+  hypothesis: Sector rotation.
+  rules: n/a
+  parameters_tested: '0'
+  n_variants: '0'
+  prereg: gates in docstring
+  splits: n/a
+  costs: n/a
+  gates: n/a
+  results: 'Untestable: 4 of 9 ETFs have history'
+  verdict: NOT RUN
+  audit_verdict: UNVERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: EDGE-1-F3-F5-F7
+  date: '2026-10-14'
+  family: mixed
+  market: US500, crypto, XAU/XAG
+  timeframe: D1
+  data: MT5, Binance
+  idea_source: published
+  hypothesis: Turn of month, funding carry, cross-sectional momentum and gold/silver ratio pass.
+  rules: F3, F4, F5, F7.
+  parameters_tested: '4'
+  n_variants: '4'
+  prereg: gates in docstring
+  splits: halves
+  costs: see code
+  gates: see code
+  results: All FAIL; F7 gold/silver ratio z>2 PF 0.76; F4 2023-26 +4.3%/yr
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: F7 is a ratio z-score. No cointegration test exists anywhere on disk.
+  status_of_number: found
+  publish_class: public
+- id: EDGE-1-F6
+  date: '2026-10-14'
+  family: trend
+  market: 12 crypto coins
+  timeframe: D1
+  data: Binance
+  idea_source: published
+  hypothesis: Crypto trend portfolio beats buy and hold.
+  rules: Close>SMA50, equal risk.
+  parameters_tested: stress set
+  n_variants: '8'
+  prereg: gates in docstring
+  splits: halves
+  costs: 0.1% fee
+  gates: see code
+  results: Sharpe 1.52 vs 0.96, maxDD 27% vs 48%, run-shuffle p=0.005
+  verdict: PASSED
+  audit_verdict: REPRODUCES-BUT-FRAGILE
+  known_issues: 'SURVIVORSHIP: today''s top-12 coins. 2025 +1%, 2026 +7%. Needs spot venue. Not deflated by programme trial count.'
+  status_of_number: found
+  publish_class: public
+- id: EDGE-1-F9
+  date: '2026-10-14'
+  family: portfolio
+  market: 5 streams
+  timeframe: monthly
+  data: 2022-07 to 2026-10
+  idea_source: own
+  hypothesis: Near-uncorrelated streams combine.
+  rules: RSI2, IBS, ORB, crypto trend, crypto carry at 10% vol.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: none
+  splits: 52 months
+  costs: stream level
+  gates: n/a
+  results: Book Sharpe 3.01, maxDD 1.9%
+  verdict: INCONCLUSIVE
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: 52 bull-heavy months. Includes the ORB leg that later failed, and an in-sample portfolio. Do not headline.
+  status_of_number: found
+  publish_class: public
+- id: EXIT-2-FLIP
+  date: '2026-10-14'
+  family: exits
+  market: XAUUSD
+  timeframe: M1
+  data: M1 2010-01 to 2026-09
+  idea_source: user
+  hypothesis: Letting flip_bot winners run beats the 24h close.
+  rules: 6 exits.
+  parameters_tested: '6'
+  n_variants: '6'
+  prereg: originals/gann_bot_500/research/exit2/PREREG.md sha debb6c97
+  splits: A/B/C
+  costs: $0.50
+  gates: gates A/B/C + twin
+  results: ALL 6 FAIL; n=714
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: 'Entries beat a twin with the same exit by 0.05-0.09R: real but cost-sized.'
+  status_of_number: found
+  publish_class: public
+- id: GOLD-LIT-1
+  date: '2026-10-14'
+  family: literature replication
+  market: XAUUSD
+  timeframe: M1/D1
+  data: 2004-2026
+  idea_source: Baur; intraday hat literature
+  hypothesis: Published gold anomalies hold net of cost.
+  rules: Asia long, US short, autumn, winter, 12/24m momentum.
+  parameters_tested: '6'
+  n_variants: '6'
+  prereg: originals/gann_bot_500/research/gold_lit/PREREG.md sha a3bf295e
+  splits: halves
+  costs: $0.40; IC Raw post hoc
+  gates: see prereg
+  results: ALL 6 FAIL; winter t=+1.85 closest
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: PA-1
+  date: '2026-10-14'
+  family: price action
+  market: XAUUSD
+  timeframe: H1/H4/D1
+  data: 2010-26
+  idea_source: classic patterns
+  hypothesis: 6 patterns have edge.
+  rules: PIN, PINX, ENG, IB, NR7, SFP; 2R, 10-bar stop.
+  parameters_tested: '18'
+  n_variants: '18'
+  prereg: originals/gann_bot_500/research/price_action/PREREG.md sha 2a0618d57046
+  splits: A/B/C
+  costs: see prereg
+  gates: t>=2.8, twins
+  results: 18/18 FAIL; D1 IB n387 +0.134R t=+2.15
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: PA-1B
+  date: '2026-10-14'
+  family: price action
+  market: XAG, US500, US30, USTEC
+  timeframe: D1
+  data: H1/M1
+  idea_source: PA-1 near miss
+  hypothesis: D1 inside-bar breakout transfers.
+  rules: Unchanged.
+  parameters_tested: '4'
+  n_variants: '4'
+  prereg: originals/gann_bot_500/research/price_action/PREREG_IB.md sha 5136c45a7b96
+  splits: n/a
+  costs: with swaps
+  gates: see prereg
+  results: 0/4 markets >0
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: Gold-specific, drift-driven.
+  status_of_number: found
+  publish_class: public
+- id: PA-15-30
+  date: '2026-10-22'
+  family: price action
+  market: XAUUSD
+  timeframe: M15/M30
+  data: 2022-07 to 2026-10
+  idea_source: user
+  hypothesis: Price action on 15/30m makes $5.
+  rules: PIN, ENG, IB, BO20; TP $5, $10.
+  parameters_tested: '16'
+  n_variants: '16'
+  prereg: originals/gann_bot_500/research/pa_lab/pa1.py sha 34ce42ce6067
+  splits: split 2024-09-01
+  costs: see code
+  gates: n>=150, PF>=1.2, twin, t>=3
+  results: 16/16 FAIL; best PF 1.06
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: PA-30-MAX5
+  date: '2026-10-23'
+  family: price action
+  market: XAUUSD
+  timeframe: M30
+  data: 2022-07 to 2026-10
+  idea_source: user
+  hypothesis: Small targets on M30 work.
+  rules: Targets $1-5.
+  parameters_tested: '20'
+  n_variants: '20'
+  prereg: originals/gann_bot_500/research/pa_lab/pa30.py sha 81ca5e0b52d8
+  splits: halves
+  costs: see code
+  gates: as PA-15/30
+  results: 20/20 FAIL
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: TVS-1
+  date: '2026-10-23'
+  family: indicator search
+  market: XAUUSD, SPY, QQQ
+  timeframe: 1m-1D
+  data: broker M1/M5; Yahoo SPY/QQQ
+  idea_source: video VWAP + 9 EMA, TradingView built-ins
+  hypothesis: Video rule works, and a search finds OOS survivors.
+  rules: P1 video rule; P2 64,521 configs, 9 cells.
+  parameters_tested: '64521'
+  n_variants: '64521'
+  prereg: research/tvsearch src sha ec9256604311
+  splits: IS 70 / OOS 30, WF 6 blocks
+  costs: XAU bar spread floor 0.22; SPY/QQQ 0.01/side
+  gates: OOS, B&H, random, DSR>=0.95, stability
+  results: 0/20 PASS; DSR hurdle Sharpe 11.3
+  verdict: FAILED
+  audit_verdict: VERIFIED-WITH-CORRECTIONS
+  known_issues: Top cells had only 12 OOS sessions.
+  status_of_number: found
+  publish_class: public
+- id: SWEEP-MTF-1
+  date: '2026-10-26'
+  family: ICT/SMC
+  market: XAUUSD
+  timeframe: H1->M5, H4->M15
+  data: 2010-2026
+  idea_source: ICT video
+  hypothesis: Two-timeframe swing sweep has edge.
+  rules: Variants A-D.
+  parameters_tested: '4'
+  n_variants: '4'
+  prereg: originals/gann_bot_500/research/sweep_mtf/PREREG.md sha 2fa59273d230
+  splits: IS 2y / OOS 1y + HIST
+  costs: $0.40/oz
+  gates: t>=2.8, twin
+  results: 4/4 FAIL; net -0.24R
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: TUNE-1-DIP
+  date: '2026-10-26'
+  family: mean-reversion
+  market: US500/US30/US2000; 18 unseen
+  timeframe: D1
+  data: 2012-2026
+  idea_source: own
+  hypothesis: Tuning beats the live dip rules.
+  rules: 3960 grid, sealed holdouts.
+  parameters_tested: '3960'
+  n_variants: '3960'
+  prereg: originals/gann_bot_500/research/tune1/PREREG.md sha b63b3eacd499
+  splits: DEV, HOLD-T, HOLD-M
+  costs: spread + financing
+  gates: see prereg
+  results: 0/3 PASS; live rsi2 HOLD-T n122 PF 3.05, HOLD-M n2158 PF 1.59
+  verdict: PASSED
+  audit_verdict: REPRODUCES-BUT-FRAGILE
+  known_issues: PASSED refers to the live RSI2 rule confirmed on 18 unseen markets; the tuning itself failed. Plateau gate was weakened before the sealed look, disclosed.
+  status_of_number: found
+  publish_class: public
+- id: TUNE-1-ORB
+  date: '2026-10-26'
+  family: ORB
+  market: USTEC
+  timeframe: M1
+  data: 2022-07 to 2026-10
+  idea_source: own
+  hypothesis: Tuning improves ORB.
+  rules: 800 grid.
+  parameters_tested: '800'
+  n_variants: '800'
+  prereg: tune_orb.py 94b34cd62eac
+  splits: DEV, HOLD-T, HOLD-M
+  costs: see code
+  gates: see prereg
+  results: 0/3 PASS; live ORB-30 n245 PF 0.87
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: Sealed data now spent.
+  status_of_number: found
+  publish_class: public
+- id: CRT-FVG-1
+  date: '2026-10-30'
+  family: ICT/SMC
+  market: XAU, EURUSD, GBPUSD, NAS100
+  timeframe: 4H/1H/15m/3-15m
+  data: Dukascopy M1 2013-2026
+  idea_source: user brief
+  hypothesis: CRT + HTF FVG stack has edge.
+  rules: 108-config IS grid, 15 pooled cells.
+  parameters_tested: 6480 backtests
+  n_variants: '6480'
+  prereg: originals/gann_bot_500/research/crt_fvg/PREREG.md sha afbec5a00f7e
+  splits: IS 70 / OOS 30
+  costs: see config
+  gates: OOS>0, PF>=1.15, 2x cost, Holm, WFO
+  results: 0/15 PASS; OOS -0.07..-0.64R
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: ''
+  status_of_number: found
+  publish_class: public
+- id: LBO-1
+  date: '2026-10-30'
+  family: breakout
+  market: GER40, UK100 + 5 robustness
+  timeframe: 1-15m
+  data: Dukascopy 2013-2026
+  idea_source: social post, 'elitrade basic' PDF
+  hypothesis: Asian-box and session-level breakouts have edge.
+  rules: Variant A 32,544 configs; Variant B 4,320; 26 fixes.
+  parameters_tested: 36864+
+  n_variants: '36864'
+  prereg: originals/london-breakout/RESEARCH_LOG.md
+  splits: IS/VAL/OOS
+  costs: config/research.yaml
+  gates: six gates incl. SPA, WFO
+  results: OOS -0.008R n=204
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: Robustness-instrument grid count not yet added.
+  status_of_number: found
+  publish_class: public
+- id: TAEVAL-1
+  date: '2026-10-25'
+  family: LLM agent
+  market: 27 US symbols
+  timeframe: weekly
+  data: 2023; 2024-08 to 2026-10
+  idea_source: TauricResearch TradingAgents v0.7.0
+  hypothesis: TradingAgents has an edge after costs.
+  rules: E1-E9, 17 variants.
+  parameters_tested: '17'
+  n_variants: '17'
+  prereg: <private>/tradingagents-eval\PREREGISTRATION.md commit dd3a9ce
+  splits: pre/post model cutoff
+  costs: 10 bps per side
+  gates: H1-H5 with DSR, SPA, Holm
+  results: 'No result. Study broken since 2026-10-30 06:19: 4,947 ERROR rows'
+  verdict: INCOMPLETE
+  audit_verdict: UNVERIFIED
+  known_issues: llama-server binary not found. ERROR rows sit in decisions.db and the prereg maps ERROR to 'keep', so analysing the DB as it stands would produce wrong numbers. Whether resume skips ERROR rows is not yet checked.
+  status_of_number: found
+  publish_class: public
+- id: HLCOPY-1
+  date: '2026-10-18'
+  family: copy trading
+  market: Hyperliquid wallets
+  timeframe: live
+  data: forward
+  idea_source: user
+  hypothesis: Copying steady wallets beats a twin and BTC.
+  rules: smart vs twin vs BTC.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: originals/gann_bot_500/research/hl_copy/PREREG.md sha e194ce11b258
+  splits: forward to 2026-12-13
+  costs: see prereg
+  gates: 5 gates
+  results: No journal on disk; bot task removed in the 2026-10-20 VM rebuild
+  verdict: INCOMPLETE
+  audit_verdict: UNVERIFIED
+  known_issues: About one day of data at most, on a machine that was later shut down.
+  status_of_number: found
+  publish_class: public
+- id: EXCLUDED-01
+  date: 2026-09
+  n_variants: 1
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-02
+  date: 2026-10
+  n_variants: 1
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-03
+  date: 2026-10
+  n_variants: 3
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-04
+  date: 2026-10
+  n_variants: 4
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-05
+  date: 2026-10
+  n_variants: 180
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-06
+  date: 2026-10
+  n_variants: 3
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-07
+  date: 2026-10
+  n_variants: 30
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-08
+  date: 2026-10
+  n_variants: 4
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-09
+  date: 2026-10
+  n_variants: 7
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-10
+  date: 2026-10
+  n_variants: 4
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-11
+  date: 2026-10
+  n_variants: 4
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-12
+  date: 2026-10
+  n_variants: 1
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-13
+  date: 2026-10
+  n_variants: 600
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-14
+  date: 2026-10
+  n_variants: 599
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-15
+  date: 2026-10
+  n_variants: 2
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-16
+  date: 2026-10
+  n_variants: 6
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: EXCLUDED-17
+  date: 2026-10
+  n_variants: 4
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: CHANNEL-A
+  date: '2026-10-21'
+  family: public channels
+  market: not named
+  timeframe: M1
+  data: Channel posts, not published
+  idea_source: public channel
+  hypothesis: A public signal channel's calls score above chance.
+  rules: Calls from a public channel, scored against the rules in the audit notes.
+  parameters_tested: '2'
+  n_variants: '2'
+  prereg: not published
+  splits: halves
+  costs: see log
+  gates: see log
+  results: P1 PF 0.58, worse than coin-flip twin
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: The channel is not named in this repository.
+  status_of_number: found
+  publish_class: public_anonymised
+- id: CHANNEL-C
+  date: '2026-10-22'
+  family: public channels
+  market: not named
+  timeframe: M1
+  data: Channel posts, not published
+  idea_source: public channel
+  hypothesis: Three public signal channels pass the gates.
+  rules: Calls from a public channel, scored against the rules in the audit notes.
+  parameters_tested: '6'
+  n_variants: '6'
+  prereg: not published
+  splits: halves
+  costs: see log
+  gates: see log
+  results: All FAIL; two channels are one operator; one has deleted-post signs
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: The channel is not named in this repository.
+  status_of_number: found
+  publish_class: public_anonymised
+- id: CHANNEL-B-SCORE
+  date: '2026-10-18'
+  family: public channels
+  market: not named
+  timeframe: M1
+  data: Channel posts, not published
+  idea_source: public channel
+  hypothesis: A public crypto channel's calls beat random.
+  rules: Calls from a public channel, scored against the rules in the audit notes.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: not published
+  splits: halves
+  costs: see log
+  gates: see log
+  results: 641 calls; figures in memory, source file to confirm
+  verdict: UNVERIFIED
+  audit_verdict: UNVERIFIED
+  known_issues: The channel is not named in this repository.
+  status_of_number: found
+  publish_class: public_anonymised
+- id: EXCLUDED-18
+  date: 2026-10
+  n_variants: 2
+  verdict: EXCLUDED
+  reason: Derived from a third party's signals. Not published and not tested.
+- id: E1-PAIRS
+  date: '2026-10-31'
+  family: pairs
+  market: XAU/XAG, BTC/ETH, gold/GDX
+  timeframe: H1, D1
+  data: Dukascopy, Binance, Yahoo
+  idea_source: audit brief
+  hypothesis: Cointegrated spreads revert at a profit after two-leg costs.
+  rules: See prereg.
+  parameters_tested: '9'
+  n_variants: '9'
+  prereg: audit/prereg/E1-PAIRS.md
+  splits: see prereg
+  costs: see prereg
+  gates: see prereg
+  results: Frozen rule 7 cells INSUFFICIENT SAMPLE, 2 FAIL at dev. Validation not evaluated. See audit/phaseE/e1_result.json.
+  verdict: FAILED OR INSUFFICIENT SAMPLE
+  audit_verdict: VERIFIED
+  known_issues: See audit/DECISIONS.md
+  status_of_number: found
+  publish_class: public
+- id: E2-SILVER-TRANSFER
+  date: '2026-10-31'
+  family: transfer test
+  market: XAGUSD
+  timeframe: M1
+  data: Dukascopy M1 bid and ask 2015-2026
+  idea_source: audit brief
+  hypothesis: Gold rules transfer unchanged.
+  rules: See prereg.
+  parameters_tested: '3'
+  n_variants: '3'
+  prereg: audit/prereg/E2-SILVER-TRANSFER.md
+  splits: see prereg
+  costs: see prereg
+  gates: see prereg
+  results: All three FAIL. See audit/phaseE/e2_result.json.
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: See audit/DECISIONS.md
+  status_of_number: found
+  publish_class: public
+- id: E3-PORTFOLIO
+  date: '2026-10-31'
+  family: portfolio
+  market: four fragile streams
+  timeframe: D1
+  data: as sources
+  idea_source: audit brief
+  hypothesis: Descriptive only.
+  rules: See prereg.
+  parameters_tested: '0'
+  n_variants: '0'
+  prereg: audit/prereg/E3-PORTFOLIO.md
+  splits: see prereg
+  costs: see prereg
+  gates: see prereg
+  results: Descriptive. No verdict can come from this entry.
+  verdict: DESCRIPTIVE
+  audit_verdict: VERIFIED
+  known_issues: See audit/DECISIONS.md
+  status_of_number: found
+  publish_class: public
+- id: E4-NEWS
+  date: '2026-10-31'
+  family: execution
+  market: XAUUSD
+  timeframe: ticks
+  data: Dukascopy ticks 2015-2026
+  idea_source: audit brief
+  hypothesis: Event spreads change the verdicts.
+  rules: See prereg.
+  parameters_tested: '6'
+  n_variants: '6'
+  prereg: audit/prereg/E4-NEWS.md
+  splits: see prereg
+  costs: see prereg
+  gates: see prereg
+  results: No rule reaches its gate. See audit/phaseE/e4_result.json.
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: See audit/DECISIONS.md
+  status_of_number: found
+  publish_class: public
+- id: E5-CRYPTO
+  date: '2026-10-31'
+  family: execution
+  market: crypto
+  timeframe: D1
+  data: Binance
+  idea_source: audit brief
+  hypothesis: Real fees, funding and delisted coins change the results.
+  rules: See prereg.
+  parameters_tested: '7'
+  n_variants: '7'
+  prereg: audit/prereg/E5-CRYPTO.md
+  splits: see prereg
+  costs: see prereg
+  gates: see prereg
+  results: Cost correction, no verdict moves. See audit/phaseE/e5_result.json.
+  verdict: CORRECTION
+  audit_verdict: VERIFIED
+  known_issues: See audit/DECISIONS.md
+  status_of_number: found
+  publish_class: public
+- id: E6-PAPER
+  date: '2026-10-31'
+  family: reconciliation
+  market: XAUUSD
+  timeframe: M1
+  data: demo journal, Dukascopy M1
+  idea_source: audit brief
+  hypothesis: Backtest matches the demo trades.
+  rules: See prereg.
+  parameters_tested: '1'
+  n_variants: '1'
+  prereg: audit/prereg/E6-PAPER.md
+  splits: see prereg
+  costs: see prereg
+  gates: see prereg
+  results: 6 of 19 matched. INSUFFICIENT SAMPLE.
+  verdict: INSUFFICIENT SAMPLE
+  audit_verdict: VERIFIED
+  known_issues: See audit/DECISIONS.md
+  status_of_number: found
+  publish_class: public
+- id: E7-INDICATORS
+  date: '2026-10-31'
+  family: indicators
+  market: XAUUSD, EURUSD, GBPUSD
+  timeframe: D1, H1
+  data: HistData corrected, Dukascopy
+  idea_source: audit brief
+  hypothesis: 200-day filter and Bollinger RSI pay after costs.
+  rules: See prereg.
+  parameters_tested: '3'
+  n_variants: '3'
+  prereg: audit/prereg/E7-INDICATORS.md
+  splits: see prereg
+  costs: see prereg
+  gates: see prereg
+  results: FX FAIL at dev. Gold INSUFFICIENT SAMPLE at dev.
+  verdict: FAILED
+  audit_verdict: VERIFIED
+  known_issues: See audit/DECISIONS.md
+  status_of_number: found
+  publish_class: public

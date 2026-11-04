@@ -1,0 +1,36 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote audit/_copy/rs_adj/fable-backtesting/calendar/news_days.json: 260 blackout days
+A1/A2 daily index effects (2012-2026)
+  A1 US500 RSI2 mean-reversion       n= 124 | half1 avg +0.263% PF 1.72 | half2 avg +0.665% PF 3.79 | vs random twin p=0.000  PASS
+  A2 US500 turn-of-month             n= 169 | half1 avg +0.175% PF 1.37 | half2 avg +0.304% PF 1.43 | vs random twin p=0.198  fail
+  A1 US30 RSI2 mean-reversion        n= 122 | half1 avg +0.171% PF 1.40 | half2 avg +0.239% PF 1.48 | vs random twin p=0.081  fail
+  A2 US30 turn-of-month              n= 169 | half1 avg +0.183% PF 1.39 | half2 avg +0.319% PF 1.51 | vs random twin p=0.140  fail
+
+A3/A4 H1 index effects (2018-2026)
+  A3 US500 pre-FOMC 24h drift        n=  67 | half1 avg +0.132% PF 1.66 | half2 avg +0.244% PF 2.35 | vs random twin p=0.107  fail
+  A4 US500 gross mean overnight +0.0465%/night vs intraday +0.0141%/day
+  A4 US500 long overnight only (net) n=2115 | half1 avg +0.010% PF 1.04 | half2 avg +0.009% PF 1.04 | vs random twin p=nan  fail
+  A4 US500 long intraday only (net)  n=2111 | half1 avg -0.019% PF 0.94 | half2 avg +0.011% PF 1.04 | vs random twin p=nan  fail
+  A3 US30 pre-FOMC 24h drift         n=  67 | half1 avg +0.105% PF 1.47 | half2 avg +0.180% PF 2.21 | vs random twin p=0.159  fail
+  A4 US30 gross mean overnight +0.0384%/night vs intraday +0.0086%/day
+  A4 US30 long overnight only (net)  n=2119 | half1 avg +0.017% PF 1.06 | half2 avg +0.008% PF 1.04 | vs random twin p=nan  fail
+  A4 US30 long intraday only (net)   n=2114 | half1 avg -0.013% PF 0.96 | half2 avg +0.017% PF 1.08 | vs random twin p=nan  fail
+
+B multi-asset trend following (2005-2026)
+  B trend portfolio half1: Sharpe -0.45 (long-only 0.07)  CAGR -3.0%  maxDD -35.8%  corr to long-only +0.35
+  B trend portfolio half2: Sharpe -0.15 (long-only 0.17)  CAGR -1.0%  maxDD -24.0%  corr to long-only +0.37
+  B verdict: fail
+
+C do other markets lead gold?
+  C D1: corr(X now, gold next bar)   half1 | half2   (n)
+     XAUUSD  +0.000 | +0.004   (5482)  
+     TLT     +0.015 | +0.021   (5217)  
+     US500   -0.001 | +0.025   (3575)  
+     XAGUSD  +0.002 | +0.014   (4534)  
+     EURUSD  +0.017 | -0.017   (5537)  
+  C H1: corr(X now, gold next bar)   half1 | half2   (n)
+     XAUUSD  -0.008 | -0.012   (45068)  
+     TLT     -0.019 | +0.021   (12260)  
+     US500   -0.004 | +0.001   (44235)  
+     XAGUSD  +0.007 | -0.025   (45238)  
+     EURUSD  -0.002 | -0.001   (45260)  

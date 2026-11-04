@@ -1,0 +1,27 @@
+decisions 98996, up-first base rate 0.503
+  2014: train  24144 test  6019  OOS AUC 0.521
+  2015: train  30162 test  5940  OOS AUC 0.547
+  2016: train  36102 test  5923  OOS AUC 0.520
+  2017: train  42025 test  5944  OOS AUC 0.528
+  2018: train  47970 test  6035  OOS AUC 0.522
+  2019: train  54005 test  5899  OOS AUC 0.516
+  2020: train  59905 test  5907  OOS AUC 0.537
+  2021: train  65811 test  5891  OOS AUC 0.522
+  2022: train  71701 test  5914  OOS AUC 0.494
+  2023: train  77616 test  5153  OOS AUC 0.515
+  2024: train  82768 test  5933  OOS AUC 0.495
+  2025: train  88698 test  5905  OOS AUC 0.497
+  2026: train  94603 test  4387  OOS AUC 0.508
+
+OOS AUC 2014-2026: model 0.519  shuffled 0.503  (0.500 = no information)
+  thr 0.52 model    2014-19 n= 8379 PF 0.83 avg -0.093R | 2020-26 n= 8084 PF 0.94 avg -0.032R
+  thr 0.52 shuffled 2014-19 n= 6429 PF 0.80 avg -0.112R | 2020-26 n= 5168 PF 0.86 avg -0.077R
+  thr 0.55 model    2014-19 n= 4902 PF 0.86 avg -0.074R | 2020-26 n= 2947 PF 1.02 avg +0.009R
+  thr 0.55 shuffled 2014-19 n= 1466 PF 0.76 avg -0.138R | 2020-26 n=  455 PF 0.87 avg -0.072R
+  thr 0.58 model    2014-19 n= 2228 PF 0.99 avg -0.007R | 2020-26 n=  707 PF 1.21 avg +0.095R
+  thr 0.58 shuffled 2014-19 n=  242 PF 0.69 avg -0.188R | 2020-26 n=   19 PF 1.52 avg +0.203R
+  thr 0.60 model    2014-19 n= 1200 PF 1.02 avg +0.009R | 2020-26 n=  258 PF 1.17 avg +0.078R
+  thr 0.60 shuffled too few trades (64/4)
+
+long gross R by model-probability decile (should rise left->right if the model knows anything):
+  -0.074 -0.014 +0.003 +0.017 +0.018 +0.005 -0.006 +0.020 +0.045 +0.079

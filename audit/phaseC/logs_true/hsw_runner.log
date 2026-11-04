@@ -1,0 +1,41 @@
+cost matrix: audit/_copy/sb_true/fable-backtesting/cost_matrix.json (overall med=$0.72, p95=$0.79, n=1,986)
+        flat: breakeven move ~ $0.20/oz per round trip
+  optimistic: breakeven move ~ $0.43/oz per round trip
+   realistic: breakeven move ~ $0.89/oz per round trip
+       worst: breakeven move ~ $1.06/oz per round trip
+  admin fee [ESTIMATE]: $5.00/lot/night (pending broker T&Cs)
+
+loading xauusd_m1_trueutc.csv ...
+M1 2010-01-03 23:00:00+00:00 .. 2026-06-19 16:57:00+00:00  (5,769,159 bars); D1 trading days: 4,247 (dropped 870 partial)
+D1 ATR% median (vol axis): 1.3405%
+
+candidates (pre-guard, pre-depth): 1367  touch-baseline events: 1667  diag: {'days_scanned': 4232, 'no_reclaim': 732, 'both_sides_void': 348, 'no_atr': 0, 'asia_window': 1495}
+candidates after anti-scalp guard: 1362
+  d=0.05: n=1126 (long=596, short=530)
+  d=0.15: n=841 (long=446, short=395)
+  d=0.30: n=588 (long=310, short=278)
+
+== 2x2 era table (net realistic PF | n), primary vs mirror ==
+  old/LOvol  n= 317  E1=0.6803711080610518  E2=0.5554229336789951  mirror=0.4263715454705994
+  old/HIvol  n= 294  E1=0.8165957923492521  E2=0.5981114567282161  mirror=0.5444782883683204
+  new/LOvol  n= 113  E1=0.8324098464690716  E2=0.880294190466847  mirror=0.6671432976523352
+  new/HIvol  n= 117  E1=1.0629529718436328  E2=0.5546826761048146  mirror=1.3061231707954126
+
+PBO (S=8, C(8,4)=70, embargo 24h): 0.029 (lambda_mean +1.71)
+
+== gates (primary E1 d=0.15) ==
+  g0_power_n_ge_100: PASS
+  g1_pf_ge_1.30: FAIL
+  g2_uplift_ge_0.10: FAIL
+  g3_era_ge_1.00_both: FAIL
+  g3_no_mirror_inversion: FAIL
+  g4_dsr_ge_0.95: FAIL
+  g5_pbo_lt_0.50: PASS
+  g6_p95_stress_pf_ge_1.15: FAIL
+  DSR detail: SR=-0.0412 SR0=+0.0516 skew=+10.30 kurt=204.7 n=841 -> DSR=0.0143
+
+displacement: none
+
+== HSW FAIL: intraday sweep-reclaim line on XAUUSD CLOSED — no depth/session/window shopping, no level-definition migration; reversal-at-levels family closed at every free-data scale (with HCRT) ==
+
+results -> audit/_copy/sb_true/research/goldbot/results/HSW_run.json

@@ -1,0 +1,37 @@
+VOLUME PROFILE BACKTEST — ANALYSIS REPORT
+
+======================================================================
+SIDE-BY-SIDE COMPARISON
+======================================================================
+            Config  Trades  WinRate%    PF  Expectancy  MaxDD_pts  VP_PassRate%
+Profile_D_Baseline      66     22.73 1.025       49.24    43636.0           NaN
+      Profile_D_VP       0      0.00 0.000        0.00        0.0           0.0
+Profile_R_Baseline      32     46.88 1.027       46.28    20190.0           NaN
+      Profile_R_VP       0      0.00 0.000        0.00        0.0           0.0
+[analyze] saved equity_curve_D.png
+[analyze] saved equity_curve_R.png
+
+======================================================================
+VP FILTER IMPACT ANALYSIS
+======================================================================
+
+--- Profile D ---
+Kept (VP-passed) trades : 0
+Filtered-out signals    : 104
+   removed by POC proximity       : 63
+   removed by Value-Area context  : 80
+   removed by LVN path            : 75
+Win rate of FILTERED-OUT trades : 18.3%  (avg pnl -439.5 pts)
+
+--- Profile R ---
+Kept (VP-passed) trades : 0
+Filtered-out signals    : 48
+   removed by POC proximity       : 33
+   removed by Value-Area context  : 36
+   removed by LVN path            : 35
+Win rate of FILTERED-OUT trades : 50.0%  (avg pnl 287.5 pts)
+
+======================================================================
+GATE CONTRIBUTION ANALYSIS (Profile_D_VP)
+======================================================================
+No Profile_D_VP trades to analyse.

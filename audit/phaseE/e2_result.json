@@ -1,0 +1,72 @@
+{
+ "H1": {
+  "n": 468,
+  "pf": 0.487,
+  "pf_gross": 1.116,
+  "pf_1_5x": 0.318,
+  "pf_2x": 0.22,
+  "pf_p90": 0.372,
+  "twin_p": 0.2249,
+  "pf_old": 0.202,
+  "n_old": 227,
+  "pf_new": 0.587,
+  "n_new": 241,
+  "gates": {
+   "pf_ge_1_20": false,
+   "pf2x_ge_1": false,
+   "eras_ge_1": false,
+   "n_ge_100": true,
+   "twin": "False",
+   "p90_ge_1": false
+  },
+  "verdict": "FAILED"
+ },
+ "FINAL_v3": {
+  "n": 410,
+  "pf": 0.683,
+  "pf_gross": 1.157,
+  "pf_1_5x": 0.514,
+  "pf_2x": 0.388,
+  "pf_p90": 0.594,
+  "twin_p": 0.096,
+  "pf_old": 0.488,
+  "n_old": 205,
+  "pf_new": 0.748,
+  "n_new": 205,
+  "gates": {
+   "pf_ge_1_20": false,
+   "pf2x_ge_1": false,
+   "eras_ge_1": false,
+   "n_ge_100": true,
+   "twin": "False",
+   "p90_ge_1": false
+  },
+  "verdict": "FAILED",
+  "note": "No exit time saved, so entry-hour spread is used on both sides and the night fee is left out"
+ },
+ "FINAL_v4": {
+  "n": 576,
+  "pf": 0.45,
+  "pf_gross": 0.969,
+  "pf_1_5x": 0.299,
+  "pf_2x": 0.211,
+  "pf_p90": 0.367,
+  "twin_p": 0.3478,
+  "pf_old": 0.191,
+  "n_old": 282,
+  "pf_new": 0.534,
+  "n_new": 294,
+  "gates": {
+   "pf_ge_1_20": false,
+   "pf2x_ge_1": false,
+   "eras_ge_1": false,
+   "n_ge_100": true,
+   "twin": "False",
+   "p90_ge_1": false
+  },
+  "verdict": "FAILED",
+  "note": "No exit time saved, so entry-hour spread is used on both sides and the night fee is left out"
+ },
+ "twin_note": "FINAL_v3 and v4 save no exit time, so their twins use the H1 rule's holding times. All three fail on PF, so this changes nothing.",
+ "constants": "No gold-dollar constant is reached on these paths: the ATR zone, TP and SL are all ATR multiples. Levels are prices from silver's own pivots."
+}

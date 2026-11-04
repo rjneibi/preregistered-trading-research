@@ -1,0 +1,7 @@
+frozen thresholds {'enter_mr': 0.09623115181181222, 'exit_mr': 0.17164965031621532, 'exit_mom': 0.2832321672076952, 'enter_mom': 0.4217443249701222} | cutoff 2023-02-23 18:24:00+00:00
+OOS trades: 138
+unrouted OOS: n=138 PF=1.421 net=$18,648
+routed OOS:   n=107 PF=1.484 net=$16,683 p90=1.423 uplift=+0.063
+per-state: {'MOMENTUM': 107, 'NEUTRAL': 25, 'MEAN_REVERSION': 6} | PFs {'MEAN_REVERSION': inf, 'MOMENTUM': 1.484, 'NEUTRAL': 0.9}
+gates: {'1_routed_oos_pf_ge_1.35': True, '2_uplift_ge_0.10': False, '3_n_routed_ge_70': True, '4_routed_p90_ge_1.15': True}
+== HR FAIL/KILL -> routing overlay closed (the gate working); sizing-policy redesign remains the open, separate question ==

@@ -1,0 +1,95 @@
+{
+ "verdict": "FAIL",
+ "gates": {
+  "1_n_events_ge_22": true,
+  "2_primary_pf_ge_1.20_realistic": false,
+  "3_primary_total_gt_0_worst": false,
+  "4_fade_family_ge_4of6_pf_ge_1.00": false,
+  "5_permutation_beats_p95": false
+ },
+ "primary": {
+  "config": "fade_t0_1600ET",
+  "realistic": {
+   "n": 27,
+   "total": -178.52,
+   "mean": -6.612,
+   "median": -8.22,
+   "pf": 0.518,
+   "win_rate": 0.407
+  },
+  "worst": {
+   "n": 27,
+   "total": -189.33,
+   "mean": -7.012,
+   "median": -8.62,
+   "pf": 0.498,
+   "win_rate": 0.407
+  }
+ },
+ "fade_family_realistic": {
+  "fade_t0_x1530": {
+   "n": 27,
+   "total": -176.47,
+   "mean": -6.536,
+   "median": -5.19,
+   "pf": 0.457,
+   "win_rate": 0.37
+  },
+  "fade_t0_x1600": {
+   "n": 27,
+   "total": -178.52,
+   "mean": -6.612,
+   "median": -8.22,
+   "pf": 0.518,
+   "win_rate": 0.407
+  },
+  "fade_t3_x1530": {
+   "n": 21,
+   "total": -235.75,
+   "mean": -11.226,
+   "median": -9.52,
+   "pf": 0.273,
+   "win_rate": 0.238
+  },
+  "fade_t3_x1600": {
+   "n": 21,
+   "total": -264.01,
+   "mean": -12.572,
+   "median": -10.97,
+   "pf": 0.287,
+   "win_rate": 0.286
+  },
+  "fade_t6_x1530": {
+   "n": 13,
+   "total": -106.45,
+   "mean": -8.189,
+   "median": -8.57,
+   "pf": 0.405,
+   "win_rate": 0.308
+  },
+  "fade_t6_x1600": {
+   "n": 13,
+   "total": -123.01,
+   "mean": -9.462,
+   "median": -10.97,
+   "pf": 0.43,
+   "win_rate": 0.385
+  }
+ },
+ "permutation": {
+  "p95_random_mean": 8.629,
+  "actual_mean": -6.612,
+  "pct_of_random_beaten": 0.133,
+  "pass": false
+ },
+ "fade_family_pf_ge_1_count": 0,
+ "warsh_descriptive_no_gate": [
+  {
+   "date": "2026-06-17",
+   "stmt_move": -86.158,
+   "presser_move": -65.63,
+   "fade_pnl_realistic": -57.78
+  }
+ ],
+ "n_oos_powell": 27
+}

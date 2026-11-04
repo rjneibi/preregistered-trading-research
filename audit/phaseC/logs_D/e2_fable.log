@@ -1,0 +1,28 @@
+  [scan] day     0/1865  events so far: 0
+  [scan] day   200/1865  events so far: 130
+  [scan] day   400/1865  events so far: 267
+  [scan] day   600/1865  events so far: 418
+  [scan] day   800/1865  events so far: 576
+  [scan] day  1000/1865  events so far: 708
+  [scan] day  1200/1865  events so far: 842
+  [scan] day  1400/1865  events so far: 981
+  [scan] day  1600/1865  events so far: 1128
+  [scan] day  1800/1865  events so far: 1276
+  [scan] done — 1314 deduped flip events
+audit/_copy/sb_fable_xag/research/flip_scalp/innovate_r3s3.py:96: UserWarning: no explicit representation of timezones available for np.datetime64
+  t0 = np.datetime64(pd.Timestamp(e["entry_ts"]))
+xag old v3 {'n': 205, 'wr': 0.068, 'pf': 0.031, 'net': -3663, 'losses': 191} v4 {'n': 282, 'wr': 0.014, 'pf': 0.007, 'net': -5393, 'losses': 278} 22 s
+  [scan] day     0/1669  events so far: 0
+  [scan] day   200/1669  events so far: 144
+  [scan] day   400/1669  events so far: 313
+  [scan] day   600/1669  events so far: 473
+  [scan] day   800/1669  events so far: 636
+  [scan] day  1000/1669  events so far: 795
+  [scan] day  1200/1669  events so far: 933
+  [scan] day  1400/1669  events so far: 1088
+  [scan] day  1600/1669  events so far: 1281
+  [scan] done — 1341 deduped flip events
+audit/_copy/sb_fable_xag/research/flip_scalp/innovate_r3s3.py:96: UserWarning: no explicit representation of timezones available for np.datetime64
+  t0 = np.datetime64(pd.Timestamp(e["entry_ts"]))
+xag new v3 {'n': 205, 'wr': 0.234, 'pf': 0.34, 'net': -3819, 'losses': 157} v4 {'n': 294, 'wr': 0.163, 'pf': 0.194, 'net': -6297, 'losses': 246} 19 s
+{"v3": {"old": {"n": 205, "wr": 0.068, "pf": 0.031, "net": -3663, "losses": 191}, "new": {"n": 205, "wr": 0.234, "pf": 0.34, "net": -3819, "losses": 157}, "pooled": {"n": 410, "wr": 0.151, "pf": 0.218, "net": -7483, "losses": 348}, "y2025": {"n": 38, "wr": 0.421, "pf": 0.426, "net": -361, "losses": 22}, "maxdd": 7525}, "v4": {"old": {"n": 282, "wr": 0.014, "pf": 0.007, "net": -5393, "losses": 278}, "new": {"n": 294, "wr": 0.163, "pf": 0.194, "net": -6297, "losses": 246}, "pooled": {"n": 576, "wr": 0.09, "pf": 0.117, "net": -11690, "losses": 524}, "y2025": {"n": 59, "wr": 0.254, "pf": 0.137, "net": -928, "losses": 44}, "maxdd": 11721}, "ev": {}}

@@ -1,0 +1,121 @@
+{
+ "freeze_date_utc": "2026-10-31",
+ "status": "Frozen. Any change is a new strategy with its own freeze.",
+ "note": "None of these has a verified edge. Each is REPRODUCES-BUT-FRAGILE. Daily bars, paper only. The original indices came from a broker demo feed. Forward bars come from Dukascopy, a different feed of the same indices, because the audit uses no broker login. Spreads are constants frozen from each backtest, not measured forward.",
+ "strategies": [
+  {
+   "id": "FW-XM-1-A1",
+   "source": "XM-1-A1",
+   "rule": "rsi2_dip",
+   "params": {
+    "rsi2_below": 10,
+    "trend_sma": 200,
+    "exit_close_above_sma": 5,
+    "max_days": 10
+   },
+   "fills": "signal at daily close, fill next open, exit at the next open after the exit condition",
+   "financing_per_night": 0.000136986,
+   "cost_model": "one spread per round trip, plus 5% a year long financing per calendar night",
+   "markets": [
+    {
+     "name": "US500",
+     "dukascopy": "usa500idxusd",
+     "spread_price": 0.45
+    }
+   ]
+  },
+  {
+   "id": "FW-SW-1",
+   "source": "SW-1 MR2",
+   "rule": "ibs_dip",
+   "params": {
+    "ibs_below": 0.2,
+    "exit_ibs_above": 0.8,
+    "or_close_above_prev_high": true,
+    "max_days": 15
+   },
+   "fills": "signal at daily close, fill next open, exit at the next open after the exit condition",
+   "financing_per_night": 0.000136986,
+   "cost_model": "one spread per round trip, plus 5% a year long financing per calendar night",
+   "markets": [
+    {
+     "name": "US500",
+     "dukascopy": "usa500idxusd",
+     "spread_price": 0.45
+    }
+   ]
+  },
+  {
+   "id": "FW-TUNE-1-DIP",
+   "source": "TUNE-1-DIP live rsi2 baseline, HOLD-T markets",
+   "rule": "rsi2_dip",
+   "params": {
+    "rsi2_below": 10,
+    "trend_sma": 200,
+    "exit_close_above_sma": 5,
+    "max_days": 10
+   },
+   "fills": "signal at daily close, fill next open, exit at the next open after the exit condition",
+   "financing_per_night": 0.000136986,
+   "cost_model": "one spread per round trip, plus 5% a year long financing per calendar night",
+   "markets": [
+    {
+     "name": "US500",
+     "dukascopy": "usa500idxusd",
+     "spread_price": 0.582
+    },
+    {
+     "name": "US30",
+     "dukascopy": "usa30idxusd",
+     "spread_price": 5.222
+    },
+    {
+     "name": "US2000",
+     "dukascopy": "ussc2000idxusd",
+     "spread_price": 0.33
+    },
+    {
+     "name": "USTEC",
+     "dukascopy": "usatechidxusd",
+     "spread_price": 3.828
+    }
+   ],
+   "note": "Same rule as FW-XM-1-A1 on a wider market set, and US500 is shared. Not an independent test. Spreads carry the floor TUNE-1 used, so US500 costs more here than in FW-XM-1-A1."
+  },
+  {
+   "id": "FW-EDGE-1-F6",
+   "source": "EDGE-1-F6",
+   "rule": "f6",
+   "params": {
+    "sma": 50,
+    "vol_days": 60,
+    "vol_target_daily": 0.02,
+    "max_weight_before_equal_split": 1.0
+   },
+   "fills": "weights decided at the daily close, held the next day",
+   "cost_per_turnover": 0.001,
+   "cost_model": "0.1% of daily turnover",
+   "coins": [
+    "BTC",
+    "ETH",
+    "BNB",
+    "XRP",
+    "ADA",
+    "SOL",
+    "DOGE",
+    "LTC",
+    "LINK",
+    "DOT",
+    "AVAX",
+    "TRX"
+   ],
+   "markets": []
+  }
+ ],
+ "code_sha256_lf": {
+  "forward/forward_update.py": "84bbf9658cb50959ac981067ed6134872232198fefb21092fc7afe5615db9cc3",
+  "forward/parity_rules.py": "312bd16d615d2c4696c3a4479113c4c83521347b29c9a559ca9812ed44679e69",
+  "forward/parity_f6.py": "b6f2600900c0d32032e8d3bcd7cbd265300dd13104aac73425668ac58e375bcc"
+ },
+ "data_source": "Dukascopy daily bars for index rules, Binance daily bars for coins. Details per strategy below."
+}

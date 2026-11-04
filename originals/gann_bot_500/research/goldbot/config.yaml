@@ -1,0 +1,115 @@
+# goldbot Phase 1 configuration.
+# Every cost number is tagged VERIFIED / BROKER / ESTIMATE — config.py refuses
+# to load a costs entry whose numbers are not inside a tagged dict.
+
+data:
+  data_tz: UTC                       # tz of NAIVE input timestamps (epoch inputs are always UTC)
+  m1_path: ../data/xauusd_m1_histdata.csv   # relative to this file; overridable by CLI arg
+
+strategy:
+  variant: final                     # final (conviction dual-arm H1+H4) | base (H4-close, fixed-$)
+  session_utc: [12, 20]              # inclusive H1-close hours (final variant only)
+  skip_weekday: [0]                  # 0=Monday — strongest validated filter
+  dead_check_h4_closes: 10           # baseline: level breached by last-N H4 closes => dead today
+  reentry_block_hours: 24            # global single-position proxy (final variant)
+  min_h4_history: 50                 # parity with SWING_LOOKBACK_H4 day guard in the harness
+
+pivots:
+  day_boundary: utc00                # utc00 (VALIDATED — all historical results) | ny17
+
+exits:
+  fill_mode: gap_open                # gap_open (honest research default) | barrier_level (Sim5 parity)
+  final:
+    k_tp_atr: 0.8
+    k_sl_atr: 2.4
+    time_stop_h: 24
+    bail:
+      enabled: true
+      hivol_half_x: 1.2              # hivol: close HALF at first M1 close <= -1.2*ATR adverse
+      lovol_bail_h: 8                # lovol: close ALL at M1 close <= -1.0*ATR adverse after 8h
+      lovol_bail_x: 1.0
+    atr:
+      tf: H1
+      period: 14                     # Wilder, SMA seed (parity with broker.get_atr)
+      regime_median_bars: 2160       # 90d x 24 H1 bars
+      min_periods: 200
+  base:
+    tp_usd: 8.0
+    sl_usd: 12.0
+    time_stop_h: 24
+    bail:
+      enabled: false
+
+cpcv:
+  n_groups: 6
+  k_test: 2                          # C(6,2)=15 splits, phi(6,2)=5 paths
+  tau_max_h: 24                      # label horizon (24h time stop)
+  embargo_h: 24
+  l_feature_max_h: 40                # 10 H4-close dead-check lookback
+  strict_regime_purge: false         # true widens l_feature_max to 2160h (90d ATR median)
+
+costs:
+  matrix_path: ../../fable-backtesting/cost_matrix.json     # measured tick spread matrix (read-only)
+  news_calendar_json: ../../fable-backtesting/calendar/news_days.json
+  spread_median_usd:
+    value: 0.72
+    tag: VERIFIED
+    note: "tick-measured overall median; THIN sample (1 day 2026 + one 2015 file) — rerun matrix after full tick download"
+  slippage_pts:
+    optimistic: 0.0
+    realistic: 5.0
+    worst: 10.0
+    tag: ESTIMATE
+    note: "per-side; replace with measured demo slippage in Phase 2"
+  commission_pts_rt:
+    value: 7.0
+    tag: BROKER
+    note: "$7 per 1.0 lot round trip"
+  legacy_flat_rt_pts:
+    value: 20.0
+    tag: ESTIMATE
+    note: "historical 13pt spread + 7pt commission assumption; kept as the 'flat' parity regime"
+  islamic_admin_fee_usd_per_lot_night:
+    value: 5.0
+    tag: ESTIMATE
+    note: "PLACEHOLDER pending broker T&Cs (grace period, per-position vs per-account, weekend billing)"
+
+guards:
+  spread_gate:
+    enabled: false                   # Phase 2 — calibrate on YOUR broker's ticks first
+    window_bars: 1440
+    mult: 2.0
+  news_blackout:
+    enabled: false                   # REJECTED by research: news days are the BEST trades (PF 2.40);
+    calendar_csv: ""                 # live layer sizes 1.5x on news instead (news_calendar.py)
+
+spread_research:
+  bar: 1h
+  hedge:
+    mode: ols_log                    # ols_log | fixed
+    beta: null                       # used when mode: fixed
+  min_obs: 500
+
+modules:                             # sizing + ER-regime router (IS development; OOS gated by HR prereg)
+  er_window: 14                      # Kaufman ER window on H1 closes
+  confirm_bars: 2                    # hysteresis confirmation bars
+  calib_quantiles:                   # calibrate_thresholds() inputs — IS data only
+    mr_enter_q: 0.20
+    mr_exit_q: 0.35
+    mom_exit_q: 0.55
+    mom_enter_q: 0.75
+  route_pivot_in: [MOMENTUM]         # DELIBERATE inversion of the task-template default:
+                                     # in THIS repo the validated R3/S3 logic is a BREAKOUT
+                                     # (fading was tested and rejected), i.e. it IS the
+                                     # "breakout module" of the template's taxonomy.
+  is_fraction: 0.70                  # IS = first 70% of 2015-06-19..data-end; OOS untouched
+  sizing:
+    risk_fraction: 0.01
+    start_equity: 10000.0
+    stop_atr_mult: 2.4               # = exits.final.k_sl_atr (the actual stop distance)
+    symbol_spec:                     # backtest SymbolSpec (recorded in run manifest);
+      tick_size: 0.01                # live builds SymbolSpec.from_mt5("XAUUSD") at startup
+      tick_value: 1.0
+      volume_step: 0.01
+      volume_min: 0.01
+      volume_max: 100.0

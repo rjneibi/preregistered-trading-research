@@ -1,0 +1,11 @@
+{
+ "a1_trades": 124,
+ "sw1_trades": 397,
+ "a1_signals_same_day_as_sw1": 40,
+ "a1_signals_same_day_as_sw1_pct": 32.3,
+ "a1_days_in_market": 390,
+ "sw1_days_in_market": 1023,
+ "days_in_both": 275,
+ "a1_days_also_in_sw1_pct": 70.5,
+ "sw1_days_also_in_a1_pct": 26.9
+}

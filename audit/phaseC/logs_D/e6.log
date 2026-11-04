@@ -1,0 +1,37 @@
+{
+ "window": [
+  "2026-06-11 09:00:00+00:00",
+  "2026-07-03 17:00:00+00:00"
+ ],
+ "journal_n": 19,
+ "label": "INSUFFICIENT SAMPLE",
+ "D": {
+  "journal": 9,
+  "backtest_one_per_zone_day": 21,
+  "unthrottled": 26,
+  "matched": 4,
+  "bot_only": 5,
+  "backtest_only": 17,
+  "median_abs_entry_gap": 0.16,
+  "bot_exit_reasons": {
+   "TRAIL": 7,
+   "MANUAL": 1,
+   "TP": 1
+  }
+ },
+ "R": {
+  "journal": 10,
+  "backtest_one_per_zone_day": 11,
+  "unthrottled": 18,
+  "matched": 2,
+  "bot_only": 8,
+  "backtest_only": 9,
+  "median_abs_entry_gap": 0.41,
+  "bot_exit_reasons": {
+   "TRAIL": 7,
+   "TP": 3
+  }
+ },
+ "match_rate": 0.316,
+ "exit_gap_median_abs_usd": 11.66
+}

@@ -1,0 +1,96 @@
+
+========================================================================
+1. SYNTHETIC DATA
+========================================================================
+shape: (20000, 5)  index: 2018-01-01 00:00:00 .. 2020-04-13 07:00:00
+OHLC coherence assert: PASS (low<=min(o,c), high>=max(o,c) all bars)
+
+========================================================================
+2. TRIPLE-BARRIER LABELS
+========================================================================
+signals labelled: 6152
+  TP      :   2016  ( 32.8%)
+  SL      :   3981  ( 64.7%)
+  TIMEOUT :    155  (  2.5%)
+sample row: signal_idx=1519 entry_idx=1521 (entry_idx - signal_idx = 2 == N_CONFIRM=2)
+rows after dropping warmup-NaN features: 6152
+feature causality probe at [9000, 14400]: PASS (prefix == full)
+
+========================================================================
+3. CPCV (N=6, k=2 -> 15 splits, 5 paths)
+========================================================================
+splits generated: 15 (non-empty assert passed for all)
+  split  0: train=  3597  test=  2051
+  split  1: train=  3086  test=  2050
+  split  2: train=  3086  test=  2050
+  split  3: train=  3086  test=  2050
+  split  4: train=  3589  test=  2051
+  split  5: train=  3589  test=  2051
+  split  6: train=  3077  test=  2051
+  split  7: train=  3077  test=  2051
+  split  8: train=  3580  test=  2052
+  split  9: train=  3590  test=  2050
+  split 10: train=  3078  test=  2050
+  split 11: train=  3581  test=  2051
+  split 12: train=  3590  test=  2050
+  split 13: train=  3581  test=  2051
+  split 14: train=  4093  test=  2051
+
+========================================================================
+4. LEAKAGE PROBE
+========================================================================
+train indices inside any [test_start-TAU_MAX, test_end+max(EMBARGO,L)]: 0  -> PASS
+
+========================================================================
+5. CALIBRATION (pooled OOS ECE / Brier)
+========================================================================
+  split  0 scored: test= 2051  R-bar_timeout(+1)=+0.00205 R-bar_timeout(-1)=+0.00198
+  split  1 scored: test= 2050  R-bar_timeout(+1)=+0.00245 R-bar_timeout(-1)=+0.00181
+  split  2 scored: test= 2050  R-bar_timeout(+1)=+0.00264 R-bar_timeout(-1)=+0.00211
+  split  3 scored: test= 2050  R-bar_timeout(+1)=+0.00202 R-bar_timeout(-1)=+0.00252
+  split  4 scored: test= 2051  R-bar_timeout(+1)=+0.00206 R-bar_timeout(-1)=+0.00221
+  split  5 scored: test= 2051  R-bar_timeout(+1)=+0.00206 R-bar_timeout(-1)=+0.00254
+  split  6 scored: test= 2051  R-bar_timeout(+1)=+0.00217 R-bar_timeout(-1)=+0.00276
+  split  7 scored: test= 2051  R-bar_timeout(+1)=+0.00142 R-bar_timeout(-1)=+0.00303
+  split  8 scored: test= 2052  R-bar_timeout(+1)=+0.00150 R-bar_timeout(-1)=+0.00281
+  split  9 scored: test= 2050  R-bar_timeout(+1)=+0.00199 R-bar_timeout(-1)=+0.00303
+  split 10 scored: test= 2050  R-bar_timeout(+1)=+0.00167 R-bar_timeout(-1)=+0.00329
+  split 11 scored: test= 2051  R-bar_timeout(+1)=+0.00174 R-bar_timeout(-1)=+0.00305
+  split 12 scored: test= 2050  R-bar_timeout(+1)=+0.00193 R-bar_timeout(-1)=+0.00318
+  split 13 scored: test= 2051  R-bar_timeout(+1)=+0.00194 R-bar_timeout(-1)=+0.00322
+  split 14 scored: test= 2051  R-bar_timeout(+1)=+0.00157 R-bar_timeout(-1)=+0.00333
+
+pooled OOS predictions: 30760
+  TP      : ECE=0.0313  Brier=0.2224
+  SL      : ECE=0.0455  Brier=0.2318
+  TIMEOUT : ECE=0.0196  Brier=0.0268
+  MACRO   : ECE=0.0321  Brier=0.1603
+
+========================================================================
+6. GPD TAIL LOSS -> EFFECTIVE STOP
+========================================================================
+nominal D_SL (return units): 0.002423
+exceedances=400  xi_hat=0.1635  xi_clamped=0.1635  used_gpd=True
+E[slippage|breach]=0.001238  D-bar_SL=0.003661
+
+========================================================================
+7. SIZING LP (M=5) + CVaR EXCEPTION CHECK
+========================================================================
+mode=primary  status=optimal
+w = [-9.9970e-02 -3.0000e-01 -2.9999e-01 -3.0000e-01 -3.0000e-05]
+sum|w| = 0.99999  (MAX_EXPOSURE=1.0)
+CVaR_0.95(loss) = 0.00548  (limit 0.03)
+scenario CVaR-exception rate (loss>limit): 0.0000  <= (1-alpha)+tol=0.0700 ? PASS
+
+========================================================================
+8. FORCED INFEASIBLE -> DE-RISK-TO-CASH FALLBACK
+========================================================================
+sum|w0|=1.000  dropping MAX_EXPOSURE to 0.300 with locked turnover band 0.1 (hard)
+mode=derisk_to_cash  status=optimal
+w (de-risked) = [0.1 0.1 0.1 0.1 0.1]
+sum|w0|=1.000 -> sum|w|=0.500 (moved toward cash)
+De-Risk-to-Cash fallback engaged: PASS
+
+========================================================================
+VALIDATION COMPLETE — all gating asserts passed
+========================================================================

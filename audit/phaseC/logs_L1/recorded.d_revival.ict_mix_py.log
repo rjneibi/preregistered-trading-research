@@ -1,0 +1,16 @@
+===== D faithful (n=1432)   tag: YES n PF netR [2010-17 | 2018-26]   NO PF [2010-17 | 2018-26]
+  order_block            YES n= 271  -13.2R PF 0.76 | 1.05    NO n=1161  -78.5R PF 0.84 | 0.89
+  fvg                    YES n= 496  -41.1R PF 0.68 | 0.99    NO n= 936  -50.6R PF 0.91 | 0.88
+  sweep                  YES n= 138  -17.5R PF 0.89 | 0.64    NO n=1294  -74.2R PF 0.82 | 0.95
+  snr_swing              YES n= 634  -85.4R PF 0.78 | 0.72    NO n= 798   -6.3R PF 0.86 | 1.11
+  discount_premium       YES n=  85   -5.9R PF 0.85 | 0.88    NO n=1347  -85.8R PF 0.82 | 0.92
+  ict_score>=2           YES n= 188  -20.9R PF 0.67 | 0.88    NO n=1244  -70.8R PF 0.85 | 0.92
+  ict_all3(ob/fvg/sweep) YES n=  11   -2.8R PF 0.07 | 1.47    NO n=1421  -88.9R PF 0.83 | 0.91
+===== D intended entry, TP 2 ATR plain (n=1168)   tag: YES n PF netR [2010-17 | 2018-26]   NO PF [2010-17 | 2018-26]
+  order_block            YES n= 219  -28.0R PF 0.72 | 0.93    NO n= 949  -46.9R PF 0.84 | 1.00
+  fvg                    YES n= 414  -50.3R PF 0.63 | 1.02    NO n= 754  -24.5R PF 0.93 | 0.97
+  sweep                  YES n= 106   -6.7R PF 0.90 | 0.91    NO n=1062  -68.1R PF 0.81 | 0.99
+  snr_swing              YES n= 529  -35.7R PF 0.81 | 0.98    NO n= 639  -39.2R PF 0.82 | 1.00
+  discount_premium       YES n=  73   -6.3R PF 0.71 | 1.03    NO n=1095  -68.6R PF 0.83 | 0.98
+  ict_score>=2           YES n= 151  -24.0R PF 0.67 | 0.87    NO n=1017  -50.9R PF 0.84 | 1.01
+  ict_all3(ob/fvg/sweep) YES n=   8   +0.4R PF 0.00 | 2.33    NO n=1160  -75.2R PF 0.82 | 0.98

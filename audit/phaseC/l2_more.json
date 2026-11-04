@@ -1,0 +1,86 @@
+{
+ "fx": {
+  "D_AUDUSD": {
+   "n": 765,
+   "pf": 0.731,
+   "stored_n": 765,
+   "stored_pf": 0.731,
+   "oos_n": 233,
+   "oos_pf": 0.681,
+   "stored_oos_pf": 0.681
+  },
+  "D_EURUSD": {
+   "n": 710,
+   "pf": 0.721,
+   "stored_n": 710,
+   "stored_pf": 0.721,
+   "oos_n": 203,
+   "oos_pf": 0.631,
+   "stored_oos_pf": 0.631
+  },
+  "D_GBPUSD": {
+   "n": 673,
+   "pf": 0.799,
+   "stored_n": 673,
+   "stored_pf": 0.799,
+   "oos_n": 195,
+   "oos_pf": 0.813,
+   "stored_oos_pf": 0.813
+  },
+  "R_AUDUSD": {
+   "n": 1150,
+   "pf": 0.842,
+   "stored_n": 1150,
+   "stored_pf": 0.842,
+   "oos_n": 327,
+   "oos_pf": 0.764,
+   "stored_oos_pf": 0.764
+  },
+  "R_EURUSD": {
+   "n": 1140,
+   "pf": 0.902,
+   "stored_n": 1140,
+   "stored_pf": 0.902,
+   "oos_n": 372,
+   "oos_pf": 1.03,
+   "stored_oos_pf": 1.03
+  },
+  "R_GBPUSD": {
+   "n": 1220,
+   "pf": 0.884,
+   "stored_n": 1220,
+   "stored_pf": 0.884,
+   "oos_n": 386,
+   "oos_pf": 0.839,
+   "stored_oos_pf": 0.839
+  }
+ },
+ "keys": [
+  "profile",
+  "entry_ts",
+  "h1_bar_open",
+  "direction",
+  "entry_price",
+  "atr",
+  "h4_bias",
+  "zone_source",
+  "zone_level",
+  "target_source",
+  "confluence",
+  "polarity_flipped",
+  "outcome_status",
+  "pnl_points",
+  "exit_ts_final",
+  "partial_hit",
+  "sl_price",
+  "tp_price",
+  "partial_price",
+  "opposing",
+  "distance_price",
+  "distance_atr"
+ ],
+ "dr recorded D n": 1353,
+ "dr recorded R n": 1013,
+ "dr true D n": 1308,
+ "dr true R n": 1026
+}

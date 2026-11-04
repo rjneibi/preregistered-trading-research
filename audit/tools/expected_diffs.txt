@@ -1,0 +1,1 @@
+phaseC/deferred_checks.json | Needs Yahoo and exchange files fetched once into a session scratch folder and not kept, so a clean run cannot rewrite it. The stored file stands as a dated record.

@@ -1,0 +1,43 @@
+entries 715 first 2010-01-06 15:00:00+00:00 last 2026-09-16 15:00:00+00:00
+ran E0 715
+ran E1 708
+ran E2 667
+ran E3 697
+ran E4 715
+ran E5 715
+E0
+   A 2010-17: n365 avg-0.059R PF0.73 wr59% twin-0.083 x2cost-0.116 --
+   B 2018-26: n350 avg+0.019R PF1.11 wr68% twin-0.070 x2cost-0.026 --
+   C 2023+: n150 avg-0.017R PF0.92 wr63% twin-0.067 x2cost-0.046 --
+   ALL: n715 avg-0.021R PF0.89 vs twin t=+3.30
+   baseline
+E1
+   A 2010-17: n362 avg-0.020R PF0.94 wr38% twin+0.063 x2cost-0.078 --
+   B 2018-26: n346 avg-0.030R PF0.92 wr35% twin+0.002 x2cost-0.075 --
+   C 2023+: n149 avg-0.019R PF0.95 wr35% twin+0.008 x2cost-0.048 --
+   ALL: n708 avg-0.025R PF0.93 vs twin t=-1.58
+   FAIL
+E2
+   A 2010-17: n346 avg-0.035R PF0.92 wr35% twin+0.073 x2cost-0.093 --
+   B 2018-26: n321 avg-0.002R PF1.00 wr33% twin+0.000 x2cost-0.046 --
+   C 2023+: n138 avg+0.016R PF1.03 wr35% twin-0.029 x2cost-0.013 --
+   ALL: n667 avg-0.019R PF0.96 vs twin t=-1.14
+   FAIL
+E3
+   A 2010-17: n354 avg-0.087R PF0.68 wr25% twin-0.004 x2cost-0.145 --
+   B 2018-26: n343 avg+0.039R PF1.16 wr27% twin-0.011 x2cost-0.005 --
+   C 2023+: n148 avg+0.032R PF1.11 wr27% twin-0.014 x2cost+0.003 --
+   ALL: n697 avg-0.025R PF0.91 vs twin t=-0.56
+   FAIL
+E4
+   A 2010-17: n365 avg-0.045R PF0.79 wr63% twin-0.080 x2cost-0.103 --
+   B 2018-26: n350 avg+0.021R PF1.12 wr71% twin-0.070 x2cost-0.023 --
+   C 2023+: n150 avg-0.032R PF0.86 wr65% twin-0.067 x2cost-0.061 --
+   ALL: n715 avg-0.013R PF0.94 vs twin t=+3.53
+   FAIL
+E5
+   A 2010-17: n365 avg-0.010R PF0.97 wr47% twin-0.056 x2cost-0.068 --
+   B 2018-26: n350 avg+0.011R PF1.03 wr48% twin-0.061 x2cost-0.034 --
+   C 2023+: n150 avg-0.006R PF0.98 wr47% twin-0.050 x2cost-0.035 --
+   ALL: n715 avg+0.000R PF1.00 vs twin t=+1.94
+   FAIL

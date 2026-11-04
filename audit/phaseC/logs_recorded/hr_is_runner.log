@@ -1,0 +1,10 @@
+IS cutoff 2023-02-23 18:24:00+00:00 | IS trades 334 (OOS rows dropped unseen: 138)
+building H1 bars + ER + regime (IS only) ...
+calibrated thresholds (IS only): Thresholds(enter_mr=0.09623115181181222, exit_mr=0.17164965031621532, exit_mom=0.2832321672076952, enter_mom=0.4217443249701222)
+diagnostics: flips=5208 | % bars {'NEUTRAL': 0.4255, 'MOMENTUM': 0.3297, 'MEAN_REVERSION': 0.2448} | trades per state {'MOMENTUM': 261, 'NEUTRAL': 60, 'MEAN_REVERSION': 13}
+             routing_OFF: n=334 PF(1lot)=0.976 net(1lot)=$-1,067 | sized: PF=0.918 net=$-449 eq $9,551 skip0=0
+          route_MOMENTUM: n=261 PF(1lot)=1.001 net(1lot)=$20 | sized: PF=0.971 net=$-123 eq $9,877 skip0=0
+    route_MEAN_REVERSION: n= 13 PF(1lot)=1.971 net(1lot)=$849 | sized: PF=1.557 net=$85 eq $10,085 skip0=0
+           route_NEUTRAL: n= 60 PF(1lot)=0.777 net(1lot)=$-1,937 | sized: PF=0.664 net=$-404 eq $9,596 skip0=0
+
+manifest -> audit/_copy/sb_recorded/research/goldbot/results/HR_is_manifest.json (NO OOS data touched)

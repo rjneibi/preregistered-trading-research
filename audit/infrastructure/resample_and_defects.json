@@ -1,0 +1,230 @@
+{
+ "resample": {
+  "cross_market XAU M1 vs M5": {
+   "bars": 19996,
+   "open_match": 1.0,
+   "high_match": 1.0,
+   "low_match": 1.0,
+   "close_match": 0.9999,
+   "max_abs_close_diff": 0.3
+  },
+  "cross_market XAU M1 vs H1": {
+   "bars": 1667,
+   "open_match": 1.0,
+   "high_match": 1.0,
+   "low_match": 0.9994,
+   "close_match": 0.9994,
+   "max_abs_close_diff": 1.69
+  },
+  "ta_lab XAU M1 vs M15": {
+   "bars": 6667,
+   "open_match": 1.0,
+   "high_match": 1.0,
+   "low_match": 1.0,
+   "close_match": 1.0,
+   "max_abs_close_diff": 0.0
+  },
+  "ta_lab XAU M5 vs H1": {
+   "bars": 8360,
+   "open_match": 1.0,
+   "high_match": 1.0,
+   "low_match": 1.0,
+   "close_match": 1.0,
+   "max_abs_close_diff": 0.0
+  }
+ },
+ "defects": {
+  "histdata_xau_m1": {
+   "first": "2010-01-03 23:00",
+   "last": "2026-06-19 17:57",
+   "rows": 5769158,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 3961,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 29964,
+   "outlier_20x": 316,
+   "sha256_16": "df8eba6bffbff0de"
+  },
+  "talab_xau_m1": {
+   "first": "2026-06-26 06:40",
+   "last": "2026-10-12 05:53",
+   "rows": 99998,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 76,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 1,
+   "outlier_20x": 14,
+   "sha256_16": "b667136100b69541"
+  },
+  "talab_xau_m5": {
+   "first": "2025-05-05 17:15",
+   "last": "2026-10-12 05:50",
+   "rows": 99998,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 376,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 56,
+   "outlier_20x": 1,
+   "sha256_16": "ce6e43c81a385b38"
+  },
+  "talab_xau_m15": {
+   "first": "2022-07-11 02:00",
+   "last": "2026-10-12 05:45",
+   "rows": 99998,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 1103,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 17,
+   "outlier_20x": 0,
+   "sha256_16": "050d6d3b310d8691"
+  },
+  "talab_xau_h1": {
+   "first": "2009-09-09 10:00",
+   "last": "2026-10-12 05:00",
+   "rows": 99998,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 0,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 24,
+   "outlier_20x": 1,
+   "sha256_16": "d374b54c5caf96f7"
+  },
+  "talab_xag_m5": {
+   "first": "2025-11-10 10:20",
+   "last": "2026-10-12 07:20",
+   "rows": 64999,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 197,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 113,
+   "outlier_20x": 0,
+   "sha256_16": "6ce8f7f1a8dab624"
+  },
+  "talab_xag_m15": {
+   "first": "2024-01-19 04:00",
+   "last": "2026-10-12 07:15",
+   "rows": 64999,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 543,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 123,
+   "outlier_20x": 0,
+   "sha256_16": "3c2687182d1fe4a0"
+  },
+  "drevival_m1": {
+   "first": "2010-01-04 01:00",
+   "last": "2026-10-12 08:53",
+   "rows": 5869157,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 4038,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 29965,
+   "outlier_20x": 331,
+   "sha256_16": "1e51c08c58ed4dd3"
+  },
+  "lbo_xau_m1": {
+   "first": "1970-09-19 18:47",
+   "last": "1970-12-12 22:23",
+   "rows": 4893928,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 27,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 5056,
+   "outlier_20x": 264,
+   "sha256_16": "d204e4352fbb58a7"
+  },
+  "cm_xau_m1": {
+   "first": "2026-06-29 15:22",
+   "last": "2026-10-13 14:35",
+   "rows": 99998,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 76,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 1,
+   "outlier_20x": 14,
+   "sha256_16": "98d00c8dbd7e54b2"
+  },
+  "cm_xau_d1": {
+   "first": "2004-06-11 00:00",
+   "last": "2026-10-13 00:00",
+   "rows": 5739,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 2,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 0,
+   "outlier_20x": 0,
+   "sha256_16": "ee71ec606de2df9d"
+  },
+  "cm_xag_h1": {
+   "first": "2018-05-03 05:00",
+   "last": "2026-10-13 13:00",
+   "rows": 49999,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 0,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 35,
+   "outlier_20x": 0,
+   "sha256_16": "cc9c7ae3428aea02"
+  },
+  "cm_us500_m1": {
+   "first": "2012-08-06 00:00",
+   "last": "2026-10-13 14:36",
+   "rows": 3199778,
+   "dup_or_backward": 3,
+   "gaps_gt_1h": 3324,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 146315,
+   "outlier_20x": 310,
+   "sha256_16": "7c811123f31e2ad7"
+  },
+  "cm_us500_d1": {
+   "first": "2012-08-06 00:00",
+   "last": "2026-10-13 00:00",
+   "rows": 3629,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 1,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 1,
+   "outlier_20x": 0,
+   "sha256_16": "3847ec769c4f7a61"
+  },
+  "cm_ustec_m1": {
+   "first": "2022-07-06 12:39",
+   "last": "2026-10-13 14:35",
+   "rows": 1444904,
+   "dup_or_backward": 13,
+   "gaps_gt_1h": 1001,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 92,
+   "outlier_20x": 486,
+   "sha256_16": "9afbba9f43276af9"
+  },
+  "cm_btc_1d": {
+   "first": "2017-08-17 00:00",
+   "last": "2026-10-13 00:00",
+   "rows": 3344,
+   "dup_or_backward": 0,
+   "gaps_gt_1h": 0,
+   "nonpos": 0,
+   "bad_ohlc": 0,
+   "flat": 0,
+   "outlier_20x": 0,
+   "sha256_16": "748fa7a46bc1d1a6"
+  }
+ }
+}

@@ -1,0 +1,76 @@
+=== Variant A: H1 -> M5; setups 14923; IS pick 2R
+  -- target 2R  (judged): median stop $1.65 (p10 0.60, p90 5.35)
+     MAIN 3y      n 2095 win 32% avgR gross -0.049 IC -0.154 net -0.239 stress -0.430 | twin -0.189 | PF 0.70 maxDD 513.0R streak 21
+     IS           n 1427 win 32% avgR gross -0.067 IC -0.199 net -0.307 stress -0.548 | twin -0.257 | PF 0.64 maxDD 438.5R streak 19
+     OOS          n  668 win 34% avgR gross -0.009 IC -0.056 net -0.094 stress -0.180 | twin -0.044 | PF 0.87 maxDD 76.7R streak 21
+     H1 2010-16   n 5015 win 36% avgR gross +0.049 IC -0.131 net -0.278 stress -0.606 | twin -0.288 | PF 0.67 maxDD 1402.1R streak 14
+     H2 2017-23   n 5039 win 34% avgR gross +0.005 IC -0.198 net -0.364 stress -0.732 | twin -0.350 | PF 0.60 maxDD 1847.8R streak 18
+     ALL 2010-26  n12149 win 34% avgR gross +0.014 IC -0.163 net -0.307 stress -0.628 | twin -0.296 | PF 0.64 maxDD 3749.1R streak 21
+     by year net: 2010:-0.28(n679) 2011:-0.24(n725) 2012:-0.30(n738) 2013:-0.15(n691) 2014:-0.31(n731) 2015:-0.32(n708) 2016:-0.34(n743) 2017:-0.50(n691) 2018:-0.52(n744) 2019:-0.44(n769) 2020:-0.20(n782) 2021:-0.33(n763) 2022:-0.26(n781) 2023:-0.32(n653) 2024:-0.32(n708) 2025:-0.29(n703) 2026:-0.03(n540)
+     gates: IS net>0 n, OOS net>0 n>=30 n, IS real-twin>=.05 n, OOS real-twin>=.05 n, HIST both >0 n, t>=2.8 n | t -0.80 -> FAIL
+  -- target 3R: median stop $1.66 (p10 0.60, p90 5.37)
+     MAIN 3y      n 1989 win 25% avgR gross -0.053 IC -0.156 net -0.241 stress -0.429 | twin -0.162 | PF 0.73 maxDD 494.1R streak 22
+     IS           n 1343 win 24% avgR gross -0.075 IC -0.206 net -0.313 stress -0.551 | twin -0.225 | PF 0.67 maxDD 420.5R streak 22
+     OOS          n  646 win 27% avgR gross -0.007 IC -0.054 net -0.092 stress -0.176 | twin -0.030 | PF 0.88 maxDD 79.3R streak 21
+     H1 2010-16   n 4712 win 28% avgR gross +0.054 IC -0.125 net -0.270 stress -0.595 | twin -0.276 | PF 0.72 maxDD 1288.2R streak 19
+     H2 2017-23   n 4788 win 26% avgR gross +0.006 IC -0.196 net -0.362 stress -0.729 | twin -0.352 | PF 0.64 maxDD 1757.8R streak 20
+     ALL 2010-26  n11489 win 27% avgR gross +0.015 IC -0.160 net -0.303 stress -0.622 | twin -0.288 | PF 0.69 maxDD 3513.5R streak 22
+     by year net: 2010:-0.32(n647) 2011:-0.24(n682) 2012:-0.28(n688) 2013:-0.17(n654) 2014:-0.32(n685) 2015:-0.29(n663) 2016:-0.28(n693) 2017:-0.53(n662) 2018:-0.56(n706) 2019:-0.45(n730) 2020:-0.13(n743) 2021:-0.32(n728) 2022:-0.28(n737) 2023:-0.32(n621) 2024:-0.33(n671) 2025:-0.26(n660) 2026:-0.04(n519)
+     gates: IS net>0 n, OOS net>0 n>=30 n, IS real-twin>=.05 n, OOS real-twin>=.05 n, HIST both >0 n, t>=2.8 n | t -0.91 (not judged)
+=== Variant B: H4 -> M15; setups 3820; IS pick 3R
+  -- target 2R: median stop $2.82 (p10 0.99, p90 9.78)
+     MAIN 3y      n  544 win 33% avgR gross -0.021 IC -0.080 net -0.129 stress -0.236 | twin -0.061 | PF 0.82 maxDD 94.8R streak 21
+     IS           n  369 win 34% avgR gross +0.008 IC -0.070 net -0.133 stress -0.274 | twin -0.094 | PF 0.82 maxDD 64.4R streak 10
+     OOS          n  175 win 31% avgR gross -0.082 IC -0.103 net -0.120 stress -0.157 | twin +0.009 | PF 0.83 maxDD 32.4R streak 21
+     H1 2010-16   n 1316 win 35% avgR gross +0.021 IC -0.084 net -0.171 stress -0.363 | twin -0.127 | PF 0.78 maxDD 233.4R streak 12
+     H2 2017-23   n 1396 win 34% avgR gross -0.010 IC -0.135 net -0.238 stress -0.466 | twin -0.213 | PF 0.71 maxDD 339.6R streak 20
+     ALL 2010-26  n 3256 win 34% avgR gross +0.001 IC -0.106 net -0.193 stress -0.386 | twin -0.153 | PF 0.75 maxDD 647.4R streak 21
+     by year net: 2010:-0.14(n188) 2011:-0.18(n172) 2012:-0.20(n190) 2013:-0.05(n179) 2014:-0.14(n200) 2015:-0.19(n206) 2016:-0.28(n181) 2017:-0.24(n186) 2018:-0.37(n227) 2019:-0.26(n205) 2020:-0.16(n209) 2021:-0.11(n206) 2022:-0.27(n211) 2023:-0.21(n196) 2024:-0.15(n183) 2025:-0.16(n174) 2026:-0.08(n143)
+     gates: IS net>0 n, OOS net>0 n>=30 n, IS real-twin>=.05 n, OOS real-twin>=.05 n, HIST both >0 n, t>=2.8 n | t -1.57 (not judged)
+  -- target 3R  (judged): median stop $2.80 (p10 0.99, p90 9.80)
+     MAIN 3y      n  530 win 26% avgR gross -0.030 IC -0.088 net -0.136 stress -0.242 | twin -0.080 | PF 0.83 maxDD 86.0R streak 23
+     IS           n  357 win 27% avgR gross +0.009 IC -0.068 net -0.131 stress -0.271 | twin -0.111 | PF 0.84 maxDD 51.7R streak 13
+     OOS          n  173 win 25% avgR gross -0.110 IC -0.130 net -0.147 stress -0.184 | twin -0.014 | PF 0.81 maxDD 37.3R streak 23
+     H1 2010-16   n 1274 win 28% avgR gross +0.061 IC -0.045 net -0.132 stress -0.325 | twin -0.099 | PF 0.84 maxDD 182.8R streak 15
+     H2 2017-23   n 1347 win 26% avgR gross -0.034 IC -0.159 net -0.262 stress -0.490 | twin -0.205 | PF 0.71 maxDD 352.8R streak 23
+     ALL 2010-26  n 3151 win 27% avgR gross +0.005 IC -0.101 net -0.188 stress -0.382 | twin -0.141 | PF 0.78 maxDD 619.6R streak 23
+     by year net: 2010:-0.27(n185) 2011:-0.06(n168) 2012:-0.22(n183) 2013:+0.01(n175) 2014:-0.16(n190) 2015:-0.03(n198) 2016:-0.19(n175) 2017:-0.32(n183) 2018:-0.36(n222) 2019:-0.21(n194) 2020:-0.19(n204) 2021:-0.28(n188) 2022:-0.23(n206) 2023:-0.21(n193) 2024:-0.10(n176) 2025:-0.21(n170) 2026:-0.12(n141)
+     gates: IS net>0 n, OOS net>0 n>=30 n, IS real-twin>=.05 n, OOS real-twin>=.05 n, HIST both >0 n, t>=2.8 n | t -1.51 -> FAIL
+=== Variant C: H1 -> M5 + h4ema; setups 5970; IS pick 3R
+  -- target 2R: median stop $1.69 (p10 0.60, p90 5.44)
+     MAIN 3y      n  858 win 34% avgR gross -0.002 IC -0.101 net -0.182 stress -0.362 | twin -0.181 | PF 0.77 maxDD 171.3R streak 15
+     IS           n  586 win 33% avgR gross -0.024 IC -0.149 net -0.251 stress -0.478 | twin -0.245 | PF 0.69 maxDD 154.5R streak 15
+     OOS          n  272 win 36% avgR gross +0.047 IC +0.003 net -0.032 stress -0.110 | twin -0.042 | PF 0.95 maxDD 22.5R streak 10
+     H1 2010-16   n 2188 win 36% avgR gross +0.071 IC -0.108 net -0.254 stress -0.580 | twin -0.294 | PF 0.70 maxDD 562.4R streak 12
+     H2 2017-23   n 2085 win 34% avgR gross +0.013 IC -0.187 net -0.351 stress -0.714 | twin -0.331 | PF 0.61 maxDD 737.3R streak 15
+     ALL 2010-26  n 5131 win 35% avgR gross +0.035 IC -0.139 net -0.281 stress -0.598 | twin -0.290 | PF 0.67 maxDD 1461.1R streak 15
+     by year net: 2010:-0.22(n300) 2011:-0.09(n297) 2012:-0.35(n341) 2013:-0.15(n301) 2014:-0.29(n327) 2015:-0.33(n315) 2016:-0.33(n307) 2017:-0.34(n268) 2018:-0.57(n304) 2019:-0.45(n359) 2020:-0.19(n313) 2021:-0.36(n319) 2022:-0.29(n317) 2023:-0.23(n263) 2024:-0.27(n302) 2025:-0.22(n285) 2026:+0.04(n213)
+     gates: IS net>0 n, OOS net>0 n>=30 n, IS real-twin>=.05 n, OOS real-twin>=.05 n, HIST both >0 n, t>=2.8 n | t +0.43 (not judged)
+  -- target 3R  (judged): median stop $1.69 (p10 0.60, p90 5.42)
+     MAIN 3y      n  841 win 27% avgR gross +0.027 IC -0.071 net -0.152 stress -0.330 | twin -0.132 | PF 0.82 maxDD 161.1R streak 15
+     IS           n  571 win 26% avgR gross -0.013 IC -0.137 net -0.239 stress -0.465 | twin -0.180 | PF 0.74 maxDD 152.0R streak 15
+     OOS          n  270 win 30% avgR gross +0.111 IC +0.068 net +0.033 stress -0.045 | twin -0.032 | PF 1.04 maxDD 20.8R streak 10
+     H1 2010-16   n 2153 win 29% avgR gross +0.088 IC -0.090 net -0.236 stress -0.561 | twin -0.294 | PF 0.75 maxDD 521.7R streak 17
+     H2 2017-23   n 2052 win 27% avgR gross +0.030 IC -0.170 net -0.333 stress -0.697 | twin -0.330 | PF 0.66 maxDD 698.7R streak 22
+     ALL 2010-26  n 5046 win 28% avgR gross +0.055 IC -0.119 net -0.262 stress -0.578 | twin -0.282 | PF 0.72 maxDD 1360.0R streak 22
+     by year net: 2010:-0.25(n296) 2011:-0.09(n293) 2012:-0.30(n335) 2013:-0.13(n298) 2014:-0.34(n320) 2015:-0.31(n309) 2016:-0.21(n302) 2017:-0.35(n270) 2018:-0.59(n298) 2019:-0.39(n347) 2020:-0.17(n309) 2021:-0.38(n312) 2022:-0.28(n313) 2023:-0.13(n260) 2024:-0.28(n297) 2025:-0.20(n275) 2026:+0.11(n212)
+     gates: IS net>0 n, OOS net>0 n>=30 Y, IS real-twin>=.05 n, OOS real-twin>=.05 Y, HIST both >0 n, t>=2.8 n | t +0.80 -> FAIL
+=== Variant D: H1 -> M5 + session; setups 10532; IS pick 2R
+  -- target 2R  (judged): median stop $1.82 (p10 0.68, p90 5.42)
+     MAIN 3y      n 1373 win 32% avgR gross -0.049 IC -0.149 net -0.231 stress -0.414 | twin -0.183 | PF 0.71 maxDD 327.2R streak 18
+     IS           n  968 win 32% avgR gross -0.065 IC -0.189 net -0.290 stress -0.515 | twin -0.246 | PF 0.65 maxDD 281.0R streak 18
+     OOS          n  405 win 34% avgR gross -0.011 IC -0.055 net -0.091 stress -0.170 | twin -0.030 | PF 0.87 maxDD 47.9R streak 14
+     H1 2010-16   n 3698 win 34% avgR gross +0.003 IC -0.158 net -0.290 stress -0.584 | twin -0.275 | PF 0.66 maxDD 1080.2R streak 16
+     H2 2017-23   n 3552 win 34% avgR gross -0.012 IC -0.192 net -0.339 stress -0.667 | twin -0.313 | PF 0.62 maxDD 1211.9R streak 15
+     ALL 2010-26  n 8623 win 34% avgR gross -0.011 IC -0.171 net -0.301 stress -0.591 | twin -0.276 | PF 0.65 maxDD 2612.0R streak 18
+     by year net: 2010:-0.26(n524) 2011:-0.24(n538) 2012:-0.33(n565) 2013:-0.23(n515) 2014:-0.32(n514) 2015:-0.30(n522) 2016:-0.35(n520) 2017:-0.48(n473) 2018:-0.49(n499) 2019:-0.41(n550) 2020:-0.21(n562) 2021:-0.32(n547) 2022:-0.24(n556) 2023:-0.25(n473) 2024:-0.30(n491) 2025:-0.28(n440) 2026:-0.03(n334)
+     gates: IS net>0 n, OOS net>0 n>=30 n, IS real-twin>=.05 n, OOS real-twin>=.05 n, HIST both >0 n, t>=2.8 n | t -1.59 -> FAIL
+  -- target 3R: median stop $1.83 (p10 0.69, p90 5.42)
+     MAIN 3y      n 1321 win 25% avgR gross -0.058 IC -0.157 net -0.239 stress -0.420 | twin -0.181 | PF 0.73 maxDD 326.2R streak 20
+     IS           n  923 win 24% avgR gross -0.079 IC -0.202 net -0.304 stress -0.528 | twin -0.246 | PF 0.67 maxDD 280.3R streak 20
+     OOS          n  398 win 27% avgR gross -0.009 IC -0.053 net -0.089 stress -0.168 | twin -0.031 | PF 0.89 maxDD 49.2R streak 20
+     H1 2010-16   n 3524 win 26% avgR gross -0.010 IC -0.171 net -0.302 stress -0.594 | twin -0.274 | PF 0.68 maxDD 1074.9R streak 20
+     H2 2017-23   n 3396 win 26% avgR gross -0.009 IC -0.189 net -0.337 stress -0.665 | twin -0.296 | PF 0.66 maxDD 1164.6R streak 21
+     ALL 2010-26  n 8241 win 26% avgR gross -0.017 IC -0.176 net -0.306 stress -0.595 | twin -0.268 | PF 0.68 maxDD 2545.4R streak 21
+     by year net: 2010:-0.34(n507) 2011:-0.24(n509) 2012:-0.30(n536) 2013:-0.27(n496) 2014:-0.35(n488) 2015:-0.27(n495) 2016:-0.34(n493) 2017:-0.52(n456) 2018:-0.52(n480) 2019:-0.42(n529) 2020:-0.16(n539) 2021:-0.30(n519) 2022:-0.26(n528) 2023:-0.23(n449) 2024:-0.31(n471) 2025:-0.27(n419) 2026:-0.05(n327)
+     gates: IS net>0 n, OOS net>0 n>=30 n, IS real-twin>=.05 n, OOS real-twin>=.05 n, HIST both >0 n, t>=2.8 n | t -1.95 (not judged)

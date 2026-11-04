@@ -1,0 +1,7 @@
+CRT-FVG-1 blind prediction, Claude (Opus 5.5), 2026-10-30, written before any P&L was computed.
+Verdict: NO EDGE, 0 of 15 pooled cells pass (confidence 0.85).
+- Gross (0x cost) pooled OOS avg R within +/-0.05R of the random-direction twin in most cells.
+- XAUUSD 5m 2R OOS net avg R between -0.25R and 0.00R.
+- 3m entries are the worst cells because tighter stops make costs a larger share of R.
+- IS-tuned configs beat the spec defaults in IS, but not in OOS (shrinkage).
+- Prop check: < 5% of 30-day windows pass; most are "neither".

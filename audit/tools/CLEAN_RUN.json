@@ -1,0 +1,18 @@
+{
+ "tier": "full",
+ "run_utc": "2026-11-04T06:01:37Z",
+ "same": 72,
+ "differ": [],
+ "missing": [],
+ "not_regenerated": [
+  "phaseC/deferred_checks.json"
+ ],
+ "unexplained": [],
+ "explained": {
+  "phaseC/deferred_checks.json": "Needs Yahoo and exchange files fetched once into a session scratch folder and not kept, so a clean run cannot rewrite it. The stored file stands as a dated record."
+ },
+ "stages_failed": [],
+ "stages_broker_ran": [],
+ "stages_skipped": [],
+ "stages": 70
+}

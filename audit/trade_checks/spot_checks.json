@@ -1,0 +1,58 @@
+{
+ "rule_table": {
+  "XM-1-A1": [
+   20,
+   20
+  ],
+  "SW-1": [
+   20,
+   20
+  ],
+  "TUNE-1-DIP": [
+   20,
+   20
+  ],
+  "EDGE-1-F6": [
+   20,
+   20
+  ]
+ },
+ "cross_engine": {
+  "v3 recorded": {
+   "n": 432,
+   "match_within_50c": 428,
+   "net_orig": 70596,
+   "net_nbe": 80379,
+   "diff_pct": 13.86,
+   "pf_orig": 1.667,
+   "pf_nbe": 1.754
+  },
+  "v4 recorded": {
+   "n": 565,
+   "match_within_50c": 561,
+   "net_orig": 39875,
+   "net_nbe": 40441,
+   "diff_pct": 1.42,
+   "pf_orig": 1.331,
+   "pf_nbe": 1.335
+  },
+  "v3 true": {
+   "n": 436,
+   "match_within_50c": 427,
+   "net_orig": 33520,
+   "net_nbe": 43623,
+   "diff_pct": 30.14,
+   "pf_orig": 1.254,
+   "pf_nbe": 1.329
+  },
+  "v4 true": {
+   "n": 577,
+   "match_within_50c": 570,
+   "net_orig": 20185,
+   "net_nbe": 20316,
+   "diff_pct": 0.65,
+   "pf_orig": 1.145,
+   "pf_nbe": 1.145
+  }
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "v_median": 0.0024680792824028517,
+ "v": {
+  "gates": {
+   "V1_on_pf_ge_1.30_n_ge_150": false,
+   "V2_off_pf_le_1.05": false,
+   "V3_within_era_control": false,
+   "V4_p90_on_ge_1.15": false
+  },
+  "pass": false,
+  "on": {
+   "old": {
+    "n": 68,
+    "pf": 0.7520047011901945
+   },
+   "new": {
+    "n": 79,
+    "pf": 1.4134795120979315
+   }
+  },
+  "off": {
+   "old": {
+    "n": 199,
+    "pf": 1.0370604417040172
+   },
+   "new": {
+    "n": 126,
+    "pf": 1.0736738093124216
+   }
+  }
+ },
+ "y": {
+  "gates": {
+   "Y1_on_pf_ge_1.30_n_ge_150": false,
+   "Y2_off_pf_le_1.05": false,
+   "Y3_within_era_control": false,
+   "Y4_p90_on_ge_1.15": false
+  },
+  "pass": false,
+  "displaces": false,
+  "n_on": 165,
+  "pf_on": 1.148438889926929
+ },
+ "verdict": "HV FAIL: the era boundary remains unexplained; the live-deployment risk disclosure stands and HARDENS"
+}

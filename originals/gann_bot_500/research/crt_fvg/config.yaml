@@ -1,0 +1,68 @@
+# CRT-FVG-1: single config for the "CRT + HTF FVG" backtest. Every rule threshold lives here.
+# Times are UTC. Timeframes are in minutes. Prices are in instrument price units.
+seed: 20261030
+
+data:
+  # Dukascopy M1 bid/ask, already cached by the London-breakout study (mid OHLC + per-bar spread).
+  npz_dir: "@LBO_ROOT@/data/m1"
+  start: "2013-01-01"
+  end: "2026-10-30"            # exclusive
+
+symbols:                        # spread = full spread (price units), comm = round-turn commission per unit
+  XAUUSD: {spread: 0.25,    comm: 0.07,    tick: 0.01,    role: primary}   # $7/lot RT on 100 oz
+  EURUSD: {spread: 0.00005, comm: 0.00007, tick: 0.00001, role: secondary} # $7/lot RT on 100k
+  GBPUSD: {spread: 0.00010, comm: 0.00007, tick: 0.00001, role: secondary}
+  NAS100: {spread: 1.5,     comm: 0.0,     tick: 0.1,     role: secondary}
+
+rules:
+  swing_n: 2                    # fractal pivot: N bars each side; known only after bar j+N closes
+  crt_k: 1                      # the close back over the swept level must come within K bars, counting the sweep bar
+  bias_tf: 240                  # 240 = 4H, 60 = 1H
+  bias_ema: 50
+  bias_price: entry_close       # entry_close = close of the confirming entry bar | htf_close = last closed bias bar
+  setup_tf: 15
+  min_streak: 2                 # Rule 1: last N setup-TF CRTs all in the bias direction
+  streak_monotonic: true        # ...each sweep extreme higher (bull) / lower (bear) than the one before
+  setup_max_age_min: null       # null = the streak never expires (only a newer opposite CRT breaks it)
+  fvg_tf: 60
+  fvg_min_atr: 0.0              # minimum FVG height as a fraction of ATR(14) on the FVG timeframe
+  fvg_invalidate: close_through # close_through = a candle CLOSES beyond the far edge | full_fill = trades beyond it
+  fvg_before_sweep: true        # the FVG must be known before the entry sweep bar opens
+  fvg_max_age_bars: null        # null = no expiry
+  entry_tfs: [5, 3, 15]         # 5 is the spec's entry TF; 3 and 15 are the requested variants
+  sl_buffer_atr: 0.1            # stop = sweep extreme -/+ this x ATR(14) on the entry TF
+  atr_n: 14
+  tp_modes: [1.0, 1.5, 2.0, 3.0, liq]   # liq = nearest unswept opposing swing on liq_tf
+  liq_tf: 15
+  session_utc: ["07:00", "20:00"]       # entries only inside [start, end)
+  friday_exit_utc: "20:45"              # flat before the weekend
+  max_entry_gap_min: 60                 # skip if the next bar after the signal opens later than this
+
+costs:
+  slip_ticks: 1                 # on entries and stop exits (targets are limit fills, no slippage)
+  spread_mode: fixed            # fixed (per symbol above) | measured (Dukascopy per-bar spread)
+  multipliers: [0.0, 1.0, 2.0]  # 0 = gross reference, 2 = stress
+
+account:
+  start_equity: 100000
+  risk: 0.01
+
+validation:
+  is_frac: 0.70                 # by calendar time per symbol; OOS = last 30%, opened once after the freeze
+  min_is_trades: 30             # a grid config is only eligible with at least this many IS trades
+  grid:                         # IS tuning grid; the spec defaults above are always reported as well
+    swing_n: [2, 3, 5]
+    crt_k: [1, 2, 3]
+    fvg_min_atr: [0.0, 0.25, 0.5]
+    bias_tf: [240, 60]
+    sl_buffer_atr: [0.1, 0.25]
+  wfo_train_months: 6
+  wfo_test_months: 2
+  wfo_min_train_trades: 10
+  monte_carlo_runs: 1000
+  random_direction_runs: 1000
+  prop:                         # FTMO-style, rolling 30-day windows, one start per trading day
+    window_days: 30
+    target: 0.10
+    max_daily_loss: 0.05
+    max_total_loss: 0.10

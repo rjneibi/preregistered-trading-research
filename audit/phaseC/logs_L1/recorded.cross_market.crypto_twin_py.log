@@ -1,0 +1,6 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote originals/gann_bot_500/fable-backtesting/calendar/news_days.json: 260 blackout days
+A1 SMA20    BTCh1: Sh 1.30 vs twins 0.67 p=0.041 expo 55%  BTCh2: Sh 0.20 vs twins 0.10 p=0.367 expo 50%  ETHh1: Sh 1.35 vs twins 0.64 p=0.023 expo 53%  ETHh2: Sh 0.22 vs twins -0.03 p=0.239 expo 46%  -> fail
+A1 SMA50    BTCh1: Sh 1.55 vs twins 0.66 p=0.005 expo 53%  BTCh2: Sh 0.56 vs twins 0.12 p=0.097 expo 52%  ETHh1: Sh 1.20 vs twins 0.68 p=0.092 expo 54%  ETHh2: Sh 0.62 vs twins -0.00 p=0.036 expo 48%  -> fail
+A1 SMA100   BTCh1: Sh 1.09 vs twins 0.63 p=0.134 expo 53%  BTCh2: Sh 0.59 vs twins 0.10 p=0.085 expo 50%  ETHh1: Sh 1.05 vs twins 0.71 p=0.215 expo 55%  ETHh2: Sh 0.23 vs twins -0.03 p=0.211 expo 49%  -> fail
+A2 TSMOM30  BTCh1: Sh 1.33 vs twins 0.68 p=0.034 expo 54%  BTCh2: Sh 0.45 vs twins 0.09 p=0.133 expo 54%  ETHh1: Sh 1.27 vs twins 0.70 p=0.046 expo 56%  ETHh2: Sh 0.55 vs twins -0.01 p=0.056 expo 48%  -> fail

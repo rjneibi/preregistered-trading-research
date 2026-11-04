@@ -1,0 +1,19 @@
+OOS Powell events: 27, Warsh events: 1
+
+primary fade_t0_1600ET realistic: {'n': 27, 'total': np.float64(-178.52), 'mean': np.float64(-6.612), 'median': np.float64(-8.22), 'pf': np.float64(0.518), 'win_rate': 0.407}
+primary fade_t0_1600ET worst:     {'n': 27, 'total': np.float64(-189.33), 'mean': np.float64(-7.012), 'median': np.float64(-8.62), 'pf': np.float64(0.498), 'win_rate': 0.407}
+fade family PF>=1.0: 0/6
+permutation: {'p95_random_mean': np.float64(8.629), 'actual_mean': np.float64(-6.612), 'pct_of_random_beaten': 0.133, 'pass': np.False_}
+
+== GATES ==
+  1_n_events_ge_22: PASS
+  2_primary_pf_ge_1.20_realistic: FAIL
+  3_primary_total_gt_0_worst: FAIL
+  4_fade_family_ge_4of6_pf_ge_1.00: FAIL
+  5_permutation_beats_p95: FAIL
+
+== VERDICT: HPF FAIL ==
+
+Warsh descriptive (NO GATE): [{'date': '2026-06-17', 'stmt_move': np.float64(-86.158), 'presser_move': np.float64(-65.63), 'fade_pnl_realistic': np.float64(-57.78)}]
+
+wrote HPF_run.json

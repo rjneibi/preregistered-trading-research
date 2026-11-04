@@ -1,0 +1,26 @@
+long 01-09 spread 0.35             n=3285 win=52% PF=1.29 halves 1.07/1.36 total $2857/oz DD $543
+long 01-09 spread 0.6              n=3285 win=50% PF=1.20 halves 0.91/1.29 total $2036/oz DD $558
+long 01-05                         n=3286 win=51% PF=1.42 halves 1.00/1.57 total $3073/oz DD $269
+long 05-09                         n=3347 win=47% PF=0.83 halves 0.76/0.85 total $-1359/oz DD $1394
+long 03-09                         n=3345 win=48% PF=0.95 halves 0.87/0.97 total $-560/oz DD $904
+long 01-09 only above SMA50        n=1806 win=50% PF=1.34 halves 0.87/1.52 total $2012/oz DD $543
+long 01-09 only above SMA200       n=2051 win=52% PF=1.22 halves 0.96/1.31 total $1658/oz DD $543
+short 01-09 only below SMA50       n=1479 win=39% PF=0.65 halves 0.42/0.75 total $-1881/oz DD $1888
+short NY 15-23                     n=3299 win=49% PF=1.02 halves 0.94/1.06 total $386/oz DD $1953
+short NY 15-23 only below SMA50    n=1486 win=51% PF=1.13 halves 0.97/1.20 total $805/oz DD $454
+
+per year long 01-09 (spread .35): n win PF $/oz | buy&hold $/oz
+  2013   58 53%  0.94      -5 |    -471
+  2014  256 48%  0.98      -6 |     -20
+  2015  259 53%  1.32     +97 |    -123
+  2016  258 48%  1.30    +137 |     +85
+  2017  257 51%  1.01      +4 |    +152
+  2018  258 45%  0.83     -61 |     -20
+  2019  257 56%  1.01      +4 |    +234
+  2020  258 53%  1.06     +46 |    +379
+  2021  257 54%  1.38    +187 |     -76
+  2022  258 47%  0.86     -96 |      -6
+  2023  199 58%  1.66    +206 |    +236
+  2024  259 57%  1.34    +267 |    +562
+  2025  257 55%  1.58    +917 |   +1693
+  2026  194 54%  1.38   +1161 |    -133

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Preregistered trading research"
+authors:
+  - family-names: "Al Jneibi"
+    given-names: "Rashed"
+repository-code: "https://github.com/rjneibi/preregistered-trading-research"
+version: "1.0"
+date-released: "2026-11-04"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - preregistration
+  - backtest overfitting
+  - deflated Sharpe ratio
+  - negative results
+  - reproducibility

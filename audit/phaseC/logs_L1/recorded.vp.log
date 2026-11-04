@@ -1,0 +1,273 @@
+[run_backtest] Stage 1/3: data CSVs present — skipping fetch.
+[run_backtest] Stage 2/3: running backtest (4 configs) ...
+[backtest_vp] Loading CSV data ...
+[backtest_vp] H1=25920 H4=6480 D1=1260 bars
+[backtest_vp] Precomputing H4 indicators (ATR/EMA50/ADX) ...
+
+=== Running Profile_D_Baseline ===
+  Profile_D_Baseline: bar 0/25920 (taken=0, filtered=0)
+  Profile_D_Baseline: bar 500/25920 (taken=0, filtered=0)
+  Profile_D_Baseline: bar 1000/25920 (taken=0, filtered=0)
+  Profile_D_Baseline: bar 1500/25920 (taken=1, filtered=0)
+  Profile_D_Baseline: bar 2000/25920 (taken=4, filtered=0)
+  Profile_D_Baseline: bar 2500/25920 (taken=4, filtered=0)
+  Profile_D_Baseline: bar 3000/25920 (taken=4, filtered=0)
+  Profile_D_Baseline: bar 3500/25920 (taken=5, filtered=0)
+  Profile_D_Baseline: bar 4000/25920 (taken=5, filtered=0)
+  Profile_D_Baseline: bar 4500/25920 (taken=7, filtered=0)
+  Profile_D_Baseline: bar 5000/25920 (taken=8, filtered=0)
+  Profile_D_Baseline: bar 5500/25920 (taken=9, filtered=0)
+  Profile_D_Baseline: bar 6000/25920 (taken=11, filtered=0)
+  Profile_D_Baseline: bar 6500/25920 (taken=12, filtered=0)
+  Profile_D_Baseline: bar 7000/25920 (taken=13, filtered=0)
+  Profile_D_Baseline: bar 7500/25920 (taken=14, filtered=0)
+  Profile_D_Baseline: bar 8000/25920 (taken=16, filtered=0)
+  Profile_D_Baseline: bar 8500/25920 (taken=16, filtered=0)
+  Profile_D_Baseline: bar 9000/25920 (taken=18, filtered=0)
+  Profile_D_Baseline: bar 9500/25920 (taken=18, filtered=0)
+  Profile_D_Baseline: bar 10000/25920 (taken=20, filtered=0)
+  Profile_D_Baseline: bar 10500/25920 (taken=21, filtered=0)
+  Profile_D_Baseline: bar 11000/25920 (taken=23, filtered=0)
+  Profile_D_Baseline: bar 11500/25920 (taken=23, filtered=0)
+  Profile_D_Baseline: bar 12000/25920 (taken=23, filtered=0)
+  Profile_D_Baseline: bar 12500/25920 (taken=26, filtered=0)
+  Profile_D_Baseline: bar 13000/25920 (taken=26, filtered=0)
+  Profile_D_Baseline: bar 13500/25920 (taken=26, filtered=0)
+  Profile_D_Baseline: bar 14000/25920 (taken=26, filtered=0)
+  Profile_D_Baseline: bar 14500/25920 (taken=26, filtered=0)
+  Profile_D_Baseline: bar 15000/25920 (taken=28, filtered=0)
+  Profile_D_Baseline: bar 15500/25920 (taken=31, filtered=0)
+  Profile_D_Baseline: bar 16000/25920 (taken=34, filtered=0)
+  Profile_D_Baseline: bar 16500/25920 (taken=35, filtered=0)
+  Profile_D_Baseline: bar 17000/25920 (taken=38, filtered=0)
+  Profile_D_Baseline: bar 17500/25920 (taken=38, filtered=0)
+  Profile_D_Baseline: bar 18000/25920 (taken=40, filtered=0)
+  Profile_D_Baseline: bar 18500/25920 (taken=41, filtered=0)
+  Profile_D_Baseline: bar 19000/25920 (taken=43, filtered=0)
+  Profile_D_Baseline: bar 19500/25920 (taken=47, filtered=0)
+  Profile_D_Baseline: bar 20000/25920 (taken=48, filtered=0)
+  Profile_D_Baseline: bar 20500/25920 (taken=49, filtered=0)
+  Profile_D_Baseline: bar 21000/25920 (taken=51, filtered=0)
+  Profile_D_Baseline: bar 21500/25920 (taken=51, filtered=0)
+  Profile_D_Baseline: bar 22000/25920 (taken=52, filtered=0)
+  Profile_D_Baseline: bar 22500/25920 (taken=54, filtered=0)
+  Profile_D_Baseline: bar 23000/25920 (taken=56, filtered=0)
+  Profile_D_Baseline: bar 23500/25920 (taken=57, filtered=0)
+  Profile_D_Baseline: bar 24000/25920 (taken=59, filtered=0)
+  Profile_D_Baseline: bar 24500/25920 (taken=61, filtered=0)
+  Profile_D_Baseline: bar 25000/25920 (taken=63, filtered=0)
+  Profile_D_Baseline: bar 25500/25920 (taken=66, filtered=0)
+  Profile_D_Baseline: DONE — 66 trades, 0 filtered, 304 raw signals
+[backtest_vp] Profile_D_Baseline: trades=66 win%=22.73 PF=1.025 exp=49.24 maxDD=43636.0
+
+=== Running Profile_D_VP ===
+  Profile_D_VP: bar 0/25920 (taken=0, filtered=0)
+  Profile_D_VP: bar 500/25920 (taken=0, filtered=0)
+  Profile_D_VP: bar 1000/25920 (taken=0, filtered=0)
+  Profile_D_VP: bar 1500/25920 (taken=0, filtered=1)
+  Profile_D_VP: bar 2000/25920 (taken=0, filtered=5)
+  Profile_D_VP: bar 2500/25920 (taken=0, filtered=5)
+  Profile_D_VP: bar 3000/25920 (taken=0, filtered=5)
+  Profile_D_VP: bar 3500/25920 (taken=0, filtered=6)
+  Profile_D_VP: bar 4000/25920 (taken=0, filtered=6)
+  Profile_D_VP: bar 4500/25920 (taken=0, filtered=9)
+  Profile_D_VP: bar 5000/25920 (taken=0, filtered=11)
+  Profile_D_VP: bar 5500/25920 (taken=0, filtered=15)
+  Profile_D_VP: bar 6000/25920 (taken=0, filtered=19)
+  Profile_D_VP: bar 6500/25920 (taken=0, filtered=20)
+  Profile_D_VP: bar 7000/25920 (taken=0, filtered=21)
+  Profile_D_VP: bar 7500/25920 (taken=0, filtered=23)
+  Profile_D_VP: bar 8000/25920 (taken=0, filtered=24)
+  Profile_D_VP: bar 8500/25920 (taken=0, filtered=24)
+  Profile_D_VP: bar 9000/25920 (taken=0, filtered=27)
+  Profile_D_VP: bar 9500/25920 (taken=0, filtered=27)
+  Profile_D_VP: bar 10000/25920 (taken=0, filtered=31)
+  Profile_D_VP: bar 10500/25920 (taken=0, filtered=32)
+  Profile_D_VP: bar 11000/25920 (taken=0, filtered=34)
+  Profile_D_VP: bar 11500/25920 (taken=0, filtered=34)
+  Profile_D_VP: bar 12000/25920 (taken=0, filtered=34)
+  Profile_D_VP: bar 12500/25920 (taken=0, filtered=39)
+  Profile_D_VP: bar 13000/25920 (taken=0, filtered=39)
+  Profile_D_VP: bar 13500/25920 (taken=0, filtered=39)
+  Profile_D_VP: bar 14000/25920 (taken=0, filtered=39)
+  Profile_D_VP: bar 14500/25920 (taken=0, filtered=39)
+  Profile_D_VP: bar 15000/25920 (taken=0, filtered=43)
+  Profile_D_VP: bar 15500/25920 (taken=0, filtered=47)
+  Profile_D_VP: bar 16000/25920 (taken=0, filtered=51)
+  Profile_D_VP: bar 16500/25920 (taken=0, filtered=52)
+  Profile_D_VP: bar 17000/25920 (taken=0, filtered=57)
+  Profile_D_VP: bar 17500/25920 (taken=0, filtered=57)
+  Profile_D_VP: bar 18000/25920 (taken=0, filtered=59)
+  Profile_D_VP: bar 18500/25920 (taken=0, filtered=60)
+  Profile_D_VP: bar 19000/25920 (taken=0, filtered=62)
+  Profile_D_VP: bar 19500/25920 (taken=0, filtered=67)
+  Profile_D_VP: bar 20000/25920 (taken=0, filtered=69)
+  Profile_D_VP: bar 20500/25920 (taken=0, filtered=70)
+  Profile_D_VP: bar 21000/25920 (taken=0, filtered=74)
+  Profile_D_VP: bar 21500/25920 (taken=0, filtered=74)
+  Profile_D_VP: bar 22000/25920 (taken=0, filtered=75)
+  Profile_D_VP: bar 22500/25920 (taken=0, filtered=76)
+  Profile_D_VP: bar 23000/25920 (taken=0, filtered=82)
+  Profile_D_VP: bar 23500/25920 (taken=0, filtered=84)
+  Profile_D_VP: bar 24000/25920 (taken=0, filtered=87)
+  Profile_D_VP: bar 24500/25920 (taken=0, filtered=94)
+  Profile_D_VP: bar 25000/25920 (taken=0, filtered=98)
+  Profile_D_VP: bar 25500/25920 (taken=0, filtered=103)
+  Profile_D_VP: DONE — 0 trades, 104 filtered, 363 raw signals
+[backtest_vp] Profile_D_VP: trades=0 win%=0.0 PF=0.0 exp=0.0 maxDD=0.0
+
+=== Running Profile_R_Baseline ===
+  Profile_R_Baseline: bar 0/25920 (taken=0, filtered=0)
+  Profile_R_Baseline: bar 500/25920 (taken=0, filtered=0)
+  Profile_R_Baseline: bar 1000/25920 (taken=0, filtered=0)
+  Profile_R_Baseline: bar 1500/25920 (taken=1, filtered=0)
+  Profile_R_Baseline: bar 2000/25920 (taken=3, filtered=0)
+  Profile_R_Baseline: bar 2500/25920 (taken=3, filtered=0)
+  Profile_R_Baseline: bar 3000/25920 (taken=3, filtered=0)
+  Profile_R_Baseline: bar 3500/25920 (taken=3, filtered=0)
+  Profile_R_Baseline: bar 4000/25920 (taken=3, filtered=0)
+  Profile_R_Baseline: bar 4500/25920 (taken=3, filtered=0)
+  Profile_R_Baseline: bar 5000/25920 (taken=3, filtered=0)
+  Profile_R_Baseline: bar 5500/25920 (taken=4, filtered=0)
+  Profile_R_Baseline: bar 6000/25920 (taken=5, filtered=0)
+  Profile_R_Baseline: bar 6500/25920 (taken=6, filtered=0)
+  Profile_R_Baseline: bar 7000/25920 (taken=7, filtered=0)
+  Profile_R_Baseline: bar 7500/25920 (taken=8, filtered=0)
+  Profile_R_Baseline: bar 8000/25920 (taken=9, filtered=0)
+  Profile_R_Baseline: bar 8500/25920 (taken=9, filtered=0)
+  Profile_R_Baseline: bar 9000/25920 (taken=10, filtered=0)
+  Profile_R_Baseline: bar 9500/25920 (taken=10, filtered=0)
+  Profile_R_Baseline: bar 10000/25920 (taken=10, filtered=0)
+  Profile_R_Baseline: bar 10500/25920 (taken=11, filtered=0)
+  Profile_R_Baseline: bar 11000/25920 (taken=13, filtered=0)
+  Profile_R_Baseline: bar 11500/25920 (taken=14, filtered=0)
+  Profile_R_Baseline: bar 12000/25920 (taken=15, filtered=0)
+  Profile_R_Baseline: bar 12500/25920 (taken=17, filtered=0)
+  Profile_R_Baseline: bar 13000/25920 (taken=17, filtered=0)
+  Profile_R_Baseline: bar 13500/25920 (taken=17, filtered=0)
+  Profile_R_Baseline: bar 14000/25920 (taken=17, filtered=0)
+  Profile_R_Baseline: bar 14500/25920 (taken=17, filtered=0)
+  Profile_R_Baseline: bar 15000/25920 (taken=17, filtered=0)
+  Profile_R_Baseline: bar 15500/25920 (taken=17, filtered=0)
+  Profile_R_Baseline: bar 16000/25920 (taken=18, filtered=0)
+  Profile_R_Baseline: bar 16500/25920 (taken=19, filtered=0)
+  Profile_R_Baseline: bar 17000/25920 (taken=21, filtered=0)
+  Profile_R_Baseline: bar 17500/25920 (taken=21, filtered=0)
+  Profile_R_Baseline: bar 18000/25920 (taken=23, filtered=0)
+  Profile_R_Baseline: bar 18500/25920 (taken=23, filtered=0)
+  Profile_R_Baseline: bar 19000/25920 (taken=23, filtered=0)
+  Profile_R_Baseline: bar 19500/25920 (taken=25, filtered=0)
+  Profile_R_Baseline: bar 20000/25920 (taken=25, filtered=0)
+  Profile_R_Baseline: bar 20500/25920 (taken=25, filtered=0)
+  Profile_R_Baseline: bar 21000/25920 (taken=26, filtered=0)
+  Profile_R_Baseline: bar 21500/25920 (taken=27, filtered=0)
+  Profile_R_Baseline: bar 22000/25920 (taken=28, filtered=0)
+  Profile_R_Baseline: bar 22500/25920 (taken=28, filtered=0)
+  Profile_R_Baseline: bar 23000/25920 (taken=28, filtered=0)
+  Profile_R_Baseline: bar 23500/25920 (taken=29, filtered=0)
+  Profile_R_Baseline: bar 24000/25920 (taken=29, filtered=0)
+  Profile_R_Baseline: bar 24500/25920 (taken=29, filtered=0)
+  Profile_R_Baseline: bar 25000/25920 (taken=30, filtered=0)
+  Profile_R_Baseline: bar 25500/25920 (taken=31, filtered=0)
+  Profile_R_Baseline: DONE — 32 trades, 0 filtered, 127 raw signals
+[backtest_vp] Profile_R_Baseline: trades=32 win%=46.88 PF=1.027 exp=46.28 maxDD=20190.0
+
+=== Running Profile_R_VP ===
+  Profile_R_VP: bar 0/25920 (taken=0, filtered=0)
+  Profile_R_VP: bar 500/25920 (taken=0, filtered=0)
+  Profile_R_VP: bar 1000/25920 (taken=0, filtered=0)
+  Profile_R_VP: bar 1500/25920 (taken=0, filtered=1)
+  Profile_R_VP: bar 2000/25920 (taken=0, filtered=5)
+  Profile_R_VP: bar 2500/25920 (taken=0, filtered=5)
+  Profile_R_VP: bar 3000/25920 (taken=0, filtered=5)
+  Profile_R_VP: bar 3500/25920 (taken=0, filtered=5)
+  Profile_R_VP: bar 4000/25920 (taken=0, filtered=5)
+  Profile_R_VP: bar 4500/25920 (taken=0, filtered=5)
+  Profile_R_VP: bar 5000/25920 (taken=0, filtered=5)
+  Profile_R_VP: bar 5500/25920 (taken=0, filtered=6)
+  Profile_R_VP: bar 6000/25920 (taken=0, filtered=7)
+  Profile_R_VP: bar 6500/25920 (taken=0, filtered=8)
+  Profile_R_VP: bar 7000/25920 (taken=0, filtered=9)
+  Profile_R_VP: bar 7500/25920 (taken=0, filtered=11)
+  Profile_R_VP: bar 8000/25920 (taken=0, filtered=14)
+  Profile_R_VP: bar 8500/25920 (taken=0, filtered=14)
+  Profile_R_VP: bar 9000/25920 (taken=0, filtered=15)
+  Profile_R_VP: bar 9500/25920 (taken=0, filtered=15)
+  Profile_R_VP: bar 10000/25920 (taken=0, filtered=15)
+  Profile_R_VP: bar 10500/25920 (taken=0, filtered=19)
+  Profile_R_VP: bar 11000/25920 (taken=0, filtered=22)
+  Profile_R_VP: bar 11500/25920 (taken=0, filtered=23)
+  Profile_R_VP: bar 12000/25920 (taken=0, filtered=24)
+  Profile_R_VP: bar 12500/25920 (taken=0, filtered=26)
+  Profile_R_VP: bar 13000/25920 (taken=0, filtered=26)
+  Profile_R_VP: bar 13500/25920 (taken=0, filtered=26)
+  Profile_R_VP: bar 14000/25920 (taken=0, filtered=26)
+  Profile_R_VP: bar 14500/25920 (taken=0, filtered=26)
+  Profile_R_VP: bar 15000/25920 (taken=0, filtered=26)
+  Profile_R_VP: bar 15500/25920 (taken=0, filtered=26)
+  Profile_R_VP: bar 16000/25920 (taken=0, filtered=28)
+  Profile_R_VP: bar 16500/25920 (taken=0, filtered=30)
+  Profile_R_VP: bar 17000/25920 (taken=0, filtered=33)
+  Profile_R_VP: bar 17500/25920 (taken=0, filtered=33)
+  Profile_R_VP: bar 18000/25920 (taken=0, filtered=35)
+  Profile_R_VP: bar 18500/25920 (taken=0, filtered=35)
+  Profile_R_VP: bar 19000/25920 (taken=0, filtered=35)
+  Profile_R_VP: bar 19500/25920 (taken=0, filtered=37)
+  Profile_R_VP: bar 20000/25920 (taken=0, filtered=37)
+  Profile_R_VP: bar 20500/25920 (taken=0, filtered=37)
+  Profile_R_VP: bar 21000/25920 (taken=0, filtered=38)
+  Profile_R_VP: bar 21500/25920 (taken=0, filtered=39)
+  Profile_R_VP: bar 22000/25920 (taken=0, filtered=43)
+  Profile_R_VP: bar 22500/25920 (taken=0, filtered=43)
+  Profile_R_VP: bar 23000/25920 (taken=0, filtered=43)
+  Profile_R_VP: bar 23500/25920 (taken=0, filtered=45)
+  Profile_R_VP: bar 24000/25920 (taken=0, filtered=45)
+  Profile_R_VP: bar 24500/25920 (taken=0, filtered=45)
+  Profile_R_VP: bar 25000/25920 (taken=0, filtered=46)
+  Profile_R_VP: bar 25500/25920 (taken=0, filtered=47)
+  Profile_R_VP: DONE — 0 trades, 48 filtered, 147 raw signals
+[backtest_vp] Profile_R_VP: trades=0 win%=0.0 PF=0.0 exp=0.0 maxDD=0.0
+
+[backtest_vp] All 4 configs complete. Results in audit/_copy/rs_recorded/research/vp_backtest/results
+[run_backtest] Stage 3/3: analysing results ...
+VOLUME PROFILE BACKTEST — ANALYSIS REPORT
+
+======================================================================
+SIDE-BY-SIDE COMPARISON
+======================================================================
+            Config  Trades  WinRate%    PF  Expectancy  MaxDD_pts  VP_PassRate%
+Profile_D_Baseline      66     22.73 1.025       49.24    43636.0           NaN
+      Profile_D_VP       0      0.00 0.000        0.00        0.0           0.0
+Profile_R_Baseline      32     46.88 1.027       46.28    20190.0           NaN
+      Profile_R_VP       0      0.00 0.000        0.00        0.0           0.0
+[analyze] saved equity_curve_D.png
+[analyze] saved equity_curve_R.png
+
+======================================================================
+VP FILTER IMPACT ANALYSIS
+======================================================================
+
+--- Profile D ---
+Kept (VP-passed) trades : 0
+Filtered-out signals    : 104
+   removed by POC proximity       : 63
+   removed by Value-Area context  : 80
+   removed by LVN path            : 75
+Win rate of FILTERED-OUT trades : 18.3%  (avg pnl -439.5 pts)
+
+--- Profile R ---
+Kept (VP-passed) trades : 0
+Filtered-out signals    : 48
+   removed by POC proximity       : 33
+   removed by Value-Area context  : 36
+   removed by LVN path            : 35
+Win rate of FILTERED-OUT trades : 50.0%  (avg pnl 287.5 pts)
+
+======================================================================
+GATE CONTRIBUTION ANALYSIS (Profile_D_VP)
+======================================================================
+No Profile_D_VP trades to analyse.
+
+[analyze] Full report saved to audit/_copy/rs_recorded/research/vp_backtest/results/vp_analysis_report.txt
+
+[run_backtest] TOTAL RUNTIME: 2m 16.5s

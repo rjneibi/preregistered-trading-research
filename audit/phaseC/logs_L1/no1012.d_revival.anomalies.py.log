@@ -1,0 +1,21 @@
+buy & hold                     total $    2504/oz  sharpe +0.48  halves -0.07 / +0.92  maxDD $1435
+TSMOM ret20                    total $     233/oz  sharpe -0.06  halves -0.23 / +0.07  maxDD $1337
+   long-only ret20             total $    1374/oz  sharpe +0.28  halves -0.22 / +0.61  maxDD $1066
+TSMOM sma20                    total $    -193/oz  sharpe -0.04  halves +0.13 / -0.17  maxDD $1763
+   long-only sma20             total $    1160/oz  sharpe +0.31  halves +0.05 / +0.49  maxDD $1293
+TSMOM ret50                    total $    1971/oz  sharpe +0.45  halves +0.36 / +0.52  maxDD $1591
+   long-only ret50             total $    2287/oz  sharpe +0.62  halves +0.27 / +0.86  maxDD $1452
+TSMOM sma50                    total $    2323/oz  sharpe +0.25  halves -0.20 / +0.62  maxDD $845
+   long-only sma50             total $    2463/oz  sharpe +0.50  halves -0.16 / +0.94  maxDD $757
+TSMOM ret100                   total $    2405/oz  sharpe +0.31  halves -0.23 / +0.73  maxDD $1321
+   long-only ret100            total $    2617/oz  sharpe +0.55  halves -0.06 / +0.93  maxDD $1112
+TSMOM sma100                   total $    1560/oz  sharpe +0.27  halves -0.13 / +0.57  maxDD $1822
+   long-only sma100            total $    2190/oz  sharpe +0.53  halves +0.00 / +0.87  maxDD $1473
+TSMOM ret200                   total $     707/oz  sharpe +0.04  halves -0.38 / +0.32  maxDD $1774
+   long-only ret200            total $    1796/oz  sharpe +0.38  halves -0.14 / +0.67  maxDD $1497
+TSMOM sma200                   total $    1803/oz  sharpe +0.25  halves -0.07 / +0.47  maxDD $1344
+   long-only sma200            total $    2344/oz  sharpe +0.52  halves +0.09 / +0.78  maxDD $1142
+long Asia 01-09                total $    2900/oz  sharpe +0.83  halves +0.36 / +1.13  maxDD $541
+long London 09-15              total $   -1075/oz  sharpe -0.38  halves -2.42 / +0.18  maxDD $1991
+long NY 15-23                  total $   -2096/oz  sharpe -0.52  halves -1.11 / -0.38  maxDD $2125
+long late+open 19-01           total $   -1862/oz  sharpe -0.81  halves -1.59 / -0.64  maxDD $2036

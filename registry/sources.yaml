@@ -1,0 +1,231 @@
+- citation: Moskowitz, Ooi & Pedersen 2012
+  title: Time series momentum
+  venue: Journal of Financial Economics 104(2)
+  supports: Trend persistence across assets
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Hurst, Ooi & Pedersen 2017
+  title: A century of evidence on trend-following investing
+  venue: Journal of Portfolio Management 44(1)
+  supports: Long-run trend evidence
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Lemperiere et al. 2014
+  title: Two centuries of trend following
+  venue: Journal of Investment Strategies 3(3)
+  supports: Long-run trend evidence
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Osler 2003
+  title: Currency orders and exchange rate dynamics
+  venue: Journal of Finance 58(5)
+  supports: Order clustering at round numbers
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Osler 2000
+  title: 'Support for resistance: technical analysis and intraday exchange rates'
+  venue: FRBNY Economic Policy Review 6(2)
+  supports: Levels and intraday reversals
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: McLean & Pontiff 2016
+  title: Does academic research destroy stock return predictability?
+  venue: Journal of Finance 71(1)
+  supports: Post-publication decay
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Bailey & Lopez de Prado 2014
+  title: The deflated Sharpe ratio
+  venue: Journal of Portfolio Management 40(5)
+  supports: DSR
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Bailey, Borwein, Lopez de Prado & Zhu 2017
+  title: The probability of backtest overfitting
+  venue: Journal of Computational Finance 20(4)
+  supports: PBO/CSCV
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Lopez de Prado 2018
+  title: Advances in Financial Machine Learning
+  venue: Wiley
+  supports: Meta-labeling, triple barrier, purged CV
+  evidence_grade: B
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: White 2000
+  title: A reality check for data snooping
+  venue: Econometrica 68(5)
+  supports: Best-of-N selection
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Pardo 2008
+  title: The Evaluation and Optimization of Trading Strategies
+  venue: Wiley
+  supports: Walk-forward
+  evidence_grade: B
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Elder 1993
+  title: Trading for a Living
+  venue: Wiley
+  supports: Triple Screen
+  evidence_grade: C
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Chague, De-Losso & Giovannetti
+  title: Day trading for a living?
+  venue: SSRN 3423101
+  supports: Retail day-trader outcomes
+  evidence_grade: B
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Barber & Odean 2000
+  title: Trading is hazardous to your wealth
+  venue: Journal of Finance 55(2)
+  supports: Retail trading costs
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Leung & Li 2015
+  title: Optimal Mean Reversion Trading
+  venue: World Scientific
+  supports: OU trading
+  evidence_grade: B
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Lemishko, Landi & Caicedo-Llano 2024
+  title: FX cointegration pairs trading
+  venue: SSRN, citation incomplete
+  supports: FX pairs with walk-forward
+  evidence_grade: B
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Unnamed 2025
+  title: ETF pairs trading study
+  venue: Journal of Asset Management, citation incomplete
+  supports: Cointegration holds only in short windows
+  evidence_grade: A
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: QuantInsti / Garcia-Purrinos
+  title: Pivot-point backtest on gold
+  venue: practitioner, citation incomplete
+  supports: IS Sharpe 2.28 to OOS negative
+  evidence_grade: C
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Mesfin 2026
+  title: Falsification of liquidity-grab strategies on MNQ
+  venue: arXiv, citation incomplete
+  supports: Sweep falsification
+  evidence_grade: B
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Xiao, Sun, Luo & Wang 2024
+  title: 'TradingAgents: multi-agents LLM financial trading framework'
+  venue: arXiv
+  supports: System under test
+  evidence_grade: B
+  found_via: appendix_b
+  citation_status: to_verify_in_phase_5
+- citation: Kaminski & Lo 2014
+  title: When do stop-loss rules stop losses?
+  venue: Journal of Financial Markets
+  supports: Stopping premium needs persistence
+  evidence_grade: A
+  found_via: DECISIONS.log cycle 2
+  citation_status: to_verify_in_phase_5
+- citation: Andrews 1993
+  title: Tests for parameter instability and structural change with unknown change point
+  venue: Econometrica 61(4)
+  supports: Sup-Wald critical values
+  evidence_grade: A
+  found_via: DECISIONS.log cycle 3
+  citation_status: to_verify_in_phase_5
+- citation: Bailey & Lopez de Prado 2012
+  title: The Sharpe ratio efficient frontier
+  venue: Journal of Risk 15(2)
+  supports: PSR, MinTRL
+  evidence_grade: A
+  found_via: DECISIONS.log cycle 5
+  citation_status: to_verify_in_phase_5
+- citation: Hansen 2005
+  title: A test for superior predictive ability
+  venue: Journal of Business & Economic Statistics 23(4)
+  supports: SPA
+  evidence_grade: A
+  found_via: LBO-1
+  citation_status: to_verify_in_phase_5
+- citation: Gao, Han, Li & Zhou 2018
+  title: Market intraday momentum
+  venue: Journal of Financial Economics 129(2)
+  supports: Intraday momentum
+  evidence_grade: A
+  found_via: london-breakout research_summary
+  citation_status: to_verify_in_phase_5
+- citation: Li, Sakkas & Urquhart 2022
+  title: 'Intraday time series momentum: global evidence'
+  venue: Journal of Financial Markets 57
+  supports: Intraday momentum
+  evidence_grade: A
+  found_via: london-breakout research_summary
+  citation_status: to_verify_in_phase_5
+- citation: Holmberg, Lonnbark & Lundstrom 2013
+  title: Assessing the profitability of intraday opening range breakout strategies
+  venue: Finance Research Letters 10(1)
+  supports: ORB
+  evidence_grade: A
+  found_via: london-breakout research_summary
+  citation_status: to_verify_in_phase_5
+- citation: Zarattini & Aziz 2023
+  title: Can day trading really be profitable?
+  venue: SSRN 4416622
+  supports: QQQ ORB
+  evidence_grade: B
+  found_via: london-breakout research_summary
+  citation_status: to_verify_in_phase_5
+- citation: Crabel 1990
+  title: Day Trading with Short Term Price Patterns and Opening Range Breakout
+  venue: book
+  supports: Original ORB
+  evidence_grade: C
+  found_via: london-breakout research_summary
+  citation_status: to_verify_in_phase_5
+- citation: Iwatsubo, Watkins & Xu 2018
+  title: 'Intraday seasonality in efficiency, liquidity, volatility and volume: platinum and gold futures'
+  venue: Journal of Commodity Markets 11
+  supports: Gold intraday seasonality
+  evidence_grade: A
+  found_via: EVIDENCE_REVIEW_2026-07-07.md
+  citation_status: to_verify_in_phase_5
+- citation: Ni, Pearson & Poteshman 2005
+  title: Stock price clustering on option expiration dates
+  venue: Journal of Financial Economics 78(1)
+  supports: Dealer hedging
+  evidence_grade: A
+  found_via: EVIDENCE_REVIEW_2026-07-07.md
+  citation_status: to_verify_in_phase_5
+- citation: Baltussen, Da, Lammers & Martens 2021
+  title: Hedging demand and market intraday momentum
+  venue: Journal of Financial Economics 142(1)
+  supports: Gamma and momentum
+  evidence_grade: A
+  found_via: EVIDENCE_REVIEW_2026-07-07.md
+  citation_status: to_verify_in_phase_5
+- citation: Cont, Kukanov & Stoikov 2014
+  title: The price impact of order book events
+  venue: Journal of Financial Econometrics 12(1)
+  supports: Order flow imbalance
+  evidence_grade: A
+  found_via: EVIDENCE_REVIEW_2026-07-07.md
+  citation_status: to_verify_in_phase_5

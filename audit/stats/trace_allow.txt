@@ -1,0 +1,2 @@
+# Number | why it is allowed
+3829 # CRT-FVG-1 stored trade count, in the source results/table_symbols.csv, which the release does not carry

@@ -1,0 +1,32 @@
+{'brokers': 30, 'real_money_word': 5, 'bot_names': 11, 'email': 2, 'abs_path': 4, 'vm': 4, 'ids': 9}
+originals/gann_bot_500/research/tvsearch/results/all_runs.csv.gz {'abs_path': 4, 'vm': 4, 'ids': 9}
+experiments/copy-trading/HLCOPY-1/README.md {'bot_names': 6}
+registry/experiments.csv {'bot_names': 2, 'brokers': 2}
+registry/experiments.yaml {'bot_names': 2, 'brokers': 2}
+experiments/README.md {'bot_names': 1, 'brokers': 2}
+audit/VERDICTS.md {'brokers': 2}
+audit/findings/CLOCK_BUG.md {'real_money_word': 1, 'brokers': 1}
+audit/phaseC/build_verdicts.py {'brokers': 2}
+experiments/implementation-audit/FLIP-BOT-DEFECTS/README.md {'brokers': 2}
+originals/gann_bot_500/fable-backtesting/broker_fit.py {'real_money_word': 2}
+audit/CHANGES.md {'brokers': 1}
+audit/DECISIONS.md {'brokers': 1}
+audit/infrastructure/PHASE_B_REPORT.md {'brokers': 1}
+audit/phaseC/logs_L1/recorded.dr_backtest_report.md {'brokers': 1}
+audit/phaseC/logs_L1/true.dr_backtest_report.md {'brokers': 1}
+experiments/diagnostics/CYCLES-1-10/README.md {'brokers': 1}
+experiments/forward-test/FORWARD-FLIP-DEMO/README.md {'brokers': 1}
+experiments/ict-smc/CRT-FVG-1/spec.md {'brokers': 1}
+experiments/llm-agent/TAEVAL-1/README.md {'brokers': 1}
+experiments/risk-geometry/DOOR-3/spec.md {'real_money_word': 1}
+originals/gann_bot_500/research/crt_fvg/config.yaml {'brokers': 1}
+originals/gann_bot_500/research/crt_fvg/PREREG.md {'brokers': 1}
+originals/gann_bot_500/research/crt_fvg/crt_fvg/stats.py {'brokers': 1}
+originals/gann_bot_500/research/dr_backtest/backtest_report.md {'brokers': 1}
+originals/gann_bot_500/research/dr_backtest/run.py {'brokers': 1}
+originals/gann_bot_500/research/goldbot/prereg/confirmation_watcher.py {'email': 1}
+originals/gann_bot_500/research/goldbot/prereg/door3_fixed_dollar_stop.md {'real_money_word': 1}
+originals/gann_bot_500/research/goldbot/prereg/hb_binding_watcher.py {'email': 1}
+originals/gann_bot_500/research/market_context/measure.py {'brokers': 1}
+originals/gann_bot_500/research/market_context/veto_analysis.md {'brokers': 1}
+registry/trial_ledger.csv {'brokers': 1}

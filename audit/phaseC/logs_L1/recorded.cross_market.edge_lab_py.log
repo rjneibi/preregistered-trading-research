@@ -1,0 +1,35 @@
+
+F1 TSMOM  59 markets: EURUSD, EWA, IWM, TLT, US30, US500, USTEC, XAGUSD, XAUUSD, AUDJPY, AUDUSD, AUS200, DBC, DE40, EEM, EFA, ESP35, EURCHF, EURGBP, EURJPY, EWC, EWG, EWJ, EWU, FRA40, FXA, FXE, FXI, FXY, GBPJPY, GBPUSD, GDX, HK50, IEF, INDA, LQD, NZDUSD, SHY, SMH, TIP, US2000, USDCAD, USDCHF, USDJPY, USDMXN, USDNOK, USDSEK, USDTRY, USDZAR, USO, VNQ, WTI, XLC, XLE, XLK, XLP, XLV, XPDUSD, XPTUSD
+   all     Sharpe -0.27  CAGR -10.0%  vol 26.1%  maxDD 92.4%
+   2005-15 Sharpe -0.29  CAGR -10.6%  vol 26.5%  maxDD 77.7%
+   2016-26 Sharpe -0.26  CAGR  -9.5%  vol 25.7%  maxDD 73.9%
+   one extra day of execution lag: Sharpe -0.28  CAGR -10.4%  vol 26.4%  maxDD 92.8%
+   random-sign control p = 0.005   -> FAIL
+   best/worst contributors: USDCHF -0.11, EWA -0.10, AUS200 -0.07, AUDJPY -0.06 ... XLK +0.08, XLV +0.09, USO +0.10, DBC +0.11, XAUUSD +0.15, USDTRY +0.46
+
+F2 XSMOM  not enough sector ETFs: ['XLE', 'XLK', 'XLV', 'XLP']
+
+F3 TOM    US500 all: in-window +4.5 bp/day (n=680)  rest +5.4 bp/day  t=-0.21
+F3 TOM    US500 H1: in-window -0.9 bp/day (n=308)  rest +4.9 bp/day  t=-1.15
+F3 TOM    US500 H2: in-window +9.0 bp/day (n=372)  rest +5.9 bp/day  t=0.48
+   TOM-only strategy Sharpe  0.16  CAGR  +0.8%  vol  6.7%  maxDD 18.3%  (time in market 19%)  -> FAIL
+
+F4 CARRY  funding carry, equal weight across coins (delta neutral, return on the spot leg's capital)
+   all: yield +10.3%/yr  Sharpe 7.51  worst day -0.36%
+   2019-22: yield +17.6%/yr  Sharpe 9.31  worst day -0.36%
+   2023-26: yield +4.3%/yr  Sharpe 8.08  worst day -0.10%
+   worst month -0.48%, months negative 28%
+   per coin yield/yr: BTC +10%, ETH +13%, BNB +5%, XRP +13%, ADA +12%, SOL +7%, DOGE +11%, LTC +13%, LINK +13%, DOT +9%, AVAX +7%, TRX +6%
+   NOTE capital: spot leg + perp margin ~ 1.3-1.5x notional; yield above is per spot notional -> FAIL
+
+F5 CXMOM  top-3 Sharpe  0.85  CAGR +45.2%  vol 84.3%  maxDD 76.8%
+   equal  Sharpe  0.86  CAGR +44.4%  vol 77.8%  maxDD 78.1%
+   excess Sharpe all 0.11  H1 0.20  H2 -0.02 -> FAIL
+
+F6 CTSMOM trend Sharpe  1.52  CAGR +34.9%  vol 21.2%  maxDD 26.6%
+   b&h   Sharpe  0.96  CAGR +30.7%  vol 34.0%  maxDD 48.3%
+   H1 trend 1.98 vs b&h 1.06 | H2 trend 1.00 vs b&h 0.85 | run-shuffle p = 0.005 -> PASS
+
+F7 PAIRS  gold/silver z>2: n=76 PF 0.76 mean -0.81% | H1 n=31 PF 1.05 | H2 n=45 PF 0.61 -> FAIL
+
+SUMMARY: {'f1': 'FAIL', 'f2': 'FAIL', 'f3': 'FAIL', 'f4': 'FAIL', 'f5': 'FAIL', 'f6': 'PASS', 'f7': 'FAIL'}

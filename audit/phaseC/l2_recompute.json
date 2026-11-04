@@ -1,0 +1,223 @@
+{
+ "cycles recorded": {
+  "supF_net_per_atr": {
+   "F": 2.4,
+   "date": "2018-12-19"
+  },
+  "supF_gross_per_atr": {
+   "F": 1.65,
+   "date": "2017-03-15"
+  },
+  "supF_cost_per_atr": {
+   "F": 144.43,
+   "date": "2020-02-28"
+  },
+  "psr_monthly_full": 0.175,
+  "modern_2021_06": {
+   "n": 205,
+   "total_p90": 10272,
+   "hour20_n": 42,
+   "hour20_p90": 13635,
+   "rest_p90": -3363,
+   "hour20_mean_atr": 0.2002,
+   "t": 1.9,
+   "p": 0.065,
+   "sidak_k3": 0.182,
+   "total_med": 15443,
+   "hour20_med": 15169
+  },
+  "recent_2023_01": {
+   "n": 143,
+   "total_p90": 9051,
+   "hour20_n": 32,
+   "hour20_p90": 13435,
+   "rest_p90": -4384,
+   "hour20_mean_atr": 0.2637,
+   "t": 2.17,
+   "p": 0.038,
+   "sidak_k3": 0.11,
+   "total_med": 13221,
+   "hour20_med": 14765
+  }
+ },
+ "cycles true_utc": {
+  "supF_net_per_atr": {
+   "F": 3.65,
+   "date": "2019-10-24"
+  },
+  "supF_gross_per_atr": {
+   "F": 3.05,
+   "date": "2017-03-15"
+  },
+  "supF_cost_per_atr": {
+   "F": 145.45,
+   "date": "2020-02-21"
+  },
+  "psr_monthly_full": 0.028,
+  "modern_2021_06": {
+   "n": 214,
+   "total_p90": 1898,
+   "hour20_n": 44,
+   "hour20_p90": 7204,
+   "rest_p90": -5306,
+   "hour20_mean_atr": 0.0676,
+   "t": 0.47,
+   "p": 0.642,
+   "sidak_k3": 0.954,
+   "total_med": 7294,
+   "hour20_med": 8852
+  },
+  "recent_2023_01": {
+   "n": 151,
+   "total_p90": -368,
+   "hour20_n": 33,
+   "hour20_p90": 5461,
+   "rest_p90": -5828,
+   "hour20_mean_atr": -0.023,
+   "t": -0.12,
+   "p": 0.903,
+   "sidak_k3": 0.999,
+   "total_med": 4017,
+   "hour20_med": 6887
+  }
+ },
+ "door3 recorded": {
+  "n": 472,
+  "fixed20_pf": 1.103,
+  "fixed20_net": 9122,
+  "baseline_pf": 1.045,
+  "baseline_net": 4201,
+  "winners": 360,
+  "winners_reaching_20": 0,
+  "max_winner_mae_usd_per_oz": 17.6,
+  "resolution": {
+   "TP": 367,
+   "TIMEOUT": 43,
+   "BAIL": 39,
+   "SL": 23
+  }
+ },
+ "door3 true_utc": {
+  "n": 481,
+  "fixed20_pf": 0.924,
+  "fixed20_net": -7626,
+  "baseline_pf": 0.933,
+  "baseline_net": -6907,
+  "winners": 353,
+  "winners_reaching_20": 4,
+  "max_winner_mae_usd_per_oz": 37.86,
+  "resolution": {
+   "TP": 357,
+   "TIMEOUT": 51,
+   "BAIL": 49,
+   "SL": 24
+  }
+ },
+ "door3 stored": {
+  "n": 472,
+  "net_with_swap": 8297.59,
+  "pf": 1.093,
+  "gross": 54889.39
+ },
+ "fx": {
+  "trades_D_AUDUSD.csv": [
+   "timestamp",
+   "profile",
+   "ticket",
+   "direction",
+   "zone_name",
+   "confluence",
+   "entry_price",
+   "sl_price",
+   "tp_price",
+   "lots",
+   "atr",
+   "adx"
+  ],
+  "trades_D_EURUSD.csv": [
+   "timestamp",
+   "profile",
+   "ticket",
+   "direction",
+   "zone_name",
+   "confluence",
+   "entry_price",
+   "sl_price",
+   "tp_price",
+   "lots",
+   "atr",
+   "adx"
+  ],
+  "trades_D_GBPUSD.csv": [
+   "timestamp",
+   "profile",
+   "ticket",
+   "direction",
+   "zone_name",
+   "confluence",
+   "entry_price",
+   "sl_price",
+   "tp_price",
+   "lots",
+   "atr",
+   "adx"
+  ],
+  "trades_R_AUDUSD.csv": [
+   "timestamp",
+   "profile",
+   "ticket",
+   "direction",
+   "zone_name",
+   "confluence",
+   "entry_price",
+   "sl_price",
+   "tp_price",
+   "lots",
+   "atr",
+   "adx"
+  ],
+  "trades_R_EURUSD.csv": [
+   "timestamp",
+   "profile",
+   "ticket",
+   "direction",
+   "zone_name",
+   "confluence",
+   "entry_price",
+   "sl_price",
+   "tp_price",
+   "lots",
+   "atr",
+   "adx"
+  ],
+  "trades_R_GBPUSD.csv": [
+   "timestamp",
+   "profile",
+   "ticket",
+   "direction",
+   "zone_name",
+   "confluence",
+   "entry_price",
+   "sl_price",
+   "tp_price",
+   "lots",
+   "atr",
+   "adx"
+  ],
+  "trades_S_AUDUSD.csv": {
+   "col": "pnl_usd",
+   "n": 31,
+   "pf": 0.401
+  },
+  "trades_S_EURUSD.csv": {
+   "col": "pnl_usd",
+   "n": 24,
+   "pf": 0.407
+  },
+  "trades_S_GBPUSD.csv": {
+   "col": "pnl_usd",
+   "n": 41,
+   "pf": 0.539
+  }
+ }
+}

@@ -1,0 +1,8 @@
+arm A (conviction): 481 trades, PF med 1.009
+building arm B (FINAL_v3 H4 arm) ...
+arm B (v3 H4): 436 trades, PF med 1.040 (old 0.847 / new 1.162, flat 1.240)
+portfolio: 915 trades kept, 2 blocked by breaker
+
+portfolio: PF 1.033 (old 0.841 / new 1.153, p90 0.972) net $7,984 vs best single $5,638; monthly corr 0.75
+gates: {'1_portfolio_pf_ge_1.20': False, '2_each_era_ge_1.00': False, '3_net_gt_best_single': True, '4_monthly_corr_le_0.60': False, '5_p90_pf_ge_1.05': False}
+== H-P FAIL -> conviction solo remains the only line ==

@@ -1,0 +1,185 @@
+{
+ "freeze": "2f7599a",
+ "vol_median_atr_pct": 0.013424359933343687,
+ "n_partial_days_dropped": 859,
+ "diag": {
+  "days_scanned": 4233,
+  "no_reclaim": 727,
+  "both_sides_void": 356,
+  "no_atr": 0,
+  "asia_window": 1437
+ },
+ "arms": {
+  "E1_d0.05": {
+   "n": 1181,
+   "pf_real": 0.7473876472997909,
+   "pf_p95": 0.6991088021136949,
+   "net_usd": -81009.46292303817,
+   "pf_old": 0.7026641450990028,
+   "pf_new": 0.8100485181470526
+  },
+  "E2_d0.05": {
+   "n": 1181,
+   "pf_real": 0.6255325929550745,
+   "pf_p95": 0.5711945175191828,
+   "net_usd": -123180.73461691405,
+   "pf_old": 0.5719228613282434,
+   "pf_new": 0.6907573261202276
+  },
+  "E1_d0.15": {
+   "n": 885,
+   "pf_real": 0.8267265454273179,
+   "pf_p95": 0.775054866569189,
+   "net_usd": -42086.55482740111,
+   "pf_old": 0.7463157358100375,
+   "pf_new": 0.9406178126031577
+  },
+  "E2_d0.15": {
+   "n": 885,
+   "pf_real": 0.6341042584103005,
+   "pf_p95": 0.5785056404595549,
+   "net_usd": -88536.13197393497,
+   "pf_old": 0.5811913409919647,
+   "pf_new": 0.6965986251594664
+  },
+  "E1_d0.30": {
+   "n": 605,
+   "pf_real": 0.9348393098735133,
+   "pf_p95": 0.8799001414510208,
+   "net_usd": -11192.88188295759,
+   "pf_old": 0.8930231018436084,
+   "pf_new": 0.9881898963030725
+  },
+  "E2_d0.30": {
+   "n": 605,
+   "pf_real": 0.7183150804036301,
+   "pf_p95": 0.654272213338715,
+   "net_usd": -41692.05058749144,
+   "pf_old": 0.6629601700181813,
+   "pf_new": 0.7776382358776922
+  },
+  "mirror_E2": {
+   "n": 885,
+   "pf_real": 0.71644032166125,
+   "pf_p95": 0.6548164653199532,
+   "net_usd": -62818.79948327555,
+   "pf_old": 0.49884868736358573,
+   "pf_new": 1.0929591171643207
+  },
+  "touch_baseline_E2": {
+   "n": 1759,
+   "pf_real": 0.6380977007636862,
+   "pf_p95": 0.5830643736137598,
+   "net_usd": -174543.76295675355,
+   "pf_old": 0.54469033173551,
+   "pf_new": 0.7614787348848511
+  }
+ },
+ "table_2x2": {
+  "old/LOvol": {
+   "n": 348,
+   "pf_E1": 0.691736549125534,
+   "pf_E2": 0.5172282105618328,
+   "pf_mirror_E2": 0.4284276223500287
+  },
+  "old/HIvol": {
+   "n": 301,
+   "pf_E1": 0.7915390509083187,
+   "pf_E2": 0.6260754129975256,
+   "pf_mirror_E2": 0.5468739997666109
+  },
+  "new/LOvol": {
+   "n": 117,
+   "pf_E1": 0.8109269660285755,
+   "pf_E2": 0.8363882502693343,
+   "pf_mirror_E2": 0.6865277433181084
+  },
+  "new/HIvol": {
+   "n": 119,
+   "pf_E1": 1.0007764246035151,
+   "pf_E2": 0.6561352848937158,
+   "pf_mirror_E2": 1.335372848592571
+  }
+ },
+ "gates_primary": {
+  "g0_power_n_ge_100": true,
+  "g1_pf_ge_1.30": false,
+  "g2_uplift_ge_0.10": false,
+  "g3_era_ge_1.00_both": false,
+  "g3_no_mirror_inversion": false,
+  "g4_dsr_ge_0.95": false,
+  "g5_pbo_lt_0.50": true,
+  "g6_p95_stress_pf_ge_1.15": false
+ },
+ "gates_displacement": {
+  "E1_d0.05": {
+   "g0_power_n_ge_100": true,
+   "g1_pf_ge_1.30": false,
+   "g2_uplift_ge_0.10": false,
+   "g3_era_ge_1.00_both": false,
+   "g3_no_mirror_inversion": false,
+   "g4_dsr_ge_0.95": false,
+   "g5_pbo_lt_0.50": true,
+   "g6_p95_stress_pf_ge_1.15": false
+  },
+  "E1_d0.30": {
+   "g0_power_n_ge_100": true,
+   "g1_pf_ge_1.30": false,
+   "g2_uplift_ge_0.10": false,
+   "g3_era_ge_1.00_both": false,
+   "g3_no_mirror_inversion": false,
+   "g4_dsr_ge_0.95": false,
+   "g5_pbo_lt_0.50": true,
+   "g6_p95_stress_pf_ge_1.15": false
+  },
+  "E2_d0.05": {
+   "g0_power_n_ge_100": true,
+   "g1_pf_ge_1.30": false,
+   "g2_uplift_ge_0.10": false,
+   "g3_era_ge_1.00_both": false,
+   "g3_no_mirror_inversion": false,
+   "g4_dsr_ge_0.95": false,
+   "g5_pbo_lt_0.50": true,
+   "g6_p95_stress_pf_ge_1.15": false
+  },
+  "E2_d0.15": {
+   "g0_power_n_ge_100": true,
+   "g1_pf_ge_1.30": false,
+   "g2_uplift_ge_0.10": false,
+   "g3_era_ge_1.00_both": false,
+   "g3_no_mirror_inversion": false,
+   "g4_dsr_ge_0.95": false,
+   "g5_pbo_lt_0.50": true,
+   "g6_p95_stress_pf_ge_1.15": false
+  },
+  "E2_d0.30": {
+   "g0_power_n_ge_100": true,
+   "g1_pf_ge_1.30": false,
+   "g2_uplift_ge_0.10": false,
+   "g3_era_ge_1.00_both": false,
+   "g3_no_mirror_inversion": false,
+   "g4_dsr_ge_0.95": false,
+   "g5_pbo_lt_0.50": true,
+   "g6_p95_stress_pf_ge_1.15": false
+  }
+ },
+ "displace_by": null,
+ "dsr_primary": {
+  "sr": -0.04964638759402058,
+  "sr0": 0.04543223820006476,
+  "n_trials": 6,
+  "var_trial_sr": 0.0012210895063938943,
+  "n_obs": 885,
+  "skew": 10.514663751540535,
+  "kurt_raw": 214.02987026614593,
+  "dsr": 0.013955113130431962
+ },
+ "pbo": {
+  "pbo": 0.0,
+  "n_combinations": 70,
+  "lambda_mean": 1.7917594692280545,
+  "s_blocks": 8,
+  "purged": true
+ },
+ "verdict": "HSW FAIL: intraday sweep-reclaim line on XAUUSD CLOSED \u2014 no depth/session/window shopping, no level-definition migration; reversal-at-levels family closed at every free-data scale (with HCRT)"
+}

@@ -1,0 +1,28 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote audit/_copy/rs_recorded/fable-backtesting/calendar/news_days.json: 260 blackout days
+months per stream: {'Index dip RSI2': 160, 'Index dip IBS': 160, 'Nasdaq ORB': 52, 'Crypto trend (12 coins)': 109, 'Crypto funding carry': 83}
+
+per stream (scaled to 10% vol):
+  Index dip RSI2               Sharpe  0.92  worst month -11.1%  maxDD 25.0%  (2013-07..)
+  Index dip IBS                Sharpe  0.85  worst month  -8.4%  maxDD 13.6%  (2013-07..)
+  Nasdaq ORB                   Sharpe  1.05  worst month  -4.7%  maxDD  6.5%  (2022-07..)
+  Crypto trend (12 coins)      Sharpe  1.19  worst month  -3.0%  maxDD  8.3%  (2017-10..)
+  Crypto funding carry         Sharpe  1.83  worst month  -0.8%  maxDD  3.1%  (2019-12..)
+
+correlation of monthly returns:
+                         Index dip RSI2  Index dip IBS  Nasdaq ORB  Crypto trend (12 coins)  Crypto funding carry
+Index dip RSI2                     1.00           0.21        0.07                     0.03                 -0.08
+Index dip IBS                      0.21           1.00       -0.00                     0.03                 -0.12
+Nasdaq ORB                         0.07          -0.00        1.00                    -0.10                 -0.02
+Crypto trend (12 coins)            0.03           0.03       -0.10                     1.00                  0.53
+Crypto funding carry              -0.08          -0.12       -0.02                     0.53                  1.00
+
+COMBINED equal-risk book, 2022-07..2026-10 (52 months, all streams live):
+  Sharpe 3.01  vol 3.8%  maxDD 1.9%  worst month -1.6%  losing months 19%
+  vs Index dip RSI2               alone over same months: Sharpe  1.81  maxDD  8.4%
+  vs Index dip IBS                alone over same months: Sharpe  2.05  maxDD  3.0%
+  vs Nasdaq ORB                   alone over same months: Sharpe  1.05  maxDD  6.5%
+  vs Crypto trend (12 coins)      alone over same months: Sharpe  0.80  maxDD  7.0%
+  vs Crypto funding carry         alone over same months: Sharpe  1.69  maxDD  3.1%
+  book re-levered to 10% vol: CAGR +34.0%  maxDD 5.0%
+  by year: 2022 +10%, 2023 +27%, 2024 +61%, 2025 +29%, 2026 +23%

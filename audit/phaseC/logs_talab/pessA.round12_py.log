@@ -1,0 +1,6 @@
+M15 OLD (leak) <2025  n  627  net   +12.2R  avg +0.019R  PF 1.06  win 69%  maxDD  17.3R | twins avg -0.065R, beats 100%
+M15 OLD (leak) 2025+  n  364  net   +64.3R  avg +0.177R  PF 1.68  win 75%  maxDD   8.4R | twins avg +0.035R, beats 100%
+M15 FIXED      <2025  n  591  net   -61.1R  avg -0.103R  PF 0.76  win 62%  maxDD  79.0R | twins avg -0.057R, beats 15%
+M15 FIXED      2025+  n  398  net   +19.4R  avg +0.049R  PF 1.15  win 68%  maxDD  14.0R | twins avg +0.052R, beats 50%
+M5 OLD (leak) 2025+  n  297  net   +24.6R  avg +0.083R  PF 1.33  win 76%  maxDD   7.0R | twins avg -0.029R, beats 100%
+M5 FIXED      2025+  n  333  net    -6.1R  avg -0.018R  PF 0.94  win 69%  maxDD  20.6R | twins avg -0.021R, beats 40%

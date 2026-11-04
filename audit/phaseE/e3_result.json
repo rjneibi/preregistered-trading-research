@@ -1,0 +1,138 @@
+{
+ "note": "Descriptive only. No selection, no PASS. Weights use the full sample, so the combination is hindsight-scaled.",
+ "window": [
+  "2012-01-11",
+  "2026-10-13"
+ ],
+ "days": 5390,
+ "corr_daily_all": {
+  "XM-1-A1": {
+   "XM-1-A1": 1.0,
+   "SW-1": 0.056,
+   "TUNE-1-DIP": 0.147,
+   "EDGE-1-F6": -0.014
+  },
+  "SW-1": {
+   "XM-1-A1": 0.056,
+   "SW-1": 1.0,
+   "TUNE-1-DIP": 0.008,
+   "EDGE-1-F6": -0.008
+  },
+  "TUNE-1-DIP": {
+   "XM-1-A1": 0.147,
+   "SW-1": 0.008,
+   "TUNE-1-DIP": 1.0,
+   "EDGE-1-F6": 0.001
+  },
+  "EDGE-1-F6": {
+   "XM-1-A1": -0.014,
+   "SW-1": -0.008,
+   "TUNE-1-DIP": 0.001,
+   "EDGE-1-F6": 1.0
+  }
+ },
+ "corr_daily_common_window": {
+  "XM-1-A1": {
+   "XM-1-A1": 1.0,
+   "SW-1": 0.061,
+   "TUNE-1-DIP": 0.385,
+   "EDGE-1-F6": -0.015
+  },
+  "SW-1": {
+   "XM-1-A1": 0.061,
+   "SW-1": 1.0,
+   "TUNE-1-DIP": 0.041,
+   "EDGE-1-F6": -0.01
+  },
+  "TUNE-1-DIP": {
+   "XM-1-A1": 0.385,
+   "SW-1": 0.041,
+   "TUNE-1-DIP": 1.0,
+   "EDGE-1-F6": 0.007
+  },
+  "EDGE-1-F6": {
+   "XM-1-A1": -0.015,
+   "SW-1": -0.01,
+   "TUNE-1-DIP": 0.007,
+   "EDGE-1-F6": 1.0
+  }
+ },
+ "common_window_start": "2017-10-17",
+ "share_of_worst_decile_days_other_also_down": {
+  "XM-1-A1": {
+   "SW-1": 0.0,
+   "TUNE-1-DIP": 1.0,
+   "EDGE-1-F6": 0.0
+  },
+  "SW-1": {
+   "XM-1-A1": 0.0,
+   "TUNE-1-DIP": 0.308,
+   "EDGE-1-F6": 0.231
+  },
+  "TUNE-1-DIP": {
+   "XM-1-A1": 0.25,
+   "SW-1": 0.214,
+   "EDGE-1-F6": 0.321
+  },
+  "EDGE-1-F6": {
+   "XM-1-A1": 0.0,
+   "SW-1": 0.015,
+   "TUNE-1-DIP": 0.081
+  }
+ },
+ "share_of_deep_dd_days_other_also_in_dd_over_2pct": {
+  "XM-1-A1": {
+   "SW-1": 0.618,
+   "TUNE-1-DIP": 0.982,
+   "EDGE-1-F6": 0.812
+  },
+  "SW-1": {
+   "XM-1-A1": 0.998,
+   "TUNE-1-DIP": 0.884,
+   "EDGE-1-F6": 0.934
+  },
+  "TUNE-1-DIP": {
+   "XM-1-A1": 1.0,
+   "SW-1": 0.647,
+   "EDGE-1-F6": 0.837
+  },
+  "EDGE-1-F6": {
+   "XM-1-A1": 0.553,
+   "SW-1": 0.39,
+   "TUNE-1-DIP": 0.289
+  }
+ },
+ "equal_risk_weights_full_sample": {
+  "XM-1-A1": 0.23,
+  "SW-1": 0.106,
+  "TUNE-1-DIP": 0.613,
+  "EDGE-1-F6": 0.05
+ },
+ "each_alone_common_window": {
+  "XM-1-A1": {
+   "sharpe_ann": 0.74,
+   "max_dd": -0.107,
+   "total": 0.349
+  },
+  "SW-1": {
+   "sharpe_ann": 1.19,
+   "max_dd": -0.146,
+   "total": 1.788
+  },
+  "TUNE-1-DIP": {
+   "sharpe_ann": 0.51,
+   "max_dd": -0.061,
+   "total": 0.082
+  },
+  "EDGE-1-F6": {
+   "sharpe_ann": 1.52,
+   "max_dd": -0.266,
+   "total": 13.83
+  }
+ },
+ "equal_risk_combination": {
+  "sharpe_ann": 1.78,
+  "max_dd": -0.071,
+  "total": 0.459
+ }
+}

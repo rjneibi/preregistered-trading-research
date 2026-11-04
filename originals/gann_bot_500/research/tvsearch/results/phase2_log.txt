@@ -1,0 +1,92 @@
+  [data] QQQ 5m: 3121 bars 2026-08-27 15:05:00..2026-10-23 15:05:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  [data] trimmed partial session 2026-08-27 (11 bars)
+  [data] trimmed partial session 2026-10-23 (68 bars)
+  cell QQQ 15m: 7199 configs, IS/OOS split 2026-10-07 11:15:00
+  [data] SPY 5m: 3121 bars 2026-08-27 15:05:00..2026-10-23 15:05:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  [data] trimmed partial session 2026-08-27 (11 bars)
+  [data] trimmed partial session 2026-10-23 (68 bars)
+  cell SPY 15m: 7188 configs, IS/OOS split 2026-10-07 11:15:00
+  [data] QQQ 5m: 3121 bars 2026-08-27 15:05:00..2026-10-23 15:05:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  [data] trimmed partial session 2026-08-27 (11 bars)
+  [data] trimmed partial session 2026-10-23 (68 bars)
+  cell QQQ 5m: 7247 configs, IS/OOS split 2026-10-07 11:25:00
+  [data] QQQ 1h: 3486 bars 2024-10-24 14:30:00..2026-10-23 14:30:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  [data] trimmed partial session 2024-10-24 (2 bars)
+  cell QQQ 60m: 6955 configs, IS/OOS split 2026-03-23 12:30:00
+  [data] SPY 5m: 3121 bars 2026-08-27 15:05:00..2026-10-23 15:05:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  [data] trimmed partial session 2026-08-27 (11 bars)
+  [data] trimmed partial session 2026-10-23 (68 bars)
+  cell SPY 5m: 7346 configs, IS/OOS split 2026-10-07 11:25:00
+  [data] SPY 1h: 3486 bars 2024-10-24 14:30:00..2026-10-23 14:30:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  [data] trimmed partial session 2024-10-24 (2 bars)
+  cell SPY 60m: 7065 configs, IS/OOS split 2026-03-23 12:30:00
+  [data] XAU m5: 99999 bars 2025-05-29 03:05:00..2026-10-23 22:05:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  cell XAU 60m: 7040 configs, IS/OOS split 2026-05-25 17:00:00
+  [data] XAU m5: 99999 bars 2025-05-29 03:05:00..2026-10-23 22:05:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  cell XAU 15m: 7239 configs, IS/OOS split 2026-05-25 16:30:00
+  [data] XAU m5: 99999 bars 2025-05-29 03:05:00..2026-10-23 22:05:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  cell XAU 5m: 7242 configs, IS/OOS split 2026-05-25 16:20:00
+
+PHASE 2 search: 64521 configurations tested in 415s; 21119 have >= 30 OOS trades
+
+OOS-profitable share by template (>= 30 OOS trades):
+               n  oos_profitable  is_profitable  median_oos_net
+tmpl                                                           
+breakout  4050.0           0.473          0.440          -3.621
+meanrev   3893.0           0.348          0.338         -19.336
+pullback  4168.0           0.482          0.446          -2.093
+trend     3685.0           0.526          0.410           3.959
+xover     5323.0           0.483          0.440          -1.777
+
+IS vs OOS rank correlation (Spearman, per cell):
+  QQQ 5m: -0.18 (n 844)
+  QQQ 15m: -0.17 (n 100)
+  QQQ 60m: +0.28 (n 1543)
+  SPY 5m: -0.03 (n 713)
+  SPY 15m: +0.28 (n 68)
+  SPY 60m: +0.21 (n 1584)
+  XAU 5m: +0.44 (n 6365)
+  XAU 15m: +0.26 (n 5874)
+  XAU 60m: +0.38 (n 4028)
+
+Walk-forward (best-train config picked blind each fold, summed test P&L per unit):
+asset  tf  wf_test_net                                 folds  configs
+  QQQ   5      -14.299        [0.616, -12.947, -6.258, 4.29]     7247
+  QQQ  15      -41.568     [14.944, -23.605, -2.117, -30.79]     7199
+  QQQ  60        5.129         [-14.14, 8.458, 5.845, 4.966]     6955
+  SPY   5       -6.274           [1.33, 0.66, -3.205, -5.06]     7346
+  SPY  15       16.239           [0.79, 9.715, 5.379, 0.355]     7188
+  SPY  60       31.380        [10.175, 20.589, 1.976, -1.36]     7065
+  XAU   5      389.580        [165.824, 24.0, 62.456, 137.3]     7242
+  XAU  15      330.669     [315.451, 90.666, -85.103, 9.656]     7239
+  XAU  60     -382.317 [-192.193, -385.789, -30.965, 226.63]     7040
+
+Top 20 by OOS Sharpe:
+  [data] QQQ 5m: 3121 bars 2026-08-27 15:05:00..2026-10-23 15:05:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  [data] trimmed partial session 2026-08-27 (11 bars)
+  [data] trimmed partial session 2026-10-23 (68 bars)
+  #1 QQQ 5m OOS n31 net +7.13 PF inf sharpe 17.72 | beats rand 100% DSR 0.90 stab 1.00 -> fail
+  [data] SPY 5m: 3121 bars 2026-08-27 15:05:00..2026-10-23 15:05:00 | dup 0 out-of-order 0 bad-OHLC 0 NaN 0 | intra-session gaps >5 bars 0 | |bar return|>15% 0 (split check)
+  [data] trimmed partial session 2026-08-27 (11 bars)
+  [data] trimmed partial session 2026-10-23 (68 bars)
+  #2 SPY 5m OOS n34 net +10.39 PF inf sharpe 15.96 | beats rand 94% DSR 0.96 stab 0.83 -> fail
+  #3 SPY 5m OOS n36 net +7.05 PF 2.25 sharpe 14.98 | beats rand 100% DSR 0.79 stab 0.83 -> fail
+  #4 QQQ 5m OOS n30 net +5.80 PF 1.78 sharpe 13.72 | beats rand 88% DSR 0.68 stab 1.00 -> fail
+  #5 QQQ 5m OOS n58 net +17.17 PF 2.11 sharpe 13.28 | beats rand 99% DSR 0.66 stab 0.89 -> fail
+  #6 QQQ 5m OOS n43 net +14.38 PF 3.98 sharpe 12.99 | beats rand 100% DSR 0.59 stab 1.00 -> fail
+  #7 QQQ 5m OOS n56 net +30.15 PF 2.36 sharpe 12.12 | beats rand 98% DSR 0.58 stab 1.00 -> fail
+  #8 SPY 5m OOS n65 net +10.13 PF 3.46 sharpe 11.77 | beats rand 99% DSR 0.53 stab 1.00 -> fail
+  #9 SPY 5m OOS n58 net +9.39 PF 1.74 sharpe 11.20 | beats rand 98% DSR 0.49 stab 0.89 -> fail
+  #10 QQQ 5m OOS n53 net +31.17 PF 3.21 sharpe 11.09 | beats rand 100% DSR 0.48 stab 1.00 -> fail
+  #11 SPY 5m OOS n53 net +18.34 PF 2.44 sharpe 11.03 | beats rand 100% DSR 0.48 stab 1.00 -> fail
+  #12 QQQ 5m OOS n39 net +23.40 PF 2.40 sharpe 10.86 | beats rand 100% DSR 0.46 stab 1.00 -> fail
+  #13 SPY 5m OOS n30 net +11.05 PF 2.18 sharpe 10.43 | beats rand 98% DSR 0.42 stab 1.00 -> fail
+  #14 QQQ 5m OOS n36 net +18.51 PF 2.45 sharpe 10.28 | beats rand 93% DSR 0.40 stab 1.00 -> fail
+  #15 QQQ 5m OOS n80 net +30.62 PF 2.57 sharpe 10.25 | beats rand 97% DSR 0.41 stab 1.00 -> fail
+  #16 SPY 5m OOS n38 net +16.27 PF 2.54 sharpe 10.18 | beats rand 100% DSR 0.41 stab 1.00 -> fail
+  #17 QQQ 5m OOS n36 net +19.62 PF 2.80 sharpe 10.00 | beats rand 98% DSR 0.38 stab 1.00 -> fail
+  #18 SPY 5m OOS n80 net +20.53 PF 2.33 sharpe 10.00 | beats rand 100% DSR 0.34 stab 1.00 -> fail
+  #19 QQQ 5m OOS n37 net +7.72 PF 1.62 sharpe 9.98 | beats rand 92% DSR 0.39 stab 1.00 -> fail
+  #20 QQQ 5m OOS n39 net +8.59 PF 1.43 sharpe 9.90 | beats rand 85% DSR 0.37 stab 1.00 -> fail
+
+PASS: 0 of 20 | trials counted for DSR: 64521 | done in 423s

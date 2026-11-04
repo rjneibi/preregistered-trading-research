@@ -1,0 +1,79 @@
+cost levels (per-oz excl comm | all-in):
+  matrix_mean: 0.822 | 0.892
+  best_session_old: 0.525 | 0.595
+  p90_stress: 1.018 | 1.088
+
+== EXHIBIT: breakeven frontier (required win rate) ==
+ cost_usd_oz  tp   sl  required_winrate
+       0.595 0.5 0.50          1.095000
+       0.595 1.0 1.00          0.797500
+       0.595 1.5 0.75          0.597778
+       0.892 0.5 0.50          1.392000
+       0.892 1.0 1.00          0.946000
+       0.892 1.5 0.75          0.729778
+       1.088 0.5 0.50          1.588000
+       1.088 1.0 1.00          1.044000
+       1.088 1.5 0.75          0.816889
+
+loading full M1 ...
+
+== EXHIBIT: |move| per horizon vs all-in cost (full history) ==
+ horizon_min  median_abs_move  p75_abs_move  cost_over_median_move
+           1             0.16         0.357               5.576303
+           5             0.38         0.800               2.347917
+          15             0.65         1.380               1.372628
+          30             0.92         1.950               0.969792
+          60             1.31         2.780               0.681075
+
+M1 slice: 3,848,235 bars 2015-06-18 00:00:00+00:00 -> 2026-06-19 17:57:00+00:00
+events: z-fade 164,692 | momo-burst 247,261
+        z_fade_tp0.5_sl0.5_all: n=164,692 amb=10,692 full-period PF=0.001 exp=$-84.75
+     z_fade_tp0.5_sl0.5_ldn_ny: n=56,260 amb=5,304 full-period PF=0.001 exp=$-84.66
+        z_fade_tp1.0_sl1.0_all: n=164,692 amb=3,394 full-period PF=0.097 exp=$-82.48
+     z_fade_tp1.0_sl1.0_ldn_ny: n=56,260 amb=1,667 full-period PF=0.118 exp=$-81.37
+       z_fade_tp1.5_sl0.75_all: n=164,692 amb=2,736 full-period PF=0.168 exp=$-81.23
+    z_fade_tp1.5_sl0.75_ldn_ny: n=56,260 amb=1,372 full-period PF=0.200 exp=$-79.89
+          momo_tp0.5_sl0.5_all: n=247,261 amb=13,688 full-period PF=0.001 exp=$-88.19
+       momo_tp0.5_sl0.5_ldn_ny: n=85,332 amb=6,751 full-period PF=0.001 exp=$-87.90
+          momo_tp1.0_sl1.0_all: n=247,261 amb=4,140 full-period PF=0.087 exp=$-88.34
+       momo_tp1.0_sl1.0_ldn_ny: n=85,332 amb=1,999 full-period PF=0.104 exp=$-87.22
+         momo_tp1.5_sl0.75_all: n=247,261 amb=3,327 full-period PF=0.151 exp=$-86.77
+      momo_tp1.5_sl0.75_ldn_ny: n=85,332 amb=1,637 full-period PF=0.179 exp=$-85.28
+
+== purged splits (selection on train, evaluated OOS) ==
+  split  0 (0, 1): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.168) -> OOS PF 0.28 n=19,255 exp=$-58.49
+  split  1 (0, 2): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.169) -> OOS PF 0.269 n=19,336 exp=$-64.4
+  split  2 (0, 3): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.17) -> OOS PF 0.267 n=18,972 exp=$-66.32
+  split  3 (0, 4): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.179) -> OOS PF 0.245 n=18,144 exp=$-70.91
+  split  4 (0, 5): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.243) -> OOS PF 0.132 n=19,341 exp=$-99.21
+  split  5 (1, 2): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.174) -> OOS PF 0.261 n=19,197 exp=$-62.57
+  split  6 (1, 3): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.175) -> OOS PF 0.259 n=18,833 exp=$-64.46
+  split  7 (1, 4): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.185) -> OOS PF 0.236 n=18,005 exp=$-69.01
+  split  8 (1, 5): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.248) -> OOS PF 0.121 n=19,202 exp=$-97.63
+  split  9 (2, 3): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.176) -> OOS PF 0.25 n=18,914 exp=$-70.48
+  split 10 (2, 4): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.186) -> OOS PF 0.229 n=18,086 exp=$-75.28
+  split 11 (2, 5): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.252) -> OOS PF 0.123 n=19,283 exp=$-103.39
+  split 12 (3, 4): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.187) -> OOS PF 0.227 n=17,722 exp=$-77.55
+  split 13 (3, 5): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.253) -> OOS PF 0.122 n=18,919 exp=$-106.07
+  split 14 (4, 5): selected z_fade_tp1.5_sl0.75_ldn_ny (train PF 0.264) -> OOS PF 0.105 n=18,091 exp=$-112.49
+
+winning config: z_fade_tp1.5_sl0.75_ldn_ny (selected in 15/15 splits; all selections: {'z_fade_tp1.5_sl0.75_ldn_ny': 15})
+  OOS (unique test trades): n=56,260 PF=0.200 exp=$-79.89
+  eras: old PF=0.270 (n=31,333) new PF=0.135 (n=24,927)
+  p90-cost OOS PF=0.146
+
+permutation reality check: 200 replicates ...
+  25/200 (running p95=0.142)
+  50/200 (running p95=0.143)
+  75/200 (running p95=0.143)
+  100/200 (running p95=0.143)
+  125/200 (running p95=0.143)
+  150/200 (running p95=0.143)
+  175/200 (running p95=0.143)
+  200/200 (running p95=0.143)
+permutation best-of-12: median 0.142, p95 0.143
+
+  H-S gates: {'1_oos_pf_ge_1.30': False, '2_each_era_oos_pf_ge_1.10': False, '3_p90_oos_pf_ge_1.10': False, '4_oos_n_ge_500': True, '5_beats_permutation_p95': True}
+== VERDICT: BAR-LEVEL FAIL -> scalping/HFT line CLOSED with evidence ==
+
+results -> audit/_copy/sb_recorded/research/goldbot/results/HS_run.json, exhibits -> HS_exhibits.md, verdict appended to DECISIONS.log

@@ -1,0 +1,604 @@
+{
+  "TP5_SL5": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.511,
+      "avg_pts": -8.9,
+      "total_pts": -11240.0,
+      "avg_win": 480.0,
+      "avg_loss": -520.0,
+      "pf": 0.965,
+      "expectancy": -8.9,
+      "max_drawdown_pts": 17680.0
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.515,
+      "avg_pts": -4.7,
+      "total_pts": -4160.0,
+      "avg_win": 480.0,
+      "avg_loss": -520.0,
+      "pf": 0.981,
+      "expectancy": -4.7,
+      "max_drawdown_pts": 17680.0
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.501,
+      "avg_pts": -18.7,
+      "total_pts": -7080.0,
+      "avg_win": 480.0,
+      "avg_loss": -520.0,
+      "pf": 0.928,
+      "expectancy": -18.7,
+      "max_drawdown_pts": 13440.0
+    },
+    "flags": [
+      "IS: PF 0.981 < 1.20 \u2014 no edge threshold",
+      "OOS: PF 0.928 < 1.20 \u2014 no edge threshold"
+    ]
+  },
+  "TP5_SL10": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.687,
+      "avg_pts": 10.5,
+      "total_pts": 13260.0,
+      "avg_win": 480.0,
+      "avg_loss": -1020.0,
+      "pf": 1.033,
+      "expectancy": 10.5,
+      "max_drawdown_pts": 19380.0
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.698,
+      "avg_pts": 26.4,
+      "total_pts": 23340.0,
+      "avg_win": 480.0,
+      "avg_loss": -1020.0,
+      "pf": 1.086,
+      "expectancy": 26.4,
+      "max_drawdown_pts": 15420.0
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.662,
+      "avg_pts": -26.6,
+      "total_pts": -10080.0,
+      "avg_win": 480.0,
+      "avg_loss": -1020.0,
+      "pf": 0.923,
+      "expectancy": -26.6,
+      "max_drawdown_pts": 19380.0
+    },
+    "flags": [
+      "IS: PF 1.086 < 1.20 \u2014 no edge threshold",
+      "OOS: PF 0.923 < 1.20 \u2014 no edge threshold"
+    ]
+  },
+  "TP5_SL15": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.769,
+      "avg_pts": 20.0,
+      "total_pts": 25190.7,
+      "avg_win": 480.0,
+      "avg_loss": -1508.3,
+      "pf": 1.057,
+      "expectancy": 20.0,
+      "max_drawdown_pts": 26523.3
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.769,
+      "avg_pts": 21.8,
+      "total_pts": 19270.7,
+      "avg_win": 480.0,
+      "avg_loss": -1503.2,
+      "pf": 1.063,
+      "expectancy": 21.8,
+      "max_drawdown_pts": 26523.3
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.768,
+      "avg_pts": 15.6,
+      "total_pts": 5920.0,
+      "avg_win": 480.0,
+      "avg_loss": -1520.0,
+      "pf": 1.044,
+      "expectancy": 15.6,
+      "max_drawdown_pts": 14800.0
+    },
+    "flags": [
+      "IS: PF 1.063 < 1.20 \u2014 no edge threshold",
+      "IS: DD 27% > 25% budget",
+      "OOS: PF 1.044 < 1.20 \u2014 no edge threshold"
+    ]
+  },
+  "TP5_FLIPEXIT": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.883,
+      "avg_pts": 64.5,
+      "total_pts": 81389.4,
+      "avg_win": 479.7,
+      "avg_loss": -3060.6,
+      "pf": 1.18,
+      "expectancy": 64.5,
+      "max_drawdown_pts": 41162.1
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.852,
+      "avg_pts": 49.2,
+      "total_pts": 43404.0,
+      "avg_win": 479.5,
+      "avg_loss": -2421.3,
+      "pf": 1.137,
+      "expectancy": 49.2,
+      "max_drawdown_pts": 41162.1
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.955,
+      "avg_pts": 100.2,
+      "total_pts": 37985.4,
+      "avg_win": 480.0,
+      "avg_loss": -7986.7,
+      "pf": 1.28,
+      "expectancy": 100.2,
+      "max_drawdown_pts": 36486.3
+    },
+    "flags": [
+      "IS: PF 1.137 < 1.20 \u2014 no edge threshold",
+      "IS: DD 41% > 25% budget",
+      "OOS: DD 36% > 25% budget"
+    ]
+  },
+  "TP10_SL5": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.346,
+      "avg_pts": -0.9,
+      "total_pts": -1185.6,
+      "avg_win": 979.0,
+      "avg_loss": -520.0,
+      "pf": 0.997,
+      "expectancy": -0.9,
+      "max_drawdown_pts": 34325.6
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.336,
+      "avg_pts": -16.0,
+      "total_pts": -14105.6,
+      "avg_win": 978.5,
+      "avg_loss": -520.0,
+      "pf": 0.954,
+      "expectancy": -16.0,
+      "max_drawdown_pts": 34325.6
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.369,
+      "avg_pts": 34.1,
+      "total_pts": 12920.0,
+      "avg_win": 980.0,
+      "avg_loss": -520.0,
+      "pf": 1.104,
+      "expectancy": 34.1,
+      "max_drawdown_pts": 10220.0
+    },
+    "flags": [
+      "IS: PF 0.954 < 1.20 \u2014 no edge threshold",
+      "IS: DD 34% > 25% budget",
+      "OOS: PF 1.104 < 1.20 \u2014 no edge threshold"
+    ]
+  },
+  "TP10_SL10": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.522,
+      "avg_pts": 24.4,
+      "total_pts": 30774.0,
+      "avg_win": 978.1,
+      "avg_loss": -1017.9,
+      "pf": 1.05,
+      "expectancy": 24.4,
+      "max_drawdown_pts": 33087.0
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.523,
+      "avg_pts": 26.4,
+      "total_pts": 23354.0,
+      "avg_win": 977.3,
+      "avg_loss": -1017.0,
+      "pf": 1.055,
+      "expectancy": 26.4,
+      "max_drawdown_pts": 33087.0
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.52,
+      "avg_pts": 19.6,
+      "total_pts": 7420.0,
+      "avg_win": 980.0,
+      "avg_loss": -1020.0,
+      "pf": 1.04,
+      "expectancy": 19.6,
+      "max_drawdown_pts": 17520.0
+    },
+    "flags": [
+      "IS: PF 1.055 < 1.20 \u2014 no edge threshold",
+      "IS: DD 33% > 25% budget",
+      "OOS: PF 1.04 < 1.20 \u2014 no edge threshold"
+    ]
+  },
+  "TP10_SL15": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.621,
+      "avg_pts": 39.1,
+      "total_pts": 49311.7,
+      "avg_win": 977.5,
+      "avg_loss": -1500.1,
+      "pf": 1.069,
+      "expectancy": 39.1,
+      "max_drawdown_pts": 50570.3
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.612,
+      "avg_pts": 17.4,
+      "total_pts": 15391.7,
+      "avg_win": 976.4,
+      "avg_loss": -1492.3,
+      "pf": 1.03,
+      "expectancy": 17.4,
+      "max_drawdown_pts": 50570.3
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.644,
+      "avg_pts": 89.5,
+      "total_pts": 33920.0,
+      "avg_win": 980.0,
+      "avg_loss": -1520.0,
+      "pf": 1.165,
+      "expectancy": 89.5,
+      "max_drawdown_pts": 19980.0
+    },
+    "flags": [
+      "IS: PF 1.03 < 1.20 \u2014 no edge threshold",
+      "IS: DD 51% > 25% budget",
+      "OOS: PF 1.165 < 1.20 \u2014 no edge threshold"
+    ]
+  },
+  "TP10_FLIPEXIT": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.773,
+      "avg_pts": 78.0,
+      "total_pts": 98467.7,
+      "avg_win": 974.1,
+      "avg_loss": -2966.1,
+      "pf": 1.116,
+      "expectancy": 78.0,
+      "max_drawdown_pts": 74951.4
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.717,
+      "avg_pts": 58.2,
+      "total_pts": 51432.0,
+      "avg_win": 970.9,
+      "avg_loss": -2252.6,
+      "pf": 1.091,
+      "expectancy": 58.2,
+      "max_drawdown_pts": 74951.4
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.902,
+      "avg_pts": 124.1,
+      "total_pts": 47035.7,
+      "avg_win": 980.0,
+      "avg_loss": -7787.1,
+      "pf": 1.163,
+      "expectancy": 124.1,
+      "max_drawdown_pts": 64345.0
+    },
+    "flags": [
+      "IS: PF 1.091 < 1.20 \u2014 no edge threshold",
+      "IS: DD 75% > 25% budget",
+      "OOS: PF 1.163 < 1.20 \u2014 no edge threshold",
+      "OOS: DD 64% > 25% budget"
+    ]
+  },
+  "TP15_SL5": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.269,
+      "avg_pts": 15.9,
+      "total_pts": 20022.4,
+      "avg_win": 1474.9,
+      "avg_loss": -520.0,
+      "pf": 1.042,
+      "expectancy": 15.9,
+      "max_drawdown_pts": 41425.6
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.253,
+      "avg_pts": -16.9,
+      "total_pts": -14897.6,
+      "avg_win": 1472.2,
+      "avg_loss": -520.0,
+      "pf": 0.957,
+      "expectancy": -16.9,
+      "max_drawdown_pts": 41425.6
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.306,
+      "avg_pts": 92.1,
+      "total_pts": 34920.0,
+      "avg_win": 1480.0,
+      "avg_loss": -520.0,
+      "pf": 1.255,
+      "expectancy": 92.1,
+      "max_drawdown_pts": 10080.0
+    },
+    "flags": [
+      "IS: PF 0.957 < 1.20 \u2014 no edge threshold",
+      "IS: DD 41% > 25% budget"
+    ]
+  },
+  "TP15_SL10": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.429,
+      "avg_pts": 49.5,
+      "total_pts": 62468.2,
+      "avg_win": 1466.2,
+      "avg_loss": -1017.0,
+      "pf": 1.085,
+      "expectancy": 49.5,
+      "max_drawdown_pts": 48312.1
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.421,
+      "avg_pts": 27.2,
+      "total_pts": 24048.2,
+      "avg_win": 1459.9,
+      "avg_loss": -1015.7,
+      "pf": 1.046,
+      "expectancy": 27.2,
+      "max_drawdown_pts": 48312.1
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.449,
+      "avg_pts": 101.4,
+      "total_pts": 38420.0,
+      "avg_win": 1480.0,
+      "avg_loss": -1020.0,
+      "pf": 1.18,
+      "expectancy": 101.4,
+      "max_drawdown_pts": 19000.0
+    },
+    "flags": [
+      "IS: PF 1.046 < 1.20 \u2014 no edge threshold",
+      "IS: DD 48% > 25% budget",
+      "OOS: PF 1.18 < 1.20 \u2014 no edge threshold"
+    ]
+  },
+  "TP15_SL15": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.536,
+      "avg_pts": 88.8,
+      "total_pts": 112084.1,
+      "avg_win": 1453.4,
+      "avg_loss": -1490.4,
+      "pf": 1.129,
+      "expectancy": 88.8,
+      "max_drawdown_pts": 65806.6
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.521,
+      "avg_pts": 42.1,
+      "total_pts": 37164.1,
+      "avg_win": 1440.9,
+      "avg_loss": -1479.1,
+      "pf": 1.059,
+      "expectancy": 42.1,
+      "max_drawdown_pts": 65806.6
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.573,
+      "avg_pts": 197.7,
+      "total_pts": 74920.0,
+      "avg_win": 1480.0,
+      "avg_loss": -1520.0,
+      "pf": 1.304,
+      "expectancy": 197.7,
+      "max_drawdown_pts": 26840.0
+    },
+    "flags": [
+      "IS: PF 1.059 < 1.20 \u2014 no edge threshold",
+      "IS: DD 66% > 25% budget",
+      "OOS: DD 27% > 25% budget"
+    ]
+  },
+  "TP15_FLIPEXIT": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.698,
+      "avg_pts": 125.4,
+      "total_pts": 158248.7,
+      "avg_win": 1439.1,
+      "avg_loss": -2912.3,
+      "pf": 1.143,
+      "expectancy": 125.4,
+      "max_drawdown_pts": 105803.5
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.631,
+      "avg_pts": 89.0,
+      "total_pts": 78616.8,
+      "avg_win": 1415.3,
+      "avg_loss": -2177.0,
+      "pf": 1.111,
+      "expectancy": 89.0,
+      "max_drawdown_pts": 105803.5
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.855,
+      "avg_pts": 210.1,
+      "total_pts": 79631.9,
+      "avg_win": 1480.0,
+      "avg_loss": -7270.7,
+      "pf": 1.199,
+      "expectancy": 210.1,
+      "max_drawdown_pts": 80946.7
+    },
+    "flags": [
+      "IS: PF 1.111 < 1.20 \u2014 no edge threshold",
+      "IS: DD 106% > 25% budget",
+      "OOS: PF 1.199 < 1.20 \u2014 no edge threshold",
+      "OOS: DD 81% > 25% budget"
+    ]
+  },
+  "TP5_NOSL": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.956,
+      "avg_pts": -36.4,
+      "total_pts": -45969.1,
+      "avg_win": 480.0,
+      "avg_loss": -11369.6,
+      "pf": 0.926,
+      "expectancy": -36.4,
+      "max_drawdown_pts": 134077.8
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.943,
+      "avg_pts": -75.1,
+      "total_pts": -66282.1,
+      "avg_win": 480.0,
+      "avg_loss": -9322.4,
+      "pf": 0.858,
+      "expectancy": -75.1,
+      "max_drawdown_pts": 115274.8
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.987,
+      "avg_pts": 53.6,
+      "total_pts": 20313.0,
+      "avg_win": 480.0,
+      "avg_loss": -31841.4,
+      "pf": 1.128,
+      "expectancy": 53.6,
+      "max_drawdown_pts": 56721.0
+    },
+    "flags": [
+      "IS: PF 0.858 < 1.20 \u2014 no edge threshold",
+      "IS: DD 115% > 25% budget",
+      "OOS: PF 1.128 < 1.20 \u2014 no edge threshold",
+      "OOS: DD 57% > 25% budget"
+    ]
+  },
+  "TP10_NOSL": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.921,
+      "avg_pts": -135.4,
+      "total_pts": -170891.3,
+      "avg_win": 979.2,
+      "avg_loss": -13087.0,
+      "pf": 0.869,
+      "expectancy": -135.4,
+      "max_drawdown_pts": 288328.8
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.903,
+      "avg_pts": -69.2,
+      "total_pts": -61104.2,
+      "avg_win": 978.8,
+      "avg_loss": -9781.6,
+      "pf": 0.927,
+      "expectancy": -69.2,
+      "max_drawdown_pts": 146930.7
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.963,
+      "avg_pts": -289.7,
+      "total_pts": -109787.1,
+      "avg_win": 980.0,
+      "avg_loss": -33391.9,
+      "pf": 0.765,
+      "expectancy": -289.7,
+      "max_drawdown_pts": 206374.7
+    },
+    "flags": [
+      "IS: PF 0.927 < 1.20 \u2014 no edge threshold",
+      "IS: DD 147% > 25% budget",
+      "OOS: PF 0.765 < 1.20 \u2014 no edge threshold",
+      "OOS: DD 206% > 25% budget"
+    ]
+  },
+  "TP15_NOSL": {
+    "ALL": {
+      "n": 1262,
+      "win_rate": 0.884,
+      "avg_pts": -166.3,
+      "total_pts": -209853.9,
+      "avg_win": 1478.7,
+      "avg_loss": -12643.6,
+      "pf": 0.887,
+      "expectancy": -166.3,
+      "max_drawdown_pts": 367005.2
+    },
+    "IS": {
+      "n": 883,
+      "win_rate": 0.862,
+      "avg_pts": 24.2,
+      "total_pts": 21382.5,
+      "avg_win": 1478.1,
+      "avg_loss": -9044.7,
+      "pf": 1.019,
+      "expectancy": 24.2,
+      "max_drawdown_pts": 128800.9
+    },
+    "OOS": {
+      "n": 379,
+      "win_rate": 0.934,
+      "avg_pts": -610.1,
+      "total_pts": -231236.4,
+      "avg_win": 1480.0,
+      "avg_loss": -30206.3,
+      "pf": 0.694,
+      "expectancy": -610.1,
+      "max_drawdown_pts": 341744.0
+    },
+    "flags": [
+      "IS: PF 1.019 < 1.20 \u2014 no edge threshold",
+      "IS: DD 129% > 25% budget",
+      "OOS: PF 0.694 < 1.20 \u2014 no edge threshold",
+      "OOS: DD 342% > 25% budget"
+    ]
+  }
+}

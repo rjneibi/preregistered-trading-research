@@ -1,0 +1,5 @@
+_copy/
+__pycache__/
+*.pyc
+phaseC/*_trades.csv
+.venv_audit/

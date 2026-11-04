@@ -1,0 +1,44 @@
+//@version=5
+// NOTES - why TradingView will not match the Python backtest to the cent:
+//  * Data: Python used Yahoo QQQ regular-hours bars. TradingView's feed for your symbol has other ticks/volume (VWAP uses volume).
+//  * Same-bar stop+target: Python assumes the STOP filled first (worst case); TradingView's broker emulator guesses
+//    the path from the bar's open. Turn on "Bar Magnifier" (Premium) to get closer.
+//  * Costs: Python charged $0.01/share per side. Set the same in Properties.
+//  * Session: Python resets sessions at 09:30 New York; TradingView uses the symbol's session (check the chart's session settings).
+//  * Fills: both fill at the next bar's open after the signal bar closes (process_orders_on_close = false).
+
+strategy("TVS top1 QQQ 5m xover", overlay = true, process_orders_on_close = false, default_qty_type = strategy.fixed, default_qty_value = 1)
+// config: {"adx_min": 25, "eos": true, "exit": "fixed", "fast_kind": "vwma", "fast_len": 13, "filt1": "adx", "filt2": "tod", "side": "short", "sl_fix": 2.0, "slow": "price", "template": "xover", "tod_skip_close": 0, "tod_skip_open": 30, "tp_fix": 0.25}
+
+slowLine = ta.vwma(close, 13)
+longSig = ta.crossover(close, slowLine)
+shortSig = ta.crossunder(close, slowLine)
+[fP, fM, fAdx] = ta.dmi(14, 14)
+minsIn = ta.barssince(timeframe.change("D")) * 5
+atrV = ta.atr(14)
+tpDist = 0.25
+slDist = 2.0
+goLong = longSig and true and fAdx > 25 and minsIn >= 30 and minsIn + 5 <= 390 and false
+goShort = shortSig and true and fAdx > 25 and minsIn >= 30 and minsIn + 5 <= 390
+var float lvlSL = na
+var float lvlTP = na
+var float lvlTrail = na
+lastBar = session.islastbar_regular or session.islastbar
+nextIsNewDay = lastBar
+goLong := goLong and not nextIsNewDay
+goShort := goShort and not nextIsNewDay
+if goLong
+    strategy.entry("L", strategy.long)
+    lvlSL := slDist
+    lvlTP := tpDist
+if goShort
+    strategy.entry("S", strategy.short)
+    lvlSL := slDist
+    lvlTP := tpDist
+ep = strategy.position_avg_price
+if strategy.position_size > 0
+    strategy.exit("xL", "L", stop = ep - lvlSL, limit = na(lvlTP) ? na : ep + lvlTP)
+if strategy.position_size < 0
+    strategy.exit("xS", "S", stop = ep + lvlSL, limit = na(lvlTP) ? na : ep - lvlTP)
+if lastBar
+    strategy.close_all(immediately = true)

@@ -1,0 +1,25 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote audit/_copy/rs_adj/fable-backtesting/calendar/news_days.json: 260 blackout days
+1-2 execution and cost stress, US500
+  baseline (signal close)                      n= 124 win 80% avg +0.464% | PF h1 1.72 h2 3.79 | total +76% maxDD -11.0%
+  next-day open in/out                         n= 124 win 77% avg +0.438% | PF h1 1.65 h2 3.45 | total +70% maxDD -10.7%
+  next open + spread x2 + financing 7%         n= 124 win 77% avg +0.398% | PF h1 1.51 h2 3.24 | total +62% maxDD -11.6%
+
+3 parameter neighbourhood, US500, next-open execution (PF half1/half2)
+        exitMA 3             exitMA 5             exitMA 10            
+  RSI<5   0.86/4.95 n57    1.05/5.77 n57    0.80/2.13 n54    
+  RSI<10  1.49/2.90 n126   1.65/3.45 n124   1.17/2.89 n116   
+  RSI<15  1.79/1.92 n191   1.92/1.97 n174   1.69/1.88 n162   
+  RSI<25  1.50/1.86 n288   1.56/1.73 n257   1.69/1.66 n248   
+  no SMA200 trend filter                       n= 169 win 75% avg +0.267% | PF h1 0.89 h2 2.93 | total +51% maxDD -29.2%
+
+4 markets the rule was never fitted on (next-open execution)
+  US30                                         n= 122 win 74% avg +0.207% | PF h1 1.33 h2 1.56 | total +27% maxDD -8.9%
+  USTEC                                        n=  37 win 78% avg +0.567% | PF h1 3.32 h2 2.28 | total +23% maxDD -7.7%
+  IWM                                          n= 164 win 67% avg +0.290% | PF h1 1.24 h2 1.64 | total +52% maxDD -23.7%
+  EWA                                          n= 150 win 63% avg +0.282% | PF h1 1.54 h2 1.30 | total +47% maxDD -14.7%
+  IWM 2003-2011 only (before the US500 sample) n=  60 win 62% avg +0.052% | PF h1 1.05 h2 1.06 | total +0% maxDD -23.7%
+
+5 US500 per year (next-open)
+  2013:+4.9%(6)  2014:+6.2%(12)  2015:+3.8%(9)  2016:+3.3%(7)  2017:+5.9%(9)  2018:-8.7%(8)  2019:+0.8%(7)  2020:-1.7%(7)  2021:+10.9%(13)  2022:-3.3%(2)  2023:-0.8%(10)  2024:+11.4%(13)  2025:+9.0%(10)  2026:+12.7%(11)
+  worst trade -4.57%  best 2.78%  longest losing streak 2

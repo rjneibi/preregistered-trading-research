@@ -1,0 +1,9 @@
+1308 D-gate entry events loaded
+loading M1 ...
+M0_baseline: n=1308 zoneWR=14.5% net=$-302,240 PF=0.086 OOS=0.075 worst=$-18,843 maxDD=$302,124 status={'timer': 1245, 'complete': 63} FAIL
+M1_r3s3_only: n=208 zoneWR=15.4% net=$-33,004 PF=0.127 OOS=0.096 worst=$-3,179 maxDD=$32,970 status={'timer': 199, 'complete': 9} FAIL
+M2_grid_sl: n=1308 zoneWR=14.4% net=$-307,579 PF=0.083 OOS=0.072 worst=$-18,843 maxDD=$307,463 status={'timer': 1231, 'complete': 62, 'grid_sl': 15} FAIL
+M3_atr_tp: n=1308 zoneWR=25.2% net=$-97,836 PF=0.294 OOS=0.353 worst=$-4,939 maxDD=$98,141 status={'timer': 1308} FAIL
+M4_combo: n=208 zoneWR=26.0% net=$-11,447 PF=0.350 OOS=0.343 worst=$-1,382 maxDD=$11,414 status={'timer': 207, 'grid_sl': 1} FAIL
+
+== FR-M ALL VARIANTS FAIL -> recommend RETIRE Micro (operator confirms) ==

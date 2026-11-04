@@ -1,0 +1,7 @@
+live_orb30     (30, 960, 'other', 0, 'both', 0.0015) | HOLD-T n245 PF 0.87 avg -3.57bp twin p 0.761 | HOLD-M US500 n2108 PF 1.08 US30 n2162 PF 1.08 pooled 1.08
+O1_30m_long    (30, 810, 'other', 0, 'long', 0.0015) | HOLD-T n126 PF 1.01 avg +0.31bp twin p 0.420 | HOLD-M US500 n1109 PF 1.10 US30 n1095 PF 1.10 pooled 1.10
+O2_60m_long    (60, 810, 'other', 0, 'long', 0.0015) | HOLD-T n125 PF 0.91 avg -1.99bp twin p 0.613 | HOLD-M US500 n1135 PF 1.10 US30 n1073 PF 1.09 pooled 1.10
+O3_15m_long    (15, 930, 'other', 0, 'long', 0.0015) | HOLD-T n135 PF 0.92 avg -2.14bp twin p 0.641 | HOLD-M US500 n945 PF 1.20 US30 n1035 PF 1.22 pooled 1.21
+VERDICT O1_30m_long: FAIL (live HOLD-T PF 0.87, HOLD-M 1.08)
+VERDICT O2_60m_long: FAIL (live HOLD-T PF 0.87, HOLD-M 1.08)
+VERDICT O3_15m_long: FAIL (live HOLD-T PF 0.87, HOLD-M 1.08)

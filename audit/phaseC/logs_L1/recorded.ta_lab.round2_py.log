@@ -1,0 +1,57 @@
+M5 2022-07-11 -> 2026-10-12, cut 2026-02-01
+random (any direction)   ALL  n 1261  net   +90.4R  avg +0.072R  PF 1.18  win 60%  maxDD  20.4R
+                         2022 n  142 avg -0.030R PF 0.93 net   -4.2R
+                         2023 n  291 avg +0.033R PF 1.08 net   +9.6R
+                         2024 n  297 avg +0.146R PF 1.43 net  +43.4R
+                         2025 n  299 avg +0.056R PF 1.13 net  +16.6R
+                         2026 n  232 avg +0.108R PF 1.28 net  +25.0R
+
+random (with H1 trend)   ALL  n 1250  net  +122.2R  avg +0.098R  PF 1.26  win 62%  maxDD  18.4R
+                         2022 n  140 avg +0.097R PF 1.26 net  +13.6R
+                         2023 n  289 avg +0.032R PF 1.08 net   +9.2R
+                         2024 n  298 avg +0.048R PF 1.12 net  +14.4R
+                         2025 n  296 avg +0.168R PF 1.49 net  +49.6R
+                         2026 n  227 avg +0.156R PF 1.45 net  +35.4R
+
+asia sweep fade (ICT)    ALL  n 1123  net  +208.2R  avg +0.185R  PF 1.44  win 58%  maxDD  11.0R
+                         2022 n  134 avg +0.101R PF 1.23 net  +13.6R
+                         2023 n  317 avg +0.100R PF 1.22 net  +31.6R
+                         2024 n  284 avg +0.101R PF 1.23 net  +28.8R
+                         2025 n  238 avg +0.337R PF 1.90 net  +80.2R
+                         2026 n  150 avg +0.360R PF 2.06 net  +54.0R
+
+asia breakout            ALL  n  782  net  -148.5R  avg -0.190R  PF 0.62  win 47%  maxDD 149.9R
+                         2022 n   94 avg -0.164R PF 0.66 net  -15.4R
+                         2023 n  204 avg -0.204R PF 0.61 net  -41.5R
+                         2024 n  194 avg -0.223R PF 0.57 net  -43.3R
+                         2025 n  174 avg -0.102R PF 0.78 net  -17.7R
+                         2026 n  116 avg -0.263R PF 0.51 net  -30.5R
+
+pivot S1/R1              ALL  n  847  net   +36.8R  avg +0.043R  PF 1.10  win 57%  maxDD  18.6R
+                         2022 n   87 avg -0.133R PF 0.74 net  -11.6R
+                         2023 n  198 avg +0.055R PF 1.13 net  +10.8R
+                         2024 n  207 avg +0.113R PF 1.28 net  +23.4R
+                         2025 n  203 avg -0.005R PF 0.99 net   -1.0R
+                         2026 n  152 avg +0.100R PF 1.26 net  +15.2R
+
+pivot S1/R1 with trend   ALL  n  486  net   +78.4R  avg +0.161R  PF 1.45  win 64%  maxDD   6.6R
+                         2022 n   58 avg -0.017R PF 0.96 net   -1.0R
+                         2023 n  111 avg +0.240R PF 1.75 net  +26.6R
+                         2024 n  123 avg +0.150R PF 1.39 net  +18.4R
+                         2025 n  106 avg +0.223R PF 1.69 net  +23.6R
+                         2026 n   88 avg +0.123R PF 1.33 net  +10.8R
+
+fib 61.8%                ALL  n  439  net   +27.1R  avg +0.062R  PF 1.16  win 61%  maxDD   9.8R
+                         2022 n   51 avg +0.012R PF 1.03 net   +0.6R
+                         2023 n  113 avg +0.026R PF 1.06 net   +3.0R
+                         2024 n  106 avg -0.015R PF 0.97 net   -1.6R
+                         2025 n   99 avg +0.122R PF 1.38 net  +12.1R
+                         2026 n   70 avg +0.186R PF 1.65 net  +13.0R
+
+fib 50%                  ALL  n  524  net   +25.2R  avg +0.048R  PF 1.13  win 62%  maxDD  11.5R
+                         2022 n   59 avg +0.075R PF 1.22 net   +4.4R
+                         2023 n  138 avg +0.052R PF 1.13 net   +7.2R
+                         2024 n  132 avg +0.022R PF 1.06 net   +2.9R
+                         2025 n  110 avg +0.055R PF 1.15 net   +6.1R
+                         2026 n   85 avg +0.053R PF 1.14 net   +4.5R
+

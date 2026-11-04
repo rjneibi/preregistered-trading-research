@@ -1,0 +1,38 @@
+//@version=5
+// NOTES - why TradingView will not match the Python backtest to the cent:
+//  * Data: Python used Yahoo SPY regular-hours bars. TradingView's feed for your symbol has other ticks/volume (VWAP uses volume).
+//  * Same-bar stop+target: Python assumes the STOP filled first (worst case); TradingView's broker emulator guesses
+//    the path from the bar's open. Turn on "Bar Magnifier" (Premium) to get closer.
+//  * Costs: Python charged $0.01/share per side. Set the same in Properties.
+//  * Session: Python resets sessions at 09:30 New York; TradingView uses the symbol's session (check the chart's session settings).
+//  * Fills: both fill at the next bar's open after the signal bar closes (process_orders_on_close = false).
+
+strategy("TVS top2 SPY 5m trend", overlay = true, process_orders_on_close = false, default_qty_type = strategy.fixed, default_qty_value = 1)
+// config: {"eos": false, "exit": "fixed", "filt1": "tod", "filt2": "tod", "mom_len": 9, "side": "short", "sl_fix": 3.0, "sys": "mom", "template": "trend", "tod_skip_close": 15, "tod_skip_open": 60, "tp_fix": 0.25}
+
+mV = ta.mom(close, 9)
+longSig = ta.crossover(mV, 0)
+shortSig = ta.crossunder(mV, 0)
+minsIn = ta.barssince(timeframe.change("D")) * 5
+minsIn = ta.barssince(timeframe.change("D")) * 5
+atrV = ta.atr(14)
+tpDist = 0.25
+slDist = 3.0
+goLong = longSig and true and minsIn >= 60 and minsIn + 5 <= 375 and minsIn >= 60 and minsIn + 5 <= 375 and false
+goShort = shortSig and true and minsIn >= 60 and minsIn + 5 <= 375 and minsIn >= 60 and minsIn + 5 <= 375
+var float lvlSL = na
+var float lvlTP = na
+var float lvlTrail = na
+if goLong
+    strategy.entry("L", strategy.long)
+    lvlSL := slDist
+    lvlTP := tpDist
+if goShort
+    strategy.entry("S", strategy.short)
+    lvlSL := slDist
+    lvlTP := tpDist
+ep = strategy.position_avg_price
+if strategy.position_size > 0
+    strategy.exit("xL", "L", stop = ep - lvlSL, limit = na(lvlTP) ? na : ep + lvlTP)
+if strategy.position_size < 0
+    strategy.exit("xS", "S", stop = ep + lvlSL, limit = na(lvlTP) ? na : ep - lvlTP)

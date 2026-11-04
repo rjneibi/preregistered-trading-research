@@ -1,0 +1,161 @@
+{
+ "swing_lab MR1 entry": {
+  "cuts": 30,
+  "signals_compared": 3487,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab MR2 entry": {
+  "cuts": 30,
+  "signals_compared": 9982,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab MR3 entry": {
+  "cuts": 30,
+  "signals_compared": 2927,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab MR4 entry": {
+  "cuts": 30,
+  "signals_compared": 1999,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab MR5 entry": {
+  "cuts": 30,
+  "signals_compared": 6825,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab MR6 entry": {
+  "cuts": 30,
+  "signals_compared": 980,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab TR1 entry": {
+  "cuts": 30,
+  "signals_compared": 5731,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab TR2 entry": {
+  "cuts": 30,
+  "signals_compared": 1556,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab TR3 entry": {
+  "cuts": 30,
+  "signals_compared": 8381,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab TR4 entry": {
+  "cuts": 30,
+  "signals_compared": 3418,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "CONTROL swing_lab MR2 with one-bar peek": {
+  "cuts": 30,
+  "signals_compared": 9988,
+  "cuts_differing": 6,
+  "clean": false,
+  "example": [
+   {
+    "cut": 680,
+    "differ": 1
+   },
+   {
+    "cut": 746,
+    "differ": 1
+   }
+  ]
+ },
+ "swing_lab MR1 exit": {
+  "cuts": 10,
+  "signals_compared": 4450,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "swing_lab MR2 exit": {
+  "cuts": 10,
+  "signals_compared": 3161,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "tune_dip live_rsi2": {
+  "cuts": 20,
+  "signals_compared": 3218,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "tune_dip live_ibs": {
+  "cuts": 20,
+  "signals_compared": 6276,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "tune_dip F1_stretch": {
+  "cuts": 20,
+  "signals_compared": 2424,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "tune_dip F2_rsi2ibs": {
+  "cuts": 20,
+  "signals_compared": 3190,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "tune_dip F3_down3": {
+  "cuts": 20,
+  "signals_compared": 2745,
+  "cuts_differing": 0,
+  "clean": true,
+  "example": []
+ },
+ "edge_lab F6 signal": {
+  "cuts": 20,
+  "signals_compared": 149055,
+  "cuts_differing": 0,
+  "clean": true
+ },
+ "tvsearch XAU 15m": {
+  "configs": 40,
+  "cuts": 6,
+  "signals_compared": 122713,
+  "differing": 0,
+  "errors": 0,
+  "clean": true,
+  "example": []
+ },
+ "tvsearch SPY 60m": {
+  "configs": 40,
+  "cuts": 6,
+  "signals_compared": 18077,
+  "differing": 0,
+  "errors": 1,
+  "clean": true,
+  "example": []
+ }
+}

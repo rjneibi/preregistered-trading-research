@@ -1,0 +1,662 @@
+{
+ "A": {
+  "stitched_exp": -0.026709493429186833,
+  "stitched_trades": 664,
+  "stitched_t": -0.7967149940983304,
+  "windows": [
+   {
+    "train_start": "2013-09-30",
+    "test_start": "2015-09-30",
+    "test_end": "2016-03-30",
+    "cfg": 3701,
+    "train_exp": 0.7295969647087462,
+    "train_n": 73,
+    "test_exp": 0.0,
+    "test_n": 0,
+    "config": {
+     "box": "utc0007",
+     "tf": 15,
+     "order": "market",
+     "strong": "close25",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2014-03-30",
+    "test_start": "2016-03-30",
+    "test_end": "2016-09-30",
+    "cfg": 11477,
+    "train_exp": 0.5126853569348653,
+    "train_n": 75,
+    "test_exp": 0.0,
+    "test_n": 0,
+    "config": {
+     "box": "tokyo",
+     "tf": 15,
+     "order": "market",
+     "strong": "close25",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2014-09-30",
+    "test_start": "2016-09-30",
+    "test_end": "2017-03-30",
+    "cfg": 14459,
+    "train_exp": 0.9824024531684938,
+    "train_n": 122,
+    "test_exp": 0.0,
+    "test_n": 0,
+    "config": {
+     "box": "ny1904",
+     "tf": 15,
+     "order": "market",
+     "strong": "none",
+     "breakout": "whole",
+     "window": 120,
+     "stop": "candle",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2015-03-30",
+    "test_start": "2017-03-30",
+    "test_end": "2017-09-30",
+    "cfg": 0,
+    "train_exp": -Infinity,
+    "train_n": 5,
+    "test_exp": 0.0,
+    "test_n": 0,
+    "config": {
+     "box": "utc0007",
+     "tf": 1,
+     "order": "market",
+     "strong": "none",
+     "breakout": "close",
+     "window": 30,
+     "stop": "in25",
+     "rr": 1.0
+    }
+   },
+   {
+    "train_start": "2015-09-30",
+    "test_start": "2017-09-30",
+    "test_end": "2018-03-30",
+    "cfg": 0,
+    "train_exp": -Infinity,
+    "train_n": 0,
+    "test_exp": 0.0,
+    "test_n": 0,
+    "config": {
+     "box": "utc0007",
+     "tf": 1,
+     "order": "market",
+     "strong": "none",
+     "breakout": "close",
+     "window": 30,
+     "stop": "in25",
+     "rr": 1.0
+    }
+   },
+   {
+    "train_start": "2016-03-30",
+    "test_start": "2018-03-30",
+    "test_end": "2018-09-30",
+    "cfg": 0,
+    "train_exp": -Infinity,
+    "train_n": 0,
+    "test_exp": -0.146390511121364,
+    "test_n": 173,
+    "config": {
+     "box": "utc0007",
+     "tf": 1,
+     "order": "market",
+     "strong": "none",
+     "breakout": "close",
+     "window": 30,
+     "stop": "in25",
+     "rr": 1.0
+    }
+   },
+   {
+    "train_start": "2016-09-30",
+    "test_start": "2018-09-30",
+    "test_end": "2019-03-30",
+    "cfg": 7013,
+    "train_exp": 0.4011642743240703,
+    "train_n": 88,
+    "test_exp": -0.10158835873007774,
+    "test_n": 120,
+    "config": {
+     "box": "utc2307",
+     "tf": 15,
+     "order": "market",
+     "strong": "body50",
+     "breakout": "whole",
+     "window": 120,
+     "stop": "atr1",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2017-03-30",
+    "test_start": "2019-03-30",
+    "test_end": "2019-09-30",
+    "cfg": 13775,
+    "train_exp": 0.40372656748212615,
+    "train_n": 203,
+    "test_exp": 0.11240861004432745,
+    "test_n": 113,
+    "config": {
+     "box": "ny1904",
+     "tf": 5,
+     "order": "market",
+     "strong": "range1atr",
+     "breakout": "whole",
+     "window": 60,
+     "stop": "candle",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2017-09-30",
+    "test_start": "2019-09-30",
+    "test_end": "2020-03-30",
+    "cfg": 6941,
+    "train_exp": 0.4915175714036998,
+    "train_n": 68,
+    "test_exp": 1.1063398122787476,
+    "test_n": 30,
+    "config": {
+     "box": "utc2307",
+     "tf": 15,
+     "order": "market",
+     "strong": "body50",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2018-03-30",
+    "test_start": "2020-03-30",
+    "test_end": "2020-09-30",
+    "cfg": 14717,
+    "train_exp": 1.1241362971672113,
+    "train_n": 69,
+    "test_exp": 2.6292325258255005,
+    "test_n": 9,
+    "config": {
+     "box": "ny1904",
+     "tf": 15,
+     "order": "market",
+     "strong": "body50",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2018-09-30",
+    "test_start": "2020-09-30",
+    "test_end": "2021-03-30",
+    "cfg": 14717,
+    "train_exp": 1.588216949193204,
+    "train_n": 61,
+    "test_exp": 0.32111809083393644,
+    "test_n": 14,
+    "config": {
+     "box": "ny1904",
+     "tf": 15,
+     "order": "market",
+     "strong": "body50",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2019-03-30",
+    "test_start": "2021-03-30",
+    "test_end": "2021-09-30",
+    "cfg": 6941,
+    "train_exp": 1.2986646840969722,
+    "train_n": 78,
+    "test_exp": 0.10350342023940313,
+    "test_n": 21,
+    "config": {
+     "box": "utc2307",
+     "tf": 15,
+     "order": "market",
+     "strong": "body50",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2019-09-30",
+    "test_start": "2021-09-30",
+    "test_end": "2022-03-30",
+    "cfg": 14717,
+    "train_exp": 0.931527397324962,
+    "train_n": 62,
+    "test_exp": -0.16333270598860347,
+    "test_n": 17,
+    "config": {
+     "box": "ny1904",
+     "tf": 15,
+     "order": "market",
+     "strong": "body50",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": Infinity
+    }
+   },
+   {
+    "train_start": "2020-03-30",
+    "test_start": "2022-03-30",
+    "test_end": "2022-09-30",
+    "cfg": 6938,
+    "train_exp": 0.4538719322108015,
+    "train_n": 79,
+    "test_exp": -0.012599033968789237,
+    "test_n": 14,
+    "config": {
+     "box": "utc2307",
+     "tf": 15,
+     "order": "market",
+     "strong": "body50",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": 2.0
+    }
+   },
+   {
+    "train_start": "2020-09-30",
+    "test_start": "2022-09-30",
+    "test_end": "2023-03-30",
+    "cfg": 11475,
+    "train_exp": 0.3421749457840092,
+    "train_n": 121,
+    "test_exp": -0.21631537164960588,
+    "test_n": 35,
+    "config": {
+     "box": "tokyo",
+     "tf": 15,
+     "order": "market",
+     "strong": "close25",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": 3.0
+    }
+   },
+   {
+    "train_start": "2021-03-30",
+    "test_start": "2023-03-30",
+    "test_end": "2023-09-30",
+    "cfg": 11475,
+    "train_exp": 0.25530594541826324,
+    "train_n": 131,
+    "test_exp": -0.07788680629296736,
+    "test_n": 44,
+    "config": {
+     "box": "tokyo",
+     "tf": 15,
+     "order": "market",
+     "strong": "close25",
+     "breakout": "whole",
+     "window": 30,
+     "stop": "atr1",
+     "rr": 3.0
+    }
+   },
+   {
+    "train_start": "2021-09-30",
+    "test_start": "2023-09-30",
+    "test_end": "2024-03-30",
+    "cfg": 11513,
+    "train_exp": 0.28618425609421555,
+    "train_n": 274,
+    "test_exp": -0.5742233423767863,
+    "test_n": 74,
+    "config": {
+     "box": "tokyo",
+     "tf": 15,
+     "order": "market",
+     "strong": "close25",
+     "breakout": "whole",
+     "window": 60,
+     "stop": "atr1",
+     "rr": Infinity
+    }
+   }
+  ]
+ },
+ "B": {
+  "stitched_exp": -0.26798277364037176,
+  "stitched_trades": 594,
+  "stitched_t": -3.4575595874061316,
+  "windows": [
+   {
+    "train_start": "2013-09-30",
+    "test_start": "2015-09-30",
+    "test_end": "2016-03-30",
+    "cfg": 1526,
+    "train_exp": 0.2571801898758049,
+    "train_n": 138,
+    "test_exp": -0.7016881237859312,
+    "test_n": 23,
+    "config": {
+     "session": "ny",
+     "level": "session_hl",
+     "window": 30,
+     "vol_k": 1.5,
+     "stop_atr": 2.0,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2014-03-30",
+    "test_start": "2016-03-30",
+    "test_end": "2016-09-30",
+    "cfg": 1556,
+    "train_exp": 0.12368494021179884,
+    "train_n": 92,
+    "test_exp": -0.06276709757829932,
+    "test_n": 22,
+    "config": {
+     "session": "ny",
+     "level": "session_hl",
+     "window": 30,
+     "vol_k": 2.0,
+     "stop_atr": 2.0,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2014-09-30",
+    "test_start": "2016-09-30",
+    "test_end": "2017-03-30",
+    "cfg": 814,
+    "train_exp": 0.3636494028952814,
+    "train_n": 62,
+    "test_exp": 0.0,
+    "test_n": 0,
+    "config": {
+     "session": "london",
+     "level": "session_hl",
+     "window": 30,
+     "vol_k": 2.0,
+     "stop_atr": 1.0,
+     "rr": 3.0
+    }
+   },
+   {
+    "train_start": "2015-03-30",
+    "test_start": "2017-03-30",
+    "test_end": "2017-09-30",
+    "cfg": 1783,
+    "train_exp": 0.13147240593536771,
+    "train_n": 138,
+    "test_exp": -0.19943146272139115,
+    "test_n": 22,
+    "config": {
+     "session": "ny",
+     "level": "fractal",
+     "window": 30,
+     "vol_k": 2.0,
+     "stop_atr": 3.0,
+     "rr": 3.0
+    }
+   },
+   {
+    "train_start": "2015-09-30",
+    "test_start": "2017-09-30",
+    "test_end": "2018-03-30",
+    "cfg": 1992,
+    "train_exp": 0.08778020748425097,
+    "train_n": 147,
+    "test_exp": -0.05410276063614421,
+    "test_n": 45,
+    "config": {
+     "session": "ny",
+     "level": "pivot",
+     "window": 30,
+     "vol_k": 1.5,
+     "stop_atr": 3.0,
+     "rr": 2.0
+    }
+   },
+   {
+    "train_start": "2016-03-30",
+    "test_start": "2018-03-30",
+    "test_end": "2018-09-30",
+    "cfg": 1992,
+    "train_exp": 0.06871091492863651,
+    "train_n": 153,
+    "test_exp": -0.25709978056450683,
+    "test_n": 48,
+    "config": {
+     "session": "ny",
+     "level": "pivot",
+     "window": 30,
+     "vol_k": 1.5,
+     "stop_atr": 3.0,
+     "rr": 2.0
+    }
+   },
+   {
+    "train_start": "2016-09-30",
+    "test_start": "2018-09-30",
+    "test_end": "2019-03-30",
+    "cfg": 941,
+    "train_exp": 0.2623631924390793,
+    "train_n": 60,
+    "test_exp": -0.06432643725026038,
+    "test_n": 31,
+    "config": {
+     "session": "london",
+     "level": "session_hl",
+     "window": 60,
+     "vol_k": 2.0,
+     "stop_atr": 2.0,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2017-03-30",
+    "test_start": "2019-03-30",
+    "test_end": "2019-09-30",
+    "cfg": 956,
+    "train_exp": 0.18990215933185883,
+    "train_n": 87,
+    "test_exp": -0.17833541207394357,
+    "test_n": 59,
+    "config": {
+     "session": "london",
+     "level": "session_hl",
+     "window": 60,
+     "vol_k": 2.0,
+     "stop_atr": 2.0,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2017-09-30",
+    "test_start": "2019-09-30",
+    "test_end": "2020-03-30",
+    "cfg": 1076,
+    "train_exp": 0.19433845785157433,
+    "train_n": 116,
+    "test_exp": 0.2875504264464745,
+    "test_n": 13,
+    "config": {
+     "session": "london",
+     "level": "fractal",
+     "window": 30,
+     "vol_k": 2.0,
+     "stop_atr": 2.0,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2018-03-30",
+    "test_start": "2020-03-30",
+    "test_end": "2020-09-30",
+    "cfg": 1790,
+    "train_exp": 0.26560041970676845,
+    "train_n": 108,
+    "test_exp": -0.3468895416993361,
+    "test_n": 13,
+    "config": {
+     "session": "ny",
+     "level": "fractal",
+     "window": 30,
+     "vol_k": 2.0,
+     "stop_atr": 1.0,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2018-09-30",
+    "test_start": "2020-09-30",
+    "test_end": "2021-03-30",
+    "cfg": 1070,
+    "train_exp": 0.28378553630769715,
+    "train_n": 129,
+    "test_exp": -1.0814546081754897,
+    "test_n": 9,
+    "config": {
+     "session": "london",
+     "level": "fractal",
+     "window": 30,
+     "vol_k": 2.0,
+     "stop_atr": 1.0,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2019-03-30",
+    "test_start": "2021-03-30",
+    "test_end": "2021-09-30",
+    "cfg": 1190,
+    "train_exp": 0.2674281949188277,
+    "train_n": 171,
+    "test_exp": -0.05825849524084127,
+    "test_n": 53,
+    "config": {
+     "session": "london",
+     "level": "fractal",
+     "window": 60,
+     "vol_k": 2.0,
+     "stop_atr": 1.0,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2019-09-30",
+    "test_start": "2021-09-30",
+    "test_end": "2022-03-30",
+    "cfg": 788,
+    "train_exp": 0.2947598984164576,
+    "train_n": 186,
+    "test_exp": 0.2625863057811086,
+    "test_n": 41,
+    "config": {
+     "session": "london",
+     "level": "session_hl",
+     "window": 30,
+     "vol_k": 1.5,
+     "stop_atr": 1.5,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2020-03-30",
+    "test_start": "2022-03-30",
+    "test_end": "2022-09-30",
+    "cfg": 1043,
+    "train_exp": 0.3685557013039762,
+    "train_n": 193,
+    "test_exp": -0.6683726085806793,
+    "test_n": 53,
+    "config": {
+     "session": "london",
+     "level": "fractal",
+     "window": 30,
+     "vol_k": 1.5,
+     "stop_atr": 1.5,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2020-09-30",
+    "test_start": "2022-09-30",
+    "test_end": "2023-03-30",
+    "cfg": 1283,
+    "train_exp": 0.15051989703741758,
+    "train_n": 237,
+    "test_exp": -0.5745970546335414,
+    "test_n": 69,
+    "config": {
+     "session": "london",
+     "level": "pivot",
+     "window": 30,
+     "vol_k": 1.5,
+     "stop_atr": 1.5,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2021-03-30",
+    "test_start": "2023-03-30",
+    "test_end": "2023-09-30",
+    "cfg": 1430,
+    "train_exp": 0.145485520362854,
+    "train_n": 220,
+    "test_exp": -0.35145079470300056,
+    "test_n": 77,
+    "config": {
+     "session": "london",
+     "level": "pivot",
+     "window": 60,
+     "vol_k": 2.0,
+     "stop_atr": 1.0,
+     "rr": 4.0
+    }
+   },
+   {
+    "train_start": "2021-09-30",
+    "test_start": "2023-09-30",
+    "test_end": "2024-03-30",
+    "cfg": 2021,
+    "train_exp": 0.3024360420468908,
+    "train_n": 65,
+    "test_exp": -0.3140269941650331,
+    "test_n": 16,
+    "config": {
+     "session": "ny",
+     "level": "pivot",
+     "window": 30,
+     "vol_k": 2.0,
+     "stop_atr": 2.0,
+     "rr": 4.0
+    }
+   }
+  ]
+ }
+}

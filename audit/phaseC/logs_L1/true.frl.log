@@ -1,0 +1,10 @@
+building HistData deep feed ...
+5,769,159 M1 bars, NY 2010-01-03 -> 2026-06-19
+  fixed_1500_reference: n=623 WR=449.4% PF=0.497 IS/OOS=0.49/0.51 (OOS n=183) maxDD=82.8% net=$-24,014 (reference)
+               atr_1.0: n=642 WR=4688.5% PF=0.192 IS/OOS=0.14/0.35 (OOS n=189) maxDD=72.3% net=$-20,738 FAIL
+               atr_1.5: n=641 WR=4820.6% PF=0.324 IS/OOS=0.27/0.47 (OOS n=188) maxDD=71.4% net=$-20,800 FAIL
+               atr_2.0: n=637 WR=4332.8% PF=0.417 IS/OOS=0.36/0.58 (OOS n=186) maxDD=70.3% net=$-20,345 FAIL
+               pct_0.3: n=625 WR=1440.0% PF=0.690 IS/OOS=0.67/0.74 (OOS n=183) maxDD=62.0% net=$-10,157 FAIL
+               pct_0.5: n=622 WR=755.6% PF=0.558 IS/OOS=0.51/0.70 (OOS n=182) maxDD=78.6% net=$-20,248 FAIL
+
+== FR-L ALL VARIANTS FAIL -> recommend RETIRE London line (operator confirms) ==

@@ -1,0 +1,45 @@
+
+US500 M1 2012-08-05 -> 2026-10-13  cost 0.45 pts (1.10 bp)
+  O1 ORB-range 5m              n= 2286 ( 239/yr) win  25% avg  +0.73bp PF 1.02/1.07 p=0.014 fail 
+  O1 ORB-range 15m             n= 2288 ( 239/yr) win  35% avg  +1.49bp PF 1.05/1.10 p=0.005 fail 
+  O1 ORB-range 30m             n= 2285 ( 239/yr) win  41% avg  +1.90bp PF 1.05/1.13 p=0.003 fail 
+  O2 ORB-candle 5m             n= 2282 ( 239/yr) win  17% avg  -0.03bp PF 0.99/1.00 p=0.029 fail 
+  M1 intraday momentum         n= 2307 ( 242/yr) win  45% avg  -2.05bp PF 0.71/0.89 p=0.922 fail 
+  G1 gap fade                  n= 1159 ( 122/yr) win  48% avg  -0.86bp PF 0.88/1.06 p=0.414 fail 
+  X1 stretch fade              n=  737 (  77/yr) win  36% avg  -1.83bp PF 0.81/0.91 p=0.618 fail 
+  R1 first-hour reversal       n= 2294 ( 240/yr) win  47% avg  -2.35bp PF 0.98/0.85 p=0.761 fail 
+
+USTEC M1 2022-07-06 -> 2026-10-13  cost 1.35 pts (0.71 bp)
+  O1 ORB-range 5m              n=  994 ( 233/yr) win  30% avg  +4.71bp PF 1.11/1.32 p=0.007 fail 
+  O1 ORB-range 15m             n=  995 ( 233/yr) win  40% avg  +5.25bp PF 1.12/1.28 p=0.006 fail 
+  O1 ORB-range 30m             n=  987 ( 231/yr) win  48% avg  +6.79bp PF 1.22/1.30 p=0.001 PASS 
+  O2 ORB-candle 5m             n=  998 ( 236/yr) win  18% avg  +3.42bp PF 1.11/1.39 p=0.006 fail 
+  M1 intraday momentum         n= 1017 ( 238/yr) win  46% avg  -1.26bp PF 0.82/0.94 p=0.713 fail 
+  G1 gap fade                  n=  630 ( 148/yr) win  50% avg  +3.49bp PF 1.03/1.22 p=0.090 fail 
+  X1 stretch fade              n=  274 (  64/yr) win  40% avg  -2.50bp PF 0.63/1.24 p=0.715 fail 
+  R1 first-hour reversal       n= 1008 ( 236/yr) win  44% avg  -8.39bp PF 0.71/0.82 p=0.997 fail 
+
+US30 M1 2012-08-05 -> 2026-10-13  cost 1.50 pts (0.45 bp)
+  O1 ORB-range 5m              n= 2294 ( 241/yr) win  29% avg  +0.67bp PF 1.09/1.00 p=0.117 fail 
+  O1 ORB-range 15m             n= 2288 ( 240/yr) win  38% avg  +1.66bp PF 1.13/1.05 p=0.031 fail 
+  O1 ORB-range 30m             n= 2276 ( 239/yr) win  43% avg  +2.07bp PF 1.14/1.07 p=0.021 fail 
+  O2 ORB-candle 5m             n= 2297 ( 241/yr) win  15% avg  -0.43bp PF 1.01/0.90 p=0.369 fail 
+  M1 intraday momentum         n= 2319 ( 244/yr) win  46% avg  -1.76bp PF 0.76/0.85 p=0.992 fail 
+  G1 gap fade                  n= 1136 ( 119/yr) win  46% avg  -0.23bp PF 0.94/1.05 p=0.450 fail 
+  X1 stretch fade              n=  575 (  61/yr) win  41% avg  -1.27bp PF 0.89/0.92 p=0.683 fail 
+  R1 first-hour reversal       n= 2297 ( 241/yr) win  48% avg  -0.24bp PF 1.00/0.98 p=0.434 fail 
+
+confirmation across indices (PF full sample):
+  O1 ORB-range 5m              US500 1.05  USTEC 1.21  US30 1.04
+  O1 ORB-range 15m             US500 1.08  USTEC 1.20  US30 1.09
+  O1 ORB-range 30m             US500 1.09  USTEC 1.26  US30 1.10
+  O2 ORB-candle 5m             US500 1.00  USTEC 1.24  US30 0.96
+  M1 intraday momentum         US500 0.79  USTEC 0.87  US30 0.80
+  G1 gap fade                  US500 0.97  USTEC 1.12  US30 0.99
+  X1 stretch fade              US500 0.86  USTEC 0.85  US30 0.90
+  R1 first-hour reversal       US500 0.91  USTEC 0.76  US30 0.99
+
+GOLD (histdata M1 2010-2026, NY clock)
+  L1 Asia-range breakout       n= 4110 ( 245/yr) win  45% avg  +1.44bp PF 1.05/1.08 p=0.000 fail 
+  L2 London 15m ORB            n= 4312 ( 257/yr) win  21% avg  -1.00bp PF 0.96/0.90 p=0.001 fail 
+  L3 NY-open 15m ORB (gold)    n= 4068 ( 243/yr) win  36% avg  +0.11bp PF 1.01/1.00 p=0.000 fail 

@@ -1,0 +1,7 @@
+H-B BINDING run | matrix years: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026']
+n=436 WR=62.4% PF=1.040 (old 0.847 / new 1.162) p90 0.989 (old 0.811) net $5,638 flat-ref 1.240
+splits: 9/15 positive 
+  [-60.42, -49.32, 37.2, 10.44, -52.58, -37.24, 50.68, 21.56, -40.11, 72.46, 37.77, -25.68, 119.76, 73.67, 37.62]
+gates: {'1_full_pf_ge_1.35': False, '2_each_era_ge_1.00': False, '3_splits_ge_11of15': False, '4_p90_full_ge_1.15_and_old_ge_0.90': False, '5_n_ge_300': True}
+== H-B binding FAIL -> arm B solo CLOSED ==
+-> audit/_copy/sb_true/research/goldbot/results/HB_run_binding.json

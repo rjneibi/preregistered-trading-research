@@ -1,0 +1,170 @@
+{
+ "gold_family_n": 41,
+ "tune_clustered": {
+  "week_clustered_T": 60,
+  "dsr_ledger": 0.142,
+  "dsr_family": 0.3
+ },
+ "dated": {
+  "XM-1-A1": 569,
+  "SW-1": 569,
+  "EDGE-1-F6": 625,
+  "TUNE-1-DIP": 71185
+ },
+ "rows": [
+  {
+   "id": "XAU-FINAL-V3",
+   "pf": 1.254,
+   "basis": "true UTC, flat 20-pt cost, n=436",
+   "gates": [
+    "H-B gate 1, PF >= 1.35 at matrix costs: 1.040, short by 0.310",
+    "H-B gate 2, each era PF >= 1.00: old era 0.847, short by 0.153",
+    "H-B gate 3, 11 of 15 splits positive: 9, short by 2",
+    "H-B gate 4, p90 PF >= 1.15: 0.989, short by 0.161; old-era p90 >= 0.90: 0.811"
+   ],
+   "why": "The 1.254 uses an assumed flat cost well under measured spreads. H-B is the same rule at measured costs, and n matches at 436.",
+   "dsr": 0.002,
+   "dsr_fam": 0.285,
+   "fam_n": 41
+  },
+  {
+   "id": "XAU-FINAL-V4",
+   "pf": 1.145,
+   "basis": "true UTC, flat 20-pt cost, n=577",
+   "gates": [
+    "Programme gate 1, PF >= 1.20: 1.145 at flat cost, short by 0.055",
+    "Approximate matrix cost, entry hour used for both sides: PF 0.899, short by 0.301",
+    "Same approximation at p90: PF 0.843"
+   ],
+   "why": "No pre-registered gate exists for V4, so H1's gate is used. The check on V3 by the same approximation gives 1.056 against H-B's 1.040.",
+   "dsr": 0.0,
+   "dsr_fam": 0.12,
+   "fam_n": 41
+  },
+  {
+   "id": "DR-EDGE-SCREEN D",
+   "pf": 1.505,
+   "basis": "true UTC, no spread in the screen, n=1,307",
+   "gates": [
+    "Programme gate 1, PF >= 1.20 at matrix cost: 1.099, short by 0.101",
+    "At p90 cost: 1.001"
+   ],
+   "why": "Unthrottled entry screen, not a strategy. The 1.505 has no spread.",
+   "dsr": null,
+   "dsr_fam": null,
+   "fam_n": null
+  },
+  {
+   "id": "XAU-FLIP-RAW TP5/SL15",
+   "pf": 1.147,
+   "basis": "true UTC, raw grid cell, flat 20-pt cost",
+   "gates": [
+    "Programme gate 1, PF >= 1.20: 1.147, short by 0.053",
+    "One cell of a grid, no gate of its own"
+   ],
+   "why": "Grid cell picked after the fact.",
+   "dsr": null,
+   "dsr_fam": null,
+   "fam_n": null
+  },
+  {
+   "id": "SC-1 ORB-30",
+   "pf": 1.259,
+   "basis": "no HistData dependence, n=987",
+   "gates": [
+    "Later sealed read of the live ORB baseline in TUNE-1: PF 0.87, losing",
+    "DSR at ledger N 0.03 against 0.95",
+    "2026 PF 0.88"
+   ],
+   "why": "Stays failed.",
+   "dsr": 0.03,
+   "dsr_fam": null,
+   "fam_n": null
+  },
+  {
+   "id": "XM-1-A1",
+   "pf": 2.372,
+   "basis": "no HistData dependence",
+   "gates": [
+    "DSR >= 0.95 at ledger N: 0.29, short by 0.660"
+   ],
+   "why": "Numbers exact. Fragile by the stored PBO, delay and benchmark results.",
+   "dsr": 0.29,
+   "dsr_fam": 0.934,
+   "fam_n": 17,
+   "dated_n": 569,
+   "dsr_dated": 0.705
+  },
+  {
+   "id": "SW-1",
+   "pf": 1.741,
+   "basis": "no HistData dependence",
+   "gates": [
+    "DSR >= 0.95 at ledger N: 0.207, short by 0.743"
+   ],
+   "why": "Numbers exact. Fragile by the stored PBO, delay and benchmark results.",
+   "dsr": 0.207,
+   "dsr_fam": 0.867,
+   "fam_n": 50,
+   "dated_n": 569,
+   "dsr_dated": 0.659
+  },
+  {
+   "id": "TUNE-1-DIP",
+   "pf": 3.05,
+   "basis": "no HistData dependence",
+   "gates": [
+    "DSR >= 0.95 at ledger N: 0.489, short by 0.461",
+    "Registered test: 0 of 3 finalists passed",
+    "Trades cluster in 60 weeks. Averaged by week, ledger DSR is 0.142"
+   ],
+   "why": "PF 3.05 is an unregistered read of the baseline, the same rule as XM-1-A1. It is not a fourth independent result.",
+   "dsr": 0.489,
+   "dsr_fam": 0.695,
+   "fam_n": 3960,
+   "dated_n": 71185,
+   "dsr_dated": 0.537
+  },
+  {
+   "id": "EDGE-1-F6",
+   "pf": null,
+   "basis": "Sharpe 1.52, daily",
+   "gates": [
+    "DSR >= 0.95 at ledger N: 0.52, short by 0.430",
+    "PBO 0.742 on 5 variants"
+   ],
+   "why": "Numbers exact. E5 reads Sharpe 1.36 to 1.49 on real cost tiers.",
+   "dsr": 0.52,
+   "dsr_fam": 0.993,
+   "fam_n": 34,
+   "dated_n": 625,
+   "dsr_dated": 0.928
+  },
+  {
+   "id": "TA-LAB-R4 fixed, 2025+",
+   "pf": 1.29,
+   "basis": "slice, n=398",
+   "gates": [
+    "<2025 slice PF 0.78, below 1.0",
+    "Beats 45% of twins",
+    "Same-bar worst case PF 1.15"
+   ],
+   "why": "A later slice of a failed rule.",
+   "dsr": null,
+   "dsr_fam": null,
+   "fam_n": null
+  },
+  {
+   "id": "TA-LAB-R11, 2025+",
+   "pf": 1.15,
+   "basis": "slice, n=42",
+   "gates": [
+    "INSUFFICIENT SAMPLE"
+   ],
+   "why": "Under 100 trades.",
+   "dsr": null,
+   "dsr_fam": null,
+   "fam_n": null
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+//@version=5
+// NOTES - why TradingView will not match the Python backtest to the cent:
+//  * Data: Python used Yahoo SPY regular-hours bars. TradingView's feed for your symbol has other ticks/volume (VWAP uses volume).
+//  * Same-bar stop+target: Python assumes the STOP filled first (worst case); TradingView's broker emulator guesses
+//    the path from the bar's open. Turn on "Bar Magnifier" (Premium) to get closer.
+//  * Costs: Python charged $0.01/share per side. Set the same in Properties.
+//  * Session: Python resets sessions at 09:30 New York; TradingView uses the symbol's session (check the chart's session settings).
+//  * Fills: both fill at the next bar's open after the signal bar closes (process_orders_on_close = false).
+
+strategy("TVS top3 SPY 5m breakout", overlay = true, process_orders_on_close = false, default_qty_type = strategy.fixed, default_qty_value = 1)
+// config: {"atr_band": "50-100", "brk": "kc", "eos": false, "exit": "r", "filt1": "htf", "filt2": "atr_pct", "kc_k": 1.5, "kc_len": 20, "side": "both", "sl_atr": 0.5, "template": "breakout", "tp_r": 1.5}
+
+kcM = ta.ema(close, 20)
+kcA = ta.atr(10)
+kcU = kcM + 1.5 * kcA
+kcL = kcM - 1.5 * kcA
+longSig = ta.crossover(close, kcU)
+shortSig = ta.crossunder(close, kcL)
+htfEma = request.security(syminfo.tickerid, "20", ta.ema(close, 50)[1], lookahead = barmerge.lookahead_on)
+atrPct = ta.percentrank(ta.atr(14), 500)
+atrV = ta.atr(14)
+slDist = 0.5 * atrV
+tpDist = 1.5 * slDist
+goLong = longSig and true and close > htfEma and atrPct >= 50 and atrPct <= 100
+goShort = shortSig and true and atrPct >= 50 and atrPct <= 100 and close < htfEma
+var float lvlSL = na
+var float lvlTP = na
+var float lvlTrail = na
+if goLong
+    strategy.entry("L", strategy.long)
+    lvlSL := slDist
+    lvlTP := tpDist
+if goShort
+    strategy.entry("S", strategy.short)
+    lvlSL := slDist
+    lvlTP := tpDist
+ep = strategy.position_avg_price
+if strategy.position_size > 0
+    strategy.exit("xL", "L", stop = ep - lvlSL, limit = na(lvlTP) ? na : ep + lvlTP)
+if strategy.position_size < 0
+    strategy.exit("xS", "S", stop = ep + lvlSL, limit = na(lvlTP) ? na : ep - lvlTP)

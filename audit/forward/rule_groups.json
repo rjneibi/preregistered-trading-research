@@ -1,0 +1,27 @@
+{
+ "label": "monitored, no edge claimed",
+ "note": "Reporting only. Not part of the freeze. Each rule on each market is counted once in FORWARD_SUMMARY.md.",
+ "groups": [
+  {
+   "rule": "RSI2 dip",
+   "family": "US500 dip buying",
+   "legs": [
+    {"strategy": "FW-XM-1-A1", "markets": ["US500"]},
+    {"strategy": "FW-TUNE-1-DIP", "markets": ["US30", "US2000", "USTEC"]}
+   ],
+   "dropped": [{"strategy": "FW-TUNE-1-DIP", "market": "US500", "why": "Same rule on the same market as FW-XM-1-A1. Logged, but not counted again."}]
+  },
+  {
+   "rule": "IBS dip",
+   "family": "US500 dip buying",
+   "legs": [{"strategy": "FW-SW-1", "markets": ["US500"]}],
+   "dropped": []
+  },
+  {
+   "rule": "Trend basket F6",
+   "family": "Crypto trend",
+   "legs": [{"strategy": "FW-EDGE-1-F6", "markets": ["basket"]}],
+   "dropped": []
+  }
+ ]
+}

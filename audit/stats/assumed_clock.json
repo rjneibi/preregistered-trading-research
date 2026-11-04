@@ -1,0 +1,88 @@
+{
+ "label": "ASSUMED-CLOCK",
+ "note": "2010-2012 HistData stamps have no Dukascopy overlap. The US switch rule there is an assumption, supported only by reopen and break hours.",
+ "rows": [
+  {
+   "id": "D-REVIVAL",
+   "with_2010_2012": "D faithful n= 1432 win=50% PF=0.87 net= -91.7R avg=-0.064R maxDD=100.0R",
+   "without": "D faithful n= 1159 win=50% PF=0.86 net= -78.4R avg=-0.068R maxDD=95.7R",
+   "fail_lines_with": 0,
+   "fail_lines_without": 0,
+   "pass_lines_with": 0,
+   "pass_lines_without": 0
+  },
+  {
+   "id": "WHY-1 pivots",
+   "with_2010_2012": "pivot n= 10678 bounce 48.2% by era 47.5% 48.7% 48.6% 48.2%",
+   "without": "pivot n= 8750 bounce 48.1% by era 43.0% 48.7% 48.6% 48.2%",
+   "fail_lines_with": 0,
+   "fail_lines_without": 0,
+   "pass_lines_with": 0,
+   "pass_lines_without": 0
+  },
+  {
+   "id": "BOT-LAB-1 buy & hold control",
+   "with_2010_2012": "buy & hold total $ 3069/oz sharpe +0.55 halves +0.20 / +0.89 maxDD $1435",
+   "without": "buy & hold total $ 2504/oz sharpe +0.48 halves -0.07 / +0.92 maxDD $1435",
+   "fail_lines_with": 0,
+   "fail_lines_without": 0,
+   "pass_lines_with": 0,
+   "pass_lines_without": 0
+  },
+  {
+   "id": "BOT-LAB-1 Asia long",
+   "with_2010_2012": "long 01-09 spread 0.6 n=4066 win=50% PF=1.17 halves 0.97/1.26 total $2047/oz DD $558",
+   "without": "long 01-09 spread 0.6 n=3285 win=50% PF=1.20 halves 0.91/1.29 total $2036/oz DD $558",
+   "fail_lines_with": 0,
+   "fail_lines_without": 0,
+   "pass_lines_with": 0,
+   "pass_lines_without": 0
+  },
+  {
+   "id": "EXIT-2-FLIP E5",
+   "with_2010_2012": "ALL: n714 avg+0.005R PF1.01 vs twin t=+2.00",
+   "without": "ALL: n570 avg-0.011R PF0.97 vs twin t=+1.13",
+   "fail_lines_with": 5,
+   "fail_lines_without": 5,
+   "pass_lines_with": 0,
+   "pass_lines_without": 0
+  },
+  {
+   "id": "GOLD-LIT-1 H-A1",
+   "with_2010_2012": "ALL net t=-0.14 by year $/oz: 10:+39 11:-26 12:-13 13:+23 14:-6 15:+4 16:+22 17:-58 18:-188 19:-129 20:-100 21:+179 22:-151 23:-57 24:+137 25:+358 26:-161",
+   "without": "ALL net t=-0.14 by year $/oz: 13:+23 14:-6 15:+4 16:+22 17:-58 18:-188 19:-129 20:-100 21:+179 22:-151 23:-57 24:+137 25:+358 26:-161",
+   "fail_lines_with": 6,
+   "fail_lines_without": 6,
+   "pass_lines_with": 0,
+   "pass_lines_without": 0
+  },
+  {
+   "id": "PA-1 H4 PIN",
+   "with_2010_2012": "H4 PIN n 1766 gross +0.034 IC -0.011 net -0.048R win 37% | A n773 -0.128 tw-0.082 | B n993 +0.015 tw-0.026 | C n436 -0.076 tw-0.028 | t +0.07 -> FAIL",
+   "without": "H4 PIN n 1476 gross +0.058 IC +0.013 net -0.024R win 38% | A n483 -0.102 tw-0.096 | B n993 +0.015 tw-0.037 | C n436 -0.076 tw-0.054 | t +0.90 -> FAIL",
+   "fail_lines_with": 18,
+   "fail_lines_without": 18,
+   "pass_lines_with": 0,
+   "pass_lines_without": 0
+  },
+  {
+   "id": "SWEEP-MTF-1 variant A",
+   "with_2010_2012": "ALL 2010-26 n12149 win 34% avgR gross +0.014 IC -0.163 net -0.307 stress -0.628 | twin -0.296 | PF 0.64 maxDD 3749.1R streak 21",
+   "without": "ALL 2010-26 n 9942 win 34% avgR gross +0.008 IC -0.169 net -0.313 stress -0.635 | twin -0.293 | PF 0.64 maxDD 3127.3R streak 21",
+   "fail_lines_with": 4,
+   "fail_lines_without": 4,
+   "pass_lines_with": 0,
+   "pass_lines_without": 0
+  }
+ ],
+ "unaffected": [
+  "H-family, FINAL_v3, FINAL_v4, XAU-R3S3-FADE: start 2015-06",
+  "DR-EDGE-SCREEN: 2021-06 on",
+  "FR-M: 2021-06 on",
+  "XAU-FLIP-RAW: 2021-06 on",
+  "FR-L: see its script",
+  "TA-LAB, PA-15-30, PA-30-MAX5: 2022-07 on",
+  "ML-1: 2014 on",
+  "CRT-FVG-1, LBO-1: Dukascopy, measured clock"
+ ]
+}

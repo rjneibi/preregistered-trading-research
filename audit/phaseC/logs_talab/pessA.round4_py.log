@@ -1,0 +1,31 @@
+top 8 by TRAIN (2022-07..2024), then TEST (2025..2026-10) with the same settings:
+  window 06-20 minstop 0.5ATR ladder 0.4R
+     TRAIN n  627  net   +12.2R  avg +0.019R  PF 1.06  win 69%  maxDD  17.3R
+     TEST  n  364  net   +64.3R  avg +0.177R  PF 1.68  win 75%  maxDD   8.4R
+  window 06-20 minstop 0.3ATR ladder 0.4R
+     TRAIN n  627  net    +8.3R  avg +0.013R  PF 1.03  win 65%  maxDD  22.2R
+     TEST  n  364  net   +85.1R  avg +0.234R  PF 1.82  win 73%  maxDD   6.6R
+  window 06-16 minstop 0.5ATR ladder 0.4R
+     TRAIN n  568  net    +3.4R  avg +0.006R  PF 1.02  win 68%  maxDD  21.6R
+     TEST  n  333  net   +56.7R  avg +0.170R  PF 1.65  win 75%  maxDD   7.0R
+  window 06-20 minstop 0.8ATR ladder 0.4R
+     TRAIN n  626  net    +2.1R  avg +0.003R  PF 1.01  win 71%  maxDD  22.1R
+     TEST  n  363  net   +71.6R  avg +0.197R  PF 2.06  win 82%  maxDD   5.7R
+  window 06-16 minstop 0.3ATR ladder 0.4R
+     TRAIN n  568  net    +0.1R  avg +0.000R  PF 1.00  win 64%  maxDD  22.5R
+     TEST  n  333  net   +74.5R  avg +0.224R  PF 1.78  win 73%  maxDD   6.9R
+  window 06-16 minstop 0.8ATR ladder 0.4R
+     TRAIN n  567  net    -4.0R  avg -0.007R  PF 0.98  win 70%  maxDD  21.2R
+     TEST  n  332  net   +59.4R  avg +0.179R  PF 1.91  win 81%  maxDD   5.7R
+  window 06-10 minstop 0.8ATR ladder 1.0R
+     TRAIN n  340  net   -10.9R  avg -0.032R  PF 0.94  win 53%  maxDD  30.3R
+     TEST  n  188  net   +33.3R  avg +0.177R  PF 1.41  win 59%  maxDD  14.3R
+  window 06-10 minstop 0.8ATR tp 1.0R
+     TRAIN n  340  net   -14.9R  avg -0.044R  PF 0.92  win 53%  maxDD  34.3R
+     TEST  n  188  net   +25.3R  avg +0.134R  PF 1.31  win 59%  maxDD  14.3R
+
+chosen: (20, 0.5, 0.4, 'ladder')
+M5 check (2025-05..2026-10): n  297  net   +24.6R  avg +0.083R  PF 1.33  win 76%  maxDD   7.0R
+M5 risk per trade $: median 8.17  p10 4.10  p90 17.16
+trades per month (M5): 17.3
+M5 R by month: 25-05:+4 25-06:-4 25-07:+0 25-08:+3 25-09:+2 25-10:+2 25-11:-2 25-12:+2 26-01:+5 26-02:-0 26-03:+2 26-04:+8 26-05:-2 26-06:-3 26-07:+5 26-08:-0 26-09:-0 26-10:+3

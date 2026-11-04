@@ -1,0 +1,134 @@
+{
+ "freeze": "c5e042d",
+ "vol_median_atr_pct": 0.013424359933343687,
+ "n_partial_days_dropped": 859,
+ "degenerate_e1": {
+  "filtered": 10,
+  "raw": 16
+ },
+ "arms": {
+  "E1_filtered": {
+   "n": 599,
+   "pf_real": 0.8600974570811234,
+   "pf_p95": 0.8328931705496351,
+   "net_usd": -46795.40000000049,
+   "pf_old": 0.8908090343367341,
+   "pf_new": 0.831546580285621
+  },
+  "E2_filtered": {
+   "n": 609,
+   "pf_real": 0.8736644384854141,
+   "pf_p95": 0.8513603360493794,
+   "net_usd": -52965.78332621449,
+   "pf_old": 0.7619900051701874,
+   "pf_new": 1.0041345259173746
+  },
+  "E1_raw": {
+   "n": 1242,
+   "pf_real": 0.8386551983326892,
+   "pf_p95": 0.8120089705706599,
+   "net_usd": -112124.90000000037,
+   "pf_old": 0.8628674732181921,
+   "pf_new": 0.8153254451077773
+  },
+  "E2_raw": {
+   "n": 1258,
+   "pf_real": 0.8511527867828225,
+   "pf_p95": 0.8300821958017676,
+   "net_usd": -134337.8360248941,
+   "pf_old": 0.8211483684100755,
+   "pf_new": 0.8826952518949899
+  },
+  "mirror_E2": {
+   "n": 609,
+   "pf_real": 0.796146336534654,
+   "pf_p95": 0.7754642980579525,
+   "net_usd": -87817.67942340979,
+   "pf_old": 0.8643616984955506,
+   "pf_new": 0.7307352859556008
+  },
+  "bias_only_E2": {
+   "n": 4047,
+   "pf_real": 0.9233145710856615,
+   "pf_p95": 0.9004218788911936,
+   "net_usd": -213818.36618962258,
+   "pf_old": 0.8445454455909852,
+   "pf_new": 1.0075698734224254
+  }
+ },
+ "table_2x2": {
+  "old/LOvol": {
+   "n": 222,
+   "pf_E1": 0.8411662532048483,
+   "pf_E2": 0.76444841873473,
+   "pf_mirror_E2": 0.7767096236347583
+  },
+  "old/HIvol": {
+   "n": 177,
+   "pf_E1": 0.9311011029804406,
+   "pf_E2": 0.7603526278507827,
+   "pf_mirror_E2": 0.9305436102784884
+  },
+  "new/LOvol": {
+   "n": 96,
+   "pf_E1": 1.2075705176263816,
+   "pf_E2": 1.4948271700804747,
+   "pf_mirror_E2": 0.4768457316285662
+  },
+  "new/HIvol": {
+   "n": 104,
+   "pf_E1": 0.7287495298487269,
+   "pf_E2": 0.8731087674451218,
+   "pf_mirror_E2": 0.8646629155837092
+  }
+ },
+ "gates_E1": {
+  "g0_power_n_ge_100": true,
+  "g1_pf_ge_1.30": false,
+  "g2_uplift_ge_0.10": false,
+  "g3_era_ge_1.00_both": false,
+  "g3_no_mirror_inversion": true,
+  "g4_dsr_ge_0.95": false,
+  "g6_p95_stress_pf_ge_1.15": false,
+  "g5_pbo_lt_0.50": false
+ },
+ "gates_E2": {
+  "g0_power_n_ge_100": true,
+  "g1_pf_ge_1.30": false,
+  "g2_uplift_ge_0.10": false,
+  "g3_era_ge_1.00_both": false,
+  "g3_no_mirror_inversion": true,
+  "g4_dsr_ge_0.95": false,
+  "g6_p95_stress_pf_ge_1.15": false,
+  "g5_pbo_lt_0.50": false
+ },
+ "displace": false,
+ "dsr_E1": {
+  "sr": -0.0372949783377613,
+  "sr0": 0.0005444932496181851,
+  "n_trials": 2,
+  "var_trial_sr": 1.0974558875890234e-06,
+  "n_obs": 599,
+  "skew": -6.019977030533749,
+  "kurt_raw": 126.98204899083288,
+  "dsr": 0.15332071581931433
+ },
+ "dsr_E2": {
+  "sr": -0.03581345487349283,
+  "sr0": 0.0005444932496181851,
+  "n_trials": 2,
+  "var_trial_sr": 1.0974558875890234e-06,
+  "n_obs": 609,
+  "skew": -5.155038243705578,
+  "kurt_raw": 92.27637850934754,
+  "dsr": 0.16466396243382464
+ },
+ "pbo": {
+  "pbo": 0.5571428571428572,
+  "n_combinations": 70,
+  "lambda_mean": -0.36861133834478604,
+  "s_blocks": 8,
+  "purged": true
+ },
+ "verdict": "HCRT FAIL: ICT/CRT line on XAUUSD D1 CLOSED \u2014 no threshold shopping, no timeframe migration; FVG/QT/SMT inherit the negative prior"
+}

@@ -1,0 +1,1673 @@
+{
+ "histdata_xau_m1": {
+  "path": "@GANN_ROOT@/research/data/xauusd_m1_histdata.csv",
+  "sha256": "df8eba6bffbff0de5556a0f3105b215c3f241b2862fb6d3207542c27e10bd378",
+  "rows": 5769159,
+  "first": "2010-01-03 23:00",
+  "last": "2026-06-19 17:57",
+  "per_year": {
+   "2010": {
+    "rows": 346195,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 68,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 6325,
+    "outlier_20x": 8
+   },
+   "2011": {
+    "rows": 352266,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 67,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 5527,
+    "outlier_20x": 5
+   },
+   "2012": {
+    "rows": 354797,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 79,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1873,
+    "outlier_20x": 16
+   },
+   "2013": {
+    "rows": 355160,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 69,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 2035,
+    "outlier_20x": 37
+   },
+   "2014": {
+    "rows": 351606,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 159,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 2996,
+    "outlier_20x": 40
+   },
+   "2015": {
+    "rows": 351666,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 261,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 3178,
+    "outlier_20x": 30
+   },
+   "2016": {
+    "rows": 353415,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 258,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 757,
+    "outlier_20x": 23
+   },
+   "2017": {
+    "rows": 352360,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 258,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 436,
+    "outlier_20x": 25
+   },
+   "2018": {
+    "rows": 353778,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 258,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 637,
+    "outlier_20x": 8
+   },
+   "2019": {
+    "rows": 352628,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 261,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 3254,
+    "outlier_20x": 21
+   },
+   "2020": {
+    "rows": 354291,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 261,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1357,
+    "outlier_20x": 5
+   },
+   "2021": {
+    "rows": 353386,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 502,
+    "outlier_20x": 11
+   },
+   "2022": {
+    "rows": 354568,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 343,
+    "outlier_20x": 16
+   },
+   "2023": {
+    "rows": 308752,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 802,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 473,
+    "outlier_20x": 43
+   },
+   "2024": {
+    "rows": 355592,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 261,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 215,
+    "outlier_20x": 18
+   },
+   "2025": {
+    "rows": 353951,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 48,
+    "outlier_20x": 6
+   },
+   "2026": {
+    "rows": 164747,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 122,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 8,
+    "outlier_20x": 4
+   }
+  },
+  "nfp_clock": {
+   "dst": {
+    "n": 84,
+    "mode_min_utc": 810,
+    "share_mode": 0.7
+   },
+   "std": {
+    "n": 48,
+    "mode_min_utc": 810,
+    "share_mode": 0.54
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2010": 23,
+   "2011": 23,
+   "2012": 23,
+   "2013": 23,
+   "2014": 23,
+   "2015": 23,
+   "2016": 23,
+   "2017": 23,
+   "2018": 23,
+   "2019": 23,
+   "2020": 23,
+   "2021": 23,
+   "2022": 23,
+   "2023": 23,
+   "2024": 23,
+   "2025": 23,
+   "2026": 23
+  }
+ },
+ "talab_xau_m1": {
+  "path": "@GANN_ROOT@/research/ta_lab/data/XAU_M1.npy",
+  "sha256": "b667136100b69541d281453dfd9ee54b105b46c3743233ddbe2b010a79d1a834",
+  "rows": 99999,
+  "first": "2026-06-26 06:40",
+  "last": "2026-10-12 05:53",
+  "per_year": {
+   "2026": {
+    "rows": 99998,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 76,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1,
+    "outlier_20x": 14
+   }
+  },
+  "nfp_clock": {
+   "dst": {
+    "n": 4,
+    "mode_min_utc": 750,
+    "share_mode": 0.75
+   },
+   "std": {
+    "n": 0,
+    "mode_min_utc": null,
+    "share_mode": null
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2026": 22
+  }
+ },
+ "talab_xau_m5": {
+  "path": "@GANN_ROOT@/research/ta_lab/data/XAU_M5.npy",
+  "sha256": "ce6e43c81a385b38631ce300512a44f53c9bb5a9a0fc3143d287af08b42b268d",
+  "rows": 99999,
+  "first": "2025-05-05 17:15",
+  "last": "2026-10-12 05:50",
+  "per_year": {
+   "2025": {
+    "rows": 46625,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 175,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 53,
+    "outlier_20x": 0
+   },
+   "2026": {
+    "rows": 53373,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 201,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 3,
+    "outlier_20x": 1
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2025": 22,
+   "2026": 22
+  }
+ },
+ "talab_xau_m15": {
+  "path": "@GANN_ROOT@/research/ta_lab/data/XAU_M15.npy",
+  "sha256": "050d6d3b310d869137bc9bf5dd1d99bd0d4f26b9492a522a7b1cedc71d9ff313",
+  "rows": 99999,
+  "first": "2022-07-11 02:00",
+  "last": "2026-10-12 05:45",
+  "per_year": {
+   "2022": {
+    "rows": 11358,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 123,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2023": {
+    "rows": 23559,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 257,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2024": {
+    "rows": 23738,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1,
+    "outlier_20x": 0
+   },
+   "2025": {
+    "rows": 23547,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 263,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 13,
+    "outlier_20x": 0
+   },
+   "2026": {
+    "rows": 17796,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 201,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 3,
+    "outlier_20x": 0
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2022": 22,
+   "2023": 22,
+   "2024": 22,
+   "2025": 22,
+   "2026": 22
+  }
+ },
+ "talab_xau_h1": {
+  "path": "@GANN_ROOT@/research/ta_lab/data/XAU_H1.npy",
+  "sha256": "d374b54c5caf96f722cccdf2a2830ba339692112ea0590aab1228bd201f218b8",
+  "rows": 99999,
+  "first": "2009-09-09 10:00",
+  "last": "2026-10-12 05:00",
+  "per_year": {
+   "2009": {
+    "rows": 1802,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 3,
+    "outlier_20x": 0
+   },
+   "2010": {
+    "rows": 5634,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 11,
+    "outlier_20x": 0
+   },
+   "2011": {
+    "rows": 5726,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 7,
+    "outlier_20x": 1
+   },
+   "2012": {
+    "rows": 5847,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2013": {
+    "rows": 5874,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2014": {
+    "rows": 5872,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1,
+    "outlier_20x": 0
+   },
+   "2015": {
+    "rows": 5843,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2016": {
+    "rows": 5889,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2017": {
+    "rows": 5861,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2018": {
+    "rows": 5873,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2019": {
+    "rows": 5871,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2020": {
+    "rows": 5904,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2021": {
+    "rows": 5900,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2022": {
+    "rows": 5917,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2023": {
+    "rows": 5894,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2024": {
+    "rows": 5938,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2025": {
+    "rows": 5899,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2026": {
+    "rows": 4454,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 2,
+    "outlier_20x": 0
+   }
+  }
+ },
+ "talab_xag_m5": {
+  "path": "@GANN_ROOT@/research/ta_lab/data/XAG_M5.npy",
+  "sha256": "6ce8f7f1a8dab624559f510c2b4101f46cf0d577937a84fdc44a8f4a5950a93c",
+  "rows": 65000,
+  "first": "2025-11-10 10:20",
+  "last": "2026-10-12 07:20",
+  "per_year": {
+   "2025": {
+    "rows": 10236,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 14,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 96,
+    "outlier_20x": 0
+   },
+   "2026": {
+    "rows": 54763,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 183,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 17,
+    "outlier_20x": 0
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2025": 22,
+   "2026": 22
+  }
+ },
+ "talab_xag_m15": {
+  "path": "@GANN_ROOT@/research/ta_lab/data/XAG_M15.npy",
+  "sha256": "3c2687182d1fe4a0682793ffff79fd143b02829f0bbd66cd2b763f1ed0df9dea",
+  "rows": 65000,
+  "first": "2024-01-19 04:00",
+  "last": "2026-10-12 07:15",
+  "per_year": {
+   "2024": {
+    "rows": 22668,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 211,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 10,
+    "outlier_20x": 0
+   },
+   "2025": {
+    "rows": 24074,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 149,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 107,
+    "outlier_20x": 0
+   },
+   "2026": {
+    "rows": 18257,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 183,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 6,
+    "outlier_20x": 0
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2024": 22,
+   "2025": 22,
+   "2026": 22
+  }
+ },
+ "drevival_m1": {
+  "path": "@GANN_ROOT@/research/d_revival/m1.npz",
+  "sha256": "1e51c08c58ed4dd35c630e4a78b1215e4638b19221f72a213c74abeb46a46b77",
+  "rows": 5869158,
+  "first": "2010-01-04 01:00",
+  "last": "2026-10-12 08:53",
+  "per_year": {
+   "2010": {
+    "rows": 346195,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 68,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 6325,
+    "outlier_20x": 8
+   },
+   "2011": {
+    "rows": 352266,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 67,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 5527,
+    "outlier_20x": 5
+   },
+   "2012": {
+    "rows": 354797,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 79,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1873,
+    "outlier_20x": 16
+   },
+   "2013": {
+    "rows": 355160,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 69,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 2035,
+    "outlier_20x": 37
+   },
+   "2014": {
+    "rows": 351606,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 159,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 2996,
+    "outlier_20x": 40
+   },
+   "2015": {
+    "rows": 351666,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 261,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 3178,
+    "outlier_20x": 30
+   },
+   "2016": {
+    "rows": 353415,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 258,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 757,
+    "outlier_20x": 23
+   },
+   "2017": {
+    "rows": 352360,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 258,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 436,
+    "outlier_20x": 25
+   },
+   "2018": {
+    "rows": 353778,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 258,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 637,
+    "outlier_20x": 8
+   },
+   "2019": {
+    "rows": 352628,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 261,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 3254,
+    "outlier_20x": 21
+   },
+   "2020": {
+    "rows": 354291,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 261,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1357,
+    "outlier_20x": 5
+   },
+   "2021": {
+    "rows": 353386,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 502,
+    "outlier_20x": 11
+   },
+   "2022": {
+    "rows": 354568,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 343,
+    "outlier_20x": 16
+   },
+   "2023": {
+    "rows": 308752,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 802,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 473,
+    "outlier_20x": 43
+   },
+   "2024": {
+    "rows": 355592,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 261,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 215,
+    "outlier_20x": 18
+   },
+   "2025": {
+    "rows": 353951,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 48,
+    "outlier_20x": 6
+   },
+   "2026": {
+    "rows": 264746,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 199,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 9,
+    "outlier_20x": 19
+   }
+  },
+  "nfp_clock": {
+   "dst": {
+    "n": 88,
+    "mode_min_utc": 930,
+    "share_mode": 0.72
+   },
+   "std": {
+    "n": 48,
+    "mode_min_utc": 930,
+    "share_mode": 0.52
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2010": 1,
+   "2011": 1,
+   "2012": 1,
+   "2013": 1,
+   "2014": 1,
+   "2015": 1,
+   "2016": 1,
+   "2017": 1,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 1
+  }
+ },
+ "lbo_xau_m1": {
+  "path": "@LBO_ROOT@/data/m1/XAUUSD.npz",
+  "sha256": "d204e4352fbb58a736a82f58cf2e69233351599ac583d829ce41f943329a0d5c",
+  "rows": 4893929,
+  "first": "1970-09-19 18:47",
+  "last": "1970-12-12 22:23",
+  "per_year": {
+   "1970": {
+    "rows": 4893928,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 27,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 5056,
+    "outlier_20x": 264
+   }
+  },
+  "nfp_clock": {
+   "dst": {
+    "n": 0,
+    "mode_min_utc": null,
+    "share_mode": null
+   },
+   "std": {
+    "n": 0,
+    "mode_min_utc": null,
+    "share_mode": null
+   }
+  },
+  "weekly_reopen_hour_mode": {}
+ },
+ "cm_xau_m1": {
+  "path": "@GANN_ROOT@/research/cross_market/data/XAUUSD_M1.npz",
+  "sha256": "98d00c8dbd7e54b2ad84b9223d19eec5fb70d30e8374b5e21b2cbdb5a04fedf5",
+  "rows": 99999,
+  "first": "2026-06-29 15:22",
+  "last": "2026-10-13 14:35",
+  "per_year": {
+   "2026": {
+    "rows": 99998,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 76,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1,
+    "outlier_20x": 14
+   }
+  },
+  "nfp_clock": {
+   "dst": {
+    "n": 4,
+    "mode_min_utc": 930,
+    "share_mode": 0.75
+   },
+   "std": {
+    "n": 0,
+    "mode_min_utc": null,
+    "share_mode": null
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2026": 1
+  }
+ },
+ "cm_xau_d1": {
+  "path": "@GANN_ROOT@/research/cross_market/data/XAUUSD_D1.npz",
+  "sha256": "ee71ec606de2df9ddf4b12b1b64f53b37c910b4d1d3eb82ffbc8734b8f5268fd",
+  "rows": 5740,
+  "first": "2004-06-11 00:00",
+  "last": "2026-10-13 00:00",
+  "per_year": {
+   "2004": {
+    "rows": 139,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2005": {
+    "rows": 252,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 1,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2006": {
+    "rows": 251,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 1,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2007": {
+    "rows": 257,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2008": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2009": {
+    "rows": 257,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2010": {
+    "rows": 256,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2011": {
+    "rows": 256,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2012": {
+    "rows": 257,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2013": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2014": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2015": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2016": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2017": {
+    "rows": 257,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2018": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2019": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2020": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2021": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2022": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2023": {
+    "rows": 257,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2024": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2025": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2026": {
+    "rows": 202,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   }
+  }
+ },
+ "cm_xag_h1": {
+  "path": "@GANN_ROOT@/research/cross_market/data/XAGUSD_H1.npz",
+  "sha256": "cc9c7ae3428aea02fff2754dc71f70746d609e9e3041f6b202ae0c6b4dc4ef06",
+  "rows": 50000,
+  "first": "2018-05-03 05:00",
+  "last": "2026-10-13 13:00",
+  "per_year": {
+   "2018": {
+    "rows": 3916,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2019": {
+    "rows": 5871,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2020": {
+    "rows": 5904,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2021": {
+    "rows": 5900,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2022": {
+    "rows": 5917,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1,
+    "outlier_20x": 0
+   },
+   "2023": {
+    "rows": 5894,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2024": {
+    "rows": 5976,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 4,
+    "outlier_20x": 0
+   },
+   "2025": {
+    "rows": 6026,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 29,
+    "outlier_20x": 0
+   },
+   "2026": {
+    "rows": 4595,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1,
+    "outlier_20x": 0
+   }
+  }
+ },
+ "cm_us500_m1": {
+  "path": "@GANN_ROOT@/research/cross_market/data/US500_M1.npz",
+  "sha256": "7c811123f31e2ad70b4f30c4b6c2506664335fac1b49ceab21d150aca6e157c0",
+  "rows": 3199779,
+  "first": "2012-08-06 00:00",
+  "last": "2026-10-13 14:36",
+  "per_year": {
+   "2012": {
+    "rows": 106,
+    "dup_or_backward": 2,
+    "gaps_gt_1h": 104,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2013": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2014": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2015": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2016": {
+    "rows": 5693,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 151,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 99,
+    "outlier_20x": 0
+   },
+   "2017": {
+    "rows": 183208,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 152,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 18961,
+    "outlier_20x": 6
+   },
+   "2018": {
+    "rows": 343107,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 242,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 40844,
+    "outlier_20x": 15
+   },
+   "2019": {
+    "rows": 348571,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 249,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 37323,
+    "outlier_20x": 20
+   },
+   "2020": {
+    "rows": 348421,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 275,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 6985,
+    "outlier_20x": 6
+   },
+   "2021": {
+    "rows": 351915,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 268,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 11320,
+    "outlier_20x": 4
+   },
+   "2022": {
+    "rows": 351472,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 259,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 2001,
+    "outlier_20x": 15
+   },
+   "2023": {
+    "rows": 343978,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 258,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 14743,
+    "outlier_20x": 14
+   },
+   "2024": {
+    "rows": 352249,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 162,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 11747,
+    "outlier_20x": 186
+   },
+   "2025": {
+    "rows": 295601,
+    "dup_or_backward": 1,
+    "gaps_gt_1h": 224,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1763,
+    "outlier_20x": 27
+   },
+   "2026": {
+    "rows": 274680,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 203,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 529,
+    "outlier_20x": 17
+   }
+  },
+  "nfp_clock": {
+   "dst": {
+    "n": 74,
+    "mode_min_utc": 930,
+    "share_mode": 0.64
+   },
+   "std": {
+    "n": 37,
+    "mode_min_utc": 930,
+    "share_mode": 0.46
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2012": 0,
+   "2013": 0,
+   "2014": 0,
+   "2015": 0,
+   "2016": 1,
+   "2017": 1,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2021": 1,
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 1
+  }
+ },
+ "cm_us500_d1": {
+  "path": "@GANN_ROOT@/research/cross_market/data/US500_D1.npz",
+  "sha256": "3847ec769c4f7a61641f4620171ebfde575f5503577d644b2211000a0759f6cc",
+  "rows": 3630,
+  "first": "2012-08-06 00:00",
+  "last": "2026-10-13 00:00",
+  "per_year": {
+   "2012": {
+    "rows": 104,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2013": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2014": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2015": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2016": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2017": {
+    "rows": 257,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2018": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1,
+    "outlier_20x": 0
+   },
+   "2019": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2020": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2021": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2022": {
+    "rows": 258,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2023": {
+    "rows": 257,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2024": {
+    "rows": 259,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2025": {
+    "rows": 221,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 1,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2026": {
+    "rows": 203,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   }
+  }
+ },
+ "cm_ustec_m1": {
+  "path": "@GANN_ROOT@/research/cross_market/data/USTEC_M1.npz",
+  "sha256": "9afbba9f43276af989bb6e2db53625554b11a44949cd6f94a58d59249940778e",
+  "rows": 1444905,
+  "first": "2022-07-06 12:39",
+  "last": "2026-10-13 14:35",
+  "per_year": {
+   "2022": {
+    "rows": 172295,
+    "dup_or_backward": 12,
+    "gaps_gt_1h": 126,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 1,
+    "outlier_20x": 17
+   },
+   "2023": {
+    "rows": 349130,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 258,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 33,
+    "outlier_20x": 14
+   },
+   "2024": {
+    "rows": 352474,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 191,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 30,
+    "outlier_20x": 421
+   },
+   "2025": {
+    "rows": 296285,
+    "dup_or_backward": 1,
+    "gaps_gt_1h": 223,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 25,
+    "outlier_20x": 23
+   },
+   "2026": {
+    "rows": 274720,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 203,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 3,
+    "outlier_20x": 11
+   }
+  },
+  "nfp_clock": {
+   "dst": {
+    "n": 31,
+    "mode_min_utc": 930,
+    "share_mode": 0.61
+   },
+   "std": {
+    "n": 17,
+    "mode_min_utc": 930,
+    "share_mode": 0.41
+   }
+  },
+  "weekly_reopen_hour_mode": {
+   "2022": 1,
+   "2023": 1,
+   "2024": 1,
+   "2025": 1,
+   "2026": 1
+  }
+ },
+ "cm_btc_1d": {
+  "path": "@GANN_ROOT@/research/cross_market/data/BTCUSDT_1d.npz",
+  "sha256": "748fa7a46bc1d1a64dadd0f9341eb44adf794c880951721c1aae48db02fbe9c0",
+  "rows": 3345,
+  "first": "2017-08-17 00:00",
+  "last": "2026-10-13 00:00",
+  "per_year": {
+   "2017": {
+    "rows": 136,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2018": {
+    "rows": 365,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2019": {
+    "rows": 365,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2020": {
+    "rows": 366,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2021": {
+    "rows": 365,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2022": {
+    "rows": 365,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2023": {
+    "rows": 365,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2024": {
+    "rows": 366,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2025": {
+    "rows": 365,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   },
+   "2026": {
+    "rows": 286,
+    "dup_or_backward": 0,
+    "gaps_gt_1h": 0,
+    "nonpos": 0,
+    "bad_ohlc": 0,
+    "flat": 0,
+    "outlier_20x": 0
+   }
+  }
+ },
+ "tv_xau": {
+  "path": "@GANN_ROOT@/research/tvsearch/data/xau_tv.npz",
+  "sha256": "ee3c4c9da593fd40bbde91cc934aab11474b73fa5671bfff66ead8a3608974d2",
+  "keys": [
+   "m1",
+   "m5"
+  ]
+ },
+ "cross_source_vs_dukascopy_lbo": {
+  "histdata_xau_m1": {
+   "2016-01": null,
+   "2016-07": null,
+   "2020-01": null,
+   "2020-07": null,
+   "2024-01": null,
+   "2024-07": null,
+   "2025-01": null,
+   "2025-07": null,
+   "2026-01": null,
+   "2026-08": null
+  },
+  "talab_xau_m1": {
+   "2016-01": null,
+   "2016-07": null,
+   "2020-01": null,
+   "2020-07": null,
+   "2024-01": null,
+   "2024-07": null,
+   "2025-01": null,
+   "2025-07": null,
+   "2026-01": null,
+   "2026-08": null
+  },
+  "drevival_m1": {
+   "2016-01": null,
+   "2016-07": null,
+   "2020-01": null,
+   "2020-07": null,
+   "2024-01": null,
+   "2024-07": null,
+   "2025-01": null,
+   "2025-07": null,
+   "2026-01": null,
+   "2026-08": null
+  },
+  "cm_xau_m1": {
+   "2016-01": null,
+   "2016-07": null,
+   "2020-01": null,
+   "2020-07": null,
+   "2024-01": null,
+   "2024-07": null,
+   "2025-01": null,
+   "2025-07": null,
+   "2026-01": null,
+   "2026-08": null
+  }
+ }
+}

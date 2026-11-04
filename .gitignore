@@ -1,0 +1,14 @@
+data/raw/
+_copy/
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+*.log.tmp
+audit/phaseC/*_trades.csv
+audit/tools/clean_logs/
+audit/tools/data_check.json
+node_modules/

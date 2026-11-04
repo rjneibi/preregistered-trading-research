@@ -1,0 +1,19 @@
+{
+ "n_news": 66,
+ "n_rest": 406,
+ "news_pf_med": 1.443305139223585,
+ "news_pf_p90": 1.3421387500269857,
+ "news_pf_old": 1.1301884114425484,
+ "news_pf_new": 1.6557452010001739,
+ "news_wr": 0.803030303030303,
+ "news_net": 4876.881004187306,
+ "rest_pf_med": 1.0865878348236686,
+ "news_pf_flat": 1.8571058631912423,
+ "gates": {
+  "1_news_pf_ge_1.50_median": false,
+  "2_news_pf_ge_1.20_p90": true,
+  "3_each_era_ge_1.10": true,
+  "4_n_ge_60": true
+ },
+ "pass": false
+}

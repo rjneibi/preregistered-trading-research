@@ -1,0 +1,104 @@
+{
+ "fixed_1500_reference": {
+  "n": 679,
+  "wr": 5.154639175257731,
+  "pf": 0.5866531800848117,
+  "is_pf": 0.6726625996571248,
+  "oos_pf": 0.36303278222915575,
+  "oos_n": 207,
+  "maxdd_pct": 74.8571823020159,
+  "net_usd_1lot": -16225.86071428598,
+  "gates": {
+   "oos_pf>=1.20": false,
+   "oos_n>=15": true,
+   "maxdd<=25%": false,
+   "not_inverted": true
+  },
+  "pass": false
+ },
+ "atr_1.0": {
+  "n": 692,
+  "wr": 45.3757225433526,
+  "pf": 0.1823709675142588,
+  "is_pf": 0.12514512295805946,
+  "oos_pf": 0.34527346135110953,
+  "oos_n": 212,
+  "maxdd_pct": 75.65759517916118,
+  "net_usd_1lot": -20978.460714342986,
+  "gates": {
+   "oos_pf>=1.20": false,
+   "oos_n>=15": true,
+   "maxdd<=25%": false,
+   "not_inverted": true
+  },
+  "pass": false
+ },
+ "atr_1.5": {
+  "n": 691,
+  "wr": 48.33574529667149,
+  "pf": 0.31506403046004783,
+  "is_pf": 0.25291098883173774,
+  "oos_pf": 0.4926422598310385,
+  "oos_n": 211,
+  "maxdd_pct": 75.70410771576861,
+  "net_usd_1lot": -20929.714285801245,
+  "gates": {
+   "oos_pf>=1.20": false,
+   "oos_n>=15": true,
+   "maxdd<=25%": false,
+   "not_inverted": true
+  },
+  "pass": false
+ },
+ "atr_2.0": {
+  "n": 689,
+  "wr": 44.55732946298984,
+  "pf": 0.4206496623417347,
+  "is_pf": 0.3572573606659252,
+  "oos_pf": 0.5990703711412002,
+  "oos_n": 210,
+  "maxdd_pct": 73.47434459519882,
+  "net_usd_1lot": -19153.39285725779,
+  "gates": {
+   "oos_pf>=1.20": false,
+   "oos_n>=15": true,
+   "maxdd<=25%": false,
+   "not_inverted": true
+  },
+  "pass": false
+ },
+ "pct_0.3": {
+  "n": 679,
+  "wr": 14.138438880706921,
+  "pf": 0.6938009772722507,
+  "is_pf": 0.7105565852246555,
+  "oos_pf": 0.6515914821502686,
+  "oos_n": 207,
+  "maxdd_pct": 63.34196102775006,
+  "net_usd_1lot": -9488.753642854594,
+  "gates": {
+   "oos_pf>=1.20": false,
+   "oos_n>=15": true,
+   "maxdd<=25%": false,
+   "not_inverted": true
+  },
+  "pass": false
+ },
+ "pct_0.5": {
+  "n": 679,
+  "wr": 7.80559646539028,
+  "pf": 0.5896002295989419,
+  "is_pf": 0.611315671946855,
+  "oos_pf": 0.5347049045547317,
+  "oos_n": 207,
+  "maxdd_pct": 76.31083837871128,
+  "net_usd_1lot": -19330.802571435823,
+  "gates": {
+   "oos_pf>=1.20": false,
+   "oos_n>=15": true,
+   "maxdd<=25%": false,
+   "not_inverted": true
+  },
+  "pass": false
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "CONTROL round4.build (known leak)": {
+  "cuts": 40,
+  "signals_compared": 8113,
+  "cuts_differing": 14,
+  "example": [
+   {
+    "cut": 3011,
+    "only_full": 0,
+    "only_trunc": 0
+   },
+   {
+    "cut": 5152,
+    "only_full": 0,
+    "only_trunc": 1
+   },
+   {
+    "cut": 9010,
+    "only_full": 1,
+    "only_trunc": 1
+   }
+  ],
+  "clean": false
+ },
+ "round12.build_fixed": {
+  "cuts": 40,
+  "signals_compared": 7941,
+  "cuts_differing": 0,
+  "example": [],
+  "clean": true
+ },
+ "pa1.signals PIN": {
+  "cuts": 25,
+  "signals_compared": 24790,
+  "cuts_differing": 0,
+  "example": [],
+  "clean": true
+ },
+ "pa1.signals ENG": {
+  "cuts": 25,
+  "signals_compared": 54752,
+  "cuts_differing": 0,
+  "example": [],
+  "clean": true
+ },
+ "pa1.signals IB": {
+  "cuts": 25,
+  "signals_compared": 82022,
+  "cuts_differing": 0,
+  "example": [],
+  "clean": true
+ },
+ "pa1.signals BO20": {
+  "cuts": 25,
+  "signals_compared": 72675,
+  "cuts_differing": 0,
+  "example": [],
+  "clean": true
+ },
+ "goldbot.generate_events_final": {
+  "cuts": 12,
+  "signals_compared": 501,
+  "full_events": 83,
+  "cuts_differing": 0,
+  "example": [],
+  "clean": true
+ },
+ "sweep_mtf.setups h4ema": {
+  "cuts": 10,
+  "signals_compared": 5782,
+  "cuts_differing": 0,
+  "example": [],
+  "clean": true
+ }
+}

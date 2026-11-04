@@ -1,0 +1,5 @@
+Config,Trades,WinRate%,PF,Expectancy,MaxDD_pts,VP_PassRate%
+Profile_D_Baseline,66,22.73,1.025,49.24,43636.0,
+Profile_D_VP,0,0.0,0.0,0.0,0.0,0.0
+Profile_R_Baseline,32,46.88,1.027,46.28,20190.0,
+Profile_R_VP,0,0.0,0.0,0.0,0.0,0.0

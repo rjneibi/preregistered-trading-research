@@ -1,0 +1,27 @@
+{
+ "n_oos": 138,
+ "n_routed": 107,
+ "unrouted_pf": 1.421017916924017,
+ "routed_pf": 1.4843774001861259,
+ "uplift": 0.06335948326210894,
+ "routed_pf_p90": 1.4230614725263893,
+ "routed_net": 16683.195959996738,
+ "unrouted_net": 18647.909919824913,
+ "oos_trades_per_state": {
+  "MOMENTUM": 107,
+  "NEUTRAL": 25,
+  "MEAN_REVERSION": 6
+ },
+ "per_state_pf": {
+  "MEAN_REVERSION": Infinity,
+  "MOMENTUM": 1.4843774001861259,
+  "NEUTRAL": 0.8995358694527524
+ },
+ "gates": {
+  "1_routed_oos_pf_ge_1.35": true,
+  "2_uplift_ge_0.10": false,
+  "3_n_routed_ge_70": true,
+  "4_routed_p90_ge_1.15": true
+ },
+ "pass": false
+}

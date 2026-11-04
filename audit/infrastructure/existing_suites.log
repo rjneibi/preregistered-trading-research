@@ -1,0 +1,45 @@
+=== goldbot_run_tests
+PASS  check_01_isolation
+PASS  check_02_config_tags
+PASS  check_03_ou_recovery
+PASS  check_04_ou_rejection
+PASS  check_05_clock
+PASS  check_06_pivot_lookahead
+PASS  check_07_triple_barrier
+PASS  check_08_cpcv
+PASS  check_09_costs
+PASS  check_10_guards
+PASS  check_12_dsr_known_answers
+    null rejection: deflated=0.000 naive=0.407
+PASS  check_13_dsr_null_calibration
+    PBO: noise=0.63 edge=0.00
+PASS  check_14_pbo_cscv
+(fast suite only — run with --full for the slow parity check against bot_spec_trades.csv)
+ALL 13 CHECKS PASSED
+exit 0
+=== goldbot_modules
+..................                                                       [100%]
+18 passed in 1.68s
+exit 0
+=== flip_bot
+Traceback (most recent call last):
+  File "audit/_copy/flip/test_flip_bot_state.py", line 147, in <module>
+    import flip_bot as fb                                            # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "audit/_copy/flip/flip_bot.py", line 75, in <module>
+    from news_calendar import news_weight                       # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'news_calendar'
+exit 1
+=== crt_fvg
+...............                                                          [100%]
+15 passed in 4.53s
+exit 0
+=== tvsearch
+..........                                                               [100%]
+10 passed in 6.25s
+exit 0
+=== lbo
+..........ss..................                                           [100%]
+28 passed, 2 skipped in 3.80s
+exit 0

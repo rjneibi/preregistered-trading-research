@@ -1,0 +1,5 @@
+#!/bin/bash
+# The frozen code calls api.binance.com, which can refuse cloud runners, and it may not be edited. This wrapper sends the same request to Binance's public market-data host, which serves the same klines.
+args=()
+for a in "$@"; do args+=("${a/api.binance.com/data-api.binance.vision}"); done
+exec /usr/bin/curl "${args[@]}"

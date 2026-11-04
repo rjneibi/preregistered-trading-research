@@ -1,0 +1,21 @@
+# review_f/h3.py, run once on 2026-11-03 on the author's machine, PYTHONHASHSEED=0. Not part of the clean run.
+audit\review_f\h3.py:15: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  months=sorted(set(lx.index.to_period('M').astype(str)));B={}
+audit\review_f\h3.py:22: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  keep=lx.index.to_period('M').astype(str).isin(list(B));lx,lg=lx[keep],lg[keep]
+audit\review_f\h3.py:23: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  b=lx.index.to_period('M').astype(str).map(B).values.astype(float)
+audit\review_f\h3.py:30: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per=lx.index.to_period('M').astype(str).values[:cut]
+audit\review_f\h3.py:27: RuntimeWarning: invalid value encountered in sqrt
+  return a,(-np.log(2)/np.log(a) if 0<a<1 else np.nan),(1-a)/np.sqrt((1-a*a)/n)
+silver m1 2635230 2015-01-01 23:00:00+00:00 2022-09-27 02:47:00+00:00 px range 11.665 29.927
+silver M1 |ret|>2%: 23
+betas n 91 min ('2021-03', np.float64(-0.0021209045046289648)) max ('2016-03', np.float64(1.3013831699525238)) share<.3 0.1978021978021978
+{'2015-03': np.float64(0.67), '2015-04': np.float64(0.72), '2015-05': np.float64(0.61), '2015-06': np.float64(0.37), '2015-07': np.float64(0.31), '2015-08': np.float64(0.57), '2015-09': np.float64(0.71), '2015-10': np.float64(0.52)}
+stitched IS (np.float64(0.9986256055564311), np.float64(503.98249629040424), np.float64(4.609663372138361)) n 30900
+stitched, month-boundary jumps removed (np.float64(1.0001387460651725), nan, np.float64(nan))
+share of IS abs change from boundary jumps 0.5684236286679962 n boundaries 63 mean abs jump 0.5722357071312782 mean abs normal 0.0008876525456931225
+single-beta (median) whole IS (np.float64(1.0000406209697916), nan, np.float64(nan))
+months 63 within-month HL: median 57.621159223631636 share in [4,240] 0.8095238095238095 share t>=3 0.047619047619047616 median t nan
+t needed: for n=500, t>=3 implies HL<= 18.90539701127027 ; n=1500: 57.41499411843895 ; n=2160: 82.83060470842246

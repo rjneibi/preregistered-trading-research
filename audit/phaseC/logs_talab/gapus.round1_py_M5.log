@@ -1,0 +1,51 @@
+M5 2025-05-05 -> 2026-10-12, cut 2026-02-01
+random (any direction)   ladder0.6R TRAIN n  223  net    -8.2R  avg -0.037R  PF 0.91  win 61%  maxDD  17.2R
+                                    TEST  n  204  net    +7.6R  avg +0.037R  PF 1.10  win 62%  maxDD  16.3R
+random (any direction)   TP2R+BE    TRAIN n  209  net    +4.4R  avg +0.021R  PF 1.04  win 27%  maxDD  16.0R
+                                    TEST  n  194  net   +25.0R  avg +0.129R  PF 1.26  win 32%  maxDD  14.0R
+
+random (with H1 trend)   ladder0.6R TRAIN n  220  net    +9.9R  avg +0.045R  PF 1.12  win 63%  maxDD  12.5R
+                                    TEST  n  204  net    +5.0R  avg +0.025R  PF 1.06  win 62%  maxDD  13.4R
+random (with H1 trend)   TP2R+BE    TRAIN n  207  net   +17.4R  avg +0.084R  PF 1.17  win 29%  maxDD  21.0R
+                                    TEST  n  198  net    -5.1R  avg -0.026R  PF 0.95  win 26%  maxDD  17.3R
+
+fib 38.2%                ladder0.6R TRAIN n  117  net    -8.9R  avg -0.076R  PF 0.81  win 57%  maxDD  15.2R
+                                    TEST  n  108  net   -21.0R  avg -0.194R  PF 0.56  win 47%  maxDD  21.0R
+fib 38.2%                TP2R+BE    TRAIN n  106  net    +7.9R  avg +0.075R  PF 1.17  win 41%  maxDD  11.7R
+                                    TEST  n  103  net   -15.6R  avg -0.151R  PF 0.70  win 30%  maxDD  17.1R
+
+fib 50%                  ladder0.6R TRAIN n  109  net    -0.1R  avg -0.001R  PF 1.00  win 61%  maxDD   8.3R
+                                    TEST  n  103  net    +0.6R  avg +0.006R  PF 1.02  win 61%  maxDD  11.5R
+fib 50%                  TP2R+BE    TRAIN n   98  net    +3.9R  avg +0.040R  PF 1.08  win 30%  maxDD  15.4R
+                                    TEST  n   98  net    -0.1R  avg -0.001R  PF 1.00  win 31%  maxDD  16.7R
+
+fib 61.8%                ladder0.6R TRAIN n   95  net    -8.9R  avg -0.094R  PF 0.78  win 56%  maxDD  14.0R
+                                    TEST  n   91  net   +19.6R  avg +0.215R  PF 1.85  win 75%  maxDD   4.5R
+fib 61.8%                TP2R+BE    TRAIN n   86  net   -13.2R  avg -0.153R  PF 0.72  win 21%  maxDD  23.4R
+                                    TEST  n   80  net   +16.0R  avg +0.200R  PF 1.51  win 35%  maxDD   6.7R
+
+asia sweep fade (ICT)    ladder0.6R TRAIN n  180  net   +15.6R  avg +0.087R  PF 1.23  win 57%  maxDD   8.8R
+                                    TEST  n  138  net    +1.8R  avg +0.013R  PF 1.03  win 54%  maxDD  13.7R
+asia sweep fade (ICT)    TP2R+BE    TRAIN n  180  net   +36.5R  avg +0.203R  PF 1.47  win 32%  maxDD  11.2R
+                                    TEST  n  138  net    -1.3R  avg -0.010R  PF 0.98  win 25%  maxDD  14.3R
+
+asia breakout            ladder0.6R TRAIN n  130  net   -30.8R  avg -0.237R  PF 0.54  win 48%  maxDD  31.4R
+                                    TEST  n  110  net   -34.4R  avg -0.313R  PF 0.43  win 43%  maxDD  34.6R
+asia breakout            TP2R+BE    TRAIN n  122  net   -50.7R  avg -0.415R  PF 0.37  win 17%  maxDD  51.4R
+                                    TEST  n  109  net   -65.9R  avg -0.605R  PF 0.20  win 11%  maxDD  65.9R
+
+pivot S1/R1              ladder0.6R TRAIN n  151  net    -7.9R  avg -0.052R  PF 0.88  win 58%  maxDD  14.9R
+                                    TEST  n  136  net    +1.5R  avg +0.011R  PF 1.03  win 60%  maxDD   6.7R
+pivot S1/R1              TP2R+BE    TRAIN n  139  net    -5.9R  avg -0.042R  PF 0.92  win 25%  maxDD  18.0R
+                                    TEST  n  125  net    -8.4R  avg -0.068R  PF 0.87  win 25%  maxDD  17.6R
+
+pivot S1/R1 with trend   ladder0.6R TRAIN n   80  net    +7.6R  avg +0.095R  PF 1.29  win 68%  maxDD   5.0R
+                                    TEST  n   80  net    +0.3R  avg +0.004R  PF 1.01  win 60%  maxDD   4.6R
+pivot S1/R1 with trend   TP2R+BE    TRAIN n   78  net   +29.1R  avg +0.374R  PF 1.94  win 40%  maxDD   3.0R
+                                    TEST  n   75  net    +3.7R  avg +0.049R  PF 1.11  win 29%  maxDD   6.0R
+
+round $25 with trend     ladder0.6R TRAIN n  121  net    -5.4R  avg -0.044R  PF 0.89  win 60%  maxDD  16.3R
+                                    TEST  n  136  net    -6.4R  avg -0.047R  PF 0.88  win 59%  maxDD  10.6R
+round $25 with trend     TP2R+BE    TRAIN n  121  net    +0.0R  avg +0.000R  PF 1.00  win 26%  maxDD  14.0R
+                                    TEST  n  136  net   -30.0R  avg -0.221R  PF 0.59  win 16%  maxDD  32.0R
+

@@ -1,0 +1,4 @@
+news trades n=66 WR=80.3% net=$4,877
+PF: flat 1.86 | median 1.44 | p90 1.34 | old 1.13 | new 1.66 | non-news median 1.09
+gates: {'1_news_pf_ge_1.50_median': False, '2_news_pf_ge_1.20_p90': True, '3_each_era_ge_1.10': True, '4_n_ge_60': True}
+== H-N FAIL -> remove the 1.5x news multiplier from flip_bot (operator-confirmed live change) ==

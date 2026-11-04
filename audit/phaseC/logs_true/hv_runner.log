@@ -1,0 +1,18 @@
+computing full-history daily ATR% series (2010-2026) ...
+daily ATR% median (parameter-free gate): 0.002436 (0.244%) over 5,115 days
+
+== PRIMARY V: absolute ATR% gate ==
+  V old: ON n=64 PF=0.879 | OFF n=203 PF=0.798 | gap +0.081
+  V new: ON n=79 PF=1.288 | OFF n=135 PF=0.883 | gap +0.405
+  V full: ON n=143 PF=1.166 p90=1.102 | OFF n=338 PF=0.845
+  gates: {'V1_on_pf_ge_1.30_n_ge_150': False, 'V2_off_pf_le_1.05': True, 'V3_within_era_control': True, 'V4_p90_on_ge_1.15': False}
+  V FAIL
+
+== SECONDARY Y: real-yield correlation state ==
+  Y old: ON n=90 PF=0.580 | OFF n=177 PF=0.978 | gap -0.398
+  Y new: ON n=77 PF=1.145 | OFF n=137 PF=1.068 | gap +0.077
+  Y full: ON n=167 PF=0.995 p90=0.925 | OFF n=314 PF=1.025
+  gates: {'Y1_on_pf_ge_1.30_n_ge_150': False, 'Y2_off_pf_le_1.05': True, 'Y3_within_era_control': False, 'Y4_p90_on_ge_1.15': False}
+  Y FAIL (displaces V: False)
+
+== HV FAIL: the era boundary remains unexplained; the live-deployment risk disclosure stands and HARDENS ==

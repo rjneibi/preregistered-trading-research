@@ -1,0 +1,83 @@
+{
+ "onelot_pf": {
+  "old": 0.9500442360349685,
+  "new": 1.417891984217437
+ },
+ "policies": {
+  "B0_flat1pct": {
+   "old": {
+    "n": 267,
+    "pf": 0.9363670156543527,
+    "net": -281.76,
+    "maxdd": 752.48,
+    "ratio": -0.374
+   },
+   "new": {
+    "n": 205,
+    "pf": 1.2885057459710383,
+    "net": 887.15,
+    "maxdd": 331.68,
+    "ratio": 2.675
+   }
+  },
+  "P_regime_tilt": {
+   "old": {
+    "n": 267,
+    "pf": 0.9282052536517335,
+    "net": -207.13,
+    "maxdd": 555.43,
+    "ratio": -0.373
+   },
+   "new": {
+    "n": 205,
+    "pf": 1.3164371222908537,
+    "net": 664.83,
+    "maxdd": 192.56,
+    "ratio": 3.453
+   }
+  },
+  "S1_atr_cap": {
+   "old": {
+    "n": 267,
+    "pf": 0.9512292059340709,
+    "net": -233.0,
+    "maxdd": 800.9,
+    "ratio": -0.291
+   },
+   "new": {
+    "n": 205,
+    "pf": 1.3936979405158854,
+    "net": 2434.08,
+    "maxdd": 947.44,
+    "ratio": 2.569
+   }
+  },
+  "S2_sqrt": {
+   "old": {
+    "n": 267,
+    "pf": 0.9438634956419767,
+    "net": -246.95,
+    "maxdd": 754.05,
+    "ratio": -0.328
+   },
+   "new": {
+    "n": 205,
+    "pf": 1.3455886196052351,
+    "net": 1657.52,
+    "maxdd": 458.05,
+    "ratio": 3.619
+   }
+  }
+ },
+ "gates": {
+  "1_old_pf_beats_baseline_+0.05": false,
+  "2_old_inversion_eliminated": false,
+  "3_old_risk_adjusted_not_worse": true,
+  "1_new_pf_beats_baseline_+0.05": false,
+  "2_new_inversion_eliminated": false,
+  "3_new_risk_adjusted_not_worse": true
+ },
+ "pass": false,
+ "displaced_by": null,
+ "verdict": "SZ FAIL: sizing line closed this cycle; inversion stands as a known cost of vol-normalized sizing"
+}

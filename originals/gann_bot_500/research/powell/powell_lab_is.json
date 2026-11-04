@@ -1,0 +1,1571 @@
+{
+ "events": [
+  {
+   "date": "2015-03-18",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1152.877,
+   "stmt_move": 14.396,
+   "entry_bid": 1166.968,
+   "entry_ask": 1167.246,
+   "x1530_bid": 1169.449,
+   "x1530_ask": 1169.87,
+   "x1600_bid": 1170.788,
+   "x1600_ask": 1171.22,
+   "presser_move": 2.553
+  },
+  {
+   "date": "2015-06-17",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1179.05,
+   "stmt_move": 3.835,
+   "entry_bid": 1182.69,
+   "entry_ask": 1183.071,
+   "x1530_bid": 1187.829,
+   "x1530_ask": 1188.052,
+   "x1600_bid": 1187.042,
+   "x1600_ask": 1187.372,
+   "presser_move": 5.06
+  },
+  {
+   "date": "2015-09-17",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1117.1,
+   "stmt_move": 8.985,
+   "entry_bid": 1125.898,
+   "entry_ask": 1126.37,
+   "x1530_bid": 1131.751,
+   "x1530_ask": 1132.121,
+   "x1600_bid": 1131.429,
+   "x1600_ask": 1131.792,
+   "presser_move": 5.802
+  },
+  {
+   "date": "2015-12-16",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1070.925,
+   "stmt_move": -0.014,
+   "entry_bid": 1070.621,
+   "entry_ask": 1071.21,
+   "x1530_bid": 1069.11,
+   "x1530_ask": 1069.57,
+   "x1600_bid": 1073.279,
+   "x1600_ask": 1073.711,
+   "presser_move": -1.576
+  },
+  {
+   "date": "2016-03-16",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1230.726,
+   "stmt_move": 22.856,
+   "entry_bid": 1253.401,
+   "entry_ask": 1253.642,
+   "x1530_bid": 1260.659,
+   "x1530_ask": 1260.921,
+   "x1600_bid": 1260.598,
+   "x1600_ask": 1260.991,
+   "presser_move": 7.268
+  },
+  {
+   "date": "2016-06-15",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1284.26,
+   "stmt_move": 11.436,
+   "entry_bid": 1295.528,
+   "entry_ask": 1295.841,
+   "x1530_bid": 1293.03,
+   "x1530_ask": 1293.418,
+   "x1600_bid": 1294.479,
+   "x1600_ask": 1294.791,
+   "presser_move": -2.46
+  },
+  {
+   "date": "2016-09-21",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1326.444,
+   "stmt_move": 3.48,
+   "entry_bid": 1329.969,
+   "entry_ask": 1330.3,
+   "x1530_bid": 1331.93,
+   "x1530_ask": 1332.182,
+   "x1600_bid": 1333.979,
+   "x1600_ask": 1334.211,
+   "presser_move": 1.921
+  },
+  {
+   "date": "2016-12-14",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1161.385,
+   "stmt_move": -7.33,
+   "entry_bid": 1153.548,
+   "entry_ask": 1153.951,
+   "x1530_bid": 1144.928,
+   "x1530_ask": 1145.262,
+   "x1600_bid": 1142.488,
+   "x1600_ask": 1142.822,
+   "presser_move": -8.654
+  },
+  {
+   "date": "2017-03-15",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1202.5,
+   "stmt_move": 10.039,
+   "entry_bid": 1212.498,
+   "entry_ask": 1212.728,
+   "x1530_bid": 1216.469,
+   "x1530_ask": 1216.728,
+   "x1600_bid": 1220.188,
+   "x1600_ask": 1220.512,
+   "presser_move": 3.986
+  },
+  {
+   "date": "2017-06-14",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1275.83,
+   "stmt_move": -5.923,
+   "entry_bid": 1269.871,
+   "entry_ask": 1270.079,
+   "x1530_bid": 1257.901,
+   "x1530_ask": 1258.149,
+   "x1600_bid": 1259.871,
+   "x1600_ask": 1260.142,
+   "presser_move": -11.95
+  },
+  {
+   "date": "2017-09-20",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1313.76,
+   "stmt_move": -10.27,
+   "entry_bid": 1303.391,
+   "entry_ask": 1303.532,
+   "x1530_bid": 1298.842,
+   "x1530_ask": 1299.118,
+   "x1600_bid": 1300.552,
+   "x1600_ask": 1300.788,
+   "presser_move": -4.481
+  },
+  {
+   "date": "2017-12-13",
+   "chair": "yellen",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1248.552,
+   "stmt_move": 4.095,
+   "entry_bid": 1252.459,
+   "entry_ask": 1252.671,
+   "x1530_bid": 1254.828,
+   "x1530_ask": 1255.019,
+   "x1600_bid": 1255.129,
+   "x1600_ask": 1255.379,
+   "presser_move": 2.358
+  },
+  {
+   "date": "2018-03-21",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1321.73,
+   "stmt_move": 3.271,
+   "entry_bid": 1324.872,
+   "entry_ask": 1325.132,
+   "x1530_bid": 1333.652,
+   "x1530_ask": 1333.882,
+   "x1600_bid": 1333.422,
+   "x1600_ask": 1333.682,
+   "presser_move": 8.765
+  },
+  {
+   "date": "2018-06-13",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1298.201,
+   "stmt_move": -4.337,
+   "entry_bid": 1293.718,
+   "entry_ask": 1293.999,
+   "x1530_bid": 1298.862,
+   "x1530_ask": 1299.121,
+   "x1600_bid": 1299.961,
+   "x1600_ask": 1300.229,
+   "presser_move": 5.133
+  },
+  {
+   "date": "2018-12-19",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1252.08,
+   "stmt_move": -6.246,
+   "entry_bid": 1245.685,
+   "entry_ask": 1245.992,
+   "x1530_bid": 1243.465,
+   "x1530_ask": 1243.805,
+   "x1600_bid": 1241.815,
+   "x1600_ask": 1242.122,
+   "presser_move": -2.203
+  },
+  {
+   "date": "2019-01-30",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1310.54,
+   "stmt_move": 6.635,
+   "entry_bid": 1316.985,
+   "entry_ask": 1317.335,
+   "x1530_bid": 1318.688,
+   "x1530_ask": 1319.002,
+   "x1600_bid": 1318.818,
+   "x1600_ask": 1319.152,
+   "presser_move": 1.685
+  },
+  {
+   "date": "2019-03-20",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1302.51,
+   "stmt_move": 12.672,
+   "entry_bid": 1314.998,
+   "entry_ask": 1315.302,
+   "x1530_bid": 1313.768,
+   "x1530_ask": 1314.075,
+   "x1600_bid": 1314.238,
+   "x1600_ask": 1314.552,
+   "presser_move": -1.229
+  },
+  {
+   "date": "2019-05-01",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1282.515,
+   "stmt_move": 3.937,
+   "entry_bid": 1286.178,
+   "entry_ask": 1286.505,
+   "x1530_bid": 1275.878,
+   "x1530_ask": 1276.202,
+   "x1600_bid": 1275.418,
+   "x1600_ask": 1275.642,
+   "presser_move": -10.302
+  },
+  {
+   "date": "2019-06-19",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1345.508,
+   "stmt_move": 6.218,
+   "entry_bid": 1351.568,
+   "entry_ask": 1351.875,
+   "x1530_bid": 1351.608,
+   "x1530_ask": 1351.962,
+   "x1600_bid": 1355.158,
+   "x1600_ask": 1355.505,
+   "presser_move": 0.063
+  },
+  {
+   "date": "2019-07-31",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1425.645,
+   "stmt_move": 1.04,
+   "entry_bid": 1426.418,
+   "entry_ask": 1426.732,
+   "x1530_bid": 1418.708,
+   "x1530_ask": 1419.025,
+   "x1600_bid": 1412.305,
+   "x1600_ask": 1412.652,
+   "presser_move": -7.708
+  },
+  {
+   "date": "2019-09-18",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1510.18,
+   "stmt_move": -12.099,
+   "entry_bid": 1497.878,
+   "entry_ask": 1498.242,
+   "x1530_bid": 1488.375,
+   "x1530_ask": 1488.682,
+   "x1600_bid": 1492.138,
+   "x1600_ask": 1492.435,
+   "presser_move": -9.532
+  },
+  {
+   "date": "2019-10-30",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1494.25,
+   "stmt_move": -5.695,
+   "entry_bid": 1488.458,
+   "entry_ask": 1488.755,
+   "x1530_bid": 1494.338,
+   "x1530_ask": 1494.645,
+   "x1600_bid": 1496.298,
+   "x1600_ask": 1496.535,
+   "presser_move": 5.885
+  },
+  {
+   "date": "2019-12-11",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1471.116,
+   "stmt_move": 1.855,
+   "entry_bid": 1472.798,
+   "entry_ask": 1473.055,
+   "x1530_bid": 1475.048,
+   "x1530_ask": 1475.325,
+   "x1600_bid": 1475.115,
+   "x1600_ask": 1475.385,
+   "presser_move": 2.26
+  },
+  {
+   "date": "2020-01-29",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1570.896,
+   "stmt_move": 2.33,
+   "entry_bid": 1573.098,
+   "entry_ask": 1573.355,
+   "x1530_bid": 1574.998,
+   "x1530_ask": 1575.282,
+   "x1600_bid": 1576.865,
+   "x1600_ask": 1577.172,
+   "presser_move": 1.913
+  },
+  {
+   "date": "2020-04-29",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1704.91,
+   "stmt_move": -3.71,
+   "entry_bid": 1700.818,
+   "entry_ask": 1701.532,
+   "x1530_bid": 1708.748,
+   "x1530_ask": 1709.562,
+   "x1600_bid": 1715.018,
+   "x1600_ask": 1716.145,
+   "presser_move": 7.98
+  },
+  {
+   "date": "2020-06-10",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1714.094,
+   "stmt_move": 13.295,
+   "entry_bid": 1727.205,
+   "entry_ask": 1727.662,
+   "x1530_bid": 1734.148,
+   "x1530_ask": 1734.392,
+   "x1600_bid": 1738.325,
+   "x1600_ask": 1738.652,
+   "presser_move": 6.836
+  },
+  {
+   "date": "2020-07-29",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1960.115,
+   "stmt_move": 6.925,
+   "entry_bid": 1966.798,
+   "entry_ask": 1967.355,
+   "x1530_bid": 1965.725,
+   "x1530_ask": 1966.335,
+   "x1600_bid": 1969.225,
+   "x1600_ask": 1969.735,
+   "presser_move": -1.047
+  },
+  {
+   "date": "2020-11-05",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1947.738,
+   "stmt_move": 0.38,
+   "entry_bid": 1947.965,
+   "entry_ask": 1948.355,
+   "x1530_bid": 1950.048,
+   "x1530_ask": 1950.285,
+   "x1600_bid": 1948.968,
+   "x1600_ask": 1949.342,
+   "presser_move": 2.007
+  },
+  {
+   "date": "2020-12-16",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1855.738,
+   "stmt_move": -7.407,
+   "entry_bid": 1848.155,
+   "entry_ask": 1848.582,
+   "x1530_bid": 1863.305,
+   "x1530_ask": 1863.705,
+   "x1600_bid": 1864.225,
+   "x1600_ask": 1864.652,
+   "presser_move": 15.137
+  },
+  {
+   "date": "2021-01-27",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1845.652,
+   "stmt_move": -1.568,
+   "entry_bid": 1843.865,
+   "entry_ask": 1844.302,
+   "x1530_bid": 1841.055,
+   "x1530_ask": 1841.473,
+   "x1600_bid": 1840.625,
+   "x1600_ask": 1840.975,
+   "presser_move": -2.819
+  },
+  {
+   "date": "2021-03-17",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1729.902,
+   "stmt_move": 12.943,
+   "entry_bid": 1742.708,
+   "entry_ask": 1743.104,
+   "x1530_bid": 1747.955,
+   "x1530_ask": 1748.342,
+   "x1600_bid": 1745.195,
+   "x1600_ask": 1745.582,
+   "presser_move": 5.243
+  },
+  {
+   "date": "2021-04-28",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1773.664,
+   "stmt_move": 2.293,
+   "entry_bid": 1775.788,
+   "entry_ask": 1776.135,
+   "x1530_bid": 1781.838,
+   "x1530_ask": 1782.142,
+   "x1600_bid": 1781.778,
+   "x1600_ask": 1782.092,
+   "presser_move": 6.029
+  },
+  {
+   "date": "2021-06-16",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1860.615,
+   "stmt_move": -20.865,
+   "entry_bid": 1839.418,
+   "entry_ask": 1839.852,
+   "x1530_bid": 1839.018,
+   "x1530_ask": 1839.372,
+   "x1600_bid": 1828.005,
+   "x1600_ask": 1828.402,
+   "presser_move": -0.44
+  },
+  {
+   "date": "2021-07-28",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1798.99,
+   "stmt_move": -0.082,
+   "entry_bid": 1798.638,
+   "entry_ask": 1799.122,
+   "x1530_bid": 1805.437,
+   "x1530_ask": 1805.762,
+   "x1600_bid": 1808.748,
+   "x1600_ask": 1809.095,
+   "presser_move": 6.719
+  },
+  {
+   "date": "2021-09-22",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1775.92,
+   "stmt_move": 8.29,
+   "entry_bid": 1784.138,
+   "entry_ask": 1784.492,
+   "x1530_bid": 1770.214,
+   "x1530_ask": 1770.622,
+   "x1600_bid": 1768.384,
+   "x1600_ask": 1768.836,
+   "presser_move": -13.897
+  },
+  {
+   "date": "2021-11-03",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1765.432,
+   "stmt_move": -0.237,
+   "entry_bid": 1765.038,
+   "entry_ask": 1765.456,
+   "x1530_bid": 1770.974,
+   "x1530_ask": 1771.202,
+   "x1600_bid": 1773.337,
+   "x1600_ask": 1773.636,
+   "presser_move": 5.841
+  },
+  {
+   "date": "2021-12-15",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1762.6,
+   "stmt_move": 0.36,
+   "entry_bid": 1762.828,
+   "entry_ask": 1763.232,
+   "x1530_bid": 1778.635,
+   "x1530_ask": 1779.045,
+   "x1600_bid": 1777.855,
+   "x1600_ask": 1778.212,
+   "presser_move": 15.81
+  },
+  {
+   "date": "2022-01-26",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1830.148,
+   "stmt_move": 1.94,
+   "entry_bid": 1831.838,
+   "entry_ask": 1832.172,
+   "x1530_bid": 1816.808,
+   "x1530_ask": 1817.132,
+   "x1600_bid": 1817.598,
+   "x1600_ask": 1817.994,
+   "presser_move": -15.035
+  },
+  {
+   "date": "2022-03-16",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1909.577,
+   "stmt_move": -5.069,
+   "entry_bid": 1904.245,
+   "entry_ask": 1904.642,
+   "x1530_bid": 1918.283,
+   "x1530_ask": 1918.782,
+   "x1600_bid": 1927.848,
+   "x1600_ask": 1928.332,
+   "presser_move": 14.089
+  },
+  {
+   "date": "2022-05-04",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1866.592,
+   "stmt_move": 8.977,
+   "entry_bid": 1875.113,
+   "entry_ask": 1875.552,
+   "x1530_bid": 1883.563,
+   "x1530_ask": 1884.062,
+   "x1600_bid": 1883.968,
+   "x1600_ask": 1884.307,
+   "presser_move": 8.48
+  },
+  {
+   "date": "2022-06-15",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1820.3,
+   "stmt_move": 2.949,
+   "entry_bid": 1823.025,
+   "entry_ask": 1823.485,
+   "x1530_bid": 1840.498,
+   "x1530_ask": 1841.222,
+   "x1600_bid": 1831.548,
+   "x1600_ask": 1832.152,
+   "presser_move": 17.605
+  },
+  {
+   "date": "2022-07-27",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1722.69,
+   "stmt_move": 2.749,
+   "entry_bid": 1725.24,
+   "entry_ask": 1725.692,
+   "x1530_bid": 1738.008,
+   "x1530_ask": 1738.452,
+   "x1600_bid": 1734.278,
+   "x1600_ask": 1734.696,
+   "presser_move": 12.764
+  },
+  {
+   "date": "2022-09-21",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1668.655,
+   "stmt_move": -3.224,
+   "entry_bid": 1665.378,
+   "entry_ask": 1665.775,
+   "x1530_bid": 1679.245,
+   "x1530_ask": 1679.559,
+   "x1600_bid": 1672.328,
+   "x1600_ask": 1672.742,
+   "presser_move": 13.825
+  },
+  {
+   "date": "2022-11-02",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1649.36,
+   "stmt_move": 15.38,
+   "entry_bid": 1664.628,
+   "entry_ask": 1664.992,
+   "x1530_bid": 1639.488,
+   "x1530_ask": 1639.982,
+   "x1600_bid": 1636.657,
+   "x1600_ask": 1637.263,
+   "presser_move": -25.075
+  },
+  {
+   "date": "2022-12-14",
+   "chair": "powell",
+   "presser": true,
+   "is_sample": true,
+   "base_mid": 1809.408,
+   "stmt_move": -6.958,
+   "entry_bid": 1802.385,
+   "entry_ask": 1802.682,
+   "x1530_bid": 1805.685,
+   "x1530_ask": 1806.115,
+   "x1600_bid": 1806.505,
+   "x1600_ask": 1806.802,
+   "presser_move": 3.367
+  }
+ ],
+ "configs": {
+  "fade_t0_1530ET": {
+   "optimistic_yellen": {
+    "n": 12,
+    "total": -56.89,
+    "mean": -4.741,
+    "median": -4.46,
+    "pf": 0.036,
+    "win_rate": 0.083
+   },
+   "optimistic_powell": {
+    "n": 33,
+    "total": 35.28,
+    "mean": 1.069,
+    "median": -0.394,
+    "pf": 1.319,
+    "win_rate": 0.485
+   },
+   "optimistic_all": {
+    "n": 45,
+    "total": -21.61,
+    "mean": -0.48,
+    "median": -2.213,
+    "pf": 0.873,
+    "win_rate": 0.378
+   },
+   "realistic_yellen": {
+    "n": 12,
+    "total": -59.29,
+    "mean": -4.941,
+    "median": -4.66,
+    "pf": 0.031,
+    "win_rate": 0.083
+   },
+   "realistic_powell": {
+    "n": 33,
+    "total": 28.68,
+    "mean": 0.869,
+    "median": -0.594,
+    "pf": 1.251,
+    "win_rate": 0.485
+   },
+   "realistic_all": {
+    "n": 45,
+    "total": -30.61,
+    "mean": -0.68,
+    "median": -2.413,
+    "pf": 0.825,
+    "win_rate": 0.378
+   },
+   "worst_yellen": {
+    "n": 12,
+    "total": -64.09,
+    "mean": -5.341,
+    "median": -5.06,
+    "pf": 0.023,
+    "win_rate": 0.083
+   },
+   "worst_powell": {
+    "n": 33,
+    "total": 15.48,
+    "mean": 0.469,
+    "median": -0.994,
+    "pf": 1.128,
+    "win_rate": 0.455
+   },
+   "worst_all": {
+    "n": 45,
+    "total": -48.61,
+    "mean": -1.08,
+    "median": -2.813,
+    "pf": 0.74,
+    "win_rate": 0.356
+   }
+  },
+  "fade_t0_1600ET": {
+   "optimistic_yellen": {
+    "n": 12,
+    "total": -59.44,
+    "mean": -4.953,
+    "median": -4.467,
+    "pf": 0.045,
+    "win_rate": 0.167
+   },
+   "optimistic_powell": {
+    "n": 33,
+    "total": 59.5,
+    "mean": 1.803,
+    "median": -2.167,
+    "pf": 1.515,
+    "win_rate": 0.455
+   },
+   "optimistic_all": {
+    "n": 45,
+    "total": 0.06,
+    "mean": 0.001,
+    "median": -2.937,
+    "pf": 1.0,
+    "win_rate": 0.378
+   },
+   "realistic_yellen": {
+    "n": 12,
+    "total": -61.84,
+    "mean": -5.153,
+    "median": -4.667,
+    "pf": 0.037,
+    "win_rate": 0.167
+   },
+   "realistic_powell": {
+    "n": 33,
+    "total": 52.9,
+    "mean": 1.603,
+    "median": -2.367,
+    "pf": 1.444,
+    "win_rate": 0.455
+   },
+   "realistic_all": {
+    "n": 45,
+    "total": -8.94,
+    "mean": -0.199,
+    "median": -3.137,
+    "pf": 0.951,
+    "win_rate": 0.378
+   },
+   "worst_yellen": {
+    "n": 12,
+    "total": -66.64,
+    "mean": -5.553,
+    "median": -5.067,
+    "pf": 0.024,
+    "win_rate": 0.167
+   },
+   "worst_powell": {
+    "n": 33,
+    "total": 39.7,
+    "mean": 1.203,
+    "median": -2.767,
+    "pf": 1.314,
+    "win_rate": 0.424
+   },
+   "worst_all": {
+    "n": 45,
+    "total": -26.94,
+    "mean": -0.599,
+    "median": -3.537,
+    "pf": 0.862,
+    "win_rate": 0.356
+   }
+  },
+  "fade_t3_1530ET": {
+   "optimistic_yellen": {
+    "n": 11,
+    "total": -54.79,
+    "mean": -4.981,
+    "median": -4.69,
+    "pf": 0.037,
+    "win_rate": 0.091
+   },
+   "optimistic_powell": {
+    "n": 21,
+    "total": 65.6,
+    "mean": 3.124,
+    "median": 0.923,
+    "pf": 2.413,
+    "win_rate": 0.571
+   },
+   "optimistic_all": {
+    "n": 32,
+    "total": 10.81,
+    "mean": 0.338,
+    "median": -2.115,
+    "pf": 1.105,
+    "win_rate": 0.406
+   },
+   "realistic_yellen": {
+    "n": 11,
+    "total": -56.99,
+    "mean": -5.181,
+    "median": -4.89,
+    "pf": 0.032,
+    "win_rate": 0.091
+   },
+   "realistic_powell": {
+    "n": 21,
+    "total": 61.4,
+    "mean": 2.924,
+    "median": 0.723,
+    "pf": 2.273,
+    "win_rate": 0.571
+   },
+   "realistic_all": {
+    "n": 32,
+    "total": 4.41,
+    "mean": 0.138,
+    "median": -2.315,
+    "pf": 1.041,
+    "win_rate": 0.406
+   },
+   "worst_yellen": {
+    "n": 11,
+    "total": -61.39,
+    "mean": -5.581,
+    "median": -5.29,
+    "pf": 0.024,
+    "win_rate": 0.091
+   },
+   "worst_powell": {
+    "n": 21,
+    "total": 53.0,
+    "mean": 2.524,
+    "median": 0.323,
+    "pf": 2.02,
+    "win_rate": 0.524
+   },
+   "worst_all": {
+    "n": 32,
+    "total": -8.39,
+    "mean": -0.262,
+    "median": -2.715,
+    "pf": 0.927,
+    "win_rate": 0.375
+   }
+  },
+  "fade_t3_1600ET": {
+   "optimistic_yellen": {
+    "n": 11,
+    "total": -61.51,
+    "mean": -5.592,
+    "median": -4.682,
+    "pf": 0.012,
+    "win_rate": 0.091
+   },
+   "optimistic_powell": {
+    "n": 21,
+    "total": 66.37,
+    "mean": 3.161,
+    "median": 0.446,
+    "pf": 2.045,
+    "win_rate": 0.524
+   },
+   "optimistic_all": {
+    "n": 32,
+    "total": 4.86,
+    "mean": 0.152,
+    "median": -2.958,
+    "pf": 1.039,
+    "win_rate": 0.375
+   },
+   "realistic_yellen": {
+    "n": 11,
+    "total": -63.71,
+    "mean": -5.792,
+    "median": -4.882,
+    "pf": 0.008,
+    "win_rate": 0.091
+   },
+   "realistic_powell": {
+    "n": 21,
+    "total": 62.17,
+    "mean": 2.961,
+    "median": 0.246,
+    "pf": 1.949,
+    "win_rate": 0.524
+   },
+   "realistic_all": {
+    "n": 32,
+    "total": -1.54,
+    "mean": -0.048,
+    "median": -3.158,
+    "pf": 0.988,
+    "win_rate": 0.375
+   },
+   "worst_yellen": {
+    "n": 11,
+    "total": -68.11,
+    "mean": -6.192,
+    "median": -5.282,
+    "pf": 0.002,
+    "win_rate": 0.091
+   },
+   "worst_powell": {
+    "n": 21,
+    "total": 53.77,
+    "mean": 2.561,
+    "median": -0.154,
+    "pf": 1.772,
+    "win_rate": 0.476
+   },
+   "worst_all": {
+    "n": 32,
+    "total": -14.34,
+    "mean": -0.448,
+    "median": -3.558,
+    "pf": 0.896,
+    "win_rate": 0.344
+   }
+  },
+  "fade_t6_1530ET": {
+   "optimistic_yellen": {
+    "n": 7,
+    "total": -32.48,
+    "mean": -4.64,
+    "median": -4.69,
+    "pf": 0.061,
+    "win_rate": 0.143
+   },
+   "optimistic_powell": {
+    "n": 14,
+    "total": 19.86,
+    "mean": 1.419,
+    "median": -0.614,
+    "pf": 1.531,
+    "win_rate": 0.429
+   },
+   "optimistic_all": {
+    "n": 21,
+    "total": -12.61,
+    "mean": -0.601,
+    "median": -2.527,
+    "pf": 0.825,
+    "win_rate": 0.333
+   },
+   "realistic_yellen": {
+    "n": 7,
+    "total": -33.88,
+    "mean": -4.84,
+    "median": -4.89,
+    "pf": 0.053,
+    "win_rate": 0.143
+   },
+   "realistic_powell": {
+    "n": 14,
+    "total": 17.07,
+    "mean": 1.219,
+    "median": -0.814,
+    "pf": 1.437,
+    "win_rate": 0.429
+   },
+   "realistic_all": {
+    "n": 21,
+    "total": -16.81,
+    "mean": -0.801,
+    "median": -2.727,
+    "pf": 0.775,
+    "win_rate": 0.333
+   },
+   "worst_yellen": {
+    "n": 7,
+    "total": -36.68,
+    "mean": -5.24,
+    "median": -5.29,
+    "pf": 0.04,
+    "win_rate": 0.143
+   },
+   "worst_powell": {
+    "n": 14,
+    "total": 11.47,
+    "mean": 0.819,
+    "median": -1.214,
+    "pf": 1.271,
+    "win_rate": 0.357
+   },
+   "worst_all": {
+    "n": 21,
+    "total": -25.21,
+    "mean": -1.201,
+    "median": -3.127,
+    "pf": 0.687,
+    "win_rate": 0.286
+   }
+  },
+  "fade_t6_1600ET": {
+   "optimistic_yellen": {
+    "n": 7,
+    "total": -39.46,
+    "mean": -5.637,
+    "median": -5.894,
+    "pf": 0.018,
+    "win_rate": 0.143
+   },
+   "optimistic_powell": {
+    "n": 14,
+    "total": 7.89,
+    "mean": 0.564,
+    "median": -2.905,
+    "pf": 1.144,
+    "win_rate": 0.357
+   },
+   "optimistic_all": {
+    "n": 21,
+    "total": -31.56,
+    "mean": -1.503,
+    "median": -3.937,
+    "pf": 0.667,
+    "win_rate": 0.286
+   },
+   "realistic_yellen": {
+    "n": 7,
+    "total": -40.86,
+    "mean": -5.837,
+    "median": -6.094,
+    "pf": 0.013,
+    "win_rate": 0.143
+   },
+   "realistic_powell": {
+    "n": 14,
+    "total": 5.1,
+    "mean": 0.364,
+    "median": -3.105,
+    "pf": 1.09,
+    "win_rate": 0.357
+   },
+   "realistic_all": {
+    "n": 21,
+    "total": -35.76,
+    "mean": -1.703,
+    "median": -4.137,
+    "pf": 0.635,
+    "win_rate": 0.286
+   },
+   "worst_yellen": {
+    "n": 7,
+    "total": -43.66,
+    "mean": -6.237,
+    "median": -6.494,
+    "pf": 0.003,
+    "win_rate": 0.143
+   },
+   "worst_powell": {
+    "n": 14,
+    "total": -0.5,
+    "mean": -0.036,
+    "median": -3.505,
+    "pf": 0.992,
+    "win_rate": 0.286
+   },
+   "worst_all": {
+    "n": 21,
+    "total": -44.16,
+    "mean": -2.103,
+    "median": -4.537,
+    "pf": 0.576,
+    "win_rate": 0.238
+   }
+  },
+  "momentum_t0_1530ET": {
+   "optimistic_yellen": {
+    "n": 12,
+    "total": 49.41,
+    "mean": 4.117,
+    "median": 4.007,
+    "pf": 18.577,
+    "win_rate": 0.917
+   },
+   "optimistic_powell": {
+    "n": 33,
+    "total": -60.35,
+    "mean": -1.829,
+    "median": -0.267,
+    "pf": 0.62,
+    "win_rate": 0.485
+   },
+   "optimistic_all": {
+    "n": 45,
+    "total": -10.94,
+    "mean": -0.243,
+    "median": 1.643,
+    "pf": 0.932,
+    "win_rate": 0.6
+   },
+   "realistic_yellen": {
+    "n": 12,
+    "total": 47.01,
+    "mean": 3.917,
+    "median": 3.807,
+    "pf": 16.612,
+    "win_rate": 0.917
+   },
+   "realistic_powell": {
+    "n": 33,
+    "total": -66.95,
+    "mean": -2.029,
+    "median": -0.467,
+    "pf": 0.588,
+    "win_rate": 0.455
+   },
+   "realistic_all": {
+    "n": 45,
+    "total": -19.94,
+    "mean": -0.443,
+    "median": 1.443,
+    "pf": 0.879,
+    "win_rate": 0.578
+   },
+   "worst_yellen": {
+    "n": 12,
+    "total": 42.21,
+    "mean": 3.517,
+    "median": 3.407,
+    "pf": 13.374,
+    "win_rate": 0.917
+   },
+   "worst_powell": {
+    "n": 33,
+    "total": -80.15,
+    "mean": -2.429,
+    "median": -0.867,
+    "pf": 0.527,
+    "win_rate": 0.455
+   },
+   "worst_all": {
+    "n": 45,
+    "total": -37.94,
+    "mean": -0.843,
+    "median": 1.043,
+    "pf": 0.781,
+    "win_rate": 0.578
+   }
+  },
+  "momentum_t0_1600ET": {
+   "optimistic_yellen": {
+    "n": 12,
+    "total": 51.73,
+    "mean": 4.311,
+    "median": 3.825,
+    "pf": 12.62,
+    "win_rate": 0.833
+   },
+   "optimistic_powell": {
+    "n": 33,
+    "total": -84.82,
+    "mean": -2.57,
+    "median": 1.483,
+    "pf": 0.546,
+    "win_rate": 0.545
+   },
+   "optimistic_all": {
+    "n": 45,
+    "total": -33.09,
+    "mean": -0.735,
+    "median": 2.458,
+    "pf": 0.827,
+    "win_rate": 0.622
+   },
+   "realistic_yellen": {
+    "n": 12,
+    "total": 49.33,
+    "mean": 4.111,
+    "median": 3.625,
+    "pf": 11.167,
+    "win_rate": 0.833
+   },
+   "realistic_powell": {
+    "n": 33,
+    "total": -91.42,
+    "mean": -2.77,
+    "median": 1.283,
+    "pf": 0.519,
+    "win_rate": 0.545
+   },
+   "realistic_all": {
+    "n": 45,
+    "total": -42.09,
+    "mean": -0.935,
+    "median": 2.258,
+    "pf": 0.784,
+    "win_rate": 0.622
+   },
+   "worst_yellen": {
+    "n": 12,
+    "total": 44.53,
+    "mean": 3.711,
+    "median": 3.225,
+    "pf": 8.879,
+    "win_rate": 0.833
+   },
+   "worst_powell": {
+    "n": 33,
+    "total": -104.62,
+    "mean": -3.17,
+    "median": 0.883,
+    "pf": 0.466,
+    "win_rate": 0.545
+   },
+   "worst_all": {
+    "n": 45,
+    "total": -60.09,
+    "mean": -1.335,
+    "median": 1.858,
+    "pf": 0.702,
+    "win_rate": 0.622
+   }
+  },
+  "momentum_t3_1530ET": {
+   "optimistic_yellen": {
+    "n": 11,
+    "total": 48.36,
+    "mean": 4.396,
+    "median": 4.273,
+    "pf": 18.203,
+    "win_rate": 0.909
+   },
+   "optimistic_powell": {
+    "n": 21,
+    "total": -81.83,
+    "mean": -3.897,
+    "median": -1.63,
+    "pf": 0.33,
+    "win_rate": 0.381
+   },
+   "optimistic_all": {
+    "n": 32,
+    "total": -33.47,
+    "mean": -1.046,
+    "median": 1.492,
+    "pf": 0.732,
+    "win_rate": 0.562
+   },
+   "realistic_yellen": {
+    "n": 11,
+    "total": 46.16,
+    "mean": 4.196,
+    "median": 4.073,
+    "pf": 16.329,
+    "win_rate": 0.909
+   },
+   "realistic_powell": {
+    "n": 21,
+    "total": -86.03,
+    "mean": -4.097,
+    "median": -1.83,
+    "pf": 0.311,
+    "win_rate": 0.333
+   },
+   "realistic_all": {
+    "n": 32,
+    "total": -39.87,
+    "mean": -1.246,
+    "median": 1.292,
+    "pf": 0.688,
+    "win_rate": 0.531
+   },
+   "worst_yellen": {
+    "n": 11,
+    "total": 41.76,
+    "mean": 3.796,
+    "median": 3.673,
+    "pf": 13.242,
+    "win_rate": 0.909
+   },
+   "worst_powell": {
+    "n": 21,
+    "total": -94.43,
+    "mean": -4.497,
+    "median": -2.23,
+    "pf": 0.277,
+    "win_rate": 0.333
+   },
+   "worst_all": {
+    "n": 32,
+    "total": -52.67,
+    "mean": -1.646,
+    "median": 0.892,
+    "pf": 0.607,
+    "win_rate": 0.531
+   }
+  },
+  "momentum_t3_1600ET": {
+   "optimistic_yellen": {
+    "n": 11,
+    "total": 54.82,
+    "mean": 4.984,
+    "median": 3.971,
+    "pf": 41.25,
+    "win_rate": 0.909
+   },
+   "optimistic_powell": {
+    "n": 21,
+    "total": -82.76,
+    "mean": -3.941,
+    "median": -1.064,
+    "pf": 0.404,
+    "win_rate": 0.476
+   },
+   "optimistic_all": {
+    "n": 32,
+    "total": -27.94,
+    "mean": -0.873,
+    "median": 2.53,
+    "pf": 0.801,
+    "win_rate": 0.625
+   },
+   "realistic_yellen": {
+    "n": 11,
+    "total": 52.62,
+    "mean": 4.784,
+    "median": 3.771,
+    "pf": 34.688,
+    "win_rate": 0.909
+   },
+   "realistic_powell": {
+    "n": 21,
+    "total": -86.96,
+    "mean": -4.141,
+    "median": -1.264,
+    "pf": 0.384,
+    "win_rate": 0.476
+   },
+   "realistic_all": {
+    "n": 32,
+    "total": -34.33,
+    "mean": -1.073,
+    "median": 2.331,
+    "pf": 0.759,
+    "win_rate": 0.625
+   },
+   "worst_yellen": {
+    "n": 11,
+    "total": 48.22,
+    "mean": 4.384,
+    "median": 3.371,
+    "pf": 25.577,
+    "win_rate": 0.909
+   },
+   "worst_powell": {
+    "n": 21,
+    "total": -95.36,
+    "mean": -4.541,
+    "median": -1.664,
+    "pf": 0.345,
+    "win_rate": 0.476
+   },
+   "worst_all": {
+    "n": 32,
+    "total": -47.13,
+    "mean": -1.473,
+    "median": 1.931,
+    "pf": 0.68,
+    "win_rate": 0.625
+   }
+  },
+  "momentum_t6_1530ET": {
+   "optimistic_yellen": {
+    "n": 7,
+    "total": 28.09,
+    "mean": 4.013,
+    "median": 4.273,
+    "pf": 10.993,
+    "win_rate": 0.857
+   },
+   "optimistic_powell": {
+    "n": 14,
+    "total": -30.67,
+    "mean": -2.191,
+    "median": -0.111,
+    "pf": 0.509,
+    "win_rate": 0.5
+   },
+   "optimistic_all": {
+    "n": 21,
+    "total": -2.58,
+    "mean": -0.123,
+    "median": 1.88,
+    "pf": 0.96,
+    "win_rate": 0.619
+   },
+   "realistic_yellen": {
+    "n": 7,
+    "total": 26.69,
+    "mean": 3.813,
+    "median": 4.073,
+    "pf": 9.864,
+    "win_rate": 0.857
+   },
+   "realistic_powell": {
+    "n": 14,
+    "total": -33.47,
+    "mean": -2.391,
+    "median": -0.31,
+    "pf": 0.477,
+    "win_rate": 0.429
+   },
+   "realistic_all": {
+    "n": 21,
+    "total": -6.78,
+    "mean": -0.323,
+    "median": 1.68,
+    "pf": 0.899,
+    "win_rate": 0.571
+   },
+   "worst_yellen": {
+    "n": 7,
+    "total": 23.89,
+    "mean": 3.413,
+    "median": 3.673,
+    "pf": 8.004,
+    "win_rate": 0.857
+   },
+   "worst_powell": {
+    "n": 14,
+    "total": -39.07,
+    "mean": -2.791,
+    "median": -0.711,
+    "pf": 0.419,
+    "win_rate": 0.429
+   },
+   "worst_all": {
+    "n": 21,
+    "total": -15.18,
+    "mean": -0.723,
+    "median": 1.28,
+    "pf": 0.785,
+    "win_rate": 0.571
+   }
+  },
+  "momentum_t6_1600ET": {
+   "optimistic_yellen": {
+    "n": 7,
+    "total": 34.98,
+    "mean": 4.998,
+    "median": 5.059,
+    "pf": 26.686,
+    "win_rate": 0.857
+   },
+   "optimistic_powell": {
+    "n": 14,
+    "total": -18.59,
+    "mean": -1.328,
+    "median": 1.98,
+    "pf": 0.72,
+    "win_rate": 0.643
+   },
+   "optimistic_all": {
+    "n": 21,
+    "total": 16.39,
+    "mean": 0.781,
+    "median": 3.283,
+    "pf": 1.242,
+    "win_rate": 0.714
+   },
+   "realistic_yellen": {
+    "n": 7,
+    "total": 33.58,
+    "mean": 4.798,
+    "median": 4.859,
+    "pf": 22.501,
+    "win_rate": 0.857
+   },
+   "realistic_powell": {
+    "n": 14,
+    "total": -21.39,
+    "mean": -1.528,
+    "median": 1.781,
+    "pf": 0.683,
+    "win_rate": 0.643
+   },
+   "realistic_all": {
+    "n": 21,
+    "total": 12.19,
+    "mean": 0.581,
+    "median": 3.083,
+    "pf": 1.177,
+    "win_rate": 0.714
+   },
+   "worst_yellen": {
+    "n": 7,
+    "total": 30.78,
+    "mean": 4.398,
+    "median": 4.459,
+    "pf": 16.69,
+    "win_rate": 0.857
+   },
+   "worst_powell": {
+    "n": 14,
+    "total": -26.99,
+    "mean": -1.928,
+    "median": 1.38,
+    "pf": 0.611,
+    "win_rate": 0.643
+   },
+   "worst_all": {
+    "n": 21,
+    "total": 3.79,
+    "mean": 0.181,
+    "median": 2.683,
+    "pf": 1.053,
+    "win_rate": 0.714
+   }
+  }
+ },
+ "corr_stmt_presser_yellen": 0.766,
+ "corr_stmt_presser_powell": -0.21
+}

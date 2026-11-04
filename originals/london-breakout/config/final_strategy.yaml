@@ -1,0 +1,61 @@
+strategy: London Breakout - Variant A (Asian box)
+status: FAILED VALIDATION - NO EDGE. Frozen for the required single OOS run and for
+  documentation; NOT recommended for live trading.
+frozen_on: '2026-10-30'
+instruments:
+  GER40: Dukascopy DEU.IDX/EUR CFD (DAX)
+  UK100: Dukascopy GBR.IDX/GBP CFD (FTSE 100)
+time:
+  all_times: computed with zoneinfo; never fixed UTC offsets
+  london_open: 08:00 Europe/London
+  trading_days: Mon-Fri London dates with a 1m bar within 5 min of 08:00 London
+signal:
+  price: mid ((bid+ask)/2) 1-minute bars, UTC bar-open timestamps
+  box_rule: utc2307
+  box_rule_meaning: 23:00 (prev day)-07:00 UTC
+  box_end_cap: box ends no later than 08:00 London
+  box: highest high / lowest low of all 1m bars in the box window
+  min_box_coverage: 0.5
+  signal_tf_min: 15
+  signal_bars: UTC-aligned buckets of signal_tf minutes; only complete, closed buckets
+  entry_window_min: 30
+  entry_window_meaning: signal bar must open at/after 08:00 London and close by 08:00
+    + window
+  breakout: whole
+  breakout_meaning: entire signal bar beyond the edge (low > box high / high < box
+    low)
+  buffer_atr: 0.0
+  strong_candle: range1atr
+  strong_candle_meaning: candle in breakout direction and range >= ATR14 of the previous
+    signal bars
+  volume_k: 0.0
+  fresh_break: false
+  box_filter: none
+  trend_filter: none
+  first_signal_only: true
+entry:
+  type: market at the open of the next 1m bar after the signal bar closes
+  planned_entry: that bar's open (mid)
+exits:
+  stop_rule: in25
+  stop_meaning: box edge moved 25% of box width back inside the box
+  rr: none
+  target: no target
+  forced_exit_london:
+  - 16
+  - 30
+  same_bar_stop_and_target: assume stop
+  management: none
+risk:
+  risk_per_trade: 0.5% of equity (1% tested)
+  max_trades_per_day: 1
+  position_size: equity x risk / (|entry - stop| x value_per_point)
+costs_assumed:
+  GER40:
+    spread: Dukascopy bid/ask per bar
+    slip: 0.5
+    comm: 0.0
+  UK100:
+    spread: Dukascopy bid/ask per bar
+    slip: 0.5
+    comm: 0.0

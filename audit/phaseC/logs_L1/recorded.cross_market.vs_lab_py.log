@@ -1,0 +1,31 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote originals/gann_bot_500/fable-backtesting/calendar/news_days.json: 260 blackout days
+trades: 1153  (US500 519, US30 503, USTEC 131)
+
+PORTFOLIO (US500+US30+USTEC, rsi2+ibs)          2013-2019                         |  2020-2026
+  S0  CAGR  +1.6% DD  -15.0% Sh 0.23 MAR 0.11 expo  37%  |  CAGR +12.4% DD  -11.9% Sh 1.01 MAR 1.04 expo  45%
+  S1  CAGR  +1.1% DD  -11.7% Sh 0.18 MAR 0.09 expo  35%  |  CAGR +10.8% DD   -9.3% Sh 1.06 MAR 1.16 expo  44%   fail
+  S2  CAGR  +1.1% DD  -15.5% Sh 0.19 MAR 0.07 expo  31%  |  CAGR +10.7% DD  -18.2% Sh 0.82 MAR 0.59 expo  38%   fail
+  S3  CAGR  -0.2% DD  -15.2% Sh -0.01 MAR -0.02 expo  20%  |  CAGR  +6.5% DD  -11.9% Sh 0.72 MAR 0.55 expo  21%   fail
+  S4  CAGR  +1.1% DD  -19.1% Sh 0.17 MAR 0.06 expo  35%  |  CAGR +12.1% DD  -19.9% Sh 0.82 MAR 0.61 expo  45%   fail
+  S5  CAGR  +2.0% DD  -18.2% Sh 0.25 MAR 0.11 expo  39%  |  CAGR +13.2% DD  -12.7% Sh 0.94 MAR 1.03 expo  47%   fail
+
+PER-TRADE: mean net % by fear tercile (low / mid / high), halves split at 2020
+  f1 US500 +0.22/+0.07/+0.03 n230  |  +0.62/+0.18/+0.68 n287
+  f1 US30  +0.07/+0.02/+0.17 n226  |  +0.27/+0.16/+0.19 n275
+  f1 USTEC    (few)            |  +0.52/+0.01/+0.74 n128
+  f1 IWM   +0.06/+0.12/+0.42 n343  |  +0.32/+0.42/+0.43 n278
+  f1 EWA   -0.16/+0.14/-0.06 n345  |  -0.35/+0.21/+0.31 n271
+  f1: high-fear beats low-fear in both halves on 3/5 markets -> no effect
+  f2 US500 +0.18/-0.06/+0.17 n232  |  +0.44/+0.62/+0.56 n287
+  f2 US30  +0.17/-0.17/+0.15 n228  |  +0.23/+0.37/+0.04 n275
+  f2 USTEC    (few)            |  +0.53/+0.58/+0.24 n131
+  f2 IWM   +0.12/+0.33/+0.08 n299  |  +0.53/+0.58/-0.28 n278
+  f2 EWA   -0.30/-0.06/+0.37 n302  |  +0.01/+0.28/-0.18 n271
+  f2: high-fear beats low-fear in both halves on 0/5 markets -> no effect
+  f3 US500 +0.15/-0.01/+0.14 n232  |  +0.65/+0.32/+0.57 n287
+  f3 US30  -0.13/-0.03/+0.18 n228  |  +0.35/+0.14/+0.20 n275
+  f3 USTEC    (few)            |  +0.30/+0.37/+0.56 n131
+  f3 IWM   +0.13/-0.10/+0.35 n298  |  +0.76/+0.11/+0.39 n278
+  f3 EWA   -0.48/-0.31/+0.22 n302  |  +0.02/-0.01/+0.09 n271
+  f3: high-fear beats low-fear in both halves on 2/5 markets -> no effect

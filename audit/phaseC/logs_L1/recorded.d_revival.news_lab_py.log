@@ -1,0 +1,53 @@
+NFP first-Friday rule vs exact 2015: 9/12 match (exact list has 13)
+wrote originals/gann_bot_500/fable-backtesting/calendar/news_days.json: 260 blackout days
+===== NFP: 176 events (2010-01-08 .. 2026-10-02) at broker 15:30
+  MOM  k= 1 hold= 30  n=171 PF=1.10 avg=+0.049R | halves PF 1.67 / 0.64 | twin avg -0.240R, beats  97%
+  MOM  k= 1 hold=120  n=171 PF=1.21 avg=+0.120R | halves PF 1.68 / 0.78 | twin avg -0.243R, beats  96%
+  MOM  k= 1 hold=360  n=171 PF=1.23 avg=+0.140R | halves PF 1.68 / 0.84 | twin avg -0.233R, beats  93%
+  MOM  k= 5 hold= 30  n=174 PF=0.73 avg=-0.110R | halves PF 0.90 / 0.57 | twin avg -0.177R, beats  74%
+  MOM  k= 5 hold=120  n=174 PF=0.94 avg=-0.029R | halves PF 1.01 / 0.88 | twin avg -0.160R, beats  80%
+  MOM  k= 5 hold=360  n=174 PF=0.96 avg=-0.020R | halves PF 1.03 / 0.90 | twin avg -0.138R, beats  74%
+  MOM  k=15 hold= 30  n=175 PF=0.65 avg=-0.112R | halves PF 0.75 / 0.57 | twin avg -0.149R, beats  70%
+  MOM  k=15 hold=120  n=175 PF=0.85 avg=-0.066R | halves PF 0.96 / 0.76 | twin avg -0.139R, beats  72%
+  MOM  k=15 hold=360  n=175 PF=0.87 avg=-0.064R | halves PF 0.95 / 0.80 | twin avg -0.123R, beats  66%
+  FADE k= 5 hold= 30  n=175 PF=0.72 avg=-0.108R | halves PF 0.54 / 0.95 | twin avg -0.195R, beats  84%
+  FADE k= 5 hold=120  n=175 PF=0.71 avg=-0.160R | halves PF 0.64 / 0.79 | twin avg -0.191R, beats  59%
+  FADE k= 5 hold=360  n=175 PF=0.69 avg=-0.190R | halves PF 0.56 / 0.83 | twin avg -0.210R, beats  57%
+  FADE k=15 hold= 30  n=175 PF=0.66 avg=-0.090R | halves PF 0.42 / 0.95 | twin avg -0.121R, beats  68%
+  FADE k=15 hold=120  n=175 PF=0.67 avg=-0.151R | halves PF 0.47 / 0.89 | twin avg -0.092R, beats  32%
+  FADE k=15 hold=360  n=175 PF=0.70 avg=-0.146R | halves PF 0.55 / 0.86 | twin avg -0.107R, beats  39%
+  BRK  k= 0 hold= 30  n=175 PF=2.29 avg=+0.588R | halves PF 2.11 / 2.46 | twin avg -0.028R, beats 100%   <== PASS
+  BRK  k= 0 hold=120  n=175 PF=1.99 avg=+0.560R | halves PF 2.07 / 1.92 | twin avg -0.031R, beats 100%   <== PASS
+  BRK  k= 0 hold=360  n=175 PF=2.06 avg=+0.628R | halves PF 2.08 / 2.03 | twin avg -0.014R, beats 100%   <== PASS
+===== FOMC: 94 events (2015-01-28 .. 2026-06-17) at broker 21:00
+  MOM  k= 1 hold= 30  n= 92 PF=0.43 avg=-0.371R | halves PF 0.37 / 0.49 | twin avg -0.526R, beats  88%
+  MOM  k= 1 hold=120  n= 78 PF=0.68 avg=-0.236R | halves PF 0.79 / 0.61 | twin avg -0.541R, beats  92%
+  MOM  k= 5 hold= 30  n= 92 PF=0.56 avg=-0.215R | halves PF 0.71 / 0.41 | twin avg -0.380R, beats  93%
+  MOM  k= 5 hold=120  n= 78 PF=1.01 avg=+0.004R | halves PF 1.47 / 0.70 | twin avg -0.410R, beats  98%
+  MOM  k=15 hold= 30  n= 92 PF=0.51 avg=-0.203R | halves PF 0.75 / 0.39 | twin avg -0.278R, beats  79%
+  MOM  k=15 hold=120  n= 78 PF=0.86 avg=-0.063R | halves PF 1.23 / 0.71 | twin avg -0.305R, beats  93%
+  FADE k= 5 hold= 30  n= 92 PF=0.75 avg=-0.103R | halves PF 0.79 / 0.70 | twin avg -0.268R, beats  91%
+  FADE k= 5 hold=120  n= 78 PF=1.16 avg=+0.089R | halves PF 0.73 / 1.55 | twin avg -0.261R, beats  95%
+  FADE k=15 hold= 30  n= 92 PF=1.15 avg=+0.043R | halves PF 0.62 / 1.82 | twin avg -0.226R, beats 100%
+  FADE k=15 hold=120  n= 78 PF=1.08 avg=+0.039R | halves PF 0.51 / 1.68 | twin avg -0.234R, beats  98%
+  BRK  k= 0 hold= 30  n= 91 PF=1.08 avg=+0.046R | halves PF 0.87 / 1.36 | twin avg -0.166R, beats 100%
+  BRK  k= 0 hold=120  n= 78 PF=1.31 avg=+0.229R | halves PF 1.12 / 1.47 | twin avg -0.181R, beats 100%
+===== CPI: 17 events (2025-02-12 .. 2026-06-10) at broker 15:30
+  MOM  k= 1 hold= 30  n= 17 PF=0.15 avg=-0.568R | halves PF 0.01 / 0.30 | twin avg -0.226R, beats  23%
+  MOM  k= 1 hold=120  n= 17 PF=1.23 avg=+0.152R | halves PF 0.02 / 3.12 | twin avg -0.227R, beats  78%
+  MOM  k= 1 hold=360  n= 17 PF=1.73 avg=+0.604R | halves PF 0.00 / 3.48 | twin avg -0.219R, beats  88%
+  MOM  k= 5 hold= 30  n= 17 PF=0.06 avg=-0.445R | halves PF 0.10 / 0.04 | twin avg -0.172R, beats  19%
+  MOM  k= 5 hold=120  n= 17 PF=0.43 avg=-0.360R | halves PF 0.04 / 0.98 | twin avg -0.152R, beats  40%
+  MOM  k= 5 hold=360  n= 17 PF=0.68 avg=-0.253R | halves PF 0.53 / 0.81 | twin avg -0.131R, beats  51%
+  MOM  k=15 hold= 30  n= 17 PF=0.53 avg=-0.209R | halves PF 0.42 / 0.64 | twin avg -0.146R, beats  43%
+  MOM  k=15 hold=120  n= 17 PF=1.25 avg=+0.139R | halves PF 0.90 / 1.69 | twin avg -0.136R, beats  77%
+  MOM  k=15 hold=360  n= 17 PF=1.41 avg=+0.295R | halves PF 1.72 / 1.18 | twin avg -0.120R, beats  80%
+  FADE k= 5 hold= 30  n= 17 PF=1.01 avg=+0.002R | halves PF 1.33 / 0.67 | twin avg -0.192R, beats  77%
+  FADE k= 5 hold=120  n= 17 PF=0.58 avg=-0.253R | halves PF 1.74 / 0.03 | twin avg -0.188R, beats  52%
+  FADE k= 5 hold=360  n= 17 PF=0.59 avg=-0.263R | halves PF 1.04 / 0.34 | twin avg -0.208R, beats  53%
+  FADE k=15 hold= 30  n= 17 PF=1.18 avg=+0.054R | halves PF 2.62 / 0.57 | twin avg -0.119R, beats  82%
+  FADE k=15 hold=120  n= 17 PF=0.85 avg=-0.072R | halves PF 2.62 / 0.27 | twin avg -0.093R, beats  56%
+  FADE k=15 hold=360  n= 17 PF=0.86 avg=-0.075R | halves PF 1.74 / 0.42 | twin avg -0.108R, beats  57%
+  BRK  k= 0 hold= 30  n= 16 PF=0.68 avg=-0.129R | halves PF 0.86 / 0.36 | twin avg -0.001R, beats  31%
+  BRK  k= 0 hold=120  n= 16 PF=1.73 avg=+0.419R | halves PF 1.72 / 1.73 | twin avg -0.006R, beats  88%
+  BRK  k= 0 hold=360  n= 16 PF=0.77 avg=-0.201R | halves PF 1.03 / 0.51 | twin avg +0.016R, beats  35%

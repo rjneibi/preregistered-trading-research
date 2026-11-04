@@ -1,0 +1,58 @@
+[
+ {
+  "days": 1812,
+  "no_break_pct": 0.12969094922737306,
+  "both_sides_pct": 0.108719646799117,
+  "open_outside_box_pct": 0.15286975717439294,
+  "reentry_3_pct": 0.45212428662016485,
+  "reentry_6_pct": 0.5573874445149017,
+  "reentry_12_pct": 0.6531388712745719,
+  "reentry_by_exit_pct": 0.8306911857958148,
+  "median_continuation_w": -0.02082954338731001,
+  "mean_continuation_w": 0.004466192485789768,
+  "inst": "GER40",
+  "box": "utc0007"
+ },
+ {
+  "days": 1812,
+  "no_break_pct": 0.16556291390728478,
+  "both_sides_pct": 0.08167770419426049,
+  "open_outside_box_pct": 0.008830022075055188,
+  "reentry_3_pct": 0.4689153439153439,
+  "reentry_6_pct": 0.5853174603174603,
+  "reentry_12_pct": 0.6785714285714286,
+  "reentry_by_exit_pct": 0.8472222222222222,
+  "median_continuation_w": -0.02109356110342172,
+  "mean_continuation_w": -0.0024846644634652234,
+  "inst": "GER40",
+  "box": "ny1904"
+ },
+ {
+  "days": 1910,
+  "no_break_pct": 0.10732984293193717,
+  "both_sides_pct": 0.09633507853403141,
+  "open_outside_box_pct": 0.16910994764397905,
+  "reentry_3_pct": 0.4422287390029325,
+  "reentry_6_pct": 0.5395894428152492,
+  "reentry_12_pct": 0.6304985337243402,
+  "reentry_by_exit_pct": 0.8193548387096774,
+  "median_continuation_w": 0.04580838861619984,
+  "mean_continuation_w": 0.09484732064501357,
+  "inst": "UK100",
+  "box": "utc0007"
+ },
+ {
+  "days": 1912,
+  "no_break_pct": 0.14435146443514643,
+  "both_sides_pct": 0.07897489539748954,
+  "open_outside_box_pct": 0.047594142259414225,
+  "reentry_3_pct": 0.45232273838630804,
+  "reentry_6_pct": 0.5525672371638142,
+  "reentry_12_pct": 0.6448655256723717,
+  "reentry_by_exit_pct": 0.8343520782396088,
+  "median_continuation_w": 0.020738074312298693,
+  "mean_continuation_w": 0.06262082993193988,
+  "inst": "UK100",
+  "box": "ny1904"
+ }
+]

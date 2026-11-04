@@ -1,0 +1,76 @@
+{
+  "profile": "S",
+  "symbol": "GBPUSD",
+  "logic": "S-swing",
+  "cost_pts": 19,
+  "swap_long_pts": -0.2,
+  "swap_short_pts": -2.2,
+  "news_blocked_entries": 0,
+  "split_date": "2024-05-07",
+  "is_period": [
+    "2019-06-17",
+    "2024-05-07"
+  ],
+  "oos_period": [
+    "2024-05-07",
+    "2026-06-12"
+  ],
+  "longs": 30,
+  "shorts": 11,
+  "rejections": 122,
+  "full": {
+    "n": 41,
+    "wins": 11,
+    "losses": 16,
+    "be": 2,
+    "timeouts": 12,
+    "win_rate": 26.82926829268293,
+    "pf": 0.5391,
+    "exp_R": -0.206,
+    "exp_usd": -10.21,
+    "maxdd": 7.47,
+    "net_profit": -418.56,
+    "regime_conc": 0.0
+  },
+  "is": {
+    "n": 25,
+    "wins": 6,
+    "losses": 8,
+    "be": 2,
+    "timeouts": 9,
+    "win_rate": 24.0,
+    "pf": 0.9095,
+    "exp_R": -0.0307,
+    "exp_usd": -1.68,
+    "maxdd": 4.22,
+    "net_profit": -41.94,
+    "regime_conc": 0.0
+  },
+  "oos": {
+    "n": 16,
+    "wins": 5,
+    "losses": 8,
+    "be": 0,
+    "timeouts": 3,
+    "win_rate": 31.25,
+    "pf": 0.153,
+    "exp_R": -0.4798,
+    "exp_usd": -23.54,
+    "maxdd": 3.81,
+    "net_profit": -376.62,
+    "regime_conc": 0.0
+  },
+  "polarity_full": {
+    "flip_n": 41,
+    "flip_wr": 26.82926829268293,
+    "noflip_n": 0,
+    "noflip_wr": 0.0
+  },
+  "polarity_oos": {
+    "flip_n": 16,
+    "flip_wr": 31.25,
+    "noflip_n": 0,
+    "noflip_wr": 0.0
+  },
+  "csv": "@GANN_ROOT@/research/fx_backtest/results/trades_S_GBPUSD.csv"
+}

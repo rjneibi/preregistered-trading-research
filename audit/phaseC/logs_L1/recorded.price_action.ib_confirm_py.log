@@ -1,0 +1,6 @@
+XAGUSD  2018-2026 n 191 cost 0.021  gross -0.003R  net -0.045R  twin -0.043R  halves -0.096/+0.005  long n102 +0.032  short n89 -0.133  win 41%
+US500   2012-2026 n 268 cost 0.750  gross -0.054R  net -0.124R  twin -0.093R  halves -0.221/-0.027  long n156 -0.011  short n112 -0.283  win 41%
+US30    2012-2026 n 298 cost 2.250  gross +0.025R  net -0.023R  twin -0.023R  halves -0.006/-0.039  long n162 +0.046  short n136 -0.104  win 41%
+USTEC   2022-2026 n  78 cost 1.500  gross -0.004R  net -0.019R  twin +0.003R  halves -0.207/+0.169  long n36 +0.254  short n42 -0.253  win 35%
+POOLED n835 net -0.060R  twin -0.048R  diff -0.012R  t -0.30  markets>0 0/4  halves all >0 False  -> FAIL
+GOLD (PA-1 data, with swap) n387 net +0.114R  long +0.243  short -0.025

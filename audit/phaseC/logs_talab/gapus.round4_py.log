@@ -1,0 +1,31 @@
+top 8 by TRAIN (2022-07..2024), then TEST (2025..2026-10) with the same settings:
+  window 06-10 minstop 0.8ATR tp 2.0R
+     TRAIN n  335  net    +3.4R  avg +0.010R  PF 1.02  win 29%  maxDD  21.7R
+     TEST  n  185  net   +38.4R  avg +0.207R  PF 1.49  win 32%  maxDD   8.0R
+  window 06-10 minstop 0.8ATR tp 1.5R
+     TRAIN n  335  net   -12.6R  avg -0.038R  PF 0.93  win 36%  maxDD  29.4R
+     TEST  n  185  net   +43.4R  avg +0.234R  PF 1.56  win 44%  maxDD   7.7R
+  window 06-13 minstop 0.8ATR tp 2.0R
+     TRAIN n  435  net   -13.4R  avg -0.031R  PF 0.94  win 28%  maxDD  27.9R
+     TEST  n  247  net   +30.6R  avg +0.124R  PF 1.28  win 29%  maxDD  12.1R
+  window 06-10 minstop 0.8ATR tp 1.0R
+     TRAIN n  337  net   -17.5R  avg -0.052R  PF 0.90  win 52%  maxDD  34.1R
+     TEST  n  185  net   +32.4R  avg +0.175R  PF 1.43  win 61%  maxDD   9.2R
+  window 06-10 minstop 0.8ATR ladder 1.0R
+     TRAIN n  336  net   -24.6R  avg -0.073R  PF 0.86  win 51%  maxDD  39.3R
+     TEST  n  185  net   +38.5R  avg +0.208R  PF 1.51  win 61%  maxDD   8.6R
+  window 06-13 minstop 0.8ATR tp 1.5R
+     TRAIN n  438  net   -23.7R  avg -0.054R  PF 0.90  win 36%  maxDD  35.8R
+     TEST  n  247  net   +35.6R  avg +0.144R  PF 1.33  win 40%  maxDD  12.1R
+  window 06-16 minstop 0.8ATR tp 2.0R
+     TRAIN n  545  net   -23.2R  avg -0.042R  PF 0.92  win 28%  maxDD  31.5R
+     TEST  n  323  net   +40.1R  avg +0.124R  PF 1.29  win 28%  maxDD  12.2R
+  window 06-10 minstop 0.5ATR tp 2.0R
+     TRAIN n  336  net   -34.3R  avg -0.102R  PF 0.83  win 28%  maxDD  49.0R
+     TEST  n  186  net   +20.1R  avg +0.108R  PF 1.22  win 31%  maxDD  11.7R
+
+chosen: (10, 0.8, 2.0, 'tp')
+M5 check (2025-05..2026-10): n  150  net   +35.3R  avg +0.236R  PF 1.58  win 33%  maxDD  10.6R
+M5 risk per trade $: median 11.32  p10 5.51  p90 18.99
+trades per month (M5): 8.7
+M5 R by month: 25-05:-0 25-06:-6 25-07:+5 25-08:+4 25-09:+2 25-10:+2 25-11:+5 25-12:+6 26-01:+2 26-02:+11 26-03:+2 26-04:-0 26-05:-1 26-06:-0 26-07:+2 26-08:+1 26-09:-0 26-10:+2

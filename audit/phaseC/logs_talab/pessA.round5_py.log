@@ -1,0 +1,26 @@
+top 5 by TRAIN (<2025), TEST (2025+) untouched:
+  NY 13:30-18 minstop 0.5ATR ladder 0.4R
+     TRAIN n  414  net   +32.7R  avg +0.079R  PF 1.22  win 67%  maxDD  12.1R
+     TEST  n  311  net   +16.9R  avg +0.054R  PF 1.16  win 67%  maxDD   8.6R
+  NY 13:30-20 minstop 0.5ATR ladder 0.4R
+     TRAIN n  436  net   +30.0R  avg +0.069R  PF 1.19  win 67%  maxDD  11.6R
+     TEST  n  328  net   +18.0R  avg +0.055R  PF 1.16  win 67%  maxDD   9.9R
+  NY 13:30-18 minstop 0.3ATR ladder 0.4R
+     TRAIN n  414  net   +36.7R  avg +0.089R  PF 1.23  win 66%  maxDD  17.7R
+     TEST  n  311  net   +36.0R  avg +0.116R  PF 1.32  win 65%  maxDD   8.9R
+  NY 13:30-20 minstop 0.3ATR ladder 0.4R
+     TRAIN n  436  net   +33.1R  avg +0.076R  PF 1.20  win 66%  maxDD  16.5R
+     TEST  n  328  net   +40.9R  avg +0.125R  PF 1.35  win 66%  maxDD   8.9R
+  NY 13:30-16 minstop 0.3ATR ladder 0.4R
+     TRAIN n  385  net   +27.5R  avg +0.072R  PF 1.19  win 66%  maxDD  17.5R
+     TEST  n  275  net   +34.5R  avg +0.126R  PF 1.34  win 64%  maxDD   8.9R
+
+chosen NY 13:30-18, minstop 0.5, ladder 0.4R
+  M15 NY sweep fade  <2025 n  414  net   +32.7R  avg +0.079R  PF 1.22  win 67%  maxDD  12.1R
+                     2025+ n  311  net   +16.9R  avg +0.054R  PF 1.16  win 67%  maxDD   8.6R
+  M15 random twin    <2025 n  481  net   +21.0R  avg +0.044R  PF 1.13  win 70%  maxDD  17.1R
+                     2025+ n  360  net   +24.9R  avg +0.069R  PF 1.21  win 69%  maxDD  22.6R
+  M5 NY sweep fade  <2025 n    0  net    +0.0R  avg +0.000R  PF 0.00  win 0%  maxDD   0.0R
+                     2025+ n  275  net   -11.4R  avg -0.042R  PF 0.88  win 67%  maxDD  17.8R
+  M5 random twin    <2025 n    0  net    +0.0R  avg +0.000R  PF 0.00  win 0%  maxDD   0.0R
+                     2025+ n  322  net   +10.4R  avg +0.032R  PF 1.11  win 71%  maxDD  10.5R

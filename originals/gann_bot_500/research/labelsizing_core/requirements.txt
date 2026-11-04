@@ -1,0 +1,9 @@
+# Isolated research environment for labelsizing_core.
+# DELIBERATELY excludes MetaTrader5 — this artifact has NO live-execution path.
+# Pinned to majors known-compatible on Python 3.11 (win-amd64).
+numpy>=1.26,<2.2
+pandas>=2.1,<2.3
+scipy>=1.11,<1.15
+scikit-learn>=1.4,<1.6
+xgboost>=2.0,<2.2
+cvxpy>=1.5,<1.6

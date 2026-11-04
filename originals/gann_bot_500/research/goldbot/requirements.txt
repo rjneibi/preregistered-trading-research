@@ -1,0 +1,12 @@
+# goldbot Phase 1 — research-only environment.
+# Deliberately EXCLUDES MetaTrader5 (live-trading dep must never leak in;
+# _isolation_check.py enforces this). Same isolation pattern as
+# research/labelsizing_core. Known-compatible on Python 3.11 (win-amd64).
+numpy>=1.26,<3
+pandas>=2.2,<3
+PyYAML>=6.0
+tzdata>=2024.1
+# optional: parquet input support
+pyarrow>=15
+# H-M meta-label study (research-only; never a live-bot dependency)
+scikit-learn>=1.4

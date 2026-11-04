@@ -1,0 +1,282 @@
+{
+ "XAU/XAG": {
+  "bars": 69904,
+  "first": "2015-01-01 23:00:00+00:00",
+  "last": "2026-10-29 23:00:00+00:00",
+  "dev_end": "2020-11-30 11:00:00+00:00",
+  "val_end": "2023-04-13 06:11:59.999000+00:00",
+  "cointegration": {
+   "months": 104,
+   "eg": 0.058,
+   "johansen": 0.163,
+   "both": 0.038,
+   "valid_ou": 0.115,
+   "hl_h_p10_50_90": [
+    32.1,
+    45.2,
+    54.7
+   ],
+   "both_by_year": {
+    "2015": 0.0,
+    "2016": 0.0,
+    "2017": 0.22,
+    "2018": 0.0,
+    "2019": 0.14,
+    "2020": 0.09,
+    "2021": 0.0,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.0
+   }
+  },
+  "V1": {
+   "n_all": 8,
+   "dev": {
+    "n": 8,
+    "pf": 0.222,
+    "pf2x": 0.0,
+    "twin_p": 0.42128935532233885,
+    "status": "INSUFFICIENT SAMPLE",
+    "passed": false,
+    "pf_1_5x": 0.035,
+    "pf_gross": 2.255,
+    "why": {
+     "time": 6,
+     "breakdown": 2
+    }
+   },
+   "validation": "sealed",
+   "holdout": "sealed"
+  },
+  "V2": {
+   "n_all": 25,
+   "dev": {
+    "n": 25,
+    "pf": 0.094,
+    "pf2x": 0.0,
+    "twin_p": 0.25487256371814093,
+    "status": "INSUFFICIENT SAMPLE",
+    "passed": false,
+    "pf_1_5x": 0.015,
+    "pf_gross": 2.373,
+    "why": {
+     "cross": 24,
+     "stop": 1
+    }
+   },
+   "validation": "sealed",
+   "holdout": "sealed"
+  },
+  "V3": {
+   "n_all": 50,
+   "dev": {
+    "n": 31,
+    "pf": 0.025,
+    "pf2x": 0.0,
+    "twin_p": 0.8510744627686156,
+    "status": "INSUFFICIENT SAMPLE",
+    "passed": false,
+    "pf_1_5x": 0.004,
+    "pf_gross": 0.221,
+    "why": {
+     "stop": 24,
+     "time": 7
+    }
+   },
+   "validation": "sealed",
+   "holdout": "sealed",
+   "in_cointegrated_months_dev": {
+    "n": 8,
+    "pf": 0.151,
+    "pf_gross": 1.034
+   },
+   "outside_dev": {
+    "n": 23,
+    "pf": 0.0,
+    "pf_gross": 0.0
+   }
+  }
+ },
+ "BTC/ETH": {
+  "bars": 80138,
+  "first": "2017-08-17 04:00:00+00:00",
+  "last": "2026-10-13 13:00:00+00:00",
+  "dev_end": "2022-03-16 08:30:00+00:00",
+  "val_end": "2024-01-14 05:30:00+00:00",
+  "cointegration": {
+   "months": 107,
+   "eg": 0.065,
+   "johansen": 0.178,
+   "both": 0.047,
+   "valid_ou": 0.112,
+   "hl_h_p10_50_90": [
+    52.0,
+    73.5,
+    82.0
+   ],
+   "both_by_year": {
+    "2017": 0.0,
+    "2018": 0.08,
+    "2019": 0.0,
+    "2020": 0.08,
+    "2021": 0.08,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.08,
+    "2025": 0.0,
+    "2026": 0.1
+   }
+  },
+  "V1": {
+   "n_all": 6,
+   "dev": {
+    "n": 2,
+    "pf": 0.172,
+    "pf2x": 0.119,
+    "twin_p": 0.7986006996501749,
+    "status": "INSUFFICIENT SAMPLE",
+    "passed": false,
+    "pf_1_5x": 0.145,
+    "pf_gross": 0.228,
+    "why": {
+     "time": 1,
+     "stop": 1
+    }
+   },
+   "validation": "sealed",
+   "holdout": "sealed"
+  },
+  "V2": {
+   "n_all": 58,
+   "dev": {
+    "n": 29,
+    "pf": 1.135,
+    "pf2x": 0.766,
+    "twin_p": 0.12843578210894552,
+    "status": "INSUFFICIENT SAMPLE",
+    "passed": false,
+    "pf_1_5x": 0.937,
+    "pf_gross": 1.64,
+    "why": {
+     "cross": 26,
+     "stop": 3
+    }
+   },
+   "validation": "sealed",
+   "holdout": "sealed"
+  },
+  "V3": {
+   "n_all": 26,
+   "dev": {
+    "n": 16,
+    "pf": 0.332,
+    "pf2x": 0.238,
+    "twin_p": 0.743128435782109,
+    "status": "INSUFFICIENT SAMPLE",
+    "passed": false,
+    "pf_1_5x": 0.28,
+    "pf_gross": 0.45,
+    "why": {
+     "stop": 9,
+     "time": 7
+    }
+   },
+   "validation": "sealed",
+   "holdout": "sealed",
+   "in_cointegrated_months_dev": {
+    "n": 2,
+    "pf": 0.172,
+    "pf_gross": 0.228
+   },
+   "outside_dev": {
+    "n": 14,
+    "pf": 0.382,
+    "pf_gross": 0.524
+   }
+  }
+ },
+ "Gold/GDX": {
+  "bars": 2957,
+  "first": "2015-01-02 05:00:00+00:00",
+  "last": "2026-10-29 04:00:00+00:00",
+  "dev_end": "2020-11-30 04:30:00+00:00",
+  "val_end": "2023-04-12 18:41:59+00:00",
+  "cointegration": {
+   "months": 129,
+   "eg": 0.047,
+   "johansen": 0.186,
+   "both": 0.031,
+   "valid_ou": 0.147,
+   "hl_h_p10_50_90": [
+    161.6,
+    212.2,
+    222.1
+   ],
+   "both_by_year": {
+    "2016": 0.0,
+    "2017": 0.0,
+    "2018": 0.08,
+    "2019": 0.08,
+    "2020": 0.0,
+    "2021": 0.08,
+    "2022": 0.0,
+    "2023": 0.0,
+    "2024": 0.0,
+    "2025": 0.0,
+    "2026": 0.1
+   }
+  },
+  "V1": {
+   "n_all": 1,
+   "dev": {
+    "n": 0,
+    "status": "INSUFFICIENT SAMPLE",
+    "passed": false,
+    "pf": null
+   },
+   "validation": "sealed",
+   "holdout": "sealed"
+  },
+  "V2": {
+   "n_all": 1,
+   "dev": {
+    "n": 0,
+    "status": "INSUFFICIENT SAMPLE",
+    "passed": false,
+    "pf": null
+   },
+   "validation": "sealed",
+   "holdout": "sealed"
+  },
+  "V3": {
+   "n_all": 6,
+   "dev": {
+    "n": 3,
+    "pf": 43.376,
+    "pf2x": 19.582,
+    "twin_p": 0.21489255372313842,
+    "status": "INSUFFICIENT SAMPLE",
+    "passed": false,
+    "pf_1_5x": 27.225,
+    "pf_gross": Infinity,
+    "why": {
+     "time": 3
+    }
+   },
+   "validation": "sealed",
+   "holdout": "sealed",
+   "in_cointegrated_months_dev": {
+    "n": 0,
+    "pf": 0.0,
+    "pf_gross": 0.0
+   },
+   "outside_dev": {
+    "n": 3,
+    "pf": 43.376,
+    "pf_gross": Infinity
+   }
+  }
+ }
+}

@@ -1,0 +1,8 @@
+1-lot PF reference: old 0.897 / new 1.276
+   B0_flat1pct: old PF 0.883 net $-524 DD $849 r -0.62 | new PF 1.096 net $297 DD $330 r 0.90
+ P_regime_tilt: old PF 0.879 net $-355 DD $612 r -0.58 | new PF 1.153 net $327 DD $193 r 1.70
+    S1_atr_cap: old PF 0.885 net $-554 DD $885 r -0.62 | new PF 1.246 net $1,456 DD $782 r 1.86
+       S2_sqrt: old PF 0.887 net $-502 DD $825 r -0.61 | new PF 1.172 net $803 DD $424 r 1.90
+
+gates: {'1_old_pf_beats_baseline_+0.05': False, '2_old_inversion_eliminated': True, '3_old_risk_adjusted_not_worse': True, '1_new_pf_beats_baseline_+0.05': True, '2_new_inversion_eliminated': False, '3_new_risk_adjusted_not_worse': True}
+== SZ FAIL: sizing line closed this cycle; inversion stands as a known cost of vol-normalized sizing ==

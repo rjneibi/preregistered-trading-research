@@ -1,0 +1,18 @@
+# review_f/xm1.py, run once on 2026-11-03 on the author's machine, PYTHONHASHSEED=0. Not part of the clean run.
+{'t': ((3630,), dtype('int64')), 'o': ((3630,), dtype('float64')), 'h': ((3630,), dtype('float64')), 'l': ((3630,), dtype('float64')), 'c': ((3630,), dtype('float64')), 'sp': ((3630,), dtype('float64')), 'swl': ((), dtype('float64')), 'sws': ((), dtype('float64')), 'swm': ((), dtype('int64')), 'cs': ((), dtype('float64'))} sp raw (array([0.  , 0.1 , 0.11, 0.13, 0.15, 0.2 , 0.25, 0.3 ]), np.float64(0.2))
+rows 3630 dupe stamps 0 nonmono 0
+[Timestamp('2012-08-06 00:00:00'), Timestamp('2012-08-07 00:00:00'), Timestamp('2026-10-12 00:00:00'), Timestamp('2026-10-13 00:00:00')]
+weekday counts {0: 725, 1: 730, 2: 728, 3: 728, 4: 718, 5: 1}
+stamp hour {0: 3630}
+rows after dedupe 3630 max gap days 55.0 gaps>5 1
+spread used 0.44999999999999996 pos spread share 0.6413223140495867
+adjusted ewm RSI(alpha .5) open n 124 PF 2.372  halves 1.655 3.453 win 0.774 DSR12 0.949 DSR17 0.934 DSR114500 0.315 DSR178991 0.290 SR 0.3406 t 3.79
+adjusted ewm RSI(alpha .5) close n 124 PF 2.540  halves 1.719 3.789 win 0.798 DSR12 0.959 DSR17 0.947 DSR114500 0.380 DSR178991 0.353 SR 0.3600 t 4.01
+Wilder RSI seeded SMA open n 124 PF 2.372  halves 1.655 3.453 win 0.774 DSR12 0.949 DSR17 0.934 DSR114500 0.315 DSR178991 0.290 SR 0.3406 t 3.79
+Wilder RSI seeded SMA close n 124 PF 2.540  halves 1.719 3.789 win 0.798 DSR12 0.959 DSR17 0.947 DSR114500 0.380 DSR178991 0.353 SR 0.3600 t 4.01
+years 14 neg 4 {2013: 0.049, 2014: 0.062, 2015: 0.038, 2016: 0.033, 2017: 0.059, 2018: -0.087, 2019: 0.008, 2020: -0.017, 2021: 0.109, 2022: -0.033, 2023: -0.008, 2024: 0.114, 2025: 0.09, 2026: 0.127}
+years 2018+ neg 4 of 9
+nospread 2.432854427593035 nofin 2.696820000293081 gross 2.766580559825536
+delay 1 n 124 PF 1.796
+delay 2 n 124 PF 1.836
+daily Sharpe rule 0.78 bh 0.76 maxDD rule -0.143 bh -0.348 expo 0.114

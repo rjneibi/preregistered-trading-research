@@ -1,0 +1,133 @@
+{
+ "H1": {
+  "n": 481,
+  "matrix_pf": 1.009,
+  "event_aware_pf": 1.008,
+  "trades_touching_window": 7,
+  "extra_cost_usd": 150,
+  "blackout_n": 480,
+  "blackout_pf_matrix": 1.008,
+  "blackout_pf_event": 1.007,
+  "pf_2x_event": 0.659
+ },
+ "v3": {
+  "n": 436,
+  "stored_pf": 1.254,
+  "event_aware_entry_only_pf": 1.254,
+  "trades_touching_window": 0,
+  "extra_cost_usd": 0,
+  "blackout_n": 436,
+  "blackout_pf": 1.254,
+  "blackout_event_pf": 1.254,
+  "note": "The harness saves no exit time, so only the entry is re-costed"
+ },
+ "v4": {
+  "n": 577,
+  "stored_pf": 1.145,
+  "event_aware_entry_only_pf": 1.142,
+  "trades_touching_window": 14,
+  "extra_cost_usd": 347,
+  "blackout_n": 562,
+  "blackout_pf": 1.173,
+  "blackout_event_pf": 1.173,
+  "note": "The harness saves no exit time, so only the entry is re-costed"
+ },
+ "spread_by_window": {
+  "NFP -30..-5": {
+   "events": 132,
+   "median_of_year_medians": 0.342,
+   "median_of_year_p90": 0.388
+  },
+  "NFP -5..0": {
+   "events": 132,
+   "median_of_year_medians": 0.392,
+   "median_of_year_p90": 0.503
+  },
+  "NFP 0..1": {
+   "events": 132,
+   "median_of_year_medians": 0.486,
+   "median_of_year_p90": 0.85
+  },
+  "NFP 1..5": {
+   "events": 132,
+   "median_of_year_medians": 0.413,
+   "median_of_year_p90": 0.542
+  },
+  "NFP 5..30": {
+   "events": 132,
+   "median_of_year_medians": 0.358,
+   "median_of_year_p90": 0.451
+  },
+  "NFP 30..60": {
+   "events": 132,
+   "median_of_year_medians": 0.343,
+   "median_of_year_p90": 0.435
+  },
+  "CPI -30..-5": {
+   "events": 29,
+   "median_of_year_medians": 0.55,
+   "median_of_year_p90": 0.637
+  },
+  "CPI -5..0": {
+   "events": 29,
+   "median_of_year_medians": 0.57,
+   "median_of_year_p90": 0.807
+  },
+  "CPI 0..1": {
+   "events": 29,
+   "median_of_year_medians": 0.92,
+   "median_of_year_p90": 2.41
+  },
+  "CPI 1..5": {
+   "events": 29,
+   "median_of_year_medians": 0.72,
+   "median_of_year_p90": 1.22
+  },
+  "CPI 5..30": {
+   "events": 29,
+   "median_of_year_medians": 0.62,
+   "median_of_year_p90": 0.78
+  },
+  "CPI 30..60": {
+   "events": 29,
+   "median_of_year_medians": 0.6,
+   "median_of_year_p90": 0.757
+  },
+  "FOMC -30..-5": {
+   "events": 92,
+   "median_of_year_medians": 0.338,
+   "median_of_year_p90": 0.396
+  },
+  "FOMC -5..0": {
+   "events": 91,
+   "median_of_year_medians": 0.394,
+   "median_of_year_p90": 0.563
+  },
+  "FOMC 0..1": {
+   "events": 91,
+   "median_of_year_medians": 0.542,
+   "median_of_year_p90": 0.887
+  },
+  "FOMC 1..5": {
+   "events": 91,
+   "median_of_year_medians": 0.427,
+   "median_of_year_p90": 0.583
+  },
+  "FOMC 5..30": {
+   "events": 91,
+   "median_of_year_medians": 0.374,
+   "median_of_year_p90": 0.456
+  },
+  "FOMC 30..60": {
+   "events": 91,
+   "median_of_year_medians": 0.389,
+   "median_of_year_p90": 0.455
+  }
+ },
+ "non_event_median_spread_us_hours": 0.334,
+ "events": {
+  "FOMC": 94,
+  "NFP": 139,
+  "CPI": 29
+ }
+}

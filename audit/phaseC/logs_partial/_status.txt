@@ -1,0 +1,7 @@
+partial run_verdict rc=0 20s
+partial hp_runner rc=0 30s
+partial hr_is_runner rc=0 18s
+partial hr_oos_runner rc=0 16s
+partial sz_runner rc=0 9s
+partial hm_runner rc=0 161s
+partial hs_runner rc=0 727s

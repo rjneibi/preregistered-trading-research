@@ -1,0 +1,5 @@
+# Pinned, for the no-data level (scripts/verify.py) under Python 3.11.
+# The audit stages use their own lock files in audit/infrastructure/.
+numpy==2.4.6
+scipy==1.17.1
+pytest==9.1.1
